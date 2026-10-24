@@ -1,0 +1,17 @@
+plik,opis,zrodlo_i_wersja,licencja,w_pakiecie
+dane_wejsciowe/granice/miasto.gpkg,granica administracyjna Torunia,"PRG (GUGiK), wersja pobrana 20.07.2026, zaktualizowana 31.08.2026",dane publiczne (GUGiK),tak
+"dane_wejsciowe/granice/Bufor_do_2_5km.gpkg, Bufor_do_5km.gpkg","pierścienie 0–2,5 km i 2,5–5 km wokół granicy Torunia",opracowanie własne z PRG (bufory w EPSG:2180),CC BY 4.0,tak
+dane_wejsciowe/granice/aoi_calosc.geojson,obwiednia obszaru badań Torunia,opracowanie własne,CC BY 4.0,tak
+"dane_wejsciowe/granice/bydgoszcz_4326.gpkg, bydgoszcz_do_2_5km_4326.gpkg, bydgoszcz_do_5km_4326.gpkg, aoi_calosc_bydgoszcz.geojson","granica Bydgoszczy, pierścienie i obwiednia",PRG (GUGiK) i opracowanie własne,dane publiczne (GUGiK) / CC BY 4.0,tak
+gminy.gpkg,granice gmin z kodem TERYT (ważenie ludności pierścieni),"PRG (GUGiK), wersja pobrana 20.07.2026, zaktualizowana 31.08.2026",dane publiczne (GUGiK),nie (86 MB; do pobrania z GUGiK)
+dane_wejsciowe/ludnosc/LUDN_2137_CTAB_20260903150818.csv,"ludność gmin 1995–2025, tablica P2137 „Ludność wg grup wieku i płci”, stan na 31 grudnia","GUS Bank Danych Lokalnych, pobrano 03.09.2026",dane publiczne (GUS),tak
+"dane_wejsciowe/bariery/formy_ochrony_tor.gpkg, formy_ochrony_byd.gpkg",rezerwaty przyrody w obszarach badań,GDOŚ (WFS / plik lokalny ochronaPrzyrody.gpkg),dane publiczne (GDOŚ),tak
+"dane_wejsciowe/bariery/obiekty_wojskowe_TORUN.geojson, obiekty_wojskowe_BYDGOSZCZ.geojson",tereny wojskowe (tereny zamknięte),opracowanie własne,CC BY 4.0,tak
+"dane_wejsciowe/bariery/lotnisko_torun.gpkg, lotnisko_bydgoszcz.gpkg",lotniska,opracowanie własne,CC BY 4.0,tak
+dane_wejsciowe/bariery/pozarzysko_1992_dNBR_0.27.gpkg,"granica pożarzyska 1992 w Puszczy Bydgoskiej (dNBR ≥ 0,27; sekcja 21.10)",opracowanie własne z Landsat,CC BY 4.0,tak
+dane_wejsciowe/wsf_evolution/WSF_EVO.meta4,lista kafli WSFevolution_v1 użytych do assetu WSFevolution,"DLR, download.geoservice.dlr.de/WSF_EVO; kafle pobrane 20.07.2026, zaktualizowane 31.08.2026",kafle: licencja DLR (nie w pakiecie),tylko lista
+"dane_wejsciowe/ortofotomapa_skorowidze/ortofotomapa_aoi_2023.gpkg, ortofotomapaGUGiK.gpkg","skorowidze arkuszy ortofotomapy GUGiK (2023: RGB, 0,25 m, naloty 22–23.04 i 01.05.2023; archiwalna 2004–2005: czarno-biała, 0,5 m)",GUGiK (atrybuty skorowidza),arkusze: licencja GUGiK (nie w pakiecie),tylko skorowidze
+"UA2012, UA2018, UA2021 (Toruń), UA*_byd",Urban Atlas do walidacji,Copernicus Land Monitoring Service,licencja Copernicus (nie w pakiecie),nie
+CORINE Land Cover 1990–2018,walidacja klas i rdzenie,Copernicus Land Monitoring Service (asset GEE),licencja Copernicus,nie
+"Landsat C2 L2, Landsat MSS C2 L1, Sentinel-2, Dynamic World",dane satelitarne i etykiety nauczyciela,"USGS, ESA/Copernicus, Google/WRI (Google Earth Engine)",licencje dostawców,nie (assety GEE)
+weryfikacja/,"punkty ślepej fotointerpretacji z kluczami kodów, próby ślepe MSS (model 840f9d4d), panele punktów walidacji z identyfikatorami",opracowanie własne,CC BY 4.0,tak

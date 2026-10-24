@@ -1,0 +1,6 @@
+Fold zewnętrzny,Hiperparametry wybrane wewnętrznie,F1 wewnętrzne (średnia) [%],OA zewnętrzna [%],F1 zewnętrzne [%],n test
+0,"{""numberOfTrees"": 300, ""variablesPerSplit"": 4, ""minLeafPopulation"": 1}",89.9,86.8,86.9,266
+1,"{""numberOfTrees"": 300, ""variablesPerSplit"": 6, ""minLeafPopulation"": 1}",89.0,92.6,93.8,431
+2,"{""numberOfTrees"": 300, ""variablesPerSplit"": 4, ""minLeafPopulation"": 1}",89.4,92.5,91.6,333
+3,"{""numberOfTrees"": 300, ""variablesPerSplit"": 6, ""minLeafPopulation"": 1}",89.0,91.5,91.1,496
+4,"{""numberOfTrees"": 300, ""variablesPerSplit"": 4, ""minLeafPopulation"": 1}",91.2,94.2,84.5,310

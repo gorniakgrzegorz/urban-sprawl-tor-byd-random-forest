@@ -1,0 +1,4 @@
+Referencja,Mapa 1,Mapa 2,n,OA mapa 1 [%],OA mapa 2 [%],b (tylko mapa 1),c (tylko mapa 2),chi2,p
+"autor (fotointerpretacja), binarnie",DW,RF/Landsat,272,87.1,85.3,17,12,0.55,0.4576
+"autor (fotointerpretacja), binarnie",DW,RF/Sentinel-2,272,87.1,82.7,18,6,5.04,0.0247
+"autor (fotointerpretacja), binarnie",RF/Landsat,RF/Sentinel-2,272,85.3,82.7,18,11,1.24,0.2652

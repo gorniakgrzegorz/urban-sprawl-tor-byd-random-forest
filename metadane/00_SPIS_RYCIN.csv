@@ -1,0 +1,126 @@
+Plik,Sekcja,Miasto,Rozmiar [kB],Opis
+08.10_Torun_ryc_C1_sygnatury_i_przestrzen_cech.png,08.10,Toruń,731,Sygnatury spektralne i przestrzeń NDVI–NDBI
+08.10_Torun_ryc_C2_waznosc_cech_macierz_cv.png,08.10,Toruń,300,Ważność cech i macierz pomyłek z blokowej CV
+08.10_Torun_ryc_C3_krzywe_uczenia.png,08.10,Toruń,264,Krzywe uczenia (holdout)
+08.10_Torun_ryc_C4_schemat_metody.png,08.10,Toruń,503,Schemat metody
+08.10_Torun_ryc_C5_punkty_uczace_bloki_pewnosc.png,08.10,Toruń,9053,"Bloki CV, punkty uczące, pewność DW"
+10.01_Torun_ryc_D1_trajektoria_zabudowy.png,10.01,Toruń,547,"Trajektoria zabudowy: serie RF/Landsat i RF/Sentinel-2; miasto na tle WSF, CORINE i DW"
+10.01_Torun_ryc_D4_tempo_okresow.png,10.01,Toruń,300,Tempo zmian w okresach wg stref
+10.02_Torun_ryc_D3_roza_kierunkowa.png,10.02,Toruń,320,Róże kierunkowe przyrostu dla każdego okresu
+10.02_Torun_ryc_D5_metryki_krajobrazowe.png,10.02,Toruń,556,"Liczba płatów, gęstość krawędzi, udział leapfrog"
+10.03_Torun_ryc_D2_mapy_serii_1985_2025.png,10.03,Toruń,10615,Mapy zabudowy RF/Landsat z sześciu epok 1985–2025
+10.03_Torun_ryc_D2b_mapy_10m_s2_dw.png,10.03,Toruń,16052,Mapy 10 m: RF/Sentinel-2 (seria B) i Dynamic World 2025 jako odniesienie
+10.03_Torun_ryc_D8_zmiany_zabudowy_wg_okresow.png,10.03,Toruń,23093,Mapa zabudowy wg okresu pierwszego pojawienia się
+10.04_Torun_ryc_A1_powierzchnie_klas.png,10.04,Toruń,303,Powierzchnie głównych klas DW wg stref
+10.04_Torun_ryc_A2_zmiana_netto_klas.png,10.04,Toruń,205,Zmiana netto klas DW wg stref
+10.04_Torun_ryc_B1_dokladnosc_oa_ci.png,10.04,Toruń,242,Dokładność DW względem Urban Atlas z CI 95%
+10.05_Torun_ryc_B2_atlas_przeglad.png,10.05,Toruń,5303,"Atlas klasyfikacji: ortofotomapa, Sentinel-2/DW, Sentinel-2/RF, Landsat/RF"
+10.06_Torun_ryc_B3a_porownanie_dw_rf_orto_typowe.png,10.06,Toruń,15698,"Rycina porównawcza w oknach 1 × 1 km (okna typowe): ortofotomapa, DW, RF/Sentinel-2, RF/Landsat, zgodność"
+10.06_Torun_ryc_B3b_porownanie_dw_rf_orto_rozbiezne.png,10.06,Toruń,12218,"Rycina porównawcza w oknach 1 × 1 km (okna największej różnicy): ortofotomapa, DW, RF/Sentinel-2, RF/Landsat, zgodność"
+11.04b_Torun_Bydgoszcz_ryc_E13_detekcja_stalej_zabudowy_oba_miasta.png,11.04b,Toruń i Bydgoszcz,540,"Oba miasta: udział stałej zabudowy (WSF 1985 ∩ DW 2015 ∩ DW 2025) wykrytej przez RF w każdej epoce: surowo przy trzech progach i w serii z więzami (tab_C24, tab_E17)"
+11.04b_Torun_Bydgoszcz_ryc_E14_sygnatury_stabilnych_lasow_oba_miasta.png,11.04b,Toruń i Bydgoszcz,580,"Oba miasta: sygnatury spektralne stabilnych lasów w kompozytach epok (NDVI lato i przedwiośnie, SWIR1, amplituda NDVI) oraz liczba scen; diagnostyka kompozytu 1995 (tab_C25, tab_E18)"
+11.08_Bydgoszcz_ryc_E10_byd_zmiana_netto_klas_dw.png,11.08,Bydgoszcz,228,"Bydgoszcz: zmiana netto klas DW wg stref (odpowiednik A2, wspólna skala)"
+11.08_Bydgoszcz_ryc_E11_byd_atlas_przeglad.png,11.08,Bydgoszcz,5086,"Bydgoszcz: atlas klasyfikacji: ortofotomapa, Sentinel-2/DW, Sentinel-2/RF, Landsat/RF (odpowiednik B2)"
+11.08_Bydgoszcz_ryc_E1_byd_trajektoria.png,11.08,Bydgoszcz,522,Bydgoszcz: trajektoria zabudowy
+11.08_Bydgoszcz_ryc_E2_byd_roza_kierunkowa.png,11.08,Bydgoszcz,373,Bydgoszcz: róże kierunkowe
+11.08_Bydgoszcz_ryc_E3_byd_metryki.png,11.08,Bydgoszcz,511,Bydgoszcz: metryki krajobrazowe
+11.08_Bydgoszcz_ryc_E4_byd_mapy_serii.png,11.08,Bydgoszcz,10757,Bydgoszcz: mapy serii
+11.08_Bydgoszcz_ryc_E5a_byd_porownanie_dw_rf_orto_typowe.png,11.08,Bydgoszcz,16244,"Bydgoszcz: rycina porównawcza ortofotomapa, DW, RF/Sentinel-2, RF/Landsat w oknach 1 × 1 km"
+11.08_Bydgoszcz_ryc_E5b_byd_porownanie_dw_rf_orto_rozbiezne.png,11.08,Bydgoszcz,13892,"Bydgoszcz: rycina porównawcza ortofotomapa, DW, RF/Sentinel-2, RF/Landsat w oknach 1 × 1 km"
+11.08_Bydgoszcz_ryc_E6_byd_tempo_okresow.png,11.08,Bydgoszcz,325,"Bydgoszcz: tempo zmian w okresach wg stref (odpowiednik D4, wspólna skala)"
+11.08_Bydgoszcz_ryc_E7_byd_mapy_10m_s2_dw.png,11.08,Bydgoszcz,16159,Bydgoszcz: mapy 10 m: RF/Sentinel-2 (seria B) i Dynamic World 2025 (odpowiednik D2b)
+11.08_Bydgoszcz_ryc_E8_byd_zmiany_zabudowy_wg_okresow.png,11.08,Bydgoszcz,25205,"Bydgoszcz: mapa zabudowy wg okresu pierwszego pojawienia się (odpowiednik D8, te same progi i kolory)"
+11.08_Bydgoszcz_ryc_E9_byd_powierzchnie_klas_dw.png,11.08,Bydgoszcz,287,"Bydgoszcz: powierzchnie głównych klas DW wg stref (odpowiednik A1, wspólna skala)"
+11.08_Torun_Bydgoszcz_ryc_E12_walidacja_f1_oba_miasta.png,11.08,Toruń i Bydgoszcz,360,"Oba miasta: F1 klasy zabudowa map RF/Landsat, RF/Sentinel-2 i Dynamic World względem źródeł niezależnych (tab_E16)"
+11.08_Torun_ryc_A1_powierzchnie_klas.png,11.08,Toruń,260,Powierzchnie głównych klas DW wg stref
+11.08_Torun_ryc_A2_zmiana_netto_klas.png,11.08,Toruń,199,Zmiana netto klas DW wg stref
+11.08_Torun_ryc_D1_trajektoria_zabudowy.png,11.08,Toruń,525,"Trajektoria zabudowy: serie RF/Landsat i RF/Sentinel-2; miasto na tle WSF, CORINE i DW"
+11.08_Torun_ryc_D3_roza_kierunkowa.png,11.08,Toruń,318,Róże kierunkowe przyrostu dla każdego okresu
+11.08_Torun_ryc_D4_tempo_okresow.png,11.08,Toruń,309,Tempo zmian w okresach wg stref
+11.08_Torun_ryc_D5_metryki_krajobrazowe.png,11.08,Toruń,514,"Liczba płatów, gęstość krawędzi, udział leapfrog"
+12.01_Torun_Bydgoszcz_ryc_K0_tlo_ramki_oba_miasta.png,12.01,Toruń i Bydgoszcz,17904,"Oba miasta: tło map: ortofotomapa (25% nasycenia, 50% przezroczystości) w ramce i zasięg klasyfikacji do ramki; kontrola wizualna"
+12.03_Bydgoszcz_ryc_F1_byd_mapy_5lat.png,12.03,Bydgoszcz,12321,"Mapy nowej zabudowy w pięcioleciach 1985–2025, seria RF/Landsat 30 m"
+12.03_Bydgoszcz_ryc_F2_byd_rok_zabudowania.png,12.03,Bydgoszcz,24980,"Mapa roku pierwszego pojawienia się zabudowy, seria 5-letnia RF/Landsat"
+12.03_Bydgoszcz_ryc_F3_byd_nowa_zabudowa_s2.png,12.03,Bydgoszcz,26144,Nowa zabudowa w okresie Sentinel-2 w 10 m (RF/Sentinel-2) dla obu miast
+12.03_Torun_ryc_F1_tor_mapy_5lat.png,12.03,Toruń,12284,"Mapy nowej zabudowy w pięcioleciach 1985–2025, seria RF/Landsat 30 m"
+12.03_Torun_ryc_F2_tor_rok_zabudowania.png,12.03,Toruń,22866,"Mapa roku pierwszego pojawienia się zabudowy, seria 5-letnia RF/Landsat"
+12.03_Torun_ryc_F3_tor_nowa_zabudowa_s2.png,12.03,Toruń,23713,Nowa zabudowa w okresie Sentinel-2 w 10 m (RF/Sentinel-2) dla obu miast
+13.02_Bydgoszcz_ryc_G1_byd_sekwencja_zabudowy.png,13.02,Bydgoszcz,12171,"Sekwencja map zabudowy 1985–2025 co 5 lat, seria RF/Landsat 30 m"
+13.02_Torun_Bydgoszcz_ryc_G1c_torun_bydgoszcz_1985_2005_2025.png,13.02,Toruń i Bydgoszcz,11539,"Sekwencja map zabudowy 1985–2025 obu miast obok siebie, seria RF/Landsat 30 m"
+13.02_Torun_ryc_G1_tor_sekwencja_zabudowy.png,13.02,Toruń,12233,"Sekwencja map zabudowy 1985–2025 co 5 lat, seria RF/Landsat 30 m"
+13.03_Bydgoszcz_ryc_G2_byd_dw_pokrycie_2015_2025.png,13.03,Bydgoszcz,9159,Roczne mapy pokrycia terenu Dynamic World 2015–2025 (kontekst)
+13.03_Torun_ryc_G2_tor_dw_pokrycie_2015_2025.png,13.03,Toruń,8262,Roczne mapy pokrycia terenu Dynamic World 2015–2025 (kontekst)
+13.04_Bydgoszcz_ryc_G3_byd_dynamika_5lat.png,13.04,Bydgoszcz,3982,Mapy dynamiki: nowa zabudowa w siatce 1 km w pięcioleciach
+13.04_Torun_Bydgoszcz_ryc_G3b_dynamika_1985_2025_oba_miasta.png,13.04,Toruń i Bydgoszcz,8445,Mapy dynamiki: suma nowej zabudowy 1985–2025 w siatce 1 km
+13.04_Torun_ryc_G3_tor_dynamika_5lat.png,13.04,Toruń,3710,Mapy dynamiki: nowa zabudowa w siatce 1 km w pięcioleciach
+13.05_Torun_Bydgoszcz_ryc_G4_roze_dekady_oba_miasta.png,13.05,Toruń i Bydgoszcz,1885,"Róże kierunkowe obu miast w dekadach, wspólna skala"
+13.06_Torun_Bydgoszcz_ryc_G5_bariery_oba_miasta.png,13.06,Toruń i Bydgoszcz,6513,"Bariery obu miast (osobny kolor każdej bariery, styl linii wg klasy ograniczenia) na tle zabudowy 1985 i nowej 1985–2025 oraz udział zabudowy w pierścieniu 500 m"
+14.02_Torun_Bydgoszcz_ryc_H1_hovmoller_odleglosc_czas.png,14.02,Toruń i Bydgoszcz,359,"Diagram Hovmöllera: udział zabudowy w funkcji odległości od centroidu i czasu (fala suburbanizacji), oba miasta"
+14.02_Torun_Bydgoszcz_ryc_H2_profile_gradientowe.png,14.02,Toruń i Bydgoszcz,688,"Profile gradientowe: udział zabudowy w pierścieniach 500 m w kolejnych epokach, oba miasta"
+14.03_Torun_Bydgoszcz_ryc_H3_zegar_ekspansji.png,14.03,Toruń i Bydgoszcz,1191,"Zegar ekspansji: średni rok pojawienia się zabudowy w polach sektor × pierścień (wykres biegunowy), oba miasta"
+14.03_Torun_Bydgoszcz_ryc_H4_odcisk_palca.png,14.03,Toruń i Bydgoszcz,531,"Odcisk palca ekspansji: nowa zabudowa w 16 sektorach i 8 pięcioleciach (mapa ciepła), oba miasta"
+14.04_Torun_Bydgoszcz_ryc_H5_indeks_zabudowy_oba_miasta.png,14.04,Toruń i Bydgoszcz,583,Indeks zabudowy (1985 = 100) dla miasta i pierścieni obu miast
+14.04_Torun_Bydgoszcz_ryc_H6_roza_na_mapie_oba_miasta.png,14.04,Toruń i Bydgoszcz,13383,"Róża na mapie: sektory azymutalne pokolorowane wielkością przyrostu 1985–2025 na tle ortofotomapy (ramka), oba miasta"
+14.05_Torun_Bydgoszcz_ryc_H7_lcr_pgr_gminy_oba_miasta.png,14.05,Toruń i Bydgoszcz,667,"LCR względem PGR miast i gmin otaczających (prosta 1:1 = LCRPGR 1; koła puste: gminy w mniej niż połowie w AOI), oba miasta"
+14.05_Torun_Bydgoszcz_ryc_H7b_lcrpgr_gminy_kartogram_oba_miasta.png,14.05,Toruń i Bydgoszcz,999,"LCRPGR według gmin: kartogram pomocniczy z zabudową RF/Landsat i ludnością BDL, oba miasta"
+14.05_Torun_Bydgoszcz_ryc_H8_mapa_odleglosci_rok_zabudowania.png,14.05,Toruń i Bydgoszcz,19041,"Mapa odległości: pierścienie 1 km od centroidu z nową zabudową 1985–2025 i rokiem pierwszego zabudowania, oba miasta"
+15.00_Bydgoszcz_ryc_I1_byd_sekwencja_4kl.png,15.00,Bydgoszcz,8580,Sekwencja map 4-klasowych RF 1985–2025 co 5 lat (osobno Toruń i Bydgoszcz)
+15.00_Torun_Bydgoszcz_ryc_I2_udzialy_klas_oba_miasta.png,15.00,Toruń i Bydgoszcz,293,"Udziały 4 klas pokrycia terenu w AOI w czasie, oba miasta"
+15.00_Torun_Bydgoszcz_ryc_I3_4kl_vs_corine_oba_miasta.png,15.00,Toruń i Bydgoszcz,558,"Oba miasta: F1 czterech klas map RF względem rdzeni płatów CORINE w latach 1990–2018 oraz powierzchnia lasów mapa vs CORINE (tab_I4, tab_I5)"
+15.00_Torun_ryc_I1_tor_sekwencja_4kl.png,15.00,Toruń,7893,Sekwencja map 4-klasowych RF 1985–2025 co 5 lat (osobno Toruń i Bydgoszcz)
+16.02_Bydgoszcz_ryc_J1_byd_zmiany_klas_pieciolecia.png,16.02,Bydgoszcz,10817,"Mapy zmian czterech klas pokrycia terenu między kolejnymi epokami 1985–2025 (nowa zabudowa, ubytek i przyrost lasów, zmiana wód, inne zmiany), RF/Landsat 30 m"
+16.02_Torun_ryc_J1_tor_zmiany_klas_pieciolecia.png,16.02,Toruń,9272,"Mapy zmian czterech klas pokrycia terenu między kolejnymi epokami 1985–2025 (nowa zabudowa, ubytek i przyrost lasów, zmiana wód, inne zmiany), RF/Landsat 30 m"
+16.03_Torun_Bydgoszcz_ryc_J2_oba_miasta_przeplywy_klas.png,16.03,Toruń i Bydgoszcz,595,Diagram przepływów między czterema klasami pokrycia terenu 1985→2025 (szerokość wstęgi proporcjonalna do powierzchni)
+16.04_Torun_Bydgoszcz_ryc_J3_oba_miasta_stabilnosc_etykiet_dw.png,16.04,Toruń i Bydgoszcz,5968,Stabilność etykiet Dynamic World 2015–2025: mapa liczby zmian klasy między kolejnymi latami i roczne przepływy do i z klasy zabudowa
+16.05_Bydgoszcz_ryc_J4_byd_forma_przyrostu_mapy.png,16.05,Bydgoszcz,7415,"Mapy formy nowej zabudowy w pięcioleciach 1985–2025: infill, edge, leapfrog (sąsiedztwo 3 × 3), RF/Landsat 30 m"
+16.05_Torun_ryc_J4_tor_forma_przyrostu_mapy.png,16.05,Toruń,6973,"Mapy formy nowej zabudowy w pięcioleciach 1985–2025: infill, edge, leapfrog (sąsiedztwo 3 × 3), RF/Landsat 30 m"
+16.06_Torun_Bydgoszcz_ryc_J5_oba_miasta_morfotypy_gestosci.png,16.06,Toruń i Bydgoszcz,11549,"Morfotypy gęstości zabudowy (udział zabudowy w oknie 330 m: zwarta, średnio zwarta, rozproszona, pojedyncza) w trzech epokach"
+16.06_Torun_Bydgoszcz_ryc_J5b_oba_miasta_morfotypy_udzialy.png,16.06,Toruń i Bydgoszcz,287,Udziały morfotypów gęstości zabudowy w epokach 1985–2025 (wykres warstwowy)
+16.07_Torun_Bydgoszcz_ryc_J6_oba_miasta_hot_spoty_gi.png,16.07,Toruń i Bydgoszcz,10498,Hot spoty i cold spoty Getis-Ord Gi* gęstości nowej zabudowy na siatce 1 km dla całego okresu i jego połówek; obrys: istotne po korekcie FDR 5%
+16.08_Torun_Bydgoszcz_ryc_J7_oba_miasta_niepewnosc_rf.png,16.08,Toruń i Bydgoszcz,16701,"Pas niepewności decyzji RF (|p(zabudowa) − próg| < 0,10) na tle zabudowy serii A w trzech epokach, tło ortofotomapy (ramka)"
+16.09_Torun_Bydgoszcz_ryc_J8_oba_miasta_zabudowa_na_mieszkanca.png,16.09,Toruń i Bydgoszcz,404,Zabudowa na mieszkańca strefy [m²/os.] w epokach z danymi o ludności (GUS BDL)
+16.10_Torun_Bydgoszcz_ryc_J9_oba_miasta_izochrony_ekspansji.png,16.10,Toruń i Bydgoszcz,18507,"Obwiednie zabudowy w epokach: obrysy największego płatu po domknięciu 300 m w epokach 1985–2025 na tle ortofotomapy (ramka), oba miasta"
+16.11_Torun_Bydgoszcz_ryc_J10_oba_miasta_mapa_dwuzmienna.png,16.11,Toruń i Bydgoszcz,10232,"Mapa dwuzmienna 1 km: udział zabudowy 2025 × nowa zabudowa 1985–2025 (wspólne tercyle), oba miasta"
+16.12_Torun_Bydgoszcz_ryc_J11_oba_miasta_lorenz_gini.png,16.12,Toruń i Bydgoszcz,618,"Krzywe Lorenza rozkładu zabudowy między kwadratami 1 km i trajektoria współczynnika Giniego, oba miasta"
+16.13_Torun_Bydgoszcz_ryc_J12_oba_miasta_diagram_fazowy_platow.png,16.13,Toruń i Bydgoszcz,529,"Diagram fazowy fragmentacji: liczba płatów a średnia wielkość płatu w epokach, oba miasta"
+16.14_Torun_Bydgoszcz_ryc_J13_oba_miasta_ridgeline_odleglosci.png,16.14,Toruń i Bydgoszcz,1043,"Rozkłady odległości nowej zabudowy od centroidu w pięcioleciach (wykres grzbietowy), oba miasta"
+16.15_Torun_Bydgoszcz_ryc_J14_oba_miasta_hexbin_nowej_zabudowy.png,16.15,Toruń i Bydgoszcz,14767,"Mapa heksagonalna nowej zabudowy 1985–2025 (średnica ok. 1 km), oba miasta, wspólna skala"
+16.16_Torun_Bydgoszcz_ryc_J15_oba_miasta_karta_wskaznikow.png,16.16,Toruń i Bydgoszcz,1367,Karta wskaźników sprawl obu miast (wykres radarowy; wartości w tab_J13)
+16.17_Torun_Bydgoszcz_ryc_K1_wiarygodnosc_w_czasie_oba_miasta.png,16.17,Toruń i Bydgoszcz,1297,"Oba miasta: diagramy wiarygodności p(zabudowa) RF/Landsat względem źródeł niezależnych w epokach (WSF Evolution, CORINE, Dynamic World) i dryf kalibracji w czasie (tab_K1)"
+16.18_Torun_Bydgoszcz_ryc_K2_spojnosc_czasowa_oba_miasta.png,16.18,Toruń i Bydgoszcz,19839,Oba miasta: mapa spójności czasowej surowych decyzji RF (liczba przełączeń klasy w serii bez więzów) i margines decyzji; rozkład w strefach (tab_K2)
+16.19_Torun_Bydgoszcz_ryc_K3_gradient_clarka_oba_miasta.png,16.19,Toruń i Bydgoszcz,802,Oba miasta: gradient gęstości zabudowy Clarka D(r) = D0·exp(−b·r) w epokach: dopasowania i trajektorie parametrów b i D0 z CI 95% (tab_K3)
+16.20_Torun_Bydgoszcz_ryc_K4_nachylenie_odleglosc_epoka_oba_miasta.png,16.20,Toruń i Bydgoszcz,1590,Oba miasta: nachylenie odległość–epoka według sektorów azymutalnych (regresja odległości pierścienia względem średniej epoki pierwszej detekcji; tab_K4)
+16.21_Torun_Bydgoszcz_ryc_K5_wymiar_fraktalny_oba_miasta.png,16.21,Toruń i Bydgoszcz,621,Oba miasta: wymiar fraktalny zabudowy (metoda pudełkowa) w epokach 1985–2025 z dopasowaniem log-log (tab_K5)
+16.22_Torun_Bydgoszcz_ryc_K6_zgodnosc_landsat_sentinel_oba_miasta.png,16.22,Toruń i Bydgoszcz,17485,"Oba miasta: mapa zgodności RF/Landsat 30 m i RF/Sentinel-2 10 m (agregacja do 30 m) w 2025 r.: zgodne, tylko Landsat, tylko Sentinel-2 (tab_K6)"
+21.01_Torun_ryc_L1_profil_f1_wersje_map_ci.png,21.01,Toruń,151,
+21.02_Torun_ryc_L2_opoznienie_detekcji.png,21.02,Toruń,295,
+21.04_Torun_ryc_L4_punkty_niezgodne_s2_2021_2023.png,21.04,Toruń,2073,
+21.06_Torun_ryc_L6_cv_waznosc_semiwariogram.png,21.06,Toruń,379,
+21.09_Torun_ryc_L9_wycinki_s2_zmiany_dw_2020_2025.png,21.09,Toruń,2091,
+21.10_Torun_ryc_L10a_pozarzysko_1992_granica.png,21.10,Toruń,2890,
+21.10_Torun_ryc_L10b_trajektorie_pozarzysko_kontrola.png,21.10,Toruń,474,
+21.10_Torun_ryc_L10c_sygnatury_lasow_bez_pozarzyska.png,21.10,Toruń,618,
+21.13_Torun_ryc_L13_stabilnosc_progu.png,21.13,Toruń,465,
+22.02_Torun_Bydgoszcz_ryc_M1_kompozyty_mss_oba_miasta.png,22.02,Toruń i Bydgoszcz,7699,
+22.03_Torun_Bydgoszcz_ryc_M7_mapy_pokrycia_1975_1980_oba_miasta.png,22.03,Toruń i Bydgoszcz,10309,
+22.04_Torun_Bydgoszcz_ryc_M2_mapy_mss_1975_1985_oba_miasta.png,22.04,Toruń i Bydgoszcz,4802,
+22.04_Torun_Bydgoszcz_ryc_M3_trajektoria_1975_1990_oba_miasta.png,22.04,Toruń i Bydgoszcz,679,
+22.08_Bydgoszcz_ryc_G1_byd_sekwencja_zabudowy.png,22.08,Bydgoszcz,6224,"Sekwencja map zabudowy 1985–2025 co 5 lat, seria RF/Landsat 30 m"
+22.08_Bydgoszcz_ryc_I1_byd_sekwencja_4kl.png,22.08,Bydgoszcz,4151,Sekwencja map 4-klasowych RF 1985–2025 co 5 lat (osobno Toruń i Bydgoszcz)
+22.08_Torun_Bydgoszcz_ryc_M4_rok_pierwszej_zabudowy_1975_2025_oba_miasta.png,22.08,Toruń i Bydgoszcz,18280,
+22.08_Torun_Bydgoszcz_ryc_M5_trajektoria_1975_2025_oba_miasta.png,22.08,Toruń i Bydgoszcz,522,
+22.08_Torun_ryc_G1_tor_sekwencja_zabudowy.png,22.08,Toruń,6019,"Sekwencja map zabudowy 1985–2025 co 5 lat, seria RF/Landsat 30 m"
+22.08_Torun_ryc_I1_tor_sekwencja_4kl.png,22.08,Toruń,3781,Sekwencja map 4-klasowych RF 1985–2025 co 5 lat (osobno Toruń i Bydgoszcz)
+22.09_Torun_ryc_M6_lancuch_nadzoru_modeli.png,22.09,Toruń,612,
+23.01_Torun_Bydgoszcz_ryc_N1_warianty_wiezow_gestosc_krawedzi.png,23.01,Toruń i Bydgoszcz,975,Oba miasta: gęstość krawędzi w strefach i epokach dla wariantów więzów serii (trójkąt = epoka maksimum)
+23.01_Torun_Bydgoszcz_ryc_N1b_warianty_wiezow_platy.png,23.01,Toruń i Bydgoszcz,1047,Oba miasta: liczba płatów w strefach i epokach dla wariantów więzów serii
+23.02_Torun_Bydgoszcz_ryc_N2_roze_dekady_centrowane.png,23.02,Toruń i Bydgoszcz,1931,Oba miasta: róże kierunkowe nowej zabudowy w dekadach w sektorach centrowanych na N z wektorem wypadkowym (R) i osią drugiego momentu (R2)
+23.03_Torun_Bydgoszcz_ryc_N3_front_izolinii_sektory.png,23.03,Toruń i Bydgoszcz,1320,Oba miasta: nachylenie front–epoka izolinii udziału zabudowy w sektorach (progi 10/20/30%) i front łączny w epokach dla dwóch reguł
+23.04_Torun_Bydgoszcz_ryc_N4_kohorty_leapfrog_obudowanie.png,23.04,Toruń i Bydgoszcz,752,Oba miasta: udział pikseli leapfrog obudowanych po 5–20 latach wg kohort pięcioletnich (reguły ≥ 4 i ≥ 6 z 8)
+23.05_Torun_Bydgoszcz_ryc_N5_lpi_sasiedztwo_fraktal.png,23.05,Toruń i Bydgoszcz,780,"Oba miasta: wymiar fraktalny z CI po przesunięciach siatki, LPI klasowe i standardowe, płaty w sąsiedztwie 4 i 8"
+23.06_Torun_Bydgoszcz_ryc_N6_stabilnosc_hot_spotow_przesuniecia.png,23.06,Toruń i Bydgoszcz,18847,Oba miasta: mapa stabilności hot spotów FDR 5% wobec 9 przesunięć siatki 1 km
+23.07_Torun_Bydgoszcz_ryc_N7_gradient_clarka_metody.png,23.07,Toruń i Bydgoszcz,556,Oba miasta: gradient Clarka b w epokach czterema metodami z CI 95%
+23.08_Torun_Bydgoszcz_ryc_N8_bariery_pasy_kontrola.png,23.08,Toruń i Bydgoszcz,417,"Oba miasta: udział zabudowy w ostatniej epoce wewnątrz barier, w pasach 0–1000 m i w obszarze kontrolnym"
+23.09_Torun_Bydgoszcz_ryc_N9_pasy_1km_odleglosci_znormalizowane.png,23.09,Toruń i Bydgoszcz,839,Oba miasta: udział i przyrost zabudowy w pasach 1 km od granicy miasta; mediana odległości znormalizowanej nowej zabudowy
+23.12_Torun_Bydgoszcz_ryc_N12_lcrpgr_ghs_pop_bdl.png,23.12,Toruń i Bydgoszcz,641,"Oba miasta: LCRPGR pierścieni 0–2,5 i 2,5–5 km w pięcioleciach z ludnością GHS-POP i BDL (miasto tylko w tab_N12b)"
+23.13_Torun_Bydgoszcz_ryc_N13_powiekszenia_30m.png,23.13,Toruń i Bydgoszcz,14909,Oba miasta: powiększenia 3 × 3 km epoki pierwszej detekcji w rozdzielczości 30 m z mapą lokalizacyjną

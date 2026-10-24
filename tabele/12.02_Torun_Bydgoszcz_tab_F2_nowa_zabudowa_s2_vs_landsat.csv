@@ -1,0 +1,7 @@
+Miasto,Strefa,Okres,Nowa zabudowa RF/Landsat 30 m [ha],Nowa zabudowa RF/Sentinel-2 10 m [ha],Różnica S2 − LS [ha]
+Bydgoszcz,miasto,2020–2025,90.2,295.2,205.0
+Bydgoszcz,strefa_0_2_5,2020–2025,123.4,203.1,79.7
+Bydgoszcz,strefa_2_5_5,2020–2025,193.0,306.8,113.7
+Toruń,miasto,2020–2025,102.4,328.0,225.6
+Toruń,strefa_0_2_5,2020–2025,82.1,160.1,78.0
+Toruń,strefa_2_5_5,2020–2025,75.4,135.4,60.1

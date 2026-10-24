@@ -1,0 +1,241 @@
+Miasto,Strefa,Okres,Kategoria zmiany,Pow [ha],Udział w pow. strefy [%]
+Bydgoszcz,miasto,1985–1990,New built-up,729.7,4.15
+Bydgoszcz,miasto,1985–1990,Forest and tree loss,53.7,0.306
+Bydgoszcz,miasto,1985–1990,Forest and tree gain,111.5,0.634
+Bydgoszcz,miasto,1985–1990,Water change,5.4,0.031
+Bydgoszcz,miasto,1985–1990,Other change,0.0,0.0
+Bydgoszcz,strefa_0_2_5,1985–1990,New built-up,284.3,1.269
+Bydgoszcz,strefa_0_2_5,1985–1990,Forest and tree loss,82.0,0.366
+Bydgoszcz,strefa_0_2_5,1985–1990,Forest and tree gain,210.0,0.937
+Bydgoszcz,strefa_0_2_5,1985–1990,Water change,7.3,0.033
+Bydgoszcz,strefa_0_2_5,1985–1990,Other change,0.0,0.0
+Bydgoszcz,strefa_2_5_5,1985–1990,New built-up,353.3,1.503
+Bydgoszcz,strefa_2_5_5,1985–1990,Forest and tree loss,68.3,0.291
+Bydgoszcz,strefa_2_5_5,1985–1990,Forest and tree gain,281.8,1.199
+Bydgoszcz,strefa_2_5_5,1985–1990,Water change,6.6,0.028
+Bydgoszcz,strefa_2_5_5,1985–1990,Other change,0.0,0.0
+Bydgoszcz,miasto,1990–1995,New built-up,465.8,2.649
+Bydgoszcz,miasto,1990–1995,Forest and tree loss,149.2,0.849
+Bydgoszcz,miasto,1990–1995,Forest and tree gain,821.3,4.672
+Bydgoszcz,miasto,1990–1995,Water change,24.0,0.137
+Bydgoszcz,miasto,1990–1995,Other change,0.0,0.0
+Bydgoszcz,strefa_0_2_5,1990–1995,New built-up,175.3,0.783
+Bydgoszcz,strefa_0_2_5,1990–1995,Forest and tree loss,173.4,0.774
+Bydgoszcz,strefa_0_2_5,1990–1995,Forest and tree gain,1396.0,6.231
+Bydgoszcz,strefa_0_2_5,1990–1995,Water change,21.7,0.097
+Bydgoszcz,strefa_0_2_5,1990–1995,Other change,0.0,0.0
+Bydgoszcz,strefa_2_5_5,1990–1995,New built-up,269.3,1.145
+Bydgoszcz,strefa_2_5_5,1990–1995,Forest and tree loss,184.7,0.786
+Bydgoszcz,strefa_2_5_5,1990–1995,Forest and tree gain,1288.2,5.479
+Bydgoszcz,strefa_2_5_5,1990–1995,Water change,13.1,0.056
+Bydgoszcz,strefa_2_5_5,1990–1995,Other change,0.0,0.0
+Bydgoszcz,miasto,1995–2000,New built-up,175.4,0.998
+Bydgoszcz,miasto,1995–2000,Forest and tree loss,60.6,0.345
+Bydgoszcz,miasto,1995–2000,Forest and tree gain,735.2,4.182
+Bydgoszcz,miasto,1995–2000,Water change,28.9,0.164
+Bydgoszcz,miasto,1995–2000,Other change,0.0,0.0
+Bydgoszcz,strefa_0_2_5,1995–2000,New built-up,36.1,0.161
+Bydgoszcz,strefa_0_2_5,1995–2000,Forest and tree loss,71.1,0.317
+Bydgoszcz,strefa_0_2_5,1995–2000,Forest and tree gain,999.0,4.459
+Bydgoszcz,strefa_0_2_5,1995–2000,Water change,21.9,0.098
+Bydgoszcz,strefa_0_2_5,1995–2000,Other change,0.0,0.0
+Bydgoszcz,strefa_2_5_5,1995–2000,New built-up,44.3,0.188
+Bydgoszcz,strefa_2_5_5,1995–2000,Forest and tree loss,109.6,0.466
+Bydgoszcz,strefa_2_5_5,1995–2000,Forest and tree gain,923.6,3.928
+Bydgoszcz,strefa_2_5_5,1995–2000,Water change,13.1,0.056
+Bydgoszcz,strefa_2_5_5,1995–2000,Other change,0.0,0.0
+Bydgoszcz,miasto,2000–2005,New built-up,154.9,0.881
+Bydgoszcz,miasto,2000–2005,Forest and tree loss,42.6,0.242
+Bydgoszcz,miasto,2000–2005,Forest and tree gain,713.2,4.056
+Bydgoszcz,miasto,2000–2005,Water change,21.9,0.124
+Bydgoszcz,miasto,2000–2005,Other change,0.0,0.0
+Bydgoszcz,strefa_0_2_5,2000–2005,New built-up,78.8,0.351
+Bydgoszcz,strefa_0_2_5,2000–2005,Forest and tree loss,72.1,0.322
+Bydgoszcz,strefa_0_2_5,2000–2005,Forest and tree gain,669.7,2.989
+Bydgoszcz,strefa_0_2_5,2000–2005,Water change,22.8,0.102
+Bydgoszcz,strefa_0_2_5,2000–2005,Other change,0.0,0.0
+Bydgoszcz,strefa_2_5_5,2000–2005,New built-up,96.9,0.412
+Bydgoszcz,strefa_2_5_5,2000–2005,Forest and tree loss,56.3,0.24
+Bydgoszcz,strefa_2_5_5,2000–2005,Forest and tree gain,839.3,3.57
+Bydgoszcz,strefa_2_5_5,2000–2005,Water change,13.9,0.059
+Bydgoszcz,strefa_2_5_5,2000–2005,Other change,0.0,0.0
+Bydgoszcz,miasto,2005–2010,New built-up,199.7,1.136
+Bydgoszcz,miasto,2005–2010,Forest and tree loss,150.4,0.855
+Bydgoszcz,miasto,2005–2010,Forest and tree gain,595.4,3.386
+Bydgoszcz,miasto,2005–2010,Water change,14.8,0.084
+Bydgoszcz,miasto,2005–2010,Other change,0.1,0.001
+Bydgoszcz,strefa_0_2_5,2005–2010,New built-up,143.7,0.642
+Bydgoszcz,strefa_0_2_5,2005–2010,Forest and tree loss,80.5,0.36
+Bydgoszcz,strefa_0_2_5,2005–2010,Forest and tree gain,513.4,2.292
+Bydgoszcz,strefa_0_2_5,2005–2010,Water change,16.3,0.073
+Bydgoszcz,strefa_0_2_5,2005–2010,Other change,0.0,0.0
+Bydgoszcz,strefa_2_5_5,2005–2010,New built-up,218.8,0.931
+Bydgoszcz,strefa_2_5_5,2005–2010,Forest and tree loss,75.4,0.321
+Bydgoszcz,strefa_2_5_5,2005–2010,Forest and tree gain,839.2,3.569
+Bydgoszcz,strefa_2_5_5,2005–2010,Water change,11.7,0.05
+Bydgoszcz,strefa_2_5_5,2005–2010,Other change,0.0,0.0
+Bydgoszcz,miasto,2010–2015,New built-up,313.6,1.783
+Bydgoszcz,miasto,2010–2015,Forest and tree loss,154.1,0.876
+Bydgoszcz,miasto,2010–2015,Forest and tree gain,619.9,3.526
+Bydgoszcz,miasto,2010–2015,Water change,38.7,0.22
+Bydgoszcz,miasto,2010–2015,Other change,0.0,0.0
+Bydgoszcz,strefa_0_2_5,2010–2015,New built-up,307.5,1.373
+Bydgoszcz,strefa_0_2_5,2010–2015,Forest and tree loss,122.0,0.545
+Bydgoszcz,strefa_0_2_5,2010–2015,Forest and tree gain,833.7,3.721
+Bydgoszcz,strefa_0_2_5,2010–2015,Water change,36.2,0.161
+Bydgoszcz,strefa_0_2_5,2010–2015,Other change,0.0,0.0
+Bydgoszcz,strefa_2_5_5,2010–2015,New built-up,410.1,1.745
+Bydgoszcz,strefa_2_5_5,2010–2015,Forest and tree loss,151.4,0.644
+Bydgoszcz,strefa_2_5_5,2010–2015,Forest and tree gain,1010.8,4.299
+Bydgoszcz,strefa_2_5_5,2010–2015,Water change,22.1,0.094
+Bydgoszcz,strefa_2_5_5,2010–2015,Other change,0.0,0.0
+Bydgoszcz,miasto,2015–2020,New built-up,201.5,1.146
+Bydgoszcz,miasto,2015–2020,Forest and tree loss,223.9,1.274
+Bydgoszcz,miasto,2015–2020,Forest and tree gain,272.1,1.547
+Bydgoszcz,miasto,2015–2020,Water change,16.2,0.092
+Bydgoszcz,miasto,2015–2020,Other change,0.0,0.0
+Bydgoszcz,strefa_0_2_5,2015–2020,New built-up,232.3,1.037
+Bydgoszcz,strefa_0_2_5,2015–2020,Forest and tree loss,310.7,1.387
+Bydgoszcz,strefa_0_2_5,2015–2020,Forest and tree gain,345.6,1.543
+Bydgoszcz,strefa_0_2_5,2015–2020,Water change,18.7,0.084
+Bydgoszcz,strefa_0_2_5,2015–2020,Other change,0.0,0.0
+Bydgoszcz,strefa_2_5_5,2015–2020,New built-up,377.2,1.604
+Bydgoszcz,strefa_2_5_5,2015–2020,Forest and tree loss,311.0,1.323
+Bydgoszcz,strefa_2_5_5,2015–2020,Forest and tree gain,433.0,1.842
+Bydgoszcz,strefa_2_5_5,2015–2020,Water change,11.0,0.047
+Bydgoszcz,strefa_2_5_5,2015–2020,Other change,0.0,0.0
+Bydgoszcz,miasto,2020–2025,New built-up,90.1,0.512
+Bydgoszcz,miasto,2020–2025,Forest and tree loss,30.0,0.17
+Bydgoszcz,miasto,2020–2025,Forest and tree gain,55.4,0.315
+Bydgoszcz,miasto,2020–2025,Water change,4.4,0.025
+Bydgoszcz,miasto,2020–2025,Other change,0.0,0.0
+Bydgoszcz,strefa_0_2_5,2020–2025,New built-up,123.1,0.55
+Bydgoszcz,strefa_0_2_5,2020–2025,Forest and tree loss,64.7,0.289
+Bydgoszcz,strefa_0_2_5,2020–2025,Forest and tree gain,61.3,0.274
+Bydgoszcz,strefa_0_2_5,2020–2025,Water change,6.4,0.029
+Bydgoszcz,strefa_0_2_5,2020–2025,Other change,0.0,0.0
+Bydgoszcz,strefa_2_5_5,2020–2025,New built-up,193.1,0.822
+Bydgoszcz,strefa_2_5_5,2020–2025,Forest and tree loss,61.2,0.26
+Bydgoszcz,strefa_2_5_5,2020–2025,Forest and tree gain,82.0,0.349
+Bydgoszcz,strefa_2_5_5,2020–2025,Water change,5.1,0.022
+Bydgoszcz,strefa_2_5_5,2020–2025,Other change,0.3,0.001
+Toruń,miasto,1985–1990,New built-up,500.5,4.331
+Toruń,miasto,1985–1990,Forest and tree loss,23.0,0.199
+Toruń,miasto,1985–1990,Forest and tree gain,64.7,0.56
+Toruń,miasto,1985–1990,Water change,1.5,0.013
+Toruń,miasto,1985–1990,Other change,0.0,0.0
+Toruń,strefa_0_2_5,1985–1990,New built-up,323.7,1.974
+Toruń,strefa_0_2_5,1985–1990,Forest and tree loss,36.0,0.219
+Toruń,strefa_0_2_5,1985–1990,Forest and tree gain,122.4,0.746
+Toruń,strefa_0_2_5,1985–1990,Water change,0.5,0.003
+Toruń,strefa_0_2_5,1985–1990,Other change,0.0,0.0
+Toruń,strefa_2_5_5,1985–1990,New built-up,186.2,0.998
+Toruń,strefa_2_5_5,1985–1990,Forest and tree loss,55.0,0.295
+Toruń,strefa_2_5_5,1985–1990,Forest and tree gain,219.3,1.176
+Toruń,strefa_2_5_5,1985–1990,Water change,2.2,0.012
+Toruń,strefa_2_5_5,1985–1990,Other change,0.0,0.0
+Toruń,miasto,1990–1995,New built-up,249.2,2.157
+Toruń,miasto,1990–1995,Forest and tree loss,65.4,0.566
+Toruń,miasto,1990–1995,Forest and tree gain,302.3,2.616
+Toruń,miasto,1990–1995,Water change,11.7,0.101
+Toruń,miasto,1990–1995,Other change,0.0,0.0
+Toruń,strefa_0_2_5,1990–1995,New built-up,134.9,0.823
+Toruń,strefa_0_2_5,1990–1995,Forest and tree loss,139.6,0.851
+Toruń,strefa_0_2_5,1990–1995,Forest and tree gain,437.6,2.668
+Toruń,strefa_0_2_5,1990–1995,Water change,7.8,0.048
+Toruń,strefa_0_2_5,1990–1995,Other change,0.0,0.0
+Toruń,strefa_2_5_5,1990–1995,New built-up,76.1,0.408
+Toruń,strefa_2_5_5,1990–1995,Forest and tree loss,703.4,3.772
+Toruń,strefa_2_5_5,1990–1995,Forest and tree gain,480.5,2.577
+Toruń,strefa_2_5_5,1990–1995,Water change,5.5,0.029
+Toruń,strefa_2_5_5,1990–1995,Other change,0.0,0.0
+Toruń,miasto,1995–2000,New built-up,133.0,1.151
+Toruń,miasto,1995–2000,Forest and tree loss,18.4,0.159
+Toruń,miasto,1995–2000,Forest and tree gain,575.7,4.982
+Toruń,miasto,1995–2000,Water change,16.2,0.14
+Toruń,miasto,1995–2000,Other change,0.0,0.0
+Toruń,strefa_0_2_5,1995–2000,New built-up,38.7,0.236
+Toruń,strefa_0_2_5,1995–2000,Forest and tree loss,42.3,0.258
+Toruń,strefa_0_2_5,1995–2000,Forest and tree gain,768.1,4.683
+Toruń,strefa_0_2_5,1995–2000,Water change,16.2,0.099
+Toruń,strefa_0_2_5,1995–2000,Other change,0.0,0.0
+Toruń,strefa_2_5_5,1995–2000,New built-up,15.8,0.084
+Toruń,strefa_2_5_5,1995–2000,Forest and tree loss,78.2,0.419
+Toruń,strefa_2_5_5,1995–2000,Forest and tree gain,978.3,5.246
+Toruń,strefa_2_5_5,1995–2000,Water change,9.0,0.048
+Toruń,strefa_2_5_5,1995–2000,Other change,0.0,0.0
+Toruń,miasto,2000–2005,New built-up,173.8,1.504
+Toruń,miasto,2000–2005,Forest and tree loss,57.7,0.499
+Toruń,miasto,2000–2005,Forest and tree gain,424.6,3.675
+Toruń,miasto,2000–2005,Water change,9.4,0.082
+Toruń,miasto,2000–2005,Other change,0.0,0.0
+Toruń,strefa_0_2_5,2000–2005,New built-up,93.1,0.568
+Toruń,strefa_0_2_5,2000–2005,Forest and tree loss,196.7,1.2
+Toruń,strefa_0_2_5,2000–2005,Forest and tree gain,550.0,3.353
+Toruń,strefa_0_2_5,2000–2005,Water change,14.0,0.086
+Toruń,strefa_0_2_5,2000–2005,Other change,0.0,0.0
+Toruń,strefa_2_5_5,2000–2005,New built-up,71.8,0.385
+Toruń,strefa_2_5_5,2000–2005,Forest and tree loss,171.0,0.917
+Toruń,strefa_2_5_5,2000–2005,Forest and tree gain,1178.8,6.321
+Toruń,strefa_2_5_5,2000–2005,Water change,10.4,0.056
+Toruń,strefa_2_5_5,2000–2005,Other change,0.0,0.0
+Toruń,miasto,2005–2010,New built-up,323.7,2.802
+Toruń,miasto,2005–2010,Forest and tree loss,52.6,0.456
+Toruń,miasto,2005–2010,Forest and tree gain,325.3,2.816
+Toruń,miasto,2005–2010,Water change,13.3,0.115
+Toruń,miasto,2005–2010,Other change,0.0,0.0
+Toruń,strefa_0_2_5,2005–2010,New built-up,225.6,1.376
+Toruń,strefa_0_2_5,2005–2010,Forest and tree loss,108.8,0.663
+Toruń,strefa_0_2_5,2005–2010,Forest and tree gain,701.5,4.277
+Toruń,strefa_0_2_5,2005–2010,Water change,19.6,0.12
+Toruń,strefa_0_2_5,2005–2010,Other change,0.0,0.0
+Toruń,strefa_2_5_5,2005–2010,New built-up,195.9,1.051
+Toruń,strefa_2_5_5,2005–2010,Forest and tree loss,96.1,0.515
+Toruń,strefa_2_5_5,2005–2010,Forest and tree gain,794.7,4.261
+Toruń,strefa_2_5_5,2005–2010,Water change,16.1,0.086
+Toruń,strefa_2_5_5,2005–2010,Other change,0.0,0.0
+Toruń,miasto,2010–2015,New built-up,305.7,2.646
+Toruń,miasto,2010–2015,Forest and tree loss,47.7,0.413
+Toruń,miasto,2010–2015,Forest and tree gain,352.1,3.047
+Toruń,miasto,2010–2015,Water change,21.5,0.186
+Toruń,miasto,2010–2015,Other change,0.0,0.0
+Toruń,strefa_0_2_5,2010–2015,New built-up,188.9,1.152
+Toruń,strefa_0_2_5,2010–2015,Forest and tree loss,63.4,0.386
+Toruń,strefa_0_2_5,2010–2015,Forest and tree gain,608.5,3.71
+Toruń,strefa_0_2_5,2010–2015,Water change,23.6,0.144
+Toruń,strefa_0_2_5,2010–2015,Other change,0.0,0.0
+Toruń,strefa_2_5_5,2010–2015,New built-up,233.9,1.254
+Toruń,strefa_2_5_5,2010–2015,Forest and tree loss,113.0,0.606
+Toruń,strefa_2_5_5,2010–2015,Forest and tree gain,470.1,2.521
+Toruń,strefa_2_5_5,2010–2015,Water change,14.3,0.077
+Toruń,strefa_2_5_5,2010–2015,Other change,0.0,0.0
+Toruń,miasto,2015–2020,New built-up,205.7,1.78
+Toruń,miasto,2015–2020,Forest and tree loss,82.2,0.711
+Toruń,miasto,2015–2020,Forest and tree gain,226.1,1.957
+Toruń,miasto,2015–2020,Water change,16.2,0.14
+Toruń,miasto,2015–2020,Other change,0.0,0.0
+Toruń,strefa_0_2_5,2015–2020,New built-up,122.3,0.746
+Toruń,strefa_0_2_5,2015–2020,Forest and tree loss,169.2,1.032
+Toruń,strefa_0_2_5,2015–2020,Forest and tree gain,347.3,2.118
+Toruń,strefa_0_2_5,2015–2020,Water change,14.4,0.088
+Toruń,strefa_0_2_5,2015–2020,Other change,0.0,0.0
+Toruń,strefa_2_5_5,2015–2020,New built-up,146.5,0.786
+Toruń,strefa_2_5_5,2015–2020,Forest and tree loss,231.2,1.24
+Toruń,strefa_2_5_5,2015–2020,Forest and tree gain,320.9,1.721
+Toruń,strefa_2_5_5,2015–2020,Water change,15.7,0.084
+Toruń,strefa_2_5_5,2015–2020,Other change,0.0,0.0
+Toruń,miasto,2020–2025,New built-up,102.1,0.884
+Toruń,miasto,2020–2025,Forest and tree loss,49.0,0.424
+Toruń,miasto,2020–2025,Forest and tree gain,89.4,0.773
+Toruń,miasto,2020–2025,Water change,10.9,0.094
+Toruń,miasto,2020–2025,Other change,0.0,0.0
+Toruń,strefa_0_2_5,2020–2025,New built-up,82.0,0.5
+Toruń,strefa_0_2_5,2020–2025,Forest and tree loss,105.3,0.642
+Toruń,strefa_0_2_5,2020–2025,Forest and tree gain,144.8,0.883
+Toruń,strefa_0_2_5,2020–2025,Water change,6.7,0.041
+Toruń,strefa_0_2_5,2020–2025,Other change,0.0,0.0
+Toruń,strefa_2_5_5,2020–2025,New built-up,75.3,0.404
+Toruń,strefa_2_5_5,2020–2025,Forest and tree loss,121.0,0.649
+Toruń,strefa_2_5_5,2020–2025,Forest and tree gain,156.8,0.841
+Toruń,strefa_2_5_5,2020–2025,Water change,7.6,0.041
+Toruń,strefa_2_5_5,2020–2025,Other change,0.0,0.0

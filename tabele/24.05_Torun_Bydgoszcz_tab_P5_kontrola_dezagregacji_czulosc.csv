@@ -1,0 +1,35 @@
+Miasto,Kontrola,Metoda,Wartość,Odchylenie od siatki 125 m [%],Uwagi
+Bydgoszcz,ludność miasta 2021,siatka 125 m (NSP 2021),337029.0,0.0,pokrycie miasta komórkami 125 m 100.0%
+Bydgoszcz,ludność miasta 2021,siatka: wagi powierzchni,327914.0,-2.7,
+Bydgoszcz,ludność miasta 2021,siatka: wagi zabudowy,337864.0,0.25,
+Bydgoszcz,ludność miasta 2021,siatka 1 km: całe komórki wg strefy dominującej,335264.0,-0.52,
+Bydgoszcz,ludność miasta 2021,BDL: gmina miejska,334026.0,-0.89,rok BDL najbliższy spisowi
+Bydgoszcz,ludność strefa_0_2_5 2021,siatka 125 m (NSP 2021),,,pokrycie strefy komórkami 125 m 3.3% (siatka 125 m obejmuje tylko miasta: wartość niepełna)
+Bydgoszcz,ludność strefa_2_5_5 2021,siatka 125 m (NSP 2021),,,brak komórek 125 m
+Bydgoszcz,zgodność 1 km ↔ Σ 125 m (komórki 1 km pokryte ≥ 99%),133 komórek,299556.0,-0.01,Σ 125 m = 299575; mediana |Σ125 − 1 km| = 0.0 os.; maks 9 os.; Spearman ρ = 0.9953
+Bydgoszcz,LCRPGR komórek: progi,"P ≥ 50, A2010 ≥ 1 ha",232.0,,"komórek spełniających progi 242, z ilorazem (|PGR| ≥ 0.0013) 232; mediana LCRPGR 0.31; > 1: 30%; < 0: 37%"
+Bydgoszcz,LCRPGR komórek: progi,"P ≥ 50, A2010 ≥ 2 ha",228.0,,"komórek spełniających progi 238, z ilorazem (|PGR| ≥ 0.0013) 228; mediana LCRPGR 0.32; > 1: 30%; < 0: 36%"
+Bydgoszcz,LCRPGR komórek: progi,"P ≥ 50, A2010 ≥ 5 ha",211.0,,"komórek spełniających progi 221, z ilorazem (|PGR| ≥ 0.0013) 211; mediana LCRPGR 0.30; > 1: 27%; < 0: 37%"
+Bydgoszcz,LCRPGR komórek: progi,"P ≥ 100, A2010 ≥ 1 ha",183.0,,"komórek spełniających progi 193, z ilorazem (|PGR| ≥ 0.0013) 183; mediana LCRPGR 0.15; > 1: 27%; < 0: 40%"
+Bydgoszcz,LCRPGR komórek: progi,"P ≥ 100, A2010 ≥ 2 ha",182.0,,"komórek spełniających progi 192, z ilorazem (|PGR| ≥ 0.0013) 182; mediana LCRPGR 0.17; > 1: 27%; < 0: 40%"
+Bydgoszcz,LCRPGR komórek: progi,"P ≥ 100, A2010 ≥ 5 ha",178.0,,"komórek spełniających progi 188, z ilorazem (|PGR| ≥ 0.0013) 178; mediana LCRPGR 0.14; > 1: 26%; < 0: 40%"
+Bydgoszcz,LCRPGR komórek: progi,"P ≥ 200, A2010 ≥ 1 ha",127.0,,"komórek spełniających progi 135, z ilorazem (|PGR| ≥ 0.0013) 127; mediana LCRPGR 0.00; > 1: 23%; < 0: 48%"
+Bydgoszcz,LCRPGR komórek: progi,"P ≥ 200, A2010 ≥ 2 ha",127.0,,"komórek spełniających progi 135, z ilorazem (|PGR| ≥ 0.0013) 127; mediana LCRPGR 0.00; > 1: 23%; < 0: 48%"
+Bydgoszcz,LCRPGR komórek: progi,"P ≥ 200, A2010 ≥ 5 ha",125.0,,"komórek spełniających progi 133, z ilorazem (|PGR| ≥ 0.0013) 125; mediana LCRPGR 0.00; > 1: 22%; < 0: 48%"
+Toruń,ludność miasta 2021,siatka 125 m (NSP 2021),198226.0,0.0,pokrycie miasta komórkami 125 m 100.0%
+Toruń,ludność miasta 2021,siatka: wagi powierzchni,197235.0,-0.5,
+Toruń,ludność miasta 2021,siatka: wagi zabudowy,197946.0,-0.14,
+Toruń,ludność miasta 2021,siatka 1 km: całe komórki wg strefy dominującej,198374.0,0.07,
+Toruń,ludność miasta 2021,BDL: gmina miejska,197112.0,-0.56,rok BDL najbliższy spisowi
+Toruń,ludność strefa_0_2_5 2021,siatka 125 m (NSP 2021),,,pokrycie strefy komórkami 125 m 3.5% (siatka 125 m obejmuje tylko miasta: wartość niepełna)
+Toruń,ludność strefa_2_5_5 2021,siatka 125 m (NSP 2021),,,brak komórek 125 m
+Toruń,zgodność 1 km ↔ Σ 125 m (komórki 1 km pokryte ≥ 99%),89 komórek,191109.0,0.0,Σ 125 m = 191108; mediana |Σ125 − 1 km| = 0.0 os.; maks 6 os.; Spearman ρ = 0.9987
+Toruń,LCRPGR komórek: progi,"P ≥ 50, A2010 ≥ 1 ha",165.0,,"komórek spełniających progi 171, z ilorazem (|PGR| ≥ 0.0013) 165; mediana LCRPGR 0.55; > 1: 34%; < 0: 33%"
+Toruń,LCRPGR komórek: progi,"P ≥ 50, A2010 ≥ 2 ha",163.0,,"komórek spełniających progi 169, z ilorazem (|PGR| ≥ 0.0013) 163; mediana LCRPGR 0.55; > 1: 34%; < 0: 33%"
+Toruń,LCRPGR komórek: progi,"P ≥ 50, A2010 ≥ 5 ha",153.0,,"komórek spełniających progi 158, z ilorazem (|PGR| ≥ 0.0013) 153; mediana LCRPGR 0.50; > 1: 32%; < 0: 33%"
+Toruń,LCRPGR komórek: progi,"P ≥ 100, A2010 ≥ 1 ha",125.0,,"komórek spełniających progi 130, z ilorazem (|PGR| ≥ 0.0013) 125; mediana LCRPGR 0.58; > 1: 35%; < 0: 33%"
+Toruń,LCRPGR komórek: progi,"P ≥ 100, A2010 ≥ 2 ha",125.0,,"komórek spełniających progi 130, z ilorazem (|PGR| ≥ 0.0013) 125; mediana LCRPGR 0.58; > 1: 35%; < 0: 33%"
+Toruń,LCRPGR komórek: progi,"P ≥ 100, A2010 ≥ 5 ha",122.0,,"komórek spełniających progi 126, z ilorazem (|PGR| ≥ 0.0013) 122; mediana LCRPGR 0.57; > 1: 34%; < 0: 33%"
+Toruń,LCRPGR komórek: progi,"P ≥ 200, A2010 ≥ 1 ha",95.0,,"komórek spełniających progi 98, z ilorazem (|PGR| ≥ 0.0013) 95; mediana LCRPGR 0.36; > 1: 31%; < 0: 38%"
+Toruń,LCRPGR komórek: progi,"P ≥ 200, A2010 ≥ 2 ha",95.0,,"komórek spełniających progi 98, z ilorazem (|PGR| ≥ 0.0013) 95; mediana LCRPGR 0.36; > 1: 31%; < 0: 38%"
+Toruń,LCRPGR komórek: progi,"P ≥ 200, A2010 ≥ 5 ha",94.0,,"komórek spełniających progi 96, z ilorazem (|PGR| ≥ 0.0013) 94; mediana LCRPGR 0.35; > 1: 30%; < 0: 38%"

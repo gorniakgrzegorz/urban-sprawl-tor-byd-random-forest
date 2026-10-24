@@ -1,0 +1,5 @@
+Warunek,Wartość 2015,Odniesienie,Spełniony
+"liczba scen 2015 >= 0,5 x mediana 2016–2025",73.0,62.5,True
+"pewność 2015 >= mediana 2016–2025 - 0,05",0.557,0.596,True
+|zabudowa miasta 2015 - średnia 2016–2019| <= 2 sd rocznych zmian,4902.0,4817.3 ± 424.2,True
+ROK STARTOWY DW,2015.0,,True

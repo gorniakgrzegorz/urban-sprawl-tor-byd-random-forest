@@ -1,0 +1,5 @@
+Mapa,Referencja,Rok mapy,Typ,n,OA ważona [%],PA zabudowa [%],UA zabudowa [%],F1 zabudowa [%]
+RF/Sentinel-2 10 m,Urban Atlas 2018,2018,niezależna,1000,90.4,61.2,80.2,69.4
+RF/Sentinel-2 10 m,Urban Atlas 2021,2021,niezależna,1000,86.7,78.1,61.6,68.9
+RF/Sentinel-2 10 m,CORINE 2018 (rdzenie),2018,kalibracja progu (nie test),1000,91.7,67.0,83.0,74.1
+RF/Sentinel-2 10 m,Dynamic World 2025,2025,wewnętrzna (nauczyciel),1000,97.1,92.7,91.0,91.8

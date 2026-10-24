@@ -1,0 +1,2 @@
+Model,CV blokowa OA [%],CV OA sd [%],CV blokowa F1 zabudowa [%],CV F1 sd [%],Holdout OA [%],Holdout F1 [%]
+RF/Sentinel-2 10 m,91.0,2.2,88.8,5.5,90.4,90.2

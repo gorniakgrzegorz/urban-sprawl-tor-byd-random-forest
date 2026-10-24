@@ -1,0 +1,14 @@
+Model,Współczynnik,Ocena,CI95 dolny,CI95 górny,p,n (testy walidacyjne),Stopnie swobody,R²,Uwaga
+F1 ~ odległość + miasto + rodzina referencji,Wyraz wolny [F1 %],69.014,67.717,70.311,0.0,19,14.0,0.964,obserwacje zależne (te same produkty referencyjne w obu miastach): wynik opisowy
+F1 ~ odległość + miasto + rodzina referencji,Odległość od okna uczenia [p.p. F1 na rok],-0.257,-0.311,-0.202,0.0,19,14.0,0.964,obserwacje zależne (te same produkty referencyjne w obu miastach): wynik opisowy
+F1 ~ odległość + miasto + rodzina referencji,Miasto Bydgoszcz wobec Torunia [p.p. F1],6.255,5.325,7.185,0.0,19,14.0,0.964,obserwacje zależne (te same produkty referencyjne w obu miastach): wynik opisowy
+F1 ~ odległość + miasto + rodzina referencji,Referencja Urban Atlas wobec CORINE [p.p. F1],-0.6,-1.98,0.779,0.3666,19,14.0,0.964,obserwacje zależne (te same produkty referencyjne w obu miastach): wynik opisowy
+F1 ~ odległość + miasto + rodzina referencji,Referencja WSF Evolution wobec CORINE [p.p. F1],3.969,2.922,5.016,0.0,19,14.0,0.964,obserwacje zależne (te same produkty referencyjne w obu miastach): wynik opisowy
+F1 ~ odległość (Bydgoszcz),Odległość od okna uczenia [p.p. F1 na rok],-0.109,-0.24,0.023,,11,,0.28,
+F1 ~ odległość (Toruń),Odległość od okna uczenia [p.p. F1 na rok],-0.229,-0.427,-0.031,,8,,0.572,
+F1 wg referencji (Bydgoszcz),CORINE,72.3,68.8,75.2,,5,,,"średnia F1; kolumny CI95 = zakres min–maks, nie przedział ufności"
+F1 wg referencji (Bydgoszcz),Urban Atlas,73.8,73.7,73.9,,2,,,"średnia F1; kolumny CI95 = zakres min–maks, nie przedział ufności"
+F1 wg referencji (Bydgoszcz),WSF Evolution,74.7,72.3,76.8,,4,,,"średnia F1; kolumny CI95 = zakres min–maks, nie przedział ufności"
+F1 wg referencji (Toruń),CORINE,64.2,62.1,66.2,,2,,,"średnia F1; kolumny CI95 = zakres min–maks, nie przedział ufności"
+F1 wg referencji (Toruń),Urban Atlas,68.0,67.5,68.5,,2,,,"średnia F1; kolumny CI95 = zakres min–maks, nie przedział ufności"
+F1 wg referencji (Toruń),WSF Evolution,67.9,64.0,73.0,,4,,,"średnia F1; kolumny CI95 = zakres min–maks, nie przedział ufności"

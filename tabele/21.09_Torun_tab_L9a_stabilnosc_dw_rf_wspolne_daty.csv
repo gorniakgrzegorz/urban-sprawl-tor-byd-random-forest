@@ -1,0 +1,19 @@
+Miasto,Domena,Źródło,Daty,Piksele [n],Powierzchnia [ha],0 zmian [%],1 zmiana [%],2 zmiany (A–B–A) [%],Zabudowa w 1. dacie [ha],Zabudowa w ostatniej dacie [ha]
+Bydgoszcz,strefy (AOI),"DW-10 (moda roczna, agreg. 30 m)",2015–2020–2025,705516,63496.4,94.92,3.98,1.1,11826.0,12511.1
+Bydgoszcz,strefy (AOI),"RF-S (Landsat, p ≥ próg, bez więzów)",2015–2020–2025,705516,63496.4,86.25,10.22,3.54,12638.9,15179.6
+Bydgoszcz,strefy (AOI),zgodność DW-10 i RF-S we wszystkich datach,2015–2020–2025,705516,63496.4,82.21,,,,
+Bydgoszcz,miasto,"DW-10 (moda roczna, agreg. 30 m)",2015–2020–2025,195352,17581.7,93.46,5.31,1.23,7196.1,7230.5
+Bydgoszcz,miasto,"RF-S (Landsat, p ≥ próg, bez więzów)",2015–2020–2025,195352,17581.7,84.99,11.31,3.7,7448.8,7972.4
+Bydgoszcz,miasto,zgodność DW-10 i RF-S we wszystkich datach,2015–2020–2025,195352,17581.7,79.18,,,,
+Bydgoszcz,"unia zabudowy (DW-10 ∪ RF-S, dowolna data)","DW-10 (moda roczna, agreg. 30 m)",2015–2020–2025,223301,20097.1,83.96,12.58,3.46,11826.0,12511.1
+Bydgoszcz,"unia zabudowy (DW-10 ∪ RF-S, dowolna data)","RF-S (Landsat, p ≥ próg, bez więzów)",2015–2020–2025,223301,20097.1,56.54,32.28,11.18,12638.9,15179.6
+Bydgoszcz,"unia zabudowy (DW-10 ∪ RF-S, dowolna data)",zgodność DW-10 i RF-S we wszystkich datach,2015–2020–2025,223301,20097.1,43.78,,,,
+Toruń,strefy (AOI),"DW-10 (moda roczna, agreg. 30 m)",2015–2020–2025,517851,46606.6,94.88,4.25,0.87,7986.5,8263.2
+Toruń,strefy (AOI),"RF-S (Landsat, p ≥ próg, bez więzów)",2015–2020–2025,517851,46606.6,87.78,9.11,3.1,8997.7,9852.8
+Toruń,strefy (AOI),zgodność DW-10 i RF-S we wszystkich datach,2015–2020–2025,517851,46606.6,83.12,,,,
+Toruń,miasto,"DW-10 (moda roczna, agreg. 30 m)",2015–2020–2025,128393,11555.4,91.8,6.91,1.29,4895.7,4855.9
+Toruń,miasto,"RF-S (Landsat, p ≥ próg, bez więzów)",2015–2020–2025,128393,11555.4,84.5,12.11,3.39,4901.9,5211.2
+Toruń,miasto,zgodność DW-10 i RF-S we wszystkich datach,2015–2020–2025,128393,11555.4,77.85,,,,
+Toruń,"unia zabudowy (DW-10 ∪ RF-S, dowolna data)","DW-10 (moda roczna, agreg. 30 m)",2015–2020–2025,150328,13529.5,82.36,14.65,2.99,7986.5,8263.2
+Toruń,"unia zabudowy (DW-10 ∪ RF-S, dowolna data)","RF-S (Landsat, p ≥ próg, bez więzów)",2015–2020–2025,150328,13529.5,57.92,31.4,10.68,8997.7,9852.8
+Toruń,"unia zabudowy (DW-10 ∪ RF-S, dowolna data)",zgodność DW-10 i RF-S we wszystkich datach,2015–2020–2025,150328,13529.5,41.85,,,,

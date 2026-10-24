@@ -1,0 +1,11 @@
+Miasto,Rok,Sceny w oknie letnim,Śr. liczba czystych obserwacji na piksel,Piksele z < 3 obserwacjami [%],Sceny w oknie przedwiośnia,Śr. czystych obserwacji przedwiośnie,Piksele przedwiośnia z < 3 obserwacjami [%],Sceny lato wg sensora,Sceny przedwiośnie wg sensora
+Toruń,1985,16,8.83,0.0,12,6.89,0.0,L5 16,L5 12
+Toruń,1990,36,13.57,0.0,24,14.25,0.0,L5 36,L5 24
+Toruń,1995,29,14.09,0.0,19,7.42,0.0,L5 29,L5 19
+Toruń,2000,60,17.52,0.0,32,15.44,0.0,L5 27; L7 33,L5 13; L7 19
+Toruń,2005,53,23.36,0.0,29,14.52,0.0,L5 38; L7 15,L5 20; L7 9
+Toruń,2006,51,24.04,0.0,30,16.51,0.0,L5 37; L7 14,L5 20; L7 10
+Toruń,2010,66,27.17,0.0,37,15.7,0.0,L5 36; L7 30,L5 20; L7 17
+Toruń,2015,40,15.91,0.0,26,9.91,0.0,L8 40,L8 26
+Toruń,2020,38,12.18,0.0,27,9.58,0.0,L8 38,L8 27
+Toruń,2025,75,32.32,0.0,55,23.92,0.0,L8 39; L9 36,L8 27; L9 28

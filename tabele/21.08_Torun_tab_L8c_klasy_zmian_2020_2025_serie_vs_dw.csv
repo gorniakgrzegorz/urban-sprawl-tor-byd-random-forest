@@ -1,0 +1,4 @@
+Miasto,Seria,Odniesienie,OA [%],OA CI95,n,PA nowa zabudowa [%],UA nowa zabudowa [%],F1 nowa zabudowa [%],F1 nowa zabudowa CI95,PA stabilna zabudowa [%],UA stabilna zabudowa [%],F1 stabilna zabudowa [%],F1 stabilna zabudowa CI95,PA stabilny brak zabudowy [%],UA stabilny brak zabudowy [%],F1 stabilny brak zabudowy [%],F1 stabilny brak zabudowy CI95,Nowa zabudowa mapa [ha]
+Toruń,"Seria A (RF-MK, Landsat)",Dynamic World 2020→2025 (agreg. 30 m; wewnętrzne),94.8,92.7–96.6,900,10.3,26.3,14.8,8.9–25.2,83.5,93.0,88.0,83.8–92.4,99.0,95.7,97.3,95.9–98.5,260.9
+Toruń,"RF-S (surowe, Landsat)",Dynamic World 2020→2025 (agreg. 30 m; wewnętrzne),88.7,87.0–90.4,900,29.0,9.0,13.7,8.8–19.2,84.9,72.0,77.9,73.3–81.8,90.4,97.3,93.8,92.6–94.8,1790.4
+Toruń,"Seria B (RF-S2 po więzach, agreg. 30 m)",Dynamic World 2020→2025 (agreg. 30 m; wewnętrzne),95.6,93.6–96.8,900,42.7,28.3,34.1,27.1–40.8,83.7,92.3,87.8,83.1–91.1,98.9,97.3,98.1,96.9–98.9,623.6

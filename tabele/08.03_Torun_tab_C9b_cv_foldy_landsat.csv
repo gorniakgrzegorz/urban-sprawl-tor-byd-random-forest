@@ -1,0 +1,6 @@
+Model,Fold,OA [%],F1 zabudowa [%],n test,n test zabudowa
+RF/Landsat 30 m,0,86.8,86.9,266,129
+RF/Landsat 30 m,1,93.3,94.5,431,259
+RF/Landsat 30 m,2,92.5,91.6,333,148
+RF/Landsat 30 m,3,92.9,92.6,496,240
+RF/Landsat 30 m,4,94.2,84.5,310,55

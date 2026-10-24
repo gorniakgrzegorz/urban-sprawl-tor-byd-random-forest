@@ -1,0 +1,37 @@
+Miasto,Strefa,Okres,Przyrost zabudowy [ha],Zmiana ludności,Zabudowa na nowego mieszkańca [m²/os.]
+Bydgoszcz,miasto,1995–2000,175.4,-10379,n.d. (ludność nie rosła)
+Bydgoszcz,miasto,2000–2005,154.8,-9601,n.d. (ludność nie rosła)
+Bydgoszcz,miasto,2005–2010,199.7,-1630,n.d. (ludność nie rosła)
+Bydgoszcz,miasto,2010–2015,313.6,-8797,n.d. (ludność nie rosła)
+Bydgoszcz,miasto,2015–2020,201.5,-16576,n.d. (ludność nie rosła)
+Bydgoszcz,miasto,2020–2025,90.1,-17967,n.d. (ludność nie rosła)
+Bydgoszcz,strefa_0_2_5,1995–2000,36.1,1176,306.7
+Bydgoszcz,strefa_0_2_5,2000–2005,78.7,2587,304.2
+Bydgoszcz,strefa_0_2_5,2005–2010,143.8,3246,442.9
+Bydgoszcz,strefa_0_2_5,2010–2015,307.5,2168,1417.7
+Bydgoszcz,strefa_0_2_5,2015–2020,232.3,3535,657.0
+Bydgoszcz,strefa_0_2_5,2020–2025,123.1,2740,449.2
+Bydgoszcz,strefa_2_5_5,1995–2000,44.3,1091,405.9
+Bydgoszcz,strefa_2_5_5,2000–2005,96.9,2363,410.1
+Bydgoszcz,strefa_2_5_5,2005–2010,218.8,2991,731.5
+Bydgoszcz,strefa_2_5_5,2010–2015,410.1,2028,2021.3
+Bydgoszcz,strefa_2_5_5,2015–2020,377.0,3057,1233.1
+Bydgoszcz,strefa_2_5_5,2020–2025,193.1,2268,851.4
+Toruń,miasto,1995–2000,133.0,5533,240.3
+Toruń,miasto,2000–2005,173.8,-2186,n.d. (ludność nie rosła)
+Toruń,miasto,2005–2010,323.8,-2877,n.d. (ludność nie rosła)
+Toruń,miasto,2010–2015,305.7,-2439,n.d. (ludność nie rosła)
+Toruń,miasto,2015–2020,205.6,-3887,n.d. (ludność nie rosła)
+Toruń,miasto,2020–2025,102.2,-6016,n.d. (ludność nie rosła)
+Toruń,strefa_0_2_5,1995–2000,38.7,403,960.1
+Toruń,strefa_0_2_5,2000–2005,93.2,1560,597.3
+Toruń,strefa_0_2_5,2005–2010,225.6,1300,1735.3
+Toruń,strefa_0_2_5,2010–2015,188.9,729,2588.1
+Toruń,strefa_0_2_5,2015–2020,122.3,1188,1029.2
+Toruń,strefa_0_2_5,2020–2025,82.0,513,1597.7
+Toruń,strefa_2_5_5,1995–2000,15.8,435,362.9
+Toruń,strefa_2_5_5,2000–2005,71.8,1486,483.1
+Toruń,strefa_2_5_5,2005–2010,195.9,1501,1304.5
+Toruń,strefa_2_5_5,2010–2015,233.9,1025,2279.9
+Toruń,strefa_2_5_5,2015–2020,146.5,1491,982.3
+Toruń,strefa_2_5_5,2020–2025,75.4,758,994.6

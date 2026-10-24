@@ -1,0 +1,5 @@
+Wariant,CV blokowa F1 (nowy model) [%],F1 2021 vs UA 2021 (siatka 30 m) [%],F1 CI95,PA [%],UA [%],FP [ha],FN [ha],Zabudowa 2021 miasto [ha],Zabudowa 2025 miasto [ha]
+"Landsat GLCM 7 × 7 (210 m), model finalny",model finalny,68.9,64.9–72.6,74.1,64.4,3195.8,2024.6,5131.4,5224.1
+"Landsat GLCM 3 × 3 (90 m), nowy model",89.0,67.7,63.6–72.3,71.3,64.4,3073.0,2240.0,5084.3,5199.2
+"Sentinel-2 GLCM 7 × 7 (70 m), okno roczne, model finalny",model finalny,70.1,66.1–74.2,81.3,61.7,3944.6,1462.6,5535.2,5568.4
+"Sentinel-2 GLCM 9 × 9 (90 m), okno trzyletnie, nowy model",91.2,72.2,68.0–76.3,79.2,66.4,3133.3,1624.7,5245.9,5604.4

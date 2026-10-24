@@ -1,0 +1,245 @@
+Plik,Sekcja,Miasto,Rozmiar [kB],Opis
+06.01_Torun_tab_A6_dw_seria_roczna.csv,06.01,Toruń,0,"Roczna seria Dynamic World 2015–2025: liczba scen, pewność, zabudowa wg stref (diagnostyka roku startowego)"
+06.01_Torun_tab_A7_rok_startowy_dw.csv,06.01,Toruń,0,Reguła roku startowego Dynamic World: trzy warunki z wartościami i decyzja
+06.02_Torun_tab_A1_dw_pewnosc_stref.csv,06.02,Toruń,0,"Średnia pewność Dynamic World i udział pikseli niepewnych, wg stref i lat"
+06.03_Torun_tab_A2_dw_powierzchnie_klas.csv,06.03,Toruń,2,"Powierzchnie klas pokrycia terenu [ha] wg Dynamic World, wg stref i lat"
+06.04_Torun_tab_A3_dw_macierz_przejsc_2015_2025_miasto.csv,06.04,Toruń,1,"Macierz przejść między klasami DW [ha], osobno dla każdej strefy"
+06.04_Torun_tab_A3_dw_macierz_przejsc_2015_2025_strefa_0_2_5.csv,06.04,Toruń,1,"Macierz przejść między klasami DW [ha], osobno dla każdej strefy"
+06.04_Torun_tab_A3_dw_macierz_przejsc_2015_2025_strefa_2_5_5.csv,06.04,Toruń,1,"Macierz przejść między klasami DW [ha], osobno dla każdej strefy"
+06.04_Torun_tab_A4_dw_pochodzenie_zabudowy_miasto.csv,06.04,Toruń,0,"Pochodzenie nowej zabudowy DW (klasy źródłowe), osobno dla każdej strefy"
+06.04_Torun_tab_A4_dw_pochodzenie_zabudowy_strefa_0_2_5.csv,06.04,Toruń,0,"Pochodzenie nowej zabudowy DW (klasy źródłowe), osobno dla każdej strefy"
+06.04_Torun_tab_A4_dw_pochodzenie_zabudowy_strefa_2_5_5.csv,06.04,Toruń,0,"Pochodzenie nowej zabudowy DW (klasy źródłowe), osobno dla każdej strefy"
+07.02_Torun_tab_B1_walidacja_dw_vs_ua.csv,07.02,Toruń,0,"Walidacja Dynamic World względem Urban Atlas: OA, kappa, CI 95%, niezgodności definicyjne"
+07.03_Torun_tab_B2_powierzchnie_skorygowane_miasto.csv,07.03,Toruń,1,Powierzchnie klas skorygowane o błędy (estymator stratyfikowany) z SE i CI 95%
+07.03_Torun_tab_B2_powierzchnie_skorygowane_strefa_0_2_5.csv,07.03,Toruń,1,Powierzchnie klas skorygowane o błędy (estymator stratyfikowany) z SE i CI 95%
+07.03_Torun_tab_B2_powierzchnie_skorygowane_strefa_2_5_5.csv,07.03,Toruń,1,Powierzchnie klas skorygowane o błędy (estymator stratyfikowany) z SE i CI 95%
+07.05_Torun_tab_B3_weryfikacja_autora_DW.csv,07.05,Toruń,0,Dokładność ważona (estymator stratyfikowany) względem ślepej fotointerpretacji: DW i RF
+08.03_Torun_tab_C9_walidacja_krzyzowa_hiperparametry.csv,08.03,Toruń,0,Blokowa walidacja krzyżowa z buforem: dobór hiperparametrów
+08.03_Torun_tab_C9b_cv_foldy_landsat.csv,08.03,Toruń,0,"RF/Landsat: wyniki blokowej CV w każdym foldzie (OA, F1 zabudowy, liczba punktów testowych)"
+08.04_Torun_tab_C12_ablacja.csv,08.04,Toruń,1,"Tabela ablacyjna: czynniki transferu zmieniane pojedynczo, oceny wewnętrzne i niezależne"
+08.05_Torun_tab_C10_waznosc_cech_binarny.csv,08.05,Toruń,0,Ważność cech modelu binarnego
+08.05_Torun_tab_C7_kalibracja_progu_zabudowy.csv,08.05,Toruń,0,Kalibracja progu p(zabudowa): CORINE 2006 (niezależna) i DW z roku startowego (wewnętrzna)
+08.06_Torun_tab_C6_wplyw_wiezow.csv,08.06,Toruń,1,"Wpływ więzów (zasięg DW, monotoniczność) na powierzchnię zabudowy"
+08.06b_Torun_tab_C24_detekcja_stalej_zabudowy.csv,08.06b,Toruń,2,"Toruń: detekcja stałej zabudowy (WSF 1985 ∩ DW 2015 ∩ DW 2025) przez surowy RF w każdej epoce przy progu, progu ±0,10 i w serii z więzami [%]: diagnostyka artefaktu pierwszej epoki"
+08.07_Torun_tab_C13_walidacja_niezalezna_i_spojnosc.csv,08.07,Toruń,1,Walidacja niezależna i spójność wewnętrzna map RF dla kolejnych epok
+08.08_Torun_tab_B4_mcnemar_ua2021.csv,08.08,Toruń,0,Test McNemara DW vs RF/Landsat na tych samych punktach (Urban Atlas 2021)
+08.09_Torun_tab_C11_karta_modelu.csv,08.09,Toruń,2,Karta modelu
+08.10_Torun_tab_C1_rf_sygnatury_spektralne.csv,08.10,Toruń,0,Sygnatury spektralne klas w zbiorze uczącym
+08.10_Torun_tab_C2_rf_waznosc_cech.csv,08.10,Toruń,0,Ważność cech modelu finalnego
+08.10_Torun_tab_C3_rf_krzywa_uczenia_drzewa.csv,08.10,Toruń,0,"Krzywa uczenia: liczba drzew (holdout, wewnętrzna)"
+08.10_Torun_tab_C4_rf_krzywa_uczenia_proba.csv,08.10,Toruń,0,"Krzywa uczenia: wielkość próby (holdout, wewnętrzna)"
+08.11_Torun_tab_C14_transfer_drugie_miasto.csv,08.11,Toruń,1,Test przenośności przestrzennej: model Torunia na drugim mieście (opcjonalny)
+08.12_Torun_tab_C15_s2_cv.csv,08.12,Toruń,0,RF/Sentinel-2: blokowa CV i holdout
+08.12_Torun_tab_C15b_cv_foldy_s2.csv,08.12,Toruń,0,"RF/Sentinel-2: wyniki blokowej CV w każdym foldzie (OA, F1 zabudowy, liczba punktów testowych)"
+08.12_Torun_tab_C16_s2_kalibracja_progu.csv,08.12,Toruń,0,"RF/Sentinel-2: kalibracja progu (CORINE 2018 niezależna, DW 2025 wewnętrzna)"
+08.12_Torun_tab_C17_s2_walidacja.csv,08.12,Toruń,0,"RF/Sentinel-2: walidacja niezależna (Urban Atlas 2018, 2021) i spójność z nauczycielem"
+08.12_Torun_tab_C18_s2_vs_landsat.csv,08.12,Toruń,0,RF/Sentinel-2 a RF/Landsat w tych samych latach: powierzchnie wg stref i zgodność (DW jako odniesienie)
+08.13_Torun_tab_B4b_mcnemar_trzy_mapy_ua2021.csv,08.13,Toruń,0,"Test McNemara trzech map 2021: DW, RF/Landsat, RF/Sentinel-2 (Urban Atlas 2021); podstawa wyboru RF do serii wynikowych"
+08.14_Torun_tab_B3_weryfikacja_autora_DW.csv,08.14,Toruń,0,Dokładność ważona (estymator stratyfikowany) względem ślepej fotointerpretacji: DW i RF
+08.14_Torun_tab_B3_weryfikacja_autora_RF.csv,08.14,Toruń,0,Dokładność ważona (estymator stratyfikowany) względem ślepej fotointerpretacji: DW i RF
+08.14_Torun_tab_B3_weryfikacja_autora_RF_S2.csv,08.14,Toruń,0,Dokładność ważona (estymator stratyfikowany) względem ślepej fotointerpretacji: DW i RF
+08.14_Torun_tab_B4_mcnemar_autor.csv,08.14,Toruń,0,Test McNemara DW vs RF/Landsat na tych samych punktach (Urban Atlas 2021)
+08.14_Torun_tab_B4c_mcnemar_autor_trzy_mapy.csv,08.14,Toruń,0,Test McNemara trzech map na punktach ślepej fotointerpretacji autora (binarnie)
+08.15_Torun_tab_B6_walidacja_historyczna_RF.csv,08.15,Toruń,0,Dokładność ważona RF/Landsat TM 2006 względem ślepej fotointerpretacji archiwalnej (kolumna Status: ważna tylko przy zgodności próby z mapą aktualną)
+08.15_Torun_tab_B6b_zgodnosc_proby_2006.csv,08.15,Toruń,0,"Zgodność ślepej próby 2006 z mapą aktualną: udział punktów w tej samej warstwie co przy losowaniu, tabela krzyżowa kodów interpretacji i warstw"
+08.16_Torun_tab_C19_4kl_cv.csv,08.16,Toruń,0,Model 4-klasowy RF: blokowa CV (OA i F1 klas)
+08.16_Torun_tab_C20_4kl_vs_ua2021.csv,08.16,Toruń,0,Mapa 4-klasowa 2021 vs Urban Atlas 2021 (estymator stratyfikowany)
+08.16_Torun_tab_C21_4kl_vs_fotointerpretacja.csv,08.16,Toruń,0,Mapa 4-klasowa vs ślepa fotointerpretacja autora (4 klasy)
+08.16_Torun_tab_C22_filtr_czasowy_4kl.csv,08.16,Toruń,1,"Toruń: filtr czasowy map 4-klasowych: powierzchnia i udział pikseli zmienionych w każdej epoce, lasy przed i po filtrze"
+08.16b_Torun_tab_C26_4kl_vs_corine.csv,08.16b,Toruń,2,"Toruń: dokładność map 4-klasowych względem rdzeni płatów CORINE 1990–2018 (PA, UA, F1 każdej klasy, estymator stratyfikowany)"
+08.16b_Torun_tab_C27_lasy_wody_vs_corine.csv,08.16b,Toruń,1,"Toruń: powierzchnia lasów i wód z map 4-klasowych a CORINE w tych samych latach, wg stref"
+08.17_Torun_tab_C23_jakosc_kompozytow_landsat.csv,08.17,Toruń,1,"Jakość kompozytów Landsat w epokach: sceny i czyste obserwacje w oknie letnim i przedwiośnia, udział pikseli z < 3 obserwacjami, sceny wg sensora (oba miasta)"
+08.17_Torun_tab_C25_sygnatury_stabilnych_lasow.csv,08.17,Toruń,1,"Toruń: sygnatury spektralne stabilnych lasów (rdzenie CORINE 1990 i 2018, drzewa DW 2025) w kompozytach epok: odbicie, NDVI lato i przedwiośnie, amplituda NDVI; diagnostyka anomalii kompozytu"
+09.01_Torun_tab_D1_sprawl_trajektoria_1985_2025.csv,09.01,Toruń,3,"Trajektoria zabudowy 1985–2025: seria A (RF/Landsat 30 m), seria B (RF/Sentinel-2 10 m i agreg. 30 m), DW jako odniesienie; tempo liniowe (A2/A1 − 1)·100/Δt i wykładnicze ((A2/A1)^(1/Δt) − 1)·100 [%/rok]"
+09.01_Torun_tab_D1b_zmiana_brutto_netto.csv,09.01,Toruń,0,"Zmiana brutto (przyrost, ubytek) i netto w seriach A i B; DW jako odniesienie"
+09.02_Torun_tab_D4_lcrpgr.csv,09.02,Toruń,3,LCRPGR (SDG 11.3.1) z ludnością gmin ważoną powierzchnią; pary lat w obrębie serii
+09.03_Torun_tab_D3_bariery_zabudowa.csv,09.03,Toruń,4,"Zabudowa wewnątrz barier (formy ochrony przyrody z WFS GDOŚ z klasą ograniczenia, tereny wojskowe, lotnisko) w kolejnych epokach"
+09.04_Torun_tab_D2_sprawl_trajektoria_bez_barier.csv,09.04,Toruń,2,Trajektoria zabudowy po wyłączeniu barier
+09.05_Torun_tab_D8_roza_kierunkowa.csv,09.05,Toruń,1,Róża kierunkowa przyrostu zabudowy w 16 sektorach dla każdego okresu
+09.06_Torun_tab_D5_metryki_krajobrazowe_30m.csv,09.06,Toruń,2,"Metryki krajobrazowe zabudowy na siatce 30 m (płaty, LPI klasowe i standardowe, gęstość krawędzi)"
+09.06_Torun_tab_D6_forma_przyrostu.csv,09.06,Toruń,2,"Forma przyrostu zabudowy: infill, edge, leapfrog; odległość od centroidu"
+09.07_Torun_tab_D12_clc_seria.csv,09.07,Toruń,0,Seria powierzchni sztucznych CORINE (niezależna)
+09.07_Torun_tab_D7_wsf_zabudowa.csv,09.07,Toruń,0,Seria zabudowy WSF Evolution (niezależna)
+10.05_Torun_tab_B8_atlas_wycinki_tor.csv,10.05,Toruń,0,"Wycinki atlasu klasyfikacji: klasa DW, współrzędne i dostępność ortofotomapy (osobno dla każdego miasta)"
+10.06_Torun_tab_B7_okna_porownawcze_tor.csv,10.06,Toruń,1,"Okna 1 × 1 km wybrane do ryciny porównawczej (kryterium, strefa, powierzchnie DW, RF/S2, RF/LS, część wspólna, różnica)"
+10.06_Torun_tab_B7b_siatka_1km_dw_rf_tor.csv,10.06,Toruń,32,"Siatka 1 km nad AOI: powierzchnie zabudowy DW, RF/Sentinel-2, RF/Landsat, część wspólna i różnica w każdym oknie"
+11.02_Bydgoszcz_tab_E1_byd_dw_seria_roczna.csv,11.02,Bydgoszcz,1,Bydgoszcz: roczna seria Dynamic World 2015–2025 (diagnostyka nauczyciela)
+11.02_Bydgoszcz_tab_E2_byd_dw_powierzchnie_klas.csv,11.02,Bydgoszcz,2,Bydgoszcz: powierzchnie klas DW wg stref (odniesienie)
+11.02_Bydgoszcz_tab_E3_byd_dw_pochodzenie_zabudowy_miasto.csv,11.02,Bydgoszcz,0,Bydgoszcz: pochodzenie nowej zabudowy wg DW (odniesienie)
+11.02_Bydgoszcz_tab_E3_byd_dw_pochodzenie_zabudowy_strefa_0_2_5.csv,11.02,Bydgoszcz,0,Bydgoszcz: pochodzenie nowej zabudowy wg DW (odniesienie)
+11.02_Bydgoszcz_tab_E3_byd_dw_pochodzenie_zabudowy_strefa_2_5_5.csv,11.02,Bydgoszcz,0,Bydgoszcz: pochodzenie nowej zabudowy wg DW (odniesienie)
+11.03_Bydgoszcz_tab_E4_byd_wplyw_wiezow.csv,11.03,Bydgoszcz,1,Bydgoszcz: wpływ więzów na powierzchnię zabudowy RF/Landsat
+11.04_Bydgoszcz_tab_E5_byd_walidacja.csv,11.04,Bydgoszcz,2,Bydgoszcz: walidacja niezależna map RF/Landsat i RF/Sentinel-2 (modele Torunia bez rekalibracji)
+11.04b_Bydgoszcz_tab_E17_byd_detekcja_stalej_zabudowy.csv,11.04b,Bydgoszcz,2,"Bydgoszcz: detekcja stałej zabudowy (WSF 1985 ∩ DW 2015 ∩ DW 2025) przez surowy RF w każdej epoce przy progu, progu ±0,10 i w serii z więzami [%]"
+11.04b_Bydgoszcz_tab_E18_byd_sygnatury_stabilnych_lasow.csv,11.04b,Bydgoszcz,1,Bydgoszcz: sygnatury spektralne stabilnych lasów w kompozytach epok (jak tab_C25)
+11.05_Bydgoszcz_tab_E6_byd_trajektoria.csv,11.05,Bydgoszcz,3,"Bydgoszcz: trajektoria zabudowy w seriach RF (A: Landsat 30 m, B: Sentinel-2 10 m) z tempem; DW jako odniesienie"
+11.05_Bydgoszcz_tab_E6b_byd_zmiana_brutto_netto.csv,11.05,Bydgoszcz,0,Bydgoszcz: zmiana brutto i netto
+11.05_Bydgoszcz_tab_E7_byd_lcrpgr.csv,11.05,Bydgoszcz,3,Bydgoszcz: LCRPGR
+11.06_Bydgoszcz_tab_E8_byd_bariery.csv,11.06,Bydgoszcz,4,Bydgoszcz: zabudowa wewnątrz barier
+11.06_Bydgoszcz_tab_E9_byd_roza_kierunkowa.csv,11.06,Bydgoszcz,1,Bydgoszcz: róża kierunkowa przyrostu
+11.07_Bydgoszcz_tab_E10_byd_metryki_30m.csv,11.07,Bydgoszcz,3,Bydgoszcz: metryki krajobrazowe 30 m
+11.07_Bydgoszcz_tab_E11_byd_forma_przyrostu.csv,11.07,Bydgoszcz,2,"Bydgoszcz: forma przyrostu (infill, edge, leapfrog)"
+11.08_Bydgoszcz_tab_B8_atlas_wycinki_byd.csv,11.08,Bydgoszcz,0,"Wycinki atlasu klasyfikacji: klasa DW, współrzędne i dostępność ortofotomapy (osobno dla każdego miasta)"
+11.08_Bydgoszcz_tab_E13_byd_okna_porownawcze.csv,11.08,Bydgoszcz,1,Bydgoszcz: okna 1 × 1 km wybrane do ryciny porównawczej
+11.08_Bydgoszcz_tab_E14_byd_wsf_zabudowa.csv,11.08,Bydgoszcz,0,Bydgoszcz: seria zabudowy WSF Evolution wg stref (niezależna)
+11.08_Bydgoszcz_tab_E15_byd_clc_seria.csv,11.08,Bydgoszcz,0,Bydgoszcz: seria powierzchni sztucznych CORINE wg stref (niezależna)
+11.08_Torun_Bydgoszcz_tab_E12_porownanie_torun_bydgoszcz.csv,11.08,Toruń i Bydgoszcz,1,Tabela porównawcza wskaźników sprawl Toruń vs Bydgoszcz (serie RF; tempo liniowe od 1985 r. i od roku bazowego)
+11.08_Torun_Bydgoszcz_tab_E16_walidacja_oba_miasta.csv,11.08,Toruń i Bydgoszcz,3,"Oba miasta: dokładność map RF/Landsat, RF/Sentinel-2 i Dynamic World względem źródeł niezależnych (OA ważona, F1 zabudowy)"
+12.01_Torun_Bydgoszcz_tab_K0_zgodnosc_ramka_aoi.csv,12.01,Toruń i Bydgoszcz,2,"Oba miasta: zgodność klasyfikacji liczonej do ramki z klasyfikacją liczoną w AOI (udział pikseli zgodnych w strefach, epoki serii 5-letniej); źródło i rozdzielczość tła"
+12.02_Torun_Bydgoszcz_tab_F1_nowa_zabudowa_5lat.csv,12.02,Toruń i Bydgoszcz,4,Nowa zabudowa w pięcioleciach 1985–2025 dla obu miast wg stref (seria 5-letnia RF/Landsat 30 m)
+12.02_Torun_Bydgoszcz_tab_F2_nowa_zabudowa_s2_vs_landsat.csv,12.02,Toruń i Bydgoszcz,0,Nowa zabudowa w latach Sentinel-2 dla obu miast: RF/Landsat 30 m a RF/Sentinel-2 10 m (ten sam okres)
+13.02_Torun_Bydgoszcz_tab_G0_zabudowa_epoki_oba_miasta.csv,13.02,Toruń i Bydgoszcz,2,"Oba miasta: powierzchnia i udział zabudowy w każdej epoce serii 5-letniej wg stref (rastry 30 m EPSG:2180, NumPy)"
+13.02_Torun_Bydgoszcz_tab_G0b_zgodnosc_gee_numpy.csv,13.02,Toruń i Bydgoszcz,3,"Oba miasta: zgodność powierzchni zabudowy liczonej w GEE (tab_D1, tab_E6) i z rastrów NumPy (tab_G0) w każdej epoce i strefie [ha, %]"
+13.04_Torun_Bydgoszcz_tab_G1_dynamika_1km.csv,13.04,Toruń i Bydgoszcz,1,"Oba miasta: dynamika przyrostu w siatce 1 km w pięcioleciach (średnia i maks. gęstość, koncentracja)"
+13.05_Torun_Bydgoszcz_tab_G2_kierunki_dekady.csv,13.05,Toruń i Bydgoszcz,1,"Oba miasta: kierunki ekspansji w dekadach z azymutów pikseli siatki analizy (sektor dominujący, udział 3 sektorów, wektor wypadkowy, siła R); od v3_18 liczone w NumPy spójnie z tab_H2"
+13.06_Torun_Bydgoszcz_tab_G3_bariery_oba_miasta.csv,13.06,Toruń i Bydgoszcz,8,"Oba miasta: bariery (formy ochrony przyrody wg klasy ograniczenia, tereny wojskowe, lotniska): zabudowa wewnątrz i w pierścieniu 500 m w kolejnych epokach"
+14.02_Torun_Bydgoszcz_tab_H1_profil_odleglosci.csv,14.02,Toruń i Bydgoszcz,20,Oba miasta: profil odległościowy: udział zabudowy w pierścieniach 500 m od centroidu miasta w każdej epoce (dane do diagramu Hovmöllera)
+14.03_Torun_Bydgoszcz_tab_H2_odcisk_palca_sektory_okresy.csv,14.03,Toruń i Bydgoszcz,7,Oba miasta: odcisk palca ekspansji: nowa zabudowa [ha] w 16 sektorach i 8 pięcioleciach
+14.03_Torun_Bydgoszcz_tab_H4_zegar_ekspansji.csv,14.03,Toruń i Bydgoszcz,16,Oba miasta: zegar ekspansji: średni rok pojawienia się nowej zabudowy w polach sektor × pierścień
+14.05_Torun_Bydgoszcz_tab_H3_lcrpgr_gminy.csv,14.05,Toruń i Bydgoszcz,2,"Oba miasta: LCRPGR według gmin (zabudowa RF/Landsat w części gminy w AOI, ludność BDL) z udziałem gminy w AOI"
+15.00_Torun_Bydgoszcz_tab_I1_4kl_powierzchnie.csv,15.00,Toruń i Bydgoszcz,9,"Oba miasta: powierzchnie 4 klas pokrycia terenu wg stref i epok (RF/Landsat, zabudowa z serii A)"
+15.00_Torun_Bydgoszcz_tab_I2_4kl_macierz_przejsc.csv,15.00,Toruń i Bydgoszcz,1,Oba miasta: macierze przejść między 4 klasami 1985→2025
+15.00_Torun_Bydgoszcz_tab_I3_filtr_czasowy_oba_miasta.csv,15.00,Toruń i Bydgoszcz,1,"Oba miasta: filtr czasowy map 4-klasowych: piksele zmienione w każdej epoce, lasy przed i po filtrze"
+15.00_Torun_Bydgoszcz_tab_I4_4kl_vs_corine_oba_miasta.csv,15.00,Toruń i Bydgoszcz,3,"Oba miasta: dokładność map 4-klasowych względem rdzeni płatów CORINE 1990–2018 (PA, UA, F1 każdej klasy, estymator stratyfikowany)"
+15.00_Torun_Bydgoszcz_tab_I5_lasy_wody_vs_corine_oba_miasta.csv,15.00,Toruń i Bydgoszcz,2,"Oba miasta: powierzchnia lasów i wód z map 4-klasowych a CORINE w tych samych latach, wg stref"
+15.00_Torun_tab_C23_jakosc_kompozytow_landsat.csv,15.00,Toruń,1,"Jakość kompozytów Landsat w epokach: sceny i czyste obserwacje w oknie letnim i przedwiośnia, udział pikseli z < 3 obserwacjami, sceny wg sensora (oba miasta)"
+16.02_Torun_Bydgoszcz_tab_J1_zmiany_klas_pieciolecia.csv,16.02,Toruń i Bydgoszcz,14,"Oba miasta: kategorie zmian między mapami 4-klasowymi kolejnych pięcioleci (nowa zabudowa, ubytek i przyrost lasów, zmiana wód, inne) wg stref [ha, % strefy]"
+16.04_Torun_Bydgoszcz_tab_J2_stabilnosc_dw_strefy.csv,16.04,Toruń i Bydgoszcz,0,"Oba miasta: stabilność etykiet Dynamic World 2015–2025 wg stref (udział pikseli z 0, 1, 2, >= 3 zmianami klasy)"
+16.04_Torun_Bydgoszcz_tab_J2b_stabilnosc_dw_pary_lat.csv,16.04,Toruń i Bydgoszcz,1,"Oba miasta: zmiany klasy Dynamic World między kolejnymi latami (% AOI, powierzchnia do i z klasy zabudowa)"
+16.05_Torun_Bydgoszcz_tab_J3_leapfrog_odleglosc_wchloniecie.csv,16.05,Toruń i Bydgoszcz,3,"Oba miasta: zabudowa leapfrog w pięcioleciach: powierzchnia, odległość przeskoku od wcześniejszej zabudowy, wchłonięcie do ostatniej epoki"
+16.06_Torun_Bydgoszcz_tab_J4_morfotypy_gestosci.csv,16.06,Toruń i Bydgoszcz,3,"Oba miasta: morfotypy gęstości zabudowy (okno 330 m: zwarta, średnio zwarta, rozproszona, pojedyncza) wg stref i epok"
+16.06_Torun_Bydgoszcz_tab_J4b_morfotypy_przejscia_narodziny.csv,16.06,Toruń i Bydgoszcz,6,Oba miasta: przejścia morfotypów gęstości 1985→2025 i morfotyp narodzin nowej zabudowy w pięcioleciach
+16.07_Torun_Bydgoszcz_tab_J5_hot_spoty_gi.csv,16.07,Toruń i Bydgoszcz,1,"Oba miasta: hot spoty Getis-Ord Gi* gęstości nowej zabudowy na siatce 1 km (poziomy ufności, korekta FDR, udział nowej zabudowy w hot spotach, hot spoty wg stref)"
+16.08_Torun_Bydgoszcz_tab_J6_niepewnosc_progu_rf.csv,16.08,Toruń i Bydgoszcz,1,"Oba miasta: pas niepewności decyzji RF (|p − próg| < 0,10) i surowa powierzchnia zabudowy przy progu ± 0,10 wg stref i epok"
+16.09_Torun_Bydgoszcz_tab_J7_zabudowa_na_mieszkanca.csv,16.09,Toruń i Bydgoszcz,3,Oba miasta: zabudowa na mieszkańca strefy [m²/os.] w epokach z danymi o ludności
+16.09_Torun_Bydgoszcz_tab_J7b_zabudowa_na_nowego_mieszkanca.csv,16.09,Toruń i Bydgoszcz,2,Oba miasta: przyrost zabudowy na nowego mieszkańca strefy [m²/os.] w okresach wzrostu ludności
+16.10_Torun_Bydgoszcz_tab_J8_obwiednie_izochrony.csv,16.10,Toruń i Bydgoszcz,1,"Oba miasta: obwiednie zwartej zabudowy w epokach (powierzchnia, obwód, zwartość 4πA/P², udział zabudowy wewnątrz, średni promień, liczba płatów po domknięciu)"
+16.10_Torun_Bydgoszcz_tab_J8b_obwiednie_wrazliwosc_promien.csv,16.10,Toruń i Bydgoszcz,2,"Oba miasta: wrażliwość obwiedni na promień domknięcia (150, 300, 450 m): obwiednia największego płatu i wszystkich płatów, liczba płatów ≥ 1 km²"
+16.11_Torun_Bydgoszcz_tab_J9_mapa_dwuzmienna_1km.csv,16.11,Toruń i Bydgoszcz,2,Oba miasta: mapa dwuzmienna 1 km: liczba kwadratów i nowa zabudowa w 9 klasach (udział zabudowy 2025 × przyrost 1985–2025) wg stref
+16.12_Torun_Bydgoszcz_tab_J10_gini_koncentracja.csv,16.12,Toruń i Bydgoszcz,1,"Oba miasta: współczynnik Giniego rozkładu zabudowy między kwadratami 1 km, udział kwadratów z zabudową i udział 10% najbardziej zabudowanych kwadratów w epokach"
+16.13_Torun_Bydgoszcz_tab_J11_diagram_fazowy_platow.csv,16.13,Toruń i Bydgoszcz,1,"Oba miasta: liczba płatów zabudowy, średnia i mediana wielkości płatu, udział największego płatu w epokach (diagram fazowy)"
+16.14_Torun_Bydgoszcz_tab_J12_odleglosc_nowej_zabudowy.csv,16.14,Toruń i Bydgoszcz,1,Oba miasta: kwartyle odległości nowej zabudowy od centroidu i udział poza 5 km w pięcioleciach
+16.16_Torun_Bydgoszcz_tab_J13_karta_wskaznikow.csv,16.16,Toruń i Bydgoszcz,0,"Oba miasta: karta wskaźników sprawl (tempo od 1985 i od roku bazowego, leapfrog, przyrost mediany odległości, spadek Giniego, koncentracja w hot spotach, zabudowa na mieszkańca)"
+16.17_Torun_Bydgoszcz_tab_K1_wiarygodnosc_przedzialy.csv,16.17,Toruń i Bydgoszcz,26,"Oba miasta: wiarygodność p(zabudowa) RF/Landsat w przedziałach prawdopodobieństwa względem WSF Evolution, CORINE i Dynamic World w epokach; ECE i nachylenie krzywej wiarygodności"
+16.17_Torun_Bydgoszcz_tab_K1b_wiarygodnosc_ece.csv,16.17,Toruń i Bydgoszcz,2,"Oba miasta: wiarygodność p(zabudowa) RF/Landsat w przedziałach prawdopodobieństwa względem WSF Evolution, CORINE i Dynamic World w epokach; ECE i nachylenie krzywej wiarygodności"
+16.18_Torun_Bydgoszcz_tab_K2_spojnosc_czasowa_decyzji.csv,16.18,Toruń i Bydgoszcz,1,"Oba miasta: spójność czasowa surowych decyzji RF (udział pikseli z 0, 1, ≥ 2 przełączeniami) i margines decyzji |p − próg| w strefach"
+16.19_Torun_Bydgoszcz_tab_K3_gradient_clarka.csv,16.19,Toruń i Bydgoszcz,1,"Oba miasta: parametry gradientu Clarka (D0, b, R²) z CI 95% w epokach serii 5-letniej"
+16.20_Torun_Bydgoszcz_tab_K4_nachylenie_odleglosc_epoka_sektory.csv,16.20,Toruń i Bydgoszcz,1,"Oba miasta: nachylenie regresji odległości pierścienia względem średniej epoki pierwszej detekcji [m/rok] w 16 sektorach azymutalnych (statystyka opisowa, nie prędkość frontu; z R² i liczbą pierścieni)"
+16.21_Torun_Bydgoszcz_tab_K5_wymiar_fraktalny.csv,16.21,Toruń i Bydgoszcz,1,"Oba miasta: wymiar fraktalny zabudowy (metoda pudełkowa, 30 m–1,9 km) w epokach z R² dopasowania"
+16.22_Torun_Bydgoszcz_tab_K6_zgodnosc_landsat_sentinel.csv,16.22,Toruń i Bydgoszcz,1,"Oba miasta: zgodność map RF/Landsat 30 m i RF/Sentinel-2 (agregacja do 30 m) w 2025 r. w strefach: zgodne, tylko Landsat, tylko Sentinel-2 [ha]"
+21.01_Torun_tab_L1_panel_ocena_wersji_map.csv,21.01,Toruń,17,
+21.01_Torun_tab_L1b_roznice_sparowane_wersji.csv,21.01,Toruń,9,
+21.01_Torun_tab_L1c_roznice_miast_rf_mk.csv,21.01,Toruń,1,
+21.02_Torun_tab_L2_dokladnosc_zmian_pary_epok.csv,21.02,Toruń,3,
+21.02_Torun_tab_L2b_rozklad_opoznienia_detekcji.csv,21.02,Toruń,13,
+21.02_Torun_tab_L2c_opoznienie_podsumowanie.csv,21.02,Toruń,3,
+21.03_Torun_tab_L3a_uklad_2x2_wiezow_na_panelach.csv,21.03,Toruń,9,
+21.03_Torun_tab_L3b_powierzchnie_2x2_wiezow.csv,21.03,Toruń,3,
+21.03_Torun_tab_L3c_ablacja_konfiguracja_finalna.csv,21.03,Toruń,3,
+21.03_Torun_tab_L3e_ablacja_roznice_sparowane.csv,21.03,Toruń,4,
+21.03_Torun_tab_L3f_interakcja_wiezy_prog.csv,21.03,Toruń,1,
+21.04_Torun_tab_L4_fotointerpretacja_2023_mapy_2021_2025.csv,21.04,Toruń,1,
+21.04_Torun_tab_L4b_punkty_niezgodne_do_przegladu.csv,21.04,Toruń,1,
+21.05_Torun_tab_L5_kontrola_proby_2006.csv,21.05,Toruń,1,
+21.06_Torun_tab_L6a_cv_zagniezdzona.csv,21.06,Toruń,1,
+21.06_Torun_tab_L6b_waznosc_permutacyjna_foldy.csv,21.06,Toruń,2,
+21.06_Torun_tab_L6b_waznosc_permutacyjna_srednia.csv,21.06,Toruń,0,
+21.06_Torun_tab_L6c_krzywe_uczenia_powtorzenia.csv,21.06,Toruń,1,
+21.06_Torun_tab_L6d_semiwariogram_reszt.csv,21.06,Toruń,0,
+21.06_Torun_tab_L6e_jednorodnosc_etykiet_30m.csv,21.06,Toruń,0,
+21.06_Torun_tab_L6f_wrazliwosc_erozja_pewnosc.csv,21.06,Toruń,0,
+21.07_Torun_tab_L7a_roznice_p_ramka_strefy_wg_odleglosci.csv,21.07,Toruń,6,
+21.07_Torun_tab_L7b_sceny_strefy_vs_ramka.csv,21.07,Toruń,4,
+21.07_Torun_tab_L7c_zgodnosc_decyzji_ramka_strefy_aktualizacja_K0.csv,21.07,Toruń,2,
+21.07_Torun_tab_L7d_ustawienia_potoku_ramka_strefy.csv,21.07,Toruń,1,
+21.08_Torun_tab_L8a_jaccard_landsat_s2_przed_i_po_wiezach.csv,21.08,Toruń,2,
+21.08_Torun_tab_L8b_roznice_sparowane_s2_landsat.csv,21.08,Toruń,2,
+21.08_Torun_tab_L8b_walidacja_wspolna_siatka_30m.csv,21.08,Toruń,3,
+21.08_Torun_tab_L8c_klasy_zmian_2020_2025_serie_vs_dw.csv,21.08,Toruń,1,
+21.08_Torun_tab_L8c_krzyzowo_seria_A_vs_B_2020_2025.csv,21.08,Toruń,0,
+21.08_Torun_tab_L8d_jaccard_wsparcie_wyrownane.csv,21.08,Toruń,0,
+21.08_Torun_tab_L8d_wyrownane_wsparcie_tekstury_okno.csv,21.08,Toruń,1,
+21.08_Torun_tab_L8e_wnetrza_granice_platow.csv,21.08,Toruń,1,
+21.09_Torun_tab_L9a_stabilnosc_dw_rf_wspolne_daty.csv,21.09,Toruń,2,
+21.09_Torun_tab_L9b_wzorce_roczne_dw_2015_2025.csv,21.09,Toruń,1,
+21.09_Torun_tab_L9c_slepa_proba_zmian_dw.csv,21.09,Toruń,0,
+21.10_Torun_tab_L10a_pozarzysko_1992_udzial_w_strefach.csv,21.10,Toruń,2,
+21.10_Torun_tab_L10b_klasy_w_pozarzysku_przed_po_filtrze.csv,21.10,Toruń,2,
+21.10_Torun_tab_L10c_macierze_przejsc_pozarzysko.csv,21.10,Toruń,5,
+21.10_Torun_tab_L10d_pierwsza_ponowna_detekcja_lasu.csv,21.10,Toruń,2,
+21.10_Torun_tab_L10e_trajektorie_pozarzysko_kontrola.csv,21.10,Toruń,4,
+21.10_Torun_tab_L10f_sygnatury_lasow_bez_pozarzyska.csv,21.10,Toruń,6,
+21.10_Torun_tab_L10h_slepa_proba_rozbieznosci_lasow.csv,21.10,Toruń,0,
+21.10_Torun_tab_L10i_metryki_4kl_surowy_filtr_hybrydowy.csv,21.10,Toruń,12,
+21.11_Torun_tab_L11a_wspolczynniki_harmonizacji.csv,21.11,Toruń,2,
+21.11_Torun_tab_L11b_obiekty_pseudoinwariantne_harmonizacja.csv,21.11,Toruń,17,
+21.11_Torun_tab_L11c_pary_scen_podsumowanie.csv,21.11,Toruń,1,
+21.11_Torun_tab_L11c_pary_scen_regresja.csv,21.11,Toruń,8,
+21.11_Torun_tab_L11d_wplyw_harmonizacji_na_p_i_detekcje.csv,21.11,Toruń,1,
+21.12_Torun_tab_L12a_podsumowanie_scen_landsat.csv,21.12,Toruń,6,
+21.12_Torun_tab_L12a_sceny_landsat.csv,21.12,Toruń,609,
+21.12_Torun_tab_L12b_granule_sentinel2.csv,21.12,Toruń,349,
+21.12_Torun_tab_L12c_pokrycie_dynamic_world.csv,21.12,Toruń,2,
+21.12_Torun_tab_L12d_wspoldzielenie_scen_domeny.csv,21.12,Toruń,2,
+21.13_Torun_tab_L13a_kalibratory_proba_poza_blokiem.csv,21.13,Toruń,1,
+21.13_Torun_tab_L13b_ece_brier_po_kalibracji_epoki.csv,21.13,Toruń,11,
+21.13_Torun_tab_L13c_rozklad_progu_optymalnego.csv,21.13,Toruń,0,
+21.13_Torun_tab_L13d_krzywa_f1_progu_ci.csv,21.13,Toruń,0,
+21.14_Torun_tab_L14_multiprobability_vs_glosy.csv,21.14,Toruń,10,
+21.15_Torun_tab_C11_karta_modelu.csv,21.15,Toruń,7,Karta modelu
+21.15_Torun_tab_L15a_identyfikatory_eksperymentow.csv,21.15,Toruń,30,
+21.15_Torun_tab_L15b_uprawnienia_assetow_gee.csv,21.15,Toruń,7,
+21.15_Torun_tab_L15c_manifest_pakietu.csv,21.15,Toruń,93,
+22.01_Torun_tab_M1a_sceny_mss.csv,22.01,Toruń,32,
+22.01_Torun_tab_M1b_podsumowanie_scen_mss.csv,22.01,Toruń,1,
+22.01_Torun_tab_M1c_obserwacje_na_piksel_mss.csv,22.01,Toruń,1,
+22.03_Torun_tab_M2_model_mss_cv_prog.csv,22.03,Toruń,2,
+22.03_Torun_tab_M2b_cv_foldy_mss.csv,22.03,Toruń,0,
+22.03_Torun_tab_M2c_kalibracja_progu_mss.csv,22.03,Toruń,0,
+22.03_Torun_tab_M2d_4kl_mss_cv.csv,22.03,Toruń,1,
+22.03_Torun_tab_M2e_normalizacja_pif_mss.csv,22.03,Toruń,1,
+22.03_Torun_tab_M2f_detekcja_rdzeni_mss.csv,22.03,Toruń,2,
+22.03_Torun_tab_M2g_progi_epok_mss.csv,22.03,Toruń,1,
+22.03_Torun_tab_M2h_reguly_ramki_mss.csv,22.03,Toruń,0,
+22.03_Torun_tab_M2i_walidacja_punkty_reczne_mss.csv,22.03,Toruń,0,
+22.03_Torun_tab_M2r_punkty_reczne_mss.csv,22.03,Toruń,0,
+22.03_Torun_tab_M3a_most_1985_ocena_wersji.csv,22.03,Toruń,4,
+22.03_Torun_tab_M3b_most_1985_roznice_sparowane.csv,22.03,Toruń,2,
+22.04_Torun_tab_M4a_powierzchnie_mss_1975_1985.csv,22.04,Toruń,1,
+22.04_Torun_tab_M4b_udzial_zabudowy_1985_obecnej_wczesniej.csv,22.04,Toruń,1,
+22.04_Torun_tab_M4c_wariant_wiezow_mss.csv,22.04,Toruń,1,
+22.05_Torun_tab_M5a_spojnosc_mss_z_wsf.csv,22.05,Toruń,3,
+22.06_Torun_tab_M6_karta_modelu_mss.csv,22.06,Toruń,5,
+22.08_Torun_Bydgoszcz_tab_M7_zabudowa_epoki_1975_2025_oba_miasta.csv,22.08,Toruń i Bydgoszcz,4,
+22.09_Torun_tab_M8_rejestr_modeli.csv,22.09,Toruń,6,
+23.01_Torun_Bydgoszcz_tab_N1a_warianty_wiezow_metryki_platow.csv,23.01,Toruń i Bydgoszcz,22,"Oba miasta: metryki płatów (płaty, średnia, mediana, LPI klasowe i standardowe, gęstość krawędzi) w strefach i epokach dla wariantów więzów serii (bez więzów, monotoniczność, zasięg DW, oba; seria A w AOI)"
+23.01_Torun_Bydgoszcz_tab_N1b_warianty_wiezow_forma_przyrostu.csv,23.01,Toruń i Bydgoszcz,19,"Oba miasta: formy nowej zabudowy (infill, edge, leapfrog, odległość przeskoku) w strefach i pięcioleciach dla wariantów więzów serii"
+23.01_Torun_Bydgoszcz_tab_N1c_warianty_wiezow_podsumowanie.csv,23.01,Toruń i Bydgoszcz,4,Oba miasta: epoka maksimum gęstości krawędzi i liczby płatów oraz udziały form wg wariantu więzów (podsumowanie tab_N1a–N1b)
+23.02_Torun_Bydgoszcz_tab_N2a_sektory_dwie_konwencje.csv,23.02,Toruń i Bydgoszcz,71,"Oba miasta: nowa zabudowa w 16 sektorach w dwóch konwencjach (krawędź sektora na N; sektor centrowany na N) dla pięcioleci, dekad i całego okresu"
+23.02_Torun_Bydgoszcz_tab_N2b_statystyki_kolowe.csv,23.02,Toruń i Bydgoszcz,4,"Oba miasta: statystyki kołowe kierunków nowej zabudowy z azymutów pikseli: R i azymut wypadkowy (1. moment), R2 i oś (2. moment, dwumodalność), entropia, sektory dominujące w obu konwencjach"
+23.03_Torun_Bydgoszcz_tab_N3a_front_izolinii_sektory_epoki.csv,23.03,Toruń i Bydgoszcz,151,Oba miasta: promień frontu izolinii udziału zabudowy w sektorach i epokach dla progów 10–30% i dwóch reguł frontu
+23.03_Torun_Bydgoszcz_tab_N3b_front_izolinii_nachylenie_sektory.csv,23.03,Toruń i Bydgoszcz,25,Oba miasta: przesunięcie frontu 1985–2025 i nachylenie front–epoka [m/rok] z CI 95% w sektorach dla progów 10–30%
+23.03_Torun_Bydgoszcz_tab_N3c_front_izolinii_laczny.csv,23.03,Toruń i Bydgoszcz,3,Oba miasta: front łączny (wszystkie sektory) w epokach z profilu pierścieni dla progów 10–30%; nachylenie z CI 95%
+23.03_Torun_Bydgoszcz_tab_N3d_front_izolinii_podsumowanie.csv,23.03,Toruń i Bydgoszcz,2,"Oba miasta: podsumowanie frontu w sektorach (mediana, zakres, sektory z R² ≥ 0,5) i korelacja Spearmana z nachyleniem odległość–epoka z zegara ekspansji (tab_K4)"
+23.04_Torun_Bydgoszcz_tab_N4a_kohorty_leapfrog_rowne_okna.csv,23.04,Toruń i Bydgoszcz,16,"Oba miasta: udział pikseli leapfrog obudowanych po 5, 10, 15 i 20 latach od epoki powstania (kohorty pięcioletnie, strefy i AOI; reguły ≥ 4 i ≥ 6 z 8 sąsiadów)"
+23.04_Torun_Bydgoszcz_tab_N4b_kohorty_leapfrog_czas_obudowania.csv,23.04,Toruń i Bydgoszcz,7,"Oba miasta: mediana czasu do obudowania leapfrog z cenzurowaniem w ostatniej epoce, udział po 10 latach i do ostatniej epoki wg kohort"
+23.05_Torun_Bydgoszcz_tab_N5a_lpi_sasiedztwo_krawedzie.csv,23.05,Toruń i Bydgoszcz,6,"Oba miasta: LPI klasowe i standardowe, liczba płatów w sąsiedztwie 4 i 8, gęstość krawędzi z boków pikseli i z izolinii 0,5 w strefach i epokach"
+23.05_Torun_Bydgoszcz_tab_N5b_wymiar_fraktalny_przesuniecia_ci.csv,23.05,Toruń i Bydgoszcz,5,"Oba miasta: wymiar fraktalny (metoda pudełkowa) z minimum i średnią zliczeń po przesunięciach siatki oraz bez przesunięcia; CI 95% nachylenia; strefy i AOI, epoki"
+23.06_Torun_Bydgoszcz_tab_N6a_gi_przesuniecia_siatki.csv,23.06,Toruń i Bydgoszcz,3,"Oba miasta: hot spoty Gi* (95% bez korekty, FDR 5%) i udział nowej zabudowy w hot spotach dla 9 przesunięć początku siatki 1 km i trzech okien czasowych"
+23.06_Torun_Bydgoszcz_tab_N6b_gini_przesuniecia_siatki.csv,23.06,Toruń i Bydgoszcz,4,Oba miasta: współczynnik Giniego zabudowy w kwadratach 1 km dla 9 przesunięć siatki w epokach
+23.06_Torun_Bydgoszcz_tab_N6c_gi_gini_bok_komorki.csv,23.06,Toruń i Bydgoszcz,3,"Oba miasta: Gini w epokach i hot spoty 1985–2025 dla boku komórki ~0,5, 1 i 2 km"
+23.06_Torun_Bydgoszcz_tab_N6d_gi_przesuniecia_podsumowanie.csv,23.06,Toruń i Bydgoszcz,0,"Oba miasta: podsumowanie wrażliwości hot spotów FDR na przesunięcie siatki (min, mediana, maks liczby i udziału)"
+23.07_Torun_Bydgoszcz_tab_N7_gradient_clarka_metody.csv,23.07,Toruń i Bydgoszcz,6,"Oba miasta: gradient Clarka b w epokach czterema metodami (OLS ln D, WLS ln D, NLS bez ograniczenia, NLS D0 ≤ 1) z CI 95%, D0, R² i promieniem połowicznego spadku"
+23.08_Torun_Bydgoszcz_tab_N8_bariery_pasy_kontrola.csv,23.08,Toruń i Bydgoszcz,24,"Oba miasta: udział zabudowy w epokach wewnątrz barier, w pasach 0–250, 250–500, 500–1000 m i w obszarze kontrolnym o dopasowanej centralności"
+23.08_Torun_Bydgoszcz_tab_N8b_bariery_iloraz_kontrola.csv,23.08,Toruń i Bydgoszcz,1,Oba miasta: iloraz pas/kontrola w ostatniej epoce i przyrost udziału 1985–2025 w pasach wokół barier i w kontroli
+23.09_Torun_Bydgoszcz_tab_N9a_pasy_1km_od_granicy_udzial.csv,23.09,Toruń i Bydgoszcz,4,Oba miasta: udział zabudowy w pasach 1 km od granicy miasta (transformata odległości) i w mieście w epokach
+23.09_Torun_Bydgoszcz_tab_N9b_pasy_1km_od_granicy_przyrost.csv,23.09,Toruń i Bydgoszcz,4,"Oba miasta: nowa zabudowa w pięcioleciach w pasach 1 km od granicy miasta (ha, % powierzchni pasa, tempo względem t1)"
+23.09_Torun_Bydgoszcz_tab_N9c_odleglosci_znormalizowane.csv,23.09,Toruń i Bydgoszcz,2,"Oba miasta: odległość nowej zabudowy od centroidu znormalizowana promieniem równoważnym miasta; udział poza 1,0 i 1,5 r_m i poza 4–7 km w pięcioleciach"
+23.10_Torun_Bydgoszcz_tab_N10a_zgodnosc_A_B_siatka_analizy.csv,23.10,Toruń i Bydgoszcz,2,Oba miasta: zgodność (Jaccard) serii A (RF/Landsat 30 m) i B (RF/Sentinel-2 agregowanej do 30 m) na siatce analizy (AOI) obok wartości z ramki (tab_K6)
+23.10_Torun_Bydgoszcz_tab_N10b_zabudowa_na_mieszkanca_dwie_sciezki.csv,23.10,Toruń i Bydgoszcz,3,Oba miasta: powierzchnia zabudowy ścieżką GEE i NumPy oraz zabudowa na mieszkańca obiema ścieżkami przy tej samej ludności
+23.11_Torun_Bydgoszcz_tab_N11a_dane_walidacji_niezaleznej.csv,23.11,Toruń i Bydgoszcz,2,Oba miasta: przesunięcie domeny miasto × epoka: regresja F1 zabudowy względem odległości epoki od okna uczenia i miasta; F1 wg referencji; dane walidacji niezależnej
+23.11_Torun_Bydgoszcz_tab_N11a_przesuniecie_domeny_miasto_epoka.csv,23.11,Toruń i Bydgoszcz,2,Oba miasta: przesunięcie domeny miasto × epoka: regresja F1 zabudowy względem odległości epoki od okna uczenia i miasta; F1 wg referencji; dane walidacji niezależnej
+23.11_Torun_Bydgoszcz_tab_N11b_propagacja_bledu_wskazniki.csv,23.11,Toruń i Bydgoszcz,13,"Oba miasta: propagacja błędu klasyfikacji (A·UA/PA) do LCR, LCRPGR i zabudowy na mieszkańca w strefach i okresach; zakres po referencjach"
+23.12_Torun_Bydgoszcz_tab_N12a_ludnosc_stref_ghs_pop_bdl.csv,23.12,Toruń i Bydgoszcz,4,Oba miasta: ludność stref w epokach z GHS-POP (100 m) i z BDL; iloraz GHS-POP/BDL
+23.12_Torun_Bydgoszcz_tab_N12b_lcrpgr_stref_ghs_pop_bdl.csv,23.12,Toruń i Bydgoszcz,9,"Oba miasta: LCR, PGR, LCRPGR i zabudowa na mieszkańca w strefach z ludnością GHS-POP i BDL"
+23.13_Torun_Bydgoszcz_tab_N13_okna_powiekszen.csv,23.13,Toruń i Bydgoszcz,0,"Oba miasta: okna powiększeń 3 × 3 km (środek EPSG:2180, zabudowa w oknie w trzech epokach)"

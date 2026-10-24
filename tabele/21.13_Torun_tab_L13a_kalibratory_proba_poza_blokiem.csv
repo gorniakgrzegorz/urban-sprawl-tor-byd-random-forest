@@ -1,0 +1,5 @@
+Kalibrator,Dopasowanie,Ocena,n ocena,"π populacji (DW 2025, 30 m)",π w próbie,ECE,Nachylenie,Wyraz wolny,Brier,Brier klimatologiczny π(1 − π),Parametry
+p surowe (RF),połowa próby kalibracyjnej (poza blokiem),druga połowa,2953,0.178,0.1802,0.109,0.895,-0.079,0.0804,0.1477,n.d.
+korekta priorów (π populacji),połowa próby kalibracyjnej (poza blokiem),druga połowa,2953,0.178,0.1802,0.0365,1.142,0.0,0.0647,0.1477,π = 0.1780
+Platt (regresja logistyczna),połowa próby kalibracyjnej (poza blokiem),druga połowa,2953,0.178,0.1802,0.0215,0.978,0.01,0.0624,0.1477,"a = 1.382, b = -1.468 (logit)"
+izotoniczna,połowa próby kalibracyjnej (poza blokiem),druga połowa,2953,0.178,0.1802,0.0204,0.962,0.013,0.0631,0.1477,n.d.

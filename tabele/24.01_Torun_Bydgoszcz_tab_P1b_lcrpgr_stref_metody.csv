@@ -1,0 +1,61 @@
+Miasto,Strefa,Metoda ludności,Wariant zabudowy,Ludność 2011,Ludność 2021,Zabudowa t1 [ha],Zabudowa t2 [ha],LCR [1/rok],PGR [1/rok],LCRPGR,LCRPGR bez progu stabilności,Iloraz interpretowalny (|PGR| ≥ 0.0013),Zabudowa na mieszkańca 2011 [m²/os.],Zabudowa na mieszkańca 2021 [m²/os.],Zmiana zabudowy na mieszkańca [%]
+Bydgoszcz,miasto,siatka: wagi powierzchni,epoki 2010/2020,353995,327914,6726.2,7241.3,0.0074,-0.0077,-0.964,-0.964,True,190.0,220.8,16.2
+Bydgoszcz,miasto,siatka: wagi zabudowy,epoki 2010/2020,364050,337864,6726.2,7241.3,0.0074,-0.0075,-0.988,-0.988,True,184.8,214.3,16.0
+Bydgoszcz,miasto,BDL: gminy ważone powierzchnią,epoki 2010/2020,363020,334026,6726.2,7241.3,0.0074,-0.0083,-0.886,-0.886,True,185.3,216.8,17.0
+Bydgoszcz,miasto,siatka: wagi powierzchni,interpolacja do 31.03.2011 i 31.03.2021,353995,327914,6804.6,7263.8,0.0065,-0.0077,-0.853,-0.853,True,192.2,221.5,15.2
+Bydgoszcz,miasto,siatka: wagi zabudowy,interpolacja do 31.03.2011 i 31.03.2021,364050,337864,6804.6,7263.8,0.0065,-0.0075,-0.875,-0.875,True,186.9,215.0,15.0
+Bydgoszcz,miasto,BDL: gminy ważone powierzchnią,interpolacja do 31.03.2011 i 31.03.2021,363020,334026,6804.6,7263.8,0.0065,-0.0083,-0.785,-0.785,True,187.4,217.5,16.0
+Bydgoszcz,strefa_0_2_5,siatka: wagi powierzchni,epoki 2010/2020,28551,33148,1392.8,1932.6,0.0328,0.0149,2.194,2.194,True,487.8,583.0,19.5
+Bydgoszcz,strefa_0_2_5,siatka: wagi zabudowy,epoki 2010/2020,18330,23084,1392.8,1932.6,0.0328,0.0231,1.421,1.421,True,759.8,837.2,10.2
+Bydgoszcz,strefa_0_2_5,BDL: gminy ważone powierzchnią,epoki 2010/2020,20933,26753,1392.8,1932.6,0.0328,0.0245,1.335,1.335,True,665.3,722.4,8.6
+Bydgoszcz,strefa_0_2_5,siatka: wagi powierzchni,interpolacja do 31.03.2011 i 31.03.2021,28551,33148,1469.6,1963.3,0.029,0.0149,1.94,1.94,True,514.7,592.3,15.1
+Bydgoszcz,strefa_0_2_5,siatka: wagi zabudowy,interpolacja do 31.03.2011 i 31.03.2021,18330,23084,1469.6,1963.3,0.029,0.0231,1.256,1.256,True,801.8,850.5,6.1
+Bydgoszcz,strefa_0_2_5,BDL: gminy ważone powierzchnią,interpolacja do 31.03.2011 i 31.03.2021,20933,26753,1469.6,1963.3,0.029,0.0245,1.181,1.181,True,702.1,733.9,4.5
+Bydgoszcz,strefa_2_5_5,siatka: wagi powierzchni,epoki 2010/2020,27522,35002,1952.3,2739.4,0.0339,0.024,1.409,1.409,True,709.4,782.6,10.3
+Bydgoszcz,strefa_2_5_5,siatka: wagi zabudowy,epoki 2010/2020,27688,35116,1952.3,2739.4,0.0339,0.0238,1.425,1.425,True,705.1,780.1,10.6
+Bydgoszcz,strefa_2_5_5,BDL: gminy ważone powierzchnią,epoki 2010/2020,21218,26360,1952.3,2739.4,0.0339,0.0217,1.561,1.561,True,920.1,1039.3,12.9
+Bydgoszcz,strefa_2_5_5,siatka: wagi powierzchni,interpolacja do 31.03.2011 i 31.03.2021,27522,35002,2054.8,2787.7,0.0305,0.024,1.269,1.269,True,746.6,796.4,6.7
+Bydgoszcz,strefa_2_5_5,siatka: wagi zabudowy,interpolacja do 31.03.2011 i 31.03.2021,27688,35116,2054.8,2787.7,0.0305,0.0238,1.284,1.284,True,742.1,793.9,7.0
+Bydgoszcz,strefa_2_5_5,BDL: gminy ważone powierzchnią,interpolacja do 31.03.2011 i 31.03.2021,21218,26360,2054.8,2787.7,0.0305,0.0217,1.406,1.406,True,968.4,1057.6,9.2
+Bydgoszcz,pierscienie,siatka: wagi powierzchni,epoki 2010/2020,56073,68150,3345.0,4672.0,0.0334,0.0195,1.713,1.713,True,596.5,685.5,14.9
+Bydgoszcz,pierscienie,siatka: wagi zabudowy,epoki 2010/2020,46018,58200,3345.0,4672.0,0.0334,0.0235,1.423,1.423,True,726.9,802.8,10.4
+Bydgoszcz,pierscienie,BDL: gminy ważone powierzchnią,epoki 2010/2020,42151,53113,3345.0,4672.0,0.0334,0.0231,1.445,1.445,True,793.6,879.6,10.8
+Bydgoszcz,pierscienie,siatka: wagi powierzchni,interpolacja do 31.03.2011 i 31.03.2021,56073,68150,3524.4,4751.0,0.0299,0.0195,1.531,1.531,True,628.5,697.1,10.9
+Bydgoszcz,pierscienie,siatka: wagi zabudowy,interpolacja do 31.03.2011 i 31.03.2021,46018,58200,3524.4,4751.0,0.0299,0.0235,1.272,1.272,True,765.9,816.3,6.6
+Bydgoszcz,pierscienie,BDL: gminy ważone powierzchnią,interpolacja do 31.03.2011 i 31.03.2021,42151,53113,3524.4,4751.0,0.0299,0.0231,1.292,1.292,True,836.2,894.5,7.0
+Bydgoszcz,AOI,siatka: wagi powierzchni,epoki 2010/2020,410069,396064,10071.3,11913.3,0.0168,-0.0035,-4.834,-4.834,True,245.6,300.8,22.5
+Bydgoszcz,AOI,siatka: wagi zabudowy,epoki 2010/2020,410069,396064,10071.3,11913.3,0.0168,-0.0035,-4.834,-4.834,True,245.6,300.8,22.5
+Bydgoszcz,AOI,BDL: gminy ważone powierzchnią,epoki 2010/2020,405171,387139,10071.3,11913.3,0.0168,-0.0046,-3.69,-3.69,True,248.6,307.7,23.8
+Bydgoszcz,AOI,siatka: wagi powierzchni,interpolacja do 31.03.2011 i 31.03.2021,410069,396064,10329.1,12014.9,0.0151,-0.0035,-4.351,-4.351,True,251.9,303.4,20.4
+Bydgoszcz,AOI,siatka: wagi zabudowy,interpolacja do 31.03.2011 i 31.03.2021,410069,396064,10329.1,12014.9,0.0151,-0.0035,-4.351,-4.351,True,251.9,303.4,20.4
+Bydgoszcz,AOI,BDL: gminy ważone powierzchnią,interpolacja do 31.03.2011 i 31.03.2021,405171,387139,10329.1,12014.9,0.0151,-0.0046,-3.321,-3.321,True,254.9,310.4,21.7
+Toruń,miasto,siatka: wagi powierzchni,epoki 2010/2020,204222,197235,4360.8,4872.1,0.0111,-0.0035,-3.186,-3.186,True,213.5,247.0,15.7
+Toruń,miasto,siatka: wagi zabudowy,epoki 2010/2020,204762,197946,4360.8,4872.1,0.0111,-0.0034,-3.276,-3.276,True,213.0,246.1,15.6
+Toruń,miasto,BDL: gminy ważone powierzchnią,epoki 2010/2020,204921,197112,4360.8,4872.1,0.0111,-0.0039,-2.854,-2.854,True,212.8,247.2,16.2
+Toruń,miasto,siatka: wagi powierzchni,interpolacja do 31.03.2011 i 31.03.2021,204222,197235,4437.2,4897.7,0.0099,-0.0035,-2.837,-2.837,True,217.3,248.3,14.3
+Toruń,miasto,siatka: wagi zabudowy,interpolacja do 31.03.2011 i 31.03.2021,204762,197946,4437.2,4897.7,0.0099,-0.0034,-2.917,-2.917,True,216.7,247.4,14.2
+Toruń,miasto,BDL: gminy ważone powierzchnią,interpolacja do 31.03.2011 i 31.03.2021,204921,197112,4437.2,4897.7,0.0099,-0.0039,-2.541,-2.541,True,216.5,248.5,14.8
+Toruń,strefa_0_2_5,siatka: wagi powierzchni,epoki 2010/2020,21021,24734,1439.8,1751.0,0.0196,0.0163,1.203,1.203,True,685.0,707.9,3.4
+Toruń,strefa_0_2_5,siatka: wagi zabudowy,epoki 2010/2020,19710,23200,1439.8,1751.0,0.0196,0.0163,1.2,1.2,True,730.5,754.8,3.3
+Toruń,strefa_0_2_5,BDL: gminy ważone powierzchnią,epoki 2010/2020,13105,14971,1439.8,1751.0,0.0196,0.0133,1.47,1.47,True,1098.7,1169.6,6.5
+Toruń,strefa_0_2_5,siatka: wagi powierzchni,interpolacja do 31.03.2011 i 31.03.2021,21021,24734,1487.0,1771.5,0.0175,0.0163,1.076,1.076,True,707.4,716.2,1.2
+Toruń,strefa_0_2_5,siatka: wagi zabudowy,interpolacja do 31.03.2011 i 31.03.2021,19710,23200,1487.0,1771.5,0.0175,0.0163,1.074,1.074,True,754.5,763.6,1.2
+Toruń,strefa_0_2_5,BDL: gminy ważone powierzchnią,interpolacja do 31.03.2011 i 31.03.2021,13105,14971,1487.0,1771.5,0.0175,0.0133,1.315,1.315,True,1134.7,1183.3,4.3
+Toruń,strefa_2_5_5,siatka: wagi powierzchni,epoki 2010/2020,12212,16137,954.7,1335.1,0.0335,0.0279,1.204,1.204,True,781.8,827.4,5.8
+Toruń,strefa_2_5_5,siatka: wagi zabudowy,epoki 2010/2020,12982,16960,954.7,1335.1,0.0335,0.0267,1.255,1.255,True,735.4,787.2,7.0
+Toruń,strefa_2_5_5,BDL: gminy ważone powierzchnią,epoki 2010/2020,13243,15720,954.7,1335.1,0.0335,0.0171,1.956,1.956,True,720.9,849.3,17.8
+Toruń,strefa_2_5_5,siatka: wagi powierzchni,interpolacja do 31.03.2011 i 31.03.2021,12212,16137,1013.2,1354.0,0.029,0.0279,1.04,1.04,True,829.7,839.1,1.1
+Toruń,strefa_2_5_5,siatka: wagi zabudowy,interpolacja do 31.03.2011 i 31.03.2021,12982,16960,1013.2,1354.0,0.029,0.0267,1.085,1.085,True,780.5,798.4,2.3
+Toruń,strefa_2_5_5,BDL: gminy ważone powierzchnią,interpolacja do 31.03.2011 i 31.03.2021,13243,15720,1013.2,1354.0,0.029,0.0171,1.691,1.691,True,765.1,861.3,12.6
+Toruń,pierscienie,siatka: wagi powierzchni,epoki 2010/2020,33233,40871,2394.5,3086.2,0.0254,0.0207,1.227,1.227,True,720.5,755.1,4.8
+Toruń,pierscienie,siatka: wagi zabudowy,epoki 2010/2020,32693,40160,2394.5,3086.2,0.0254,0.0206,1.233,1.233,True,732.4,768.5,4.9
+Toruń,pierscienie,BDL: gminy ważone powierzchnią,epoki 2010/2020,26348,30691,2394.5,3086.2,0.0254,0.0153,1.663,1.663,True,908.8,1005.6,10.6
+Toruń,pierscienie,siatka: wagi powierzchni,interpolacja do 31.03.2011 i 31.03.2021,33233,40871,2500.2,3125.5,0.0223,0.0207,1.079,1.079,True,752.3,764.7,1.6
+Toruń,pierscienie,siatka: wagi zabudowy,interpolacja do 31.03.2011 i 31.03.2021,32693,40160,2500.2,3125.5,0.0223,0.0206,1.085,1.085,True,764.8,778.3,1.8
+Toruń,pierscienie,BDL: gminy ważone powierzchnią,interpolacja do 31.03.2011 i 31.03.2021,26348,30691,2500.2,3125.5,0.0223,0.0153,1.463,1.463,True,948.9,1018.4,7.3
+Toruń,AOI,siatka: wagi powierzchni,epoki 2010/2020,237454,238106,6755.3,7958.3,0.0164,0.0003,,59.821,False,284.5,334.2,17.5
+Toruń,AOI,siatka: wagi zabudowy,epoki 2010/2020,237454,238106,6755.3,7958.3,0.0164,0.0003,,59.821,False,284.5,334.2,17.5
+Toruń,AOI,BDL: gminy ważone powierzchnią,epoki 2010/2020,231269,227803,6755.3,7958.3,0.0164,-0.0015,-10.854,-10.854,True,292.1,349.4,19.6
+Toruń,AOI,siatka: wagi powierzchni,interpolacja do 31.03.2011 i 31.03.2021,237454,238106,6937.4,8023.2,0.0145,0.0003,,53.073,False,292.2,337.0,15.3
+Toruń,AOI,siatka: wagi zabudowy,interpolacja do 31.03.2011 i 31.03.2021,237454,238106,6937.4,8023.2,0.0145,0.0003,,53.073,False,292.2,337.0,15.3
+Toruń,AOI,BDL: gminy ważone powierzchnią,interpolacja do 31.03.2011 i 31.03.2021,231269,227803,6937.4,8023.2,0.0145,-0.0015,-9.63,-9.63,True,300.0,352.2,17.4

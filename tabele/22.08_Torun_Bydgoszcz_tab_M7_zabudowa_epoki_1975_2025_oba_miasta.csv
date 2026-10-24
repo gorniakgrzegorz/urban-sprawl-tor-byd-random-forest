@@ -1,0 +1,67 @@
+Miasto,Strefa,Rok,Źródło epoki,Zabudowa [ha],Udział zabudowy w strefie [%]
+Bydgoszcz,miasto,1975,RF/MSS (⊂ seria A 1985),3541.0,20.14
+Bydgoszcz,miasto,1980,RF/MSS (⊂ seria A 1985),4349.8,24.74
+Bydgoszcz,miasto,1985,seria A RF/Landsat,5124.5,29.15
+Bydgoszcz,miasto,1990,seria A RF/Landsat,5886.5,33.48
+Bydgoszcz,miasto,1995,seria A RF/Landsat,6370.4,36.23
+Bydgoszcz,miasto,2000,seria A RF/Landsat,6547.9,37.24
+Bydgoszcz,miasto,2005,seria A RF/Landsat,6707.3,38.15
+Bydgoszcz,miasto,2010,seria A RF/Landsat,6917.8,39.35
+Bydgoszcz,miasto,2015,seria A RF/Landsat,7245.8,41.21
+Bydgoszcz,miasto,2020,seria A RF/Landsat,7459.4,42.43
+Bydgoszcz,miasto,2025,seria A RF/Landsat,7551.8,42.95
+Bydgoszcz,strefa_0_2_5,1975,RF/MSS (⊂ seria A 1985),258.7,1.15
+Bydgoszcz,strefa_0_2_5,1980,RF/MSS (⊂ seria A 1985),348.8,1.56
+Bydgoszcz,strefa_0_2_5,1985,seria A RF/Landsat,740.2,3.3
+Bydgoszcz,strefa_0_2_5,1990,seria A RF/Landsat,1044.5,4.66
+Bydgoszcz,strefa_0_2_5,1995,seria A RF/Landsat,1232.2,5.5
+Bydgoszcz,strefa_0_2_5,2000,seria A RF/Landsat,1269.6,5.67
+Bydgoszcz,strefa_0_2_5,2005,seria A RF/Landsat,1351.3,6.03
+Bydgoszcz,strefa_0_2_5,2010,seria A RF/Landsat,1500.8,6.7
+Bydgoszcz,strefa_0_2_5,2015,seria A RF/Landsat,1817.9,8.11
+Bydgoszcz,strefa_0_2_5,2020,seria A RF/Landsat,2059.2,9.19
+Bydgoszcz,strefa_0_2_5,2025,seria A RF/Landsat,2194.1,9.79
+Bydgoszcz,strefa_2_5_5,1975,RF/MSS (⊂ seria A 1985),227.3,0.97
+Bydgoszcz,strefa_2_5_5,1980,RF/MSS (⊂ seria A 1985),386.7,1.64
+Bydgoszcz,strefa_2_5_5,1985,seria A RF/Landsat,1044.5,4.44
+Bydgoszcz,strefa_2_5_5,1990,seria A RF/Landsat,1424.4,6.06
+Bydgoszcz,strefa_2_5_5,1995,seria A RF/Landsat,1712.7,7.29
+Bydgoszcz,strefa_2_5_5,2000,seria A RF/Landsat,1758.9,7.48
+Bydgoszcz,strefa_2_5_5,2005,seria A RF/Landsat,1859.4,7.91
+Bydgoszcz,strefa_2_5_5,2010,seria A RF/Landsat,2091.1,8.89
+Bydgoszcz,strefa_2_5_5,2015,seria A RF/Landsat,2517.9,10.71
+Bydgoszcz,strefa_2_5_5,2020,seria A RF/Landsat,2916.9,12.41
+Bydgoszcz,strefa_2_5_5,2025,seria A RF/Landsat,3117.9,13.26
+Toruń,miasto,1975,RF/MSS (⊂ seria A 1985),2109.6,18.26
+Toruń,miasto,1980,RF/MSS (⊂ seria A 1985),2570.0,22.24
+Toruń,miasto,1985,seria A RF/Landsat,3047.0,26.37
+Toruń,miasto,1990,seria A RF/Landsat,3565.3,30.85
+Toruń,miasto,1995,seria A RF/Landsat,3827.3,33.12
+Toruń,miasto,2000,seria A RF/Landsat,3961.2,34.28
+Toruń,miasto,2005,seria A RF/Landsat,4139.1,35.82
+Toruń,miasto,2010,seria A RF/Landsat,4439.3,38.42
+Toruń,miasto,2015,seria A RF/Landsat,4778.6,41.35
+Toruń,miasto,2020,seria A RF/Landsat,4997.9,43.25
+Toruń,miasto,2025,seria A RF/Landsat,5108.4,44.21
+Toruń,strefa_0_2_5,1975,RF/MSS (⊂ seria A 1985),154.3,0.94
+Toruń,strefa_0_2_5,1980,RF/MSS (⊂ seria A 1985),245.6,1.5
+Toruń,strefa_0_2_5,1985,seria A RF/Landsat,656.8,4.0
+Toruń,strefa_0_2_5,1990,seria A RF/Landsat,1008.1,6.15
+Toruń,strefa_0_2_5,1995,seria A RF/Landsat,1156.0,7.05
+Toruń,strefa_0_2_5,2000,seria A RF/Landsat,1197.9,7.3
+Toruń,strefa_0_2_5,2005,seria A RF/Landsat,1298.0,7.91
+Toruń,strefa_0_2_5,2010,seria A RF/Landsat,1507.1,9.19
+Toruń,strefa_0_2_5,2015,seria A RF/Landsat,1721.2,10.49
+Toruń,strefa_0_2_5,2020,seria A RF/Landsat,1862.2,11.35
+Toruń,strefa_0_2_5,2025,seria A RF/Landsat,1952.4,11.9
+Toruń,strefa_2_5_5,1975,RF/MSS (⊂ seria A 1985),77.7,0.42
+Toruń,strefa_2_5_5,1980,RF/MSS (⊂ seria A 1985),123.1,0.66
+Toruń,strefa_2_5_5,1985,seria A RF/Landsat,441.3,2.37
+Toruń,strefa_2_5_5,1990,seria A RF/Landsat,636.9,3.42
+Toruń,strefa_2_5_5,1995,seria A RF/Landsat,723.6,3.88
+Toruń,strefa_2_5_5,2000,seria A RF/Landsat,740.9,3.97
+Toruń,strefa_2_5_5,2005,seria A RF/Landsat,815.4,4.37
+Toruń,strefa_2_5_5,2010,seria A RF/Landsat,1000.5,5.36
+Toruń,strefa_2_5_5,2015,seria A RF/Landsat,1257.2,6.74
+Toruń,strefa_2_5_5,2020,seria A RF/Landsat,1418.4,7.61
+Toruń,strefa_2_5_5,2025,seria A RF/Landsat,1505.0,8.07

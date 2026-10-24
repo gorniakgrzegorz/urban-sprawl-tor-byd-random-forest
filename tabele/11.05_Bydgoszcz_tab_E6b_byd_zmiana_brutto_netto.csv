@@ -1,0 +1,10 @@
+Seria,Okres,Strefa,Przyrost brutto [ha],Ubytek brutto [ha],Zmiana netto [ha]
+A,1985–2025,miasto,2333.2,0.0,2333.2
+B,2018–2025,miasto,931.0,0.0,931.0
+C (odniesienie DW),2015–2025,miasto,486.2,454.0,32.2
+A,1985–2025,strefa_0_2_5,1383.2,0.0,1383.2
+B,2018–2025,strefa_0_2_5,612.8,0.0,612.8
+C (odniesienie DW),2015–2025,strefa_0_2_5,436.3,191.6,244.7
+A,1985–2025,strefa_2_5_5,1963.0,0.0,1963.0
+B,2018–2025,strefa_2_5_5,999.2,0.0,999.2
+C (odniesienie DW),2015–2025,strefa_2_5_5,693.2,289.2,404.0

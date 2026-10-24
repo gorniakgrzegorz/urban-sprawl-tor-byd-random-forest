@@ -1,0 +1,7 @@
+Miasto,Rok kompozytu,Okno lat użyte,Miesiące,Sceny [n],Wg satelity,Pierwsza data,Ostatnia data,Ścieżki/rzędy,Zachmurzenie scen: mediana [%],Tier 2 włączony,Status epoki,Minimum scen
+Toruń,1975,±1,06–09,12,L1 3; L2 9,1975-07-07,1976-07-20,204/23; 205/23,1.5,True,ważna,3
+Toruń,1980,±1,06–09,32,L2 19; L3 13,1979-06-07,1981-09-13,204/23; 205/23,24.0,True,ważna,3
+Toruń,1985,±1,06–09,54,L4 26; L5 28,1984-06-02,1986-09-28,189/23; 190/23,18.0,True,ważna,3
+Bydgoszcz,1975,±1,06–09,17,L1 4; L2 13,1975-07-07,1976-07-20,204/23; 205/23; 206/23,3.0,True,ważna,3
+Bydgoszcz,1980,±1,06–09,53,L2 33; L3 20,1979-06-07,1981-09-14,204/23; 205/23; 206/22; 206/23,27.0,True,ważna,3
+Bydgoszcz,1985,±1,06–09,76,L4 34; L5 42,1984-06-01,1986-09-28,189/23; 190/23; 191/23,16.0,True,ważna,3

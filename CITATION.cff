@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "Cytując ten kod lub dane, prosimy o podanie wersji i DOI rekordu Zenodo. / If you use this code or data, please cite the version and the Zenodo DOI."
+type: software
+title: "Seria zabudowy Torunia i Bydgoszczy 1975–2025 z klasyfikatora Random Forest uczonego na etykietach Dynamic World: kod i dane wynikowe"
+abstract: "Kod analizy (notatnik Google Colab) i dane wynikowe do rekonstrukcji przyrostu zabudowy Torunia i Bydgoszczy w latach 1975–2025. Klasyfikator Random Forest uczony na etykietach Dynamic World 2025 jest stosowany wstecz do archiwalnych zdjęć Landsat i Landsat MSS; na tej podstawie liczone są wskaźniki urban sprawl, metryki krajobrazowe i wskaźnik SDG 11.3.1 (LCRPGR)."
+version: "3.2"
+date-released: "2026-10-24"
+license: MIT
+authors:
+  - family-names: "Górniak"
+    given-names: "Grzegorz"
+    affiliation: "Uniwersytet Mikołaja Kopernika w Toruniu, Wydział Nauk o Ziemi i Gospodarki Przestrzennej"
+    email: "ggorniak@doktorant.umk.pl"
+  - family-names: "Kunz"
+    given-names: "Mieczysław"
+    affiliation: "Uniwersytet Mikołaja Kopernika w Toruniu, Wydział Nauk o Ziemi i Gospodarki Przestrzennej"
+keywords:
+  - Random Forest
+  - Dynamic World
+  - Landsat
+  - Landsat MSS
+  - Google Earth Engine
+  - urban sprawl
+  - SDG 11.3.1
+  - LCRPGR
+  - Toruń
+  - Bydgoszcz

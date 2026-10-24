@@ -1,0 +1,20 @@
+Miasto,Rok,Sceny w oknie letnim,Śr. liczba czystych obserwacji na piksel,Piksele z < 3 obserwacjami [%],Sceny w oknie przedwiośnia,Śr. czystych obserwacji przedwiośnie,Piksele przedwiośnia z < 3 obserwacjami [%],Sceny lato wg sensora,Sceny przedwiośnie wg sensora
+Toruń,1985,16,8.83,0.0,12,6.89,0.0,L5 16,L5 12
+Toruń,1990,36,13.57,0.0,24,14.25,0.0,L5 36,L5 24
+Toruń,1995,29,14.09,0.0,19,7.42,0.0,L5 29,L5 19
+Toruń,2000,60,17.52,0.0,32,15.44,0.0,L5 27; L7 33,L5 13; L7 19
+Toruń,2005,53,23.36,0.0,29,14.52,0.0,L5 38; L7 15,L5 20; L7 9
+Toruń,2006,51,24.04,0.0,30,16.51,0.0,L5 37; L7 14,L5 20; L7 10
+Toruń,2010,66,27.17,0.0,37,15.7,0.0,L5 36; L7 30,L5 20; L7 17
+Toruń,2015,40,15.91,0.0,26,9.91,0.0,L8 40,L8 26
+Toruń,2020,38,12.18,0.0,27,9.58,0.0,L8 38,L8 27
+Toruń,2025,75,32.32,0.0,55,23.92,0.0,L8 39; L9 36,L8 27; L9 28
+Bydgoszcz,1985,29,8.67,0.0,17,4.63,1.8,L5 29,L5 17
+Bydgoszcz,1990,50,10.34,0.0,39,9.01,0.0,L5 50,L5 39
+Bydgoszcz,1995,44,10.72,0.0,25,6.28,0.0,L5 44,L5 25
+Bydgoszcz,2000,90,15.43,0.0,46,10.88,0.0,L5 40; L7 50,L5 17; L7 29
+Bydgoszcz,2005,84,19.11,0.0,43,13.13,0.0,L5 57; L7 27,L5 29; L7 14
+Bydgoszcz,2010,93,25.69,0.0,51,10.61,0.0,L5 53; L7 40,L5 29; L7 22
+Bydgoszcz,2015,59,12.42,0.0,36,7.65,0.0,L8 59,L8 36
+Bydgoszcz,2020,56,8.84,0.1,40,8.33,0.0,L8 56,L8 40
+Bydgoszcz,2025,107,20.34,0.0,84,19.51,0.0,L8 54; L9 53,L8 42; L9 42

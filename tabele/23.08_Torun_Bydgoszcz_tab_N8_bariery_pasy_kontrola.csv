@@ -1,0 +1,271 @@
+Miasto,Bariera,Klasa ograniczenia,Pas,Rok,Powierzchnia pasa [ha],Zabudowa [ha],Udział zabudowy [%],Zakres odl. od centroidu kontroli [km]
+Bydgoszcz,rezerwaty,wyklucza,wewnątrz,1985,195.7,0.0,0.0,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,wewnątrz,1990,195.7,0.0,0.0,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,wewnątrz,1995,195.7,0.0,0.0,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,wewnątrz,2000,195.7,0.0,0.0,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,wewnątrz,2005,195.7,0.0,0.0,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,wewnątrz,2010,195.7,0.0,0.0,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,wewnątrz,2015,195.7,0.0,0.0,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,wewnątrz,2020,195.7,0.0,0.0,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,wewnątrz,2025,195.7,0.0,0.0,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,0–250 m,1985,739.4,12.2,1.66,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,0–250 m,1990,739.4,21.4,2.9,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,0–250 m,1995,739.4,25.4,3.43,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,0–250 m,2000,739.4,25.8,3.49,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,0–250 m,2005,739.4,27.1,3.66,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,0–250 m,2010,739.4,29.0,3.92,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,0–250 m,2015,739.4,33.3,4.5,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,0–250 m,2020,739.4,38.1,5.15,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,0–250 m,2025,739.4,40.3,5.45,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,250–500 m,1985,979.1,20.2,2.07,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,250–500 m,1990,979.1,34.5,3.52,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,250–500 m,1995,979.1,38.0,3.88,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,250–500 m,2000,979.1,39.3,4.02,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,250–500 m,2005,979.1,44.8,4.58,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,250–500 m,2010,979.1,49.0,5.0,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,250–500 m,2015,979.1,61.6,6.3,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,250–500 m,2020,979.1,72.7,7.43,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,250–500 m,2025,979.1,77.3,7.9,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,500–1000 m,1985,2503.4,138.1,5.51,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,500–1000 m,1990,2503.4,204.2,8.16,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,500–1000 m,1995,2503.4,229.0,9.15,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,500–1000 m,2000,2503.4,234.9,9.38,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,500–1000 m,2005,2503.4,242.7,9.7,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,500–1000 m,2010,2503.4,263.7,10.53,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,500–1000 m,2015,2503.4,302.1,12.07,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,500–1000 m,2020,2503.4,334.7,13.37,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,500–1000 m,2025,2503.4,352.6,14.09,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,kontrola,1985,20184.7,927.2,4.59,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,kontrola,1990,20184.7,1222.6,6.06,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,kontrola,1995,20184.7,1539.9,7.63,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,kontrola,2000,20184.7,1600.8,7.93,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,kontrola,2005,20184.7,1725.6,8.55,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,kontrola,2010,20184.7,1935.9,9.59,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,kontrola,2015,20184.7,2262.2,11.21,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,kontrola,2020,20184.7,2492.0,12.35,9.3–13.4
+Bydgoszcz,rezerwaty,wyklucza,kontrola,2025,20184.7,2630.7,13.03,9.3–13.4
+Bydgoszcz,tereny_wojskowe,infrastruktura,wewnątrz,1985,297.4,105.9,35.62,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,wewnątrz,1990,297.4,117.1,39.38,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,wewnątrz,1995,297.4,120.4,40.5,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,wewnątrz,2000,297.4,120.6,40.56,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,wewnątrz,2005,297.4,120.7,40.59,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,wewnątrz,2010,297.4,121.0,40.68,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,wewnątrz,2015,297.4,123.2,41.43,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,wewnątrz,2020,297.4,125.3,42.13,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,wewnątrz,2025,297.4,125.8,42.31,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,0–250 m,1985,1254.2,411.8,32.83,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,0–250 m,1990,1254.2,448.3,35.74,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,0–250 m,1995,1254.2,464.0,37.0,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,0–250 m,2000,1254.2,468.8,37.38,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,0–250 m,2005,1254.2,471.7,37.61,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,0–250 m,2010,1254.2,476.2,37.97,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,0–250 m,2015,1254.2,484.6,38.64,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,0–250 m,2020,1254.2,489.6,39.04,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,0–250 m,2025,1254.2,491.4,39.18,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,250–500 m,1985,1913.5,555.8,29.04,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,250–500 m,1990,1913.5,606.2,31.68,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,250–500 m,1995,1913.5,632.3,33.05,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,250–500 m,2000,1913.5,642.2,33.56,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,250–500 m,2005,1913.5,650.7,34.01,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,250–500 m,2010,1913.5,661.6,34.58,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,250–500 m,2015,1913.5,683.2,35.7,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,250–500 m,2020,1913.5,696.2,36.39,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,250–500 m,2025,1913.5,701.1,36.64,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,500–1000 m,1985,5202.0,1164.7,22.39,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,500–1000 m,1990,5202.0,1284.6,24.69,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,500–1000 m,1995,5202.0,1360.2,26.15,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,500–1000 m,2000,5202.0,1376.5,26.46,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,500–1000 m,2005,5202.0,1402.3,26.96,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,500–1000 m,2010,5202.0,1438.8,27.66,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,500–1000 m,2015,5202.0,1489.0,28.62,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,500–1000 m,2020,5202.0,1534.8,29.5,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,500–1000 m,2025,5202.0,1562.3,30.03,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,kontrola,1985,36112.7,3216.0,8.91,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,kontrola,1990,36112.7,4137.8,11.46,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,kontrola,1995,36112.7,4788.6,13.26,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,kontrola,2000,36112.7,4990.1,13.82,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,kontrola,2005,36112.7,5224.7,14.47,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,kontrola,2010,36112.7,5599.7,15.51,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,kontrola,2015,36112.7,6246.8,17.3,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,kontrola,2020,36112.7,6714.2,18.59,2.6–12.8
+Bydgoszcz,tereny_wojskowe,infrastruktura,kontrola,2025,36112.7,6958.5,19.27,2.6–12.8
+Bydgoszcz,lotnisko,infrastruktura,wewnątrz,1985,308.6,8.0,2.6,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,wewnątrz,1990,308.6,10.3,3.32,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,wewnątrz,1995,308.6,10.3,3.35,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,wewnątrz,2000,308.6,10.3,3.35,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,wewnątrz,2005,308.6,10.3,3.35,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,wewnątrz,2010,308.6,10.3,3.35,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,wewnątrz,2015,308.6,11.1,3.59,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,wewnątrz,2020,308.6,11.4,3.7,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,wewnątrz,2025,308.6,11.4,3.7,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,0–250 m,1985,265.4,55.5,20.92,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,0–250 m,1990,265.4,65.6,24.72,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,0–250 m,1995,265.4,70.4,26.52,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,0–250 m,2000,265.4,71.6,26.99,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,0–250 m,2005,265.4,72.5,27.33,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,0–250 m,2010,265.4,75.1,28.28,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,0–250 m,2015,265.4,84.1,31.71,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,0–250 m,2020,265.4,88.0,33.16,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,0–250 m,2025,265.4,89.4,33.67,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,250–500 m,1985,297.9,109.3,36.68,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,250–500 m,1990,297.9,120.2,40.36,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,250–500 m,1995,297.9,123.7,41.51,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,250–500 m,2000,297.9,126.0,42.3,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,250–500 m,2005,297.9,126.4,42.42,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,250–500 m,2010,297.9,127.9,42.93,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,250–500 m,2015,297.9,130.7,43.87,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,250–500 m,2020,297.9,132.4,44.44,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,250–500 m,2025,297.9,133.7,44.89,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,500–1000 m,1985,709.0,239.3,33.75,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,500–1000 m,1990,709.0,259.4,36.58,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,500–1000 m,1995,709.0,267.0,37.66,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,500–1000 m,2000,709.0,270.3,38.12,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,500–1000 m,2005,709.0,272.4,38.42,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,500–1000 m,2010,709.0,275.0,38.79,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,500–1000 m,2015,709.0,277.6,39.15,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,500–1000 m,2020,709.0,278.6,39.29,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,500–1000 m,2025,709.0,278.6,39.3,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,kontrola,1985,10145.4,1250.5,12.33,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,kontrola,1990,10145.4,1655.7,16.32,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,kontrola,1995,10145.4,1888.4,18.61,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,kontrola,2000,10145.4,1961.7,19.34,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,kontrola,2005,10145.4,2031.2,20.02,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,kontrola,2010,10145.4,2146.8,21.16,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,kontrola,2015,10145.4,2366.9,23.33,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,kontrola,2020,10145.4,2525.8,24.9,4.5–8.1
+Bydgoszcz,lotnisko,infrastruktura,kontrola,2025,10145.4,2600.6,25.63,4.5–8.1
+Toruń,rezerwaty,wyklucza,wewnątrz,1985,177.7,0.4,0.25,2.7–13.2
+Toruń,rezerwaty,wyklucza,wewnątrz,1990,177.7,0.8,0.46,2.7–13.2
+Toruń,rezerwaty,wyklucza,wewnątrz,1995,177.7,0.8,0.46,2.7–13.2
+Toruń,rezerwaty,wyklucza,wewnątrz,2000,177.7,0.8,0.46,2.7–13.2
+Toruń,rezerwaty,wyklucza,wewnątrz,2005,177.7,0.8,0.46,2.7–13.2
+Toruń,rezerwaty,wyklucza,wewnątrz,2010,177.7,1.0,0.56,2.7–13.2
+Toruń,rezerwaty,wyklucza,wewnątrz,2015,177.7,1.0,0.56,2.7–13.2
+Toruń,rezerwaty,wyklucza,wewnątrz,2020,177.7,1.0,0.56,2.7–13.2
+Toruń,rezerwaty,wyklucza,wewnątrz,2025,177.7,1.0,0.56,2.7–13.2
+Toruń,rezerwaty,wyklucza,0–250 m,1985,1244.2,89.6,7.2,2.7–13.2
+Toruń,rezerwaty,wyklucza,0–250 m,1990,1244.2,112.2,9.02,2.7–13.2
+Toruń,rezerwaty,wyklucza,0–250 m,1995,1244.2,117.6,9.45,2.7–13.2
+Toruń,rezerwaty,wyklucza,0–250 m,2000,1244.2,120.1,9.66,2.7–13.2
+Toruń,rezerwaty,wyklucza,0–250 m,2005,1244.2,125.7,10.11,2.7–13.2
+Toruń,rezerwaty,wyklucza,0–250 m,2010,1244.2,141.8,11.4,2.7–13.2
+Toruń,rezerwaty,wyklucza,0–250 m,2015,1244.2,153.5,12.34,2.7–13.2
+Toruń,rezerwaty,wyklucza,0–250 m,2020,1244.2,162.1,13.03,2.7–13.2
+Toruń,rezerwaty,wyklucza,0–250 m,2025,1244.2,165.5,13.3,2.7–13.2
+Toruń,rezerwaty,wyklucza,250–500 m,1985,1298.6,130.6,10.06,2.7–13.2
+Toruń,rezerwaty,wyklucza,250–500 m,1990,1298.6,165.0,12.7,2.7–13.2
+Toruń,rezerwaty,wyklucza,250–500 m,1995,1298.6,175.2,13.49,2.7–13.2
+Toruń,rezerwaty,wyklucza,250–500 m,2000,1298.6,186.2,14.34,2.7–13.2
+Toruń,rezerwaty,wyklucza,250–500 m,2005,1298.6,199.6,15.37,2.7–13.2
+Toruń,rezerwaty,wyklucza,250–500 m,2010,1298.6,237.1,18.25,2.7–13.2
+Toruń,rezerwaty,wyklucza,250–500 m,2015,1298.6,271.3,20.89,2.7–13.2
+Toruń,rezerwaty,wyklucza,250–500 m,2020,1298.6,291.9,22.48,2.7–13.2
+Toruń,rezerwaty,wyklucza,250–500 m,2025,1298.6,302.1,23.27,2.7–13.2
+Toruń,rezerwaty,wyklucza,500–1000 m,1985,2860.1,319.5,11.17,2.7–13.2
+Toruń,rezerwaty,wyklucza,500–1000 m,1990,2860.1,376.2,13.15,2.7–13.2
+Toruń,rezerwaty,wyklucza,500–1000 m,1995,2860.1,405.4,14.17,2.7–13.2
+Toruń,rezerwaty,wyklucza,500–1000 m,2000,2860.1,414.4,14.49,2.7–13.2
+Toruń,rezerwaty,wyklucza,500–1000 m,2005,2860.1,431.9,15.1,2.7–13.2
+Toruń,rezerwaty,wyklucza,500–1000 m,2010,2860.1,487.5,17.05,2.7–13.2
+Toruń,rezerwaty,wyklucza,500–1000 m,2015,2860.1,533.2,18.64,2.7–13.2
+Toruń,rezerwaty,wyklucza,500–1000 m,2020,2860.1,559.8,19.57,2.7–13.2
+Toruń,rezerwaty,wyklucza,500–1000 m,2025,2860.1,574.0,20.07,2.7–13.2
+Toruń,rezerwaty,wyklucza,kontrola,1985,28078.9,1622.0,5.78,2.7–13.2
+Toruń,rezerwaty,wyklucza,kontrola,1990,28078.9,2301.6,8.2,2.7–13.2
+Toruń,rezerwaty,wyklucza,kontrola,1995,28078.9,2608.4,9.29,2.7–13.2
+Toruń,rezerwaty,wyklucza,kontrola,2000,28078.9,2695.0,9.6,2.7–13.2
+Toruń,rezerwaty,wyklucza,kontrola,2005,28078.9,2928.4,10.43,2.7–13.2
+Toruń,rezerwaty,wyklucza,kontrola,2010,28078.9,3446.5,12.27,2.7–13.2
+Toruń,rezerwaty,wyklucza,kontrola,2015,28078.9,3945.1,14.05,2.7–13.2
+Toruń,rezerwaty,wyklucza,kontrola,2020,28078.9,4263.1,15.18,2.7–13.2
+Toruń,rezerwaty,wyklucza,kontrola,2025,28078.9,4449.5,15.85,2.7–13.2
+Toruń,tereny_wojskowe,infrastruktura,wewnątrz,1985,6076.6,81.8,1.35,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,wewnątrz,1990,6076.6,91.0,1.5,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,wewnątrz,1995,6076.6,92.5,1.52,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,wewnątrz,2000,6076.6,94.0,1.55,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,wewnątrz,2005,6076.6,94.7,1.56,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,wewnątrz,2010,6076.6,95.7,1.57,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,wewnątrz,2015,6076.6,97.7,1.61,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,wewnątrz,2020,6076.6,103.0,1.69,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,wewnątrz,2025,6076.6,107.6,1.77,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,0–250 m,1985,929.8,265.4,28.55,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,0–250 m,1990,929.8,297.5,32.0,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,0–250 m,1995,929.8,310.2,33.37,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,0–250 m,2000,929.8,316.9,34.08,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,0–250 m,2005,929.8,327.8,35.25,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,0–250 m,2010,929.8,344.4,37.04,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,0–250 m,2015,929.8,377.7,40.63,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,0–250 m,2020,929.8,398.2,42.82,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,0–250 m,2025,929.8,405.6,43.63,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,250–500 m,1985,1055.1,371.9,35.25,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,250–500 m,1990,1055.1,408.9,38.75,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,250–500 m,1995,1055.1,433.7,41.11,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,250–500 m,2000,1055.1,451.0,42.75,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,250–500 m,2005,1055.1,468.1,44.37,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,250–500 m,2010,1055.1,491.3,46.57,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,250–500 m,2015,1055.1,524.3,49.7,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,250–500 m,2020,1055.1,549.2,52.05,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,250–500 m,2025,1055.1,562.5,53.31,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,500–1000 m,1985,2344.9,849.6,36.23,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,500–1000 m,1990,2344.9,937.3,39.97,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,500–1000 m,1995,2344.9,977.9,41.7,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,500–1000 m,2000,2344.9,1016.4,43.34,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,500–1000 m,2005,2344.9,1035.5,44.16,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,500–1000 m,2010,2344.9,1073.8,45.79,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,500–1000 m,2015,2344.9,1126.5,48.04,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,500–1000 m,2020,2344.9,1157.3,49.35,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,500–1000 m,2025,2344.9,1168.1,49.81,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,kontrola,1985,20389.0,1769.6,8.68,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,kontrola,1990,20389.0,2391.4,11.73,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,kontrola,1995,20389.0,2694.9,13.22,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,kontrola,2000,20389.0,2780.7,13.64,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,kontrola,2005,20389.0,2985.5,14.64,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,kontrola,2010,20389.0,3444.7,16.89,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,kontrola,2015,20389.0,3817.7,18.72,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,kontrola,2020,20389.0,4070.2,19.96,1.3–10.3
+Toruń,tereny_wojskowe,infrastruktura,kontrola,2025,20389.0,4213.0,20.66,1.3–10.3
+Toruń,lotnisko,infrastruktura,wewnątrz,1985,185.2,1.3,0.68,3.7–6.5
+Toruń,lotnisko,infrastruktura,wewnątrz,1990,185.2,1.3,0.68,3.7–6.5
+Toruń,lotnisko,infrastruktura,wewnątrz,1995,185.2,1.3,0.73,3.7–6.5
+Toruń,lotnisko,infrastruktura,wewnątrz,2000,185.2,1.4,0.78,3.7–6.5
+Toruń,lotnisko,infrastruktura,wewnątrz,2005,185.2,1.4,0.78,3.7–6.5
+Toruń,lotnisko,infrastruktura,wewnątrz,2010,185.2,3.2,1.75,3.7–6.5
+Toruń,lotnisko,infrastruktura,wewnątrz,2015,185.2,3.4,1.85,3.7–6.5
+Toruń,lotnisko,infrastruktura,wewnątrz,2020,185.2,5.8,3.16,3.7–6.5
+Toruń,lotnisko,infrastruktura,wewnątrz,2025,185.2,5.8,3.16,3.7–6.5
+Toruń,lotnisko,infrastruktura,0–250 m,1985,157.8,4.5,2.85,3.7–6.5
+Toruń,lotnisko,infrastruktura,0–250 m,1990,157.8,5.1,3.25,3.7–6.5
+Toruń,lotnisko,infrastruktura,0–250 m,1995,157.8,5.5,3.48,3.7–6.5
+Toruń,lotnisko,infrastruktura,0–250 m,2000,157.8,5.8,3.65,3.7–6.5
+Toruń,lotnisko,infrastruktura,0–250 m,2005,157.8,6.9,4.39,3.7–6.5
+Toruń,lotnisko,infrastruktura,0–250 m,2010,157.8,9.7,6.16,3.7–6.5
+Toruń,lotnisko,infrastruktura,0–250 m,2015,157.8,10.2,6.45,3.7–6.5
+Toruń,lotnisko,infrastruktura,0–250 m,2020,157.8,13.2,8.39,3.7–6.5
+Toruń,lotnisko,infrastruktura,0–250 m,2025,157.8,13.6,8.61,3.7–6.5
+Toruń,lotnisko,infrastruktura,250–500 m,1985,197.6,11.0,5.56,3.7–6.5
+Toruń,lotnisko,infrastruktura,250–500 m,1990,197.6,12.7,6.42,3.7–6.5
+Toruń,lotnisko,infrastruktura,250–500 m,1995,197.6,15.2,7.7,3.7–6.5
+Toruń,lotnisko,infrastruktura,250–500 m,2000,197.6,16.6,8.38,3.7–6.5
+Toruń,lotnisko,infrastruktura,250–500 m,2005,197.6,19.2,9.7,3.7–6.5
+Toruń,lotnisko,infrastruktura,250–500 m,2010,197.6,24.8,12.52,3.7–6.5
+Toruń,lotnisko,infrastruktura,250–500 m,2015,197.6,25.3,12.8,3.7–6.5
+Toruń,lotnisko,infrastruktura,250–500 m,2020,197.6,26.4,13.34,3.7–6.5
+Toruń,lotnisko,infrastruktura,250–500 m,2025,197.6,26.5,13.39,3.7–6.5
+Toruń,lotnisko,infrastruktura,500–1000 m,1985,511.7,93.2,18.22,3.7–6.5
+Toruń,lotnisko,infrastruktura,500–1000 m,1990,511.7,102.1,19.96,3.7–6.5
+Toruń,lotnisko,infrastruktura,500–1000 m,1995,511.7,105.7,20.65,3.7–6.5
+Toruń,lotnisko,infrastruktura,500–1000 m,2000,511.7,110.7,21.63,3.7–6.5
+Toruń,lotnisko,infrastruktura,500–1000 m,2005,511.7,118.8,23.21,3.7–6.5
+Toruń,lotnisko,infrastruktura,500–1000 m,2010,511.7,127.5,24.92,3.7–6.5
+Toruń,lotnisko,infrastruktura,500–1000 m,2015,511.7,132.1,25.82,3.7–6.5
+Toruń,lotnisko,infrastruktura,500–1000 m,2020,511.7,133.4,26.06,3.7–6.5
+Toruń,lotnisko,infrastruktura,500–1000 m,2025,511.7,134.8,26.35,3.7–6.5
+Toruń,lotnisko,infrastruktura,kontrola,1985,5362.4,645.5,12.04,3.7–6.5
+Toruń,lotnisko,infrastruktura,kontrola,1990,5362.4,883.7,16.48,3.7–6.5
+Toruń,lotnisko,infrastruktura,kontrola,1995,5362.4,989.5,18.45,3.7–6.5
+Toruń,lotnisko,infrastruktura,kontrola,2000,5362.4,1031.4,19.23,3.7–6.5
+Toruń,lotnisko,infrastruktura,kontrola,2005,5362.4,1103.4,20.58,3.7–6.5
+Toruń,lotnisko,infrastruktura,kontrola,2010,5362.4,1246.3,23.24,3.7–6.5
+Toruń,lotnisko,infrastruktura,kontrola,2015,5362.4,1368.4,25.52,3.7–6.5
+Toruń,lotnisko,infrastruktura,kontrola,2020,5362.4,1448.1,27.0,3.7–6.5
+Toruń,lotnisko,infrastruktura,kontrola,2025,5362.4,1485.6,27.7,3.7–6.5

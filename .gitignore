@@ -1,0 +1,23 @@
+# Python i Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Wyniki i duże pliki (publikowane w rekordzie Zenodo, nie w repozytorium)
+eksporty_finalne/
+*.tif
+*.tiff
+*.npz
+*.mp4
+*.zip
+
+# Dane licencjonowane (do pobrania od dostawców)
+UA*.gpkg
+UA*.fgb
+gminy.gpkg
+/ortofotomapa*/
+
+# Pliki systemowe
+desktop.ini
+Thumbs.db
+.DS_Store

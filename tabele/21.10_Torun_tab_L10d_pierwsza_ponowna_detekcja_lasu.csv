@@ -1,0 +1,27 @@
+Miasto,Wersja,Ubytek lasu 1990→1995 w pożarzysku [ha],Lasy 1990 w pożarzysku [ha],Ubytek usunięty przez filtr [%],Pierwsza ponowna detekcja lasu (rok mapy; 9999 = brak do końca serii),Przedział od pożaru [lata],Powierzchnia [ha],Udział [%]
+Toruń,przed filtrem,690.7,690.9,68.1,2000,8.0,445.1,64.5
+Toruń,przed filtrem,690.7,690.9,68.1,2005,13.0,224.4,32.5
+Toruń,przed filtrem,690.7,690.9,68.1,2006,14.0,13.1,1.9
+Toruń,przed filtrem,690.7,690.9,68.1,2010,18.0,3.7,0.5
+Toruń,przed filtrem,690.7,690.9,68.1,2015,23.0,2.5,0.4
+Toruń,przed filtrem,690.7,690.9,68.1,2020,28.0,0.1,0.0
+Toruń,przed filtrem,690.7,690.9,68.1,2021,29.0,0.1,0.0
+Toruń,przed filtrem,690.7,690.9,68.1,2025,33.0,0.3,0.0
+Toruń,przed filtrem,690.7,690.9,68.1,9999,,0.6,0.1
+Toruń,po filtrze,220.6,690.9,68.1,2000,8.0,439.1,63.7
+Toruń,po filtrze,220.6,690.9,68.1,2005,13.0,230.0,33.3
+Toruń,po filtrze,220.6,690.9,68.1,2006,14.0,12.1,1.8
+Toruń,po filtrze,220.6,690.9,68.1,2010,18.0,4.7,0.7
+Toruń,po filtrze,220.6,690.9,68.1,2015,23.0,2.7,0.4
+Toruń,po filtrze,220.6,690.9,68.1,2020,28.0,0.3,0.0
+Toruń,po filtrze,220.6,690.9,68.1,2021,29.0,0.1,0.0
+Toruń,po filtrze,220.6,690.9,68.1,2025,33.0,0.1,0.0
+Toruń,po filtrze,220.6,690.9,68.1,9999,,0.7,0.1
+Bydgoszcz,przed filtrem,52.6,75.2,66.9,2000,8.0,29.0,55.3
+Bydgoszcz,przed filtrem,52.6,75.2,66.9,2005,13.0,16.6,31.6
+Bydgoszcz,przed filtrem,52.6,75.2,66.9,2010,18.0,6.8,13.0
+Bydgoszcz,przed filtrem,52.6,75.2,66.9,2015,23.0,0.1,0.2
+Bydgoszcz,po filtrze,17.4,75.2,66.9,2000,8.0,28.5,54.4
+Bydgoszcz,po filtrze,17.4,75.2,66.9,2005,13.0,17.1,32.5
+Bydgoszcz,po filtrze,17.4,75.2,66.9,2010,18.0,6.8,13.0
+Bydgoszcz,po filtrze,17.4,75.2,66.9,2015,23.0,0.1,0.2

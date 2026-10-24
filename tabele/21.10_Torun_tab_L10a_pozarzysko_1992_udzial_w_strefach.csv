@@ -1,0 +1,10 @@
+Miasto,Strefa,Pożarzysko [ha],Powierzchnia strefy [ha],Udział pożarzyska w strefie [%],Źródło granicy
+obszar analizy (AOI ∪ AOI_B + 12 km),całość,1569.7,384831.4,0.408,"dNBR ≥ 0.27 z Landsat 5 TM (przed: 11 scen 1 VI–9 VIII 1992; po: 9 scen 15 VIII–31 X 1992), lasy CORINE 1990, filtr modalny, płaty ≥ 10 ha"
+Toruń,miasto,0.0,11523.9,0.0,"dNBR ≥ 0.27 z Landsat 5 TM (przed: 11 scen 1 VI–9 VIII 1992; po: 9 scen 15 VIII–31 X 1992), lasy CORINE 1990, filtr modalny, płaty ≥ 10 ha"
+Toruń,strefa_0_2_5,0.0,16357.6,0.0,"dNBR ≥ 0.27 z Landsat 5 TM (przed: 11 scen 1 VI–9 VIII 1992; po: 9 scen 15 VIII–31 X 1992), lasy CORINE 1990, filtr modalny, płaty ≥ 10 ha"
+Toruń,strefa_2_5_5,715.9,18599.0,3.849,"dNBR ≥ 0.27 z Landsat 5 TM (przed: 11 scen 1 VI–9 VIII 1992; po: 9 scen 15 VIII–31 X 1992), lasy CORINE 1990, filtr modalny, płaty ≥ 10 ha"
+Toruń,AOI (suma stref),715.9,46480.5,1.54,"dNBR ≥ 0.27 z Landsat 5 TM (przed: 11 scen 1 VI–9 VIII 1992; po: 9 scen 15 VIII–31 X 1992), lasy CORINE 1990, filtr modalny, płaty ≥ 10 ha"
+Bydgoszcz,miasto,0.0,17534.0,0.0,"dNBR ≥ 0.27 z Landsat 5 TM (przed: 11 scen 1 VI–9 VIII 1992; po: 9 scen 15 VIII–31 X 1992), lasy CORINE 1990, filtr modalny, płaty ≥ 10 ha"
+Bydgoszcz,strefa_0_2_5,76.4,22339.6,0.342,"dNBR ≥ 0.27 z Landsat 5 TM (przed: 11 scen 1 VI–9 VIII 1992; po: 9 scen 15 VIII–31 X 1992), lasy CORINE 1990, filtr modalny, płaty ≥ 10 ha"
+Bydgoszcz,strefa_2_5_5,61.7,23445.6,0.263,"dNBR ≥ 0.27 z Landsat 5 TM (przed: 11 scen 1 VI–9 VIII 1992; po: 9 scen 15 VIII–31 X 1992), lasy CORINE 1990, filtr modalny, płaty ≥ 10 ha"
+Bydgoszcz,AOI (suma stref),138.1,63319.1,0.218,"dNBR ≥ 0.27 z Landsat 5 TM (przed: 11 scen 1 VI–9 VIII 1992; po: 9 scen 15 VIII–31 X 1992), lasy CORINE 1990, filtr modalny, płaty ≥ 10 ha"

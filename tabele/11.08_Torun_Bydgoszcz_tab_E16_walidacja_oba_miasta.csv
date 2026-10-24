@@ -1,0 +1,33 @@
+Miasto,Mapa,Referencja,Rok mapy,Typ,OA ważona [%],F1 zabudowa [%]
+Toruń,RF/Landsat 30 m,CORINE 1990 (rdzenie),1990,niezależna,92.6,62.1
+Toruń,RF/Landsat 30 m,CORINE 2000 (rdzenie),2000,niezależna,92.4,66.2
+Toruń,RF/Landsat 30 m,Urban Atlas 2012,2010,niezależna,90.1,67.5
+Toruń,RF/Landsat 30 m,Urban Atlas 2021,2021,niezależna,88.2,68.5
+Toruń,RF/Landsat 30 m,WSF Evolution 1985,1985,niezależna (WSF poza uczeniem),93.4,64.0
+Toruń,RF/Landsat 30 m,WSF Evolution 1990,1990,niezależna (WSF poza uczeniem),92.6,65.7
+Toruń,RF/Landsat 30 m,WSF Evolution 2000,2000,niezależna (WSF poza uczeniem),92.3,69.0
+Toruń,RF/Landsat 30 m,WSF Evolution 2010,2010,niezależna (WSF poza uczeniem),91.9,73.0
+Toruń,RF/Landsat 30 m,Dynamic World 2015,2015,wewnętrzna (spójność; mapa RF 2015),97.2,91.4
+Toruń,RF/Landsat 30 m,Dynamic World 2025,2025,wewnętrzna (nauczyciel),97.0,91.4
+Toruń,RF/Sentinel-2 10 m,Urban Atlas 2018,2018,niezależna,90.4,69.4
+Toruń,RF/Sentinel-2 10 m,Urban Atlas 2021,2021,niezależna,86.7,68.9
+Toruń,RF/Sentinel-2 10 m,CORINE 2018 (rdzenie),2018,kalibracja progu (nie test),91.7,74.1
+Toruń,RF/Sentinel-2 10 m,Dynamic World 2025,2025,wewnętrzna (nauczyciel),97.1,91.8
+Toruń,Dynamic World 10 m,Urban Atlas 2021,2021,niezależna,91.7,76.3
+Bydgoszcz,RF/Landsat 30 m,CORINE 1990 (rdzenie),1990,niezależna,93.1,68.8
+Bydgoszcz,RF/Landsat 30 m,CORINE 2000 (rdzenie),2000,niezależna,93.0,72.4
+Bydgoszcz,RF/Landsat 30 m,CORINE 2006 (rdzenie),2005,niezależna,91.9,71.8
+Bydgoszcz,RF/Landsat 30 m,CORINE 2012 (rdzenie),2010,niezależna,91.6,73.5
+Bydgoszcz,RF/Landsat 30 m,CORINE 2018 (rdzenie),2020,niezależna,91.3,75.2
+Bydgoszcz,RF/Landsat 30 m,WSF Evolution 1985,1985,niezależna,94.4,72.3
+Bydgoszcz,RF/Landsat 30 m,WSF Evolution 1990,1990,niezależna,94.0,73.8
+Bydgoszcz,RF/Landsat 30 m,WSF Evolution 2000,2000,niezależna,93.6,75.8
+Bydgoszcz,RF/Landsat 30 m,WSF Evolution 2010,2010,niezależna,93.0,76.8
+Bydgoszcz,RF/Landsat 30 m,Urban Atlas 2012,2010,niezależna,90.8,73.7
+Bydgoszcz,RF/Landsat 30 m,Urban Atlas 2021,2020,niezależna,89.2,73.9
+Bydgoszcz,RF/Landsat 30 m,Dynamic World 2025,2025,"wewnętrzna (więz zasięgu, nauczyciel)",97.9,94.6
+Bydgoszcz,RF/Sentinel-2 10 m,Urban Atlas 2018,2018,niezależna,91.4,75.1
+Bydgoszcz,RF/Sentinel-2 10 m,Urban Atlas 2021,2021,niezależna,84.6,67.1
+Bydgoszcz,RF/Sentinel-2 10 m,CORINE 2018 (rdzenie),2018,niezależna,91.3,73.8
+Bydgoszcz,Dynamic World 10 m,Urban Atlas 2021,2021,niezależna,89.5,74.9
+Bydgoszcz,RF/Sentinel-2 10 m,Dynamic World 2025,2025,"wewnętrzna (więz zasięgu, nauczyciel)",97.9,94.7

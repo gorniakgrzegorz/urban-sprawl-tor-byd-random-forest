@@ -1,0 +1,92 @@
+Interpretacje automatyczne (rozdział 13), 2026-09-25; zdania zbudowane z policzonych liczb, do przeredagowania w sekcji Wyniki.
+
+- Bydgoszcz (tab_D1/E6, GEE): zabudowa w mieście 5006 ha (1985) -> 7339 ha (2025), zmiana +47% (od 1990 r.: +28%); pierścień 0–2,5 km 676 -> 2060 ha (+205%; od 1990 r.: +114%); pierścień 2,5–5 km 969 -> 2932 ha (+203%; od 1990 r.: +122%).
+- Toruń (tab_D1/E6, GEE): zabudowa w mieście 2984 ha (1985) -> 4981 ha (2025), zmiana +67% (od 1990 r.: +43%); pierścień 0–2,5 km 625 -> 1836 ha (+194%; od 1990 r.: +93%); pierścień 2,5–5 km 409 -> 1412 ha (+245%; od 1990 r.: +137%).
+- Toruń: stała zabudowa (WSF 1985 ∩ DW 2015 ∩ DW 2025) wykryta surowo przez RF w 1985 r. w 71%, w 1990 r. w 74%, w 2010 r. w 83%; w serii z więzami 71% -> 81% (artefakt pierwszej epoki: pominięcia 1985 r. nie są uzupełniane); przyrost w mieście 1985–1990: RF +501 ha, WSF Evolution +204 ha; 1990–2015: RF +1187 ha, WSF +982 ha.
+- Bydgoszcz: stała zabudowa (WSF 1985 ∩ DW 2015 ∩ DW 2025) wykryta surowo przez RF w 1985 r. w 73%, w 1990 r. w 77%, w 2010 r. w 81%; w serii z więzami 72% -> 82% (artefakt pierwszej epoki: pominięcia 1985 r. nie są uzupełniane); przyrost w mieście 1985–1990: RF +731 ha, WSF Evolution +256 ha; 1990–2015: RF +1311 ha, WSF +1102 ha.
+- Bydgoszcz: największy przyrost zabudowy w okresie 1985–1990 (1367 ha), najmniejszy w 1995–2000 (256 ha); koncentracja przyrostu w 10% najgęstszych kwadratów: od 49% do 72% (im niższa, tym bardziej rozproszony przyrost).
+- Toruń: największy przyrost zabudowy w okresie 1985–1990 (1010 ha), najmniejszy w 1995–2000 (188 ha); koncentracja przyrostu w 10% najgęstszych kwadratów: od 48% do 74% (im niższa, tym bardziej rozproszony przyrost).
+- Bydgoszcz: kierunek dominujący w kolejnych dekadach: 1985–1995: W–WNW (14% przyrostu, R = 0.15); 1995–2005: W–WNW (16% przyrostu, R = 0.16); 2005–2015: W–WNW (17% przyrostu, R = 0.21); 2015–2025: WSW–W (16% przyrostu, R = 0.28).
+- Toruń: kierunek dominujący w kolejnych dekadach: 1985–1995: ENE–E (19% przyrostu, R = 0.22); 1995–2005: ENE–E (21% przyrostu, R = 0.30); 2005–2015: ENE–E (19% przyrostu, R = 0.35); 2015–2025: ENE–E (17% przyrostu, R = 0.27).
+- Średnia siła wektora wypadkowego (0 = równomiernie, 1 = jeden kierunek): Bydgoszcz 0.20, Toruń 0.28.
+- Bydgoszcz, rezerwaty [wyklucza]: w 2025 r. zabudowa wewnątrz 0.0% powierzchni, w pierścieniu 500 m 7.0% (AOI 19.5%, iloraz 0.36): otoczenie rzadziej zabudowane niż AOI; forma wyklucza zabudowę, więc udział wewnątrz to obiekty sprzed utworzenia formy, wyjątki ustawowe albo błąd klasyfikacji.
+- Bydgoszcz, tereny_wojskowe [infrastruktura]: w 2025 r. zabudowa wewnątrz 42.3% powierzchni, w pierścieniu 500 m 37.5% (AOI 19.5%, iloraz 1.93): otoczenie gęściej zabudowane niż AOI; teren zamknięty; zabudowa wewnątrz to obiekty własne (hangary, nawierzchnie).
+- Bydgoszcz, lotnisko [infrastruktura]: w 2025 r. zabudowa wewnątrz 3.7% powierzchni, w pierścieniu 500 m 39.7% (AOI 19.5%, iloraz 2.04): otoczenie gęściej zabudowane niż AOI; teren zamknięty; zabudowa wewnątrz to obiekty własne (hangary, nawierzchnie).
+- Toruń, rezerwaty [wyklucza]: w 2025 r. zabudowa wewnątrz 0.7% powierzchni, w pierścieniu 500 m 18.4% (AOI 17.7%, iloraz 1.04): otoczenie zabudowane jak przeciętnie w AOI; forma wyklucza zabudowę, więc udział wewnątrz to obiekty sprzed utworzenia formy, wyjątki ustawowe albo błąd klasyfikacji.
+- Toruń, tereny_wojskowe [infrastruktura]: w 2025 r. zabudowa wewnątrz 1.8% powierzchni, w pierścieniu 500 m 49.2% (AOI 17.7%, iloraz 2.78): otoczenie gęściej zabudowane niż AOI; teren zamknięty; zabudowa wewnątrz to obiekty własne (hangary, nawierzchnie).
+- Toruń, lotnisko [infrastruktura]: w 2025 r. zabudowa wewnątrz 3.2% powierzchni, w pierścieniu 500 m 11.9% (AOI 17.7%, iloraz 0.67): otoczenie rzadziej zabudowane niż AOI; teren zamknięty; zabudowa wewnątrz to obiekty własne (hangary, nawierzchnie).
+- Strefa miasto: tempo serii A 1985–2025 [%/rok]: Toruń 1.67 %/rok, Bydgoszcz 1.17 %/rok; średni udział leapfrog: Toruń 17%, Bydgoszcz 17%; infill: Toruń 43%, Bydgoszcz 45%.
+- Strefa strefa_0_2_5: tempo serii A 1985–2025 [%/rok]: Toruń 4.84 %/rok, Bydgoszcz 5.11 %/rok; średni udział leapfrog: Toruń 18%, Bydgoszcz 23%; infill: Toruń 36%, Bydgoszcz 32%.
+- Strefa strefa_2_5_5: tempo serii A 1985–2025 [%/rok]: Toruń 6.13 %/rok, Bydgoszcz 5.06 %/rok; średni udział leapfrog: Toruń 23%, Bydgoszcz 22%; infill: Toruń 32%, Bydgoszcz 32%.
+
+Rozdział 15 (mapy 4-klasowe):
+- Bydgoszcz: najdalszy pierścień z udziałem zabudowy co najmniej 20%: 5.8 km w 1985 r., 7.2 km w 2025 r. (przesunięcie +1.5 km, czyli +38 m/rok).
+- Toruń: najdalszy pierścień z udziałem zabudowy co najmniej 20%: 3.8 km w 1985 r., 4.2 km w 2025 r. (przesunięcie +0.5 km, czyli +12 m/rok).
+- Bydgoszcz: średni rok pojawienia się nowej zabudowy rośnie z odległością od centroidu o 0.95 roku na km (dopasowanie liniowe; wartość dodatnia oznacza falę rozchodzącą się na zewnątrz).
+- Bydgoszcz: łączny przyrost 1985–2025 największy w sektorze W (877 ha z 5675 ha), a w czasie w okresie 1985–1990 (1367 ha).
+- Toruń: średni rok pojawienia się nowej zabudowy rośnie z odległością od centroidu o 1.07 roku na km (dopasowanie liniowe; wartość dodatnia oznacza falę rozchodzącą się na zewnątrz).
+- Toruń: łączny przyrost 1985–2025 największy w sektorze ENE (799 ha z 4205 ha), a w czasie w okresie 1985–1990 (1010 ha).
+- Bydgoszcz: indeks zabudowy 2025 (1985 = 100): miasto 147, strefa_0_2_5 305, strefa_2_5_5 302.
+- Toruń: indeks zabudowy 2025 (1985 = 100): miasto 167, strefa_0_2_5 294, strefa_2_5_5 345.
+- Bydgoszcz: LCRPGR 1995–2025 według gmin od -0.91 (Bydgoszcz) do 48.12 (Koronowo); gmin z LCRPGR > 1 (teren zużywany szybciej niż rośnie ludność): 6 z 10.
+- Toruń: LCRPGR 1995–2025 według gmin od -4.82 (Toruń) do 1.63 (Łysomice); gmin z LCRPGR > 1 (teren zużywany szybciej niż rośnie ludność): 4 z 7.
+- Toruń: F1 klasy lasów względem rdzeni CORINE 1990: 88%, 2018: 87%; lasy w AOI wg mapy RF 15690 ha (1990) i 22999 ha (2018) wobec CORINE 18677 i 19051 ha; różnica RF − CORINE -16% (1990) i +21% (2018): trend lasów w mapach RF jest wiarygodny tylko w zakresie, w jakim zgadza się z CORINE.
+- Bydgoszcz: F1 klasy lasów względem rdzeni CORINE 1990: 89%, 2018: 91%; lasy w AOI wg mapy RF 25835 ha (1990) i 36882 ha (2018) wobec CORINE 31881 i 31316 ha; różnica RF − CORINE -19% (1990) i +18% (2018): trend lasów w mapach RF jest wiarygodny tylko w zakresie, w jakim zgadza się z CORINE.
+- Bydgoszcz: między 1985 a 2025 r. w AOI zabudowa 6647 -> 12316 ha, lasy i drzewa 25431 -> 36891 ha, wody 1494 -> 1610 ha (mapy 4-klasowe RF; klasy inne niż zabudowa bez walidacji historycznej o wysokiej rozdzielczości).
+- Toruń: między 1985 a 2025 r. w AOI zabudowa 4014 -> 8219 ha, lasy i drzewa 15397 -> 23097 ha, wody 1265 -> 1370 ha (mapy 4-klasowe RF; klasy inne niż zabudowa bez walidacji historycznej o wysokiej rozdzielczości).
+
+Rozdział 17 (ryciny objaśniające):
+
+
+Rozdział 16 (mapy zmian i nowe wskaźniki):
+- Bydgoszcz: w latach 1985–2025 nowa zabudowa objęła 5675 ha AOI (największy przyrost w pięcioleciu 1985–1990), ubytek lasów i drzew 2859 ha, przyrost lasów i drzew 14651 ha, zmiany wód 402 ha (mapy 4-klasowe RF; klasy inne niż zabudowa bez walidacji historycznej o wysokiej rozdzielczości).
+- Toruń: w latach 1985–2025 nowa zabudowa objęła 4204 ha AOI (największy przyrost w pięcioleciu 1985–1990), ubytek lasów i drzew 2826 ha, przyrost lasów i drzew 10640 ha, zmiany wód 284 ha (mapy 4-klasowe RF; klasy inne niż zabudowa bez walidacji historycznej o wysokiej rozdzielczości).
+- Bydgoszcz: w latach 2015–2025 klasę Dynamic World zmieniło co najmniej raz 20% pikseli miasta (co najmniej trzy razy: 10%); rocznie do klasy zabudowa wchodziło średnio 696 ha, a wychodziło 627 ha, co pokazuje skalę szumu etykiet nauczyciela i uzasadnia serie RF z więzem monotoniczności.
+- Toruń: w latach 2015–2025 klasę Dynamic World zmieniło co najmniej raz 22% pikseli miasta (co najmniej trzy razy: 12%); rocznie do klasy zabudowa wchodziło średnio 483 ha, a wychodziło 455 ha, co pokazuje skalę szumu etykiet nauczyciela i uzasadnia serie RF z więzem monotoniczności.
+- Bydgoszcz: zabudowa typu leapfrog z lat 1985–2025 (1249 ha) powstawała średnio 100 m od najbliższej wcześniejszej zabudowy, a do 2025 r. 91% jej pikseli zostało otoczonych zabudową (wchłonięcie).
+- Toruń: zabudowa typu leapfrog z lat 1985–2025 (872 ha) powstawała średnio 101 m od najbliższej wcześniejszej zabudowy, a do 2025 r. 88% jej pikseli zostało otoczonych zabudową (wchłonięcie).
+- Bydgoszcz: udział zabudowy zwartej w mieście zmienił się z 81% (1985) na 92% (2025); 10% nowej zabudowy całego okresu pojawiło się w morfotypie rozproszonym lub pojedynczym (morfotyp narodzin).
+- Toruń: udział zabudowy zwartej w mieście zmienił się z 77% (1985) na 93% (2025); 11% nowej zabudowy całego okresu pojawiło się w morfotypie rozproszonym lub pojedynczym (morfotyp narodzin).
+- Bydgoszcz: w całym okresie 1985–2025 hot spoty 95% (82 kwadratów 1 km, po korekcie FDR 51) skupiały 46% nowej zabudowy; w pierwszej połowie okresu hot spotów 95% było 82, w drugiej 71.
+- Toruń: w całym okresie 1985–2025 hot spoty 95% (73 kwadratów 1 km, po korekcie FDR 56) skupiały 54% nowej zabudowy; w pierwszej połowie okresu hot spotów 95% było 75, w drugiej 68.
+- Bydgoszcz 2025: pas niepewności decyzji RF obejmuje 4638 ha, czyli 38% powierzchni zabudowy serii A; przesunięcie progu o ±0.10 zmienia surową powierzchnię zabudowy AOI z 13019 do 17658 ha.
+- Toruń 2025: pas niepewności decyzji RF obejmuje 2977 ha, czyli 36% powierzchni zabudowy serii A; przesunięcie progu o ±0.10 zmienia surową powierzchnię zabudowy AOI z 8502 do 11479 ha.
+- Bydgoszcz: zabudowa na mieszkańca miasta wzrosła z 160 m²/os. (1995) do 228 m²/os. (2025).
+- Toruń: zabudowa na mieszkańca miasta wzrosła z 182 m²/os. (1995) do 258 m²/os. (2025).
+
+Rozdział 15 (mapy 4-klasowe):
+
+
+Rozdział 16 (izochrony, mapa dwuzmienna, Gini, diagram fazowy, odległości):
+- Bydgoszcz: obwiednia zwartej zabudowy (domknięcie 300 m, największy płat) wzrosła z 98 do 157 km² (wszystkie płaty: 160 -> 204 km²), zwartość 4πA/P² zmieniła się z 0.06 na 0.03, a średni promień obwiedni z 8.1 do 8.8 km; skok obwiedni największego płatu przy spadku liczby płatów (połączenie płatów): 2010–2015 (tab_J8b: wrażliwość na promień domknięcia).
+- Toruń: obwiednia zwartej zabudowy (domknięcie 300 m, największy płat) wzrosła z 87 do 114 km² (wszystkie płaty: 108 -> 143 km²), zwartość 4πA/P² zmieniła się z 0.04 na 0.03, a średni promień obwiedni z 6.6 do 7.8 km.
+- Bydgoszcz: kwadraty typu „front sprawl” (mały udział zabudowy w 2025 r., duży przyrost) to 0 km² z 0 ha nowej zabudowy, a typu „dogęszczanie” (duży udział i duży przyrost) 178 km² z 4538 ha.
+- Toruń: kwadraty typu „front sprawl” (mały udział zabudowy w 2025 r., duży przyrost) to 0 km² z 0 ha nowej zabudowy, a typu „dogęszczanie” (duży udział i duży przyrost) 128 km² z 3428 ha.
+- Bydgoszcz: współczynnik Giniego rozkładu zabudowy między kwadratami 1 km zmienił się z 0.78 (1985) na 0.69 (2025); udział kwadratów z jakąkolwiek zabudową wzrósł z 68% do 72%.
+- Toruń: współczynnik Giniego rozkładu zabudowy między kwadratami 1 km zmienił się z 0.78 (1985) na 0.70 (2025); udział kwadratów z jakąkolwiek zabudową wzrósł z 65% do 70%.
+- Bydgoszcz: liczba płatów zabudowy zmieniła się z 1955 (1985) na 754 (2025), a średnia wielkość płatu z 3.4 na 16.3 ha; największy płat obejmuje 49% zabudowy w 2025 r.
+- Toruń: liczba płatów zabudowy zmieniła się z 1522 (1985) na 600 (2025), a średnia wielkość płatu z 2.6 na 13.7 ha; największy płat obejmuje 47% zabudowy w 2025 r.
+- Bydgoszcz: mediana odległości nowej zabudowy od centroidu zmieniła się z 7.1 km (1985–1990) na 11.1 km (2020–2025); udział nowej zabudowy poza 5 km: 75% -> 91%.
+- Toruń: mediana odległości nowej zabudowy od centroidu zmieniła się z 6.4 km (1985–1990) na 7.5 km (2020–2025); udział nowej zabudowy poza 5 km: 63% -> 72%.
+
+Rozdział 16 (wiarygodność w czasie, spójność czasowa, gradient Clarka, prędkość fali, wymiar fraktalny, zgodność skal):
+- Bydgoszcz: ECE p(zabudowa) względem WSF Evolution 0.273 w 1985 r. i 0.106 w 2015 r.; nachylenie prostej wiarygodności 0.55 -> 0.82 (1 = kalibracja idealna względem tego źródła).
+- Toruń: ECE p(zabudowa) względem WSF Evolution 0.235 w 1985 r. i 0.113 w 2015 r.; nachylenie prostej wiarygodności 0.55 -> 0.79 (1 = kalibracja idealna względem tego źródła).
+- Bydgoszcz (miasto): wśród pikseli surowo zabudowanych w dowolnej epoce 50% miało co najmniej 2 przełączenia klasy (migotanie usuwane przez więz monotoniczności), a mediana marginesu decyzji wynosiła 0.24.
+- Toruń (miasto): wśród pikseli surowo zabudowanych w dowolnej epoce 53% miało co najmniej 2 przełączenia klasy (migotanie usuwane przez więz monotoniczności), a mediana marginesu decyzji wynosiła 0.26.
+- Bydgoszcz: gradient Clarka b zmienił się z 0.23 1/km (1985; R² 0.93) na 0.15 1/km (2025; R² 0.91); promień połowicznego spadku gęstości 3.0 -> 4.8 km.
+- Toruń: gradient Clarka b zmienił się z 0.35 1/km (1985; R² 0.92) na 0.26 1/km (2025; R² 0.85); promień połowicznego spadku gęstości 2.0 -> 2.7 km.
+- Bydgoszcz: największe nachylenie odległość–epoka w sektorze S (650 m/rok, R² 0.75); mediana nachylenia w sektorach 472 m/rok (statystyka opisowa, nie prędkość frontu).
+- Toruń: największe nachylenie odległość–epoka w sektorze ENE (493 m/rok, R² 0.76); mediana nachylenia w sektorach 311 m/rok (statystyka opisowa, nie prędkość frontu).
+- Bydgoszcz: wymiar fraktalny zabudowy 1.45 (1985) -> 1.59 (2025); R² dopasowania log-log 1.00–1.00.
+- Toruń: wymiar fraktalny zabudowy 1.42 (1985) -> 1.58 (2025); R² dopasowania log-log 1.00–1.00.
+- Bydgoszcz 2025: zabudowa w obu seriach 12276 ha, tylko RF/Landsat 587 ha, tylko RF/Sentinel-2 346 ha (Jaccard 93%); różnica rozdzielczości i definicji jest źródłem niepewności wskaźników opartych na 30 m.
+- Toruń 2025: zabudowa w obu seriach 8184 ha, tylko RF/Landsat 381 ha, tylko RF/Sentinel-2 339 ha (Jaccard 92%); różnica rozdzielczości i definicji jest źródłem niepewności wskaźników opartych na 30 m.
+
+Rozdział 16 (mapy zmian i nowe wskaźniki):
+
+
+Rozdział 16 (izochrony, mapa dwuzmienna, Gini, diagram fazowy, odległości):
+
+
+Rozdział 16 (wiarygodność w czasie, spójność czasowa, gradient Clarka, prędkość fali, wymiar fraktalny, zgodność skal):

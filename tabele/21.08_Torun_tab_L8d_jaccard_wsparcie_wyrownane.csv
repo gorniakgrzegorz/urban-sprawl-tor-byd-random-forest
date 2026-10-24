@@ -1,0 +1,5 @@
+Wsparcie,Rok,Jaccard Landsat vs Sentinel-2 (30 m),Część wspólna [ha],Suma [ha]
+niewyrównane (finalne),2021,0.647,8380.7,12954.2
+niewyrównane (finalne),2025,0.684,8638.7,12623.9
+"wyrównane (90 m, okno trzyletnie)",2021,0.657,7986.5,12163.4
+"wyrównane (90 m, okno trzyletnie)",2025,0.673,8607.2,12789.5

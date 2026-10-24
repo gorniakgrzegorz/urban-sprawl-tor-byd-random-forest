@@ -1,0 +1,21 @@
+Miasto,Rok mapy,Referencja,Typ,n,OA ważona [%],F1 zabudowa [%],Zabudowa [ha]
+Bydgoszcz,1990,CORINE 1990 (rdzenie),niezależna,1000.0,93.2,67.9,
+Bydgoszcz,1990,WSF Evolution 1990,niezależna (miasto nieuczone),1000.0,94.5,75.3,
+Bydgoszcz,2000,CORINE 2000 (rdzenie),niezależna,1000.0,93.8,73.4,
+Bydgoszcz,2000,WSF Evolution 2000,niezależna (miasto nieuczone),1000.0,93.9,76.1,
+Bydgoszcz,2006,CORINE 2006 (rdzenie),niezależna,1000.0,92.3,72.4,
+Bydgoszcz,2006,WSF Evolution 2006,niezależna (miasto nieuczone),1000.0,93.4,76.5,
+Bydgoszcz,2010,CORINE 2012 (rdzenie),niezależna,1000.0,91.2,72.2,
+Bydgoszcz,2010,WSF Evolution 2010,niezależna (miasto nieuczone),1000.0,92.9,76.8,
+Bydgoszcz,1990,powierzchnia RF miasto,trajektoria,,,,5304.5
+Bydgoszcz,1990,powierzchnia RF strefa_0_2_5,trajektoria,,,,765.4
+Bydgoszcz,1990,powierzchnia RF strefa_2_5_5,trajektoria,,,,1003.6
+Bydgoszcz,2000,powierzchnia RF miasto,trajektoria,,,,5868.6
+Bydgoszcz,2000,powierzchnia RF strefa_0_2_5,trajektoria,,,,865.9
+Bydgoszcz,2000,powierzchnia RF strefa_2_5_5,trajektoria,,,,1134.7
+Bydgoszcz,2006,powierzchnia RF miasto,trajektoria,,,,6218.4
+Bydgoszcz,2006,powierzchnia RF strefa_0_2_5,trajektoria,,,,1038.1
+Bydgoszcz,2006,powierzchnia RF strefa_2_5_5,trajektoria,,,,1408.7
+Bydgoszcz,2010,powierzchnia RF miasto,trajektoria,,,,6498.9
+Bydgoszcz,2010,powierzchnia RF strefa_0_2_5,trajektoria,,,,1224.0
+Bydgoszcz,2010,powierzchnia RF strefa_2_5_5,trajektoria,,,,1682.7

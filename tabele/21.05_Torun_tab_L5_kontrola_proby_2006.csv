@@ -1,0 +1,7 @@
+Sprawdzenie,Wynik,Szczegóły
+plik ślepy,punkty_HIST_2006_a67b95fe_SLEPE.gpkg,168 punktów; CRS EPSG:4326; duplikaty id: 0
+plik potwierdzony,punkty_potwierdzone_HIST_2006_a67b95fe.gpkg,"168 punktów; CRS EPSG:4326; kolumny: id_pkt, klasa_potwierdzona, uwagi, punkty_HIST_2006_a67b95fe_klucz_strata_mapy, geometry"
+kody interpretacji,"{2: 107, 4: 55, 1: 4, 3: 2}","klucz: 1 = zabudowa, 2 = lasy, 3 = wody, 4 = pozostałe"
+zgodność położenia punktów (ślepy vs potwierdzony),168 wspólnych id,maks. odległość 0.0 m; > 1 m: 0
+tablica krzyżowa kod × warstwa losowania,"{1: {1: 4, 2: 44, 3: 2, 4: 34}, 2: {1: 0, 2: 63, 3: 0, 4: 21}}","warstwa 1 = nie-zabudowa RF 2006, 2 = zabudowa RF 2006 (mapa + 1)"
+tab_B6 z próby uzgodnionej,nie policzono,oczekiwany plik punkty_potwierdzone_HIST_2006_a67b95fe_uzgodnione.gpkg (po interpretacji drugiego interpretatora i rozstrzygnięciu rozbieżności)

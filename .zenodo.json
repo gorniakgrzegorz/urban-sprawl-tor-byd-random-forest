@@ -1,0 +1,32 @@
+{
+  "title": "Seria zabudowy Torunia i Bydgoszczy 1975–2025 z klasyfikatora Random Forest uczonego na etykietach Dynamic World: kod i dane wynikowe",
+  "upload_type": "software",
+  "description": "<p>Kod analizy (notatnik Google Colab) i dane wynikowe do rekonstrukcji przyrostu zabudowy Torunia i Bydgoszczy w latach 1975–2025. Klasyfikator Random Forest uczony wyłącznie na etykietach Dynamic World 2025 jest stosowany wstecz do archiwalnych zdjęć Landsat (1985–2025) i, przez most sensorowy w epoce 1985, do zdjęć Landsat MSS (1975 i 1980). Na tej podstawie liczone są wskaźniki urban sprawl, metryki krajobrazowe oraz wskaźnik SDG 11.3.1 (LCRPGR), także na siatce kilometrowej spisów powszechnych NSP 2011 i NSP 2021.</p><p>Code and result data for reconstructing built-up expansion of Toruń and Bydgoszcz (Poland), 1975–2025, with a Random Forest classifier trained on Dynamic World 2025 labels and transferred back to archival Landsat and Landsat MSS imagery; includes urban sprawl indicators, landscape metrics and the SDG 11.3.1 indicator (LCRPGR).</p>",
+  "creators": [
+    {
+      "name": "Górniak, Grzegorz",
+      "affiliation": "Uniwersytet Mikołaja Kopernika w Toruniu, Wydział Nauk o Ziemi i Gospodarki Przestrzennej"
+    },
+    {
+      "name": "Kunz, Mieczysław",
+      "affiliation": "Uniwersytet Mikołaja Kopernika w Toruniu, Wydział Nauk o Ziemi i Gospodarki Przestrzennej"
+    }
+  ],
+  "keywords": [
+    "Random Forest",
+    "Dynamic World",
+    "Landsat",
+    "Landsat MSS",
+    "Google Earth Engine",
+    "urban sprawl",
+    "SDG 11.3.1",
+    "LCRPGR",
+    "Toruń",
+    "Bydgoszcz"
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "language": "pol",
+  "version": "3.2",
+  "notes": "Kod: licencja MIT. Tabele wynikowe, karty modeli, metadane i dane własne: CC BY 4.0. Dane źródłowe (Landsat, Sentinel-2, Dynamic World, WSF Evolution, CORINE Land Cover, Urban Atlas, ortofotomapa i PRG GUGiK, dane GUS, GDOŚ, GHS-POP) podlegają licencjom dostawców i nie są redystrybuowane."
+}

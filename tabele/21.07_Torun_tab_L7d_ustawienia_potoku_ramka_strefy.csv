@@ -1,0 +1,6 @@
+Ustawienie,Tabele (strefy),Ryciny (ramka),Skutek
+geometria cech,"cechy_landsat(AOI, rok): kompozyt i GLCM po clip do sumy stref","cechy_landsat(ramka, rok): clip do prostokąta ramki",GLCM 7 × 7 przy granicy stref liczony z pikseli brzegowych (do 3 px); w ramce granica jest poza strefami
+zbiór scen,filterBounds(AOI),filterBounds(ramka),sceny stykające się tylko z ramką zmieniają medianę i amplitudę NDVI (tab_L7b)
+siatka i CRS eksportu,"asset EPSG:2180, scale 30, bez crsTransform (siatka zakotwiczona w początku układu)","asset EPSG:2180, scale 30; obwiednia ramki wyrównana do wielokrotności 30 m",ta sama siatka; brak przesunięcia (kontrola: zgodność kodów stref w tab_K0)
+NoData,maska poza AOI; pow_ha liczy tylko piksele o wartości 1,pobranie NPY: piksele maskowane = 0,piksele bez kompozytu (brak czystych obserwacji) liczone jako p = 0 w ramce; w AOI maskowane
+statystyki,"reduceRegion(scale=30, tileScale=4) w GEE",NumPy na tablicach ramki,różnice ≤ 1 piksel na brzegu geometrii; tab_L7c porównuje obie ścieżki na identycznej siatce

@@ -1,0 +1,5 @@
+variablesPerSplit,minLeafPopulation,CV OA [%],CV OA sd [%],CV F1 zabudowa [%],CV F1 sd [%]
+4,1,91.9,2.9,90.0,4.2
+6,1,91.7,2.7,89.8,3.8
+4,5,91.5,2.3,89.2,4.2
+6,5,91.4,1.9,89.1,4.3

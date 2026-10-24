@@ -1,0 +1,6 @@
+Model,Fold,OA [%],F1 zabudowa [%],n test,n test zabudowa
+RF/MSS 60 m (wieloepokowy),0,57.2,32.6,453,54
+RF/MSS 60 m (wieloepokowy),1,74.9,77.0,1143,761
+RF/MSS 60 m (wieloepokowy),2,95.0,,456,0
+RF/MSS 60 m (wieloepokowy),3,85.9,83.4,690,311
+RF/MSS 60 m (wieloepokowy),4,89.3,24.1,766,16

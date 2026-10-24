@@ -1,0 +1,19 @@
+Miasto,Rok,Zabudowa AOI [ha],Zabudowa ramka w strefach [ha],Piksele zgodne [%],Tylko AOI [ha],Tylko ramka [ha],Zgodność siatek (kody stref) [%],Tło ramki,Rozdzielczość tła [m]
+Bydgoszcz,1985,6645.1,6909.2,96.377,1018.2,1282.3,100.0,arkusze lokalne (ortofotomapa_aoi_2023); luki 0.0%,10
+Bydgoszcz,1990,8012.4,8355.6,96.476,947.2,1290.3,100.0,arkusze lokalne (ortofotomapa_aoi_2023); luki 0.0%,10
+Bydgoszcz,1995,8922.8,9315.4,96.606,881.3,1273.9,100.0,arkusze lokalne (ortofotomapa_aoi_2023); luki 0.0%,10
+Bydgoszcz,2000,9178.6,9576.4,96.678,855.6,1253.5,100.0,arkusze lokalne (ortofotomapa_aoi_2023); luki 0.0%,10
+Bydgoszcz,2005,9509.0,9918.1,96.75,827.2,1236.2,100.0,arkusze lokalne (ortofotomapa_aoi_2023); luki 0.0%,10
+Bydgoszcz,2010,10071.3,10509.7,96.785,801.6,1240.0,100.0,arkusze lokalne (ortofotomapa_aoi_2023); luki 0.0%,10
+Bydgoszcz,2015,11102.5,11581.7,97.066,691.9,1171.2,100.0,arkusze lokalne (ortofotomapa_aoi_2023); luki 0.0%,10
+Bydgoszcz,2020,11913.3,12435.6,97.497,533.6,1055.9,100.0,arkusze lokalne (ortofotomapa_aoi_2023); luki 0.0%,10
+Bydgoszcz,2025,12319.6,12863.9,97.829,417.0,961.3,100.0,arkusze lokalne (ortofotomapa_aoi_2023); luki 0.0%,10
+Toruń,1985,4013.1,4145.1,96.381,777.2,909.3,100.0,arkusze lokalne (ortofotomapa_aoi_2023); luki 0.0%,10
+Toruń,1990,5023.5,5210.3,96.366,753.4,940.1,100.0,arkusze lokalne (ortofotomapa_aoi_2023); luki 0.0%,10
+Toruń,1995,5483.8,5706.9,96.557,690.7,913.8,100.0,arkusze lokalne (ortofotomapa_aoi_2023); luki 0.0%,10
+Toruń,2000,5671.3,5899.9,96.58,682.6,911.3,100.0,arkusze lokalne (ortofotomapa_aoi_2023); luki 0.0%,10
+Toruń,2005,6010.0,6252.5,96.603,670.3,912.8,100.0,arkusze lokalne (ortofotomapa_aoi_2023); luki 0.0%,10
+Toruń,2010,6755.3,6947.0,96.793,651.5,843.2,100.0,arkusze lokalne (ortofotomapa_aoi_2023); luki 0.0%,10
+Toruń,2015,7483.9,7757.0,97.112,536.3,809.5,100.0,arkusze lokalne (ortofotomapa_aoi_2023); luki 0.0%,10
+Toruń,2020,7958.3,8278.5,97.423,440.4,760.5,100.0,arkusze lokalne (ortofotomapa_aoi_2023); luki 0.0%,10
+Toruń,2025,8217.8,8565.8,97.735,353.9,701.8,100.0,arkusze lokalne (ortofotomapa_aoi_2023); luki 0.0%,10

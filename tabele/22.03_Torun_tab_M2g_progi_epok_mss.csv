@@ -1,0 +1,5 @@
+Miasto,Rok,Próg równej czułości na rdzeniach,Udział rdzeni wykrytych w 1985 [%],Rdzenie niezazielenione w epoce [px 60 m],Próg maks. F1 wobec pseudo-etykiet,Próg maks. F1 na punktach ręcznych (część ucząca),Punkty ręczne uczące: zabudowa / nie-zabudowa,Próg epoki mostu (THR_MSS)
+Toruń,1975,0.2783474028110504,95.4,837,0.7,,0 / 0,0.55
+Toruń,1980,0.2750603258609772,95.4,796,0.7,,0 / 0,0.55
+Bydgoszcz,1975,0.19707172363996506,91.9,1339,0.7,,0 / 0,0.55
+Bydgoszcz,1980,0.21710855513811111,91.9,1344,0.7,,0 / 0,0.55

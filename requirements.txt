@@ -1,0 +1,20 @@
+# Wersje z kod/environment_pip_freeze_2026-09-25.txt (Google Colab, Python 3.13.15)
+earthengine-api==1.7.39
+geemap==0.38.4
+numpy==2.1.3
+pandas==2.2.3
+geopandas==1.1.4
+pyogrio==0.13.0
+shapely==2.1.2
+pyproj==3.7.2
+rasterio==1.5.1
+scipy==1.16.3
+scikit-learn==1.6.1
+matplotlib==3.10.0
+pillow==11.3.0
+imageio==2.37.4
+imageio-ffmpeg==0.6.0
+requests==2.32.4
+tqdm==4.67.3
+ipyleaflet==0.20.0
+ipywidgets==7.7.1

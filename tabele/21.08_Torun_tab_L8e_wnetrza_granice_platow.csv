@@ -1,0 +1,10 @@
+Strefa płatu,Powierzchnia strefy [ha],Mapa,n,Udział zabudowy UA w strefie [%],OA [%],PA zabudowa [%],UA zabudowa [%],F1 zabudowa [%]
+wnętrze płatu DW (≥ 30 m od granicy),6273.8,DW-10 2021,600,82.0,82.0,100.0,82.0,90.1
+wnętrze płatu DW (≥ 30 m od granicy),6273.8,RF-S 2021 (Landsat 30 m),600,82.0,80.0,92.5,84.6,88.3
+wnętrze płatu DW (≥ 30 m od granicy),6273.8,RF-S2 2021 (Sentinel-2 10 m),600,82.0,82.7,95.3,85.3,90.0
+pas graniczny (± 30 m od granicy płatu DW),3118.3,DW-10 2021,600,33.2,58.5,61.3,41.5,49.5
+pas graniczny (± 30 m od granicy płatu DW),3118.3,RF-S 2021 (Landsat 30 m),600,33.2,63.0,68.3,46.1,55.1
+pas graniczny (± 30 m od granicy płatu DW),3118.3,RF-S2 2021 (Sentinel-2 10 m),600,33.2,58.5,78.4,43.1,55.6
+otoczenie (> 30 m poza płatem),35295.9,DW-10 2021,600,4.8,95.2,0.0,,
+otoczenie (> 30 m poza płatem),35295.9,RF-S 2021 (Landsat 30 m),600,4.8,92.5,24.1,23.3,23.7
+otoczenie (> 30 m poza płatem),35295.9,RF-S2 2021 (Sentinel-2 10 m),600,4.8,90.3,44.8,23.6,31.0

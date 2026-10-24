@@ -1,0 +1,7 @@
+Miasto,Strefa,Rok,RF/Landsat 30 m [ha],RF/Sentinel-2 agreg. 30 m [ha],Zabudowa w obu [ha],Tylko Landsat [ha],Tylko Sentinel-2 [ha],Zgodność (Jaccard) [%]
+Bydgoszcz,miasto,2025,7551.8,7375.4,7305.1,246.7,70.3,95.8
+Bydgoszcz,strefa_0_2_5,2025,2194.1,2147.8,2062.2,131.9,85.6,90.5
+Bydgoszcz,strefa_2_5_5,2025,3117.9,3098.7,2909.1,208.8,189.6,88.0
+Toruń,miasto,2025,5108.4,5017.0,4923.2,185.2,93.8,94.6
+Toruń,strefa_0_2_5,2025,1952.4,1974.4,1848.2,104.1,126.2,88.9
+Toruń,strefa_2_5_5,2025,1505.0,1531.9,1412.8,92.2,119.1,87.0

@@ -1,0 +1,216 @@
+{
+  "nazwa": "RF/MSS binarny zabudowa/nie-zabudowa (Landsat 1–5 MSS, 60 m): uczeń ucznia, most w epoce 1985, transfer wstecz do 1975 i 1980",
+  "wersja_data": "2026-09-25",
+  "schemat": "1 = zabudowa, 0 = nie-zabudowa",
+  "lancuch_nadzoru": [
+    "Dynamic World 2025 (etykiety) -> rf_bin (Landsat TM/ETM+/OLI, seria A)",
+    "seria A 1985 (RF-MK, udział 1,0 / 0,0 w pikselu 60 m, erozja 1 px) -> rf_mss (Landsat 4/5 MSS)",
+    "rf_mss -> Landsat 1–3 MSS 1975, 1980"
+  ],
+  "kolekcje": [
+    "LANDSAT/LM01/C02/T1",
+    "LANDSAT/LM02/C02/T1",
+    "LANDSAT/LM03/C02/T1",
+    "LANDSAT/LM04/C02/T1",
+    "LANDSAT/LM05/C02/T1",
+    "LANDSAT/LM01/C02/T2",
+    "LANDSAT/LM02/C02/T2",
+    "LANDSAT/LM03/C02/T2",
+    "LANDSAT/LM04/C02/T2",
+    "LANDSAT/LM05/C02/T2"
+  ],
+  "poziom_przetworzenia": "Collection 2 Level 1, odbicie TOA z REFLECTANCE_MULT/ADD_BAND_n i sin(SUN_ELEVATION)",
+  "maski": "QA_PIXEL bity 0 (wypełnienie) i 3 (chmura), QA_RADSAT ≠ 0, zieleń TOA > 0.35; sceny CLOUD_COVER > 70% pominięte; cienie chmur niemaskowane",
+  "kompozyt": {
+    "statystyka": "mediana",
+    "miesiace": [
+      6,
+      9
+    ],
+    "okno_lat": {
+      "tor_1975": "±1",
+      "tor_1980": "±1",
+      "tor_1985": "±1",
+      "byd_1975": "±1",
+      "byd_1980": "±1",
+      "byd_1985": "±1"
+    },
+    "skala_m": 60,
+    "crs": "EPSG:2180"
+  },
+  "cechy": [
+    "green",
+    "red",
+    "nir1",
+    "nir2",
+    "ndvi",
+    "ndwi",
+    "sr",
+    "glcm_kontrast",
+    "glcm_entropia"
+  ],
+  "liczba_cech": 9,
+  "glcm": "nir2 × 10 000 toInt, glcmTexture(size = 1) → okno 3 × 3 (180 m)",
+  "hiperparametry": {
+    "numberOfTrees": 300,
+    "variablesPerSplit": 3,
+    "minLeafPopulation": 1
+  },
+  "tryb_wyjscia": "MULTIPROBABILITY (prawdopodobieństwo klasy 1)",
+  "seed": 42,
+  "punktow_na_klase": 1500,
+  "negatywy_stratyfikacja": "podtypy CORINE 1990 (lasy, trawy, uprawy, wody, gleba odkryta; po 300)",
+  "cv": {
+    "blok_m": 5000,
+    "bufor_m": 500,
+    "foldy": 5,
+    "OA": 80.5,
+    "F1_zabudowa": NaN,
+    "F1_sd": NaN
+  },
+  "prog_p_zabudowy": 0.55,
+  "prog_kalibracja": "wewnętrzna: maks. ważonego F1 względem etykiet serii A 1985 (udział ≥ 0,5 w pikselu 60 m); próg wg WSF 1985 tylko porównawczo: 0.65",
+  "wiezy": "maska M = DW2015 ∪ DW2025; kumulacja w porządku epok MSS; wersja wynikowa ograniczona do serii A 1985: B_t = B_1985 ∩ ⋃ R_s",
+  "most_1985_wsf": [
+    {
+      "Miasto": "Toruń",
+      "ΔF1 [pkt]": -0.2,
+      "ΔF1 CI95": "-10.6–10.6",
+      "ΔPA [pkt]": -9.3,
+      "ΔUA [pkt]": 17.6
+    },
+    {
+      "Miasto": "Bydgoszcz",
+      "ΔF1 [pkt]": 1.4,
+      "ΔF1 CI95": "-8.0–12.2",
+      "ΔPA [pkt]": -11.3,
+      "ΔUA [pkt]": 14.8
+    }
+  ],
+  "sceny": [
+    {
+      "Miasto": "Toruń",
+      "Rok kompozytu": 1975,
+      "Okno lat użyte": "±1",
+      "Sceny [n]": 12,
+      "Status epoki": "ważna"
+    },
+    {
+      "Miasto": "Toruń",
+      "Rok kompozytu": 1980,
+      "Okno lat użyte": "±1",
+      "Sceny [n]": 32,
+      "Status epoki": "ważna"
+    },
+    {
+      "Miasto": "Toruń",
+      "Rok kompozytu": 1985,
+      "Okno lat użyte": "±1",
+      "Sceny [n]": 54,
+      "Status epoki": "ważna"
+    },
+    {
+      "Miasto": "Bydgoszcz",
+      "Rok kompozytu": 1975,
+      "Okno lat użyte": "±1",
+      "Sceny [n]": 17,
+      "Status epoki": "ważna"
+    },
+    {
+      "Miasto": "Bydgoszcz",
+      "Rok kompozytu": 1980,
+      "Okno lat użyte": "±1",
+      "Sceny [n]": 53,
+      "Status epoki": "ważna"
+    },
+    {
+      "Miasto": "Bydgoszcz",
+      "Rok kompozytu": 1985,
+      "Okno lat użyte": "±1",
+      "Sceny [n]": 76,
+      "Status epoki": "ważna"
+    }
+  ],
+  "assety": {
+    "cechy": [
+      "tor_cechy_mss_1975_okno1_n1985_g35_0b919d_v3",
+      "tor_cechy_mss_1980_okno1_n1985_g35_0b919d_v3",
+      "tor_cechy_mss_1985_okno1_v3",
+      "byd_cechy_mss_1975_okno1_n1985_g35_0b919d_v3",
+      "byd_cechy_mss_1980_okno1_n1985_g35_0b919d_v3",
+      "byd_cechy_mss_1985_okno1_v3"
+    ],
+    "zbior_uczacy": "uczacy_mss_multi_tor_840f9d4d_v3",
+    "model_bazowy": "rf_mss_baz_9603c449_v3",
+    "normalizacja_pif": {
+      "1975": {
+        "green": [
+          0.3848,
+          0.0799,
+          0.264
+        ],
+        "red": [
+          0.6297,
+          0.033,
+          0.447
+        ],
+        "nir1": [
+          0.9717,
+          0.0067,
+          0.511
+        ],
+        "nir2": [
+          1.1884,
+          -0.0205,
+          0.675
+        ]
+      },
+      "1980": {
+        "green": [
+          0.62,
+          0.0458,
+          0.403
+        ],
+        "red": [
+          0.7622,
+          0.0181,
+          0.586
+        ],
+        "nir1": [
+          0.9951,
+          0.0069,
+          0.822
+        ],
+        "nir2": [
+          0.992,
+          0.0167,
+          0.908
+        ]
+      }
+    },
+    "model": "rf_mss_840f9d4d_v3",
+    "p_zabudowy": [
+      "tor_rf_pbuilt_mss_840f9d4d_v3",
+      "byd_rf_pbuilt_mss_840f9d4d_v3"
+    ],
+    "mapy": [
+      "tor_mss_built_1975_840f9d4d_v3",
+      "tor_mss_built_1980_840f9d4d_v3",
+      "byd_mss_built_1975_840f9d4d_v3",
+      "byd_mss_built_1980_840f9d4d_v3"
+    ]
+  },
+  "sprawdziany_1975_1980": {
+    "spojnosc_wsf": "tab_M5a",
+    "osiedla_znana_data": "nie wykonano (brak warstwy osiedla_daty)",
+    "slepa_proba": "nie wykonano (pliki do interpretacji w weryfikacja/ niewypełnione)"
+  },
+  "ograniczenia": [
+    "brak referencji niezależnej z lat 1975–1980",
+    "TOA bez korekcji atmosferycznej",
+    "brak cech przedwiośnia i amplitudy NDVI",
+    "etykiety z serii A dziedziczą jej pominięcia z 1985 r. (artefakt pierwszej epoki, 8.6b)",
+    "georeferencja MSS (Tier 1: RMSE ≤ 12 m nominalnie; sprawdzić wizualnie względem granic)"
+  ],
+  "skrot_modelu": "840f9d4d"
+}

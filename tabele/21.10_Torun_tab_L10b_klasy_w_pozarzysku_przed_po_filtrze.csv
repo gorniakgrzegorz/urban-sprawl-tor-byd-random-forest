@@ -1,0 +1,23 @@
+Miasto,Pożarzysko w AOI [ha],Rok,Wersja,Zabudowa [ha],Lasy i drzewa [ha],Wody [ha],Pozostałe [ha],Lasy [% pożarzyska]
+Toruń,713.0,1990,przed filtrem (model surowy),9.8,691.7,0.0,14.3,97.0
+Toruń,713.0,1990,po filtrze czasowym,5.1,647.1,0.0,63.7,90.8
+Toruń,713.0,1995,przed filtrem (model surowy),0.7,0.1,0.0,715.1,0.0
+Toruń,713.0,1995,po filtrze czasowym,0.7,446.5,0.0,268.7,62.6
+Toruń,713.0,2000,przed filtrem (model surowy),14.1,451.4,0.0,250.4,63.3
+Toruń,713.0,2000,po filtrze czasowym,13.4,445.4,0.0,257.0,62.5
+Toruń,713.0,2005,przed filtrem (model surowy),9.8,681.1,0.0,25.0,95.5
+Toruń,713.0,2005,po filtrze czasowym,4.3,692.2,0.0,19.3,97.1
+Toruń,713.0,2006,przed filtrem (model surowy),2.4,705.9,0.0,7.6,99.0
+Toruń,713.0,2006,po filtrze czasowym,2.3,704.3,0.0,9.2,98.8
+Toruń,713.0,2010,przed filtrem (model surowy),4.1,705.6,0.0,6.2,99.0
+Toruń,713.0,2010,po filtrze czasowym,1.1,710.0,0.0,4.7,99.6
+Bydgoszcz,137.5,1990,przed filtrem (model surowy),25.0,75.3,0.0,37.8,54.8
+Bydgoszcz,137.5,1990,po filtrze czasowym,16.9,62.9,0.0,58.4,45.7
+Bydgoszcz,137.5,1995,przed filtrem (model surowy),12.0,22.8,0.2,103.0,16.6
+Bydgoszcz,137.5,1995,po filtrze czasowym,8.8,51.6,0.2,77.5,37.5
+Bydgoszcz,137.5,2000,przed filtrem (model surowy),14.1,73.6,0.3,50.1,53.5
+Bydgoszcz,137.5,2000,po filtrze czasowym,13.5,72.3,0.3,52.0,52.6
+Bydgoszcz,137.5,2005,przed filtrem (model surowy),5.1,109.4,0.0,23.6,79.5
+Bydgoszcz,137.5,2005,po filtrze czasowym,4.5,111.1,0.0,22.5,80.8
+Bydgoszcz,137.5,2010,przed filtrem (model surowy),1.5,126.9,0.0,9.7,92.3
+Bydgoszcz,137.5,2010,po filtrze czasowym,1.5,127.2,0.0,9.5,92.5

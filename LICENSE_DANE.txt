@@ -1,0 +1,10 @@
+Tabele wynikowe, karty modeli, metadane, dane własne (granice stref, bariery, punkty walidacyjne) oraz warstwy wynikowe w tym repozytorium są udostępnione na licencji Creative Commons Attribution 4.0 International (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
+
+Wymagane przypisanie: Górniak G., Kunz M. (2026), wersja repozytorium i DOI rekordu Zenodo.
+
+Dane źródłowe (Landsat, Landsat MSS, Sentinel-2, Dynamic World, WSF Evolution, CORINE Land Cover, Urban Atlas, ortofotomapa i granice PRG GUGiK, dane GUS, dane GDOŚ, GHS-POP) podlegają licencjom ich dostawców i nie są redystrybuowane w tym repozytorium. Pliki pochodne udostępnione tutaj (np. wycinki siatek spisowych GUS, ludność gmin z Banku Danych Lokalnych) wymagają dodatkowo podania źródła zgodnie z warunkami dostawcy.
+
+---
+
+Result tables, model cards, metadata, own data (zone boundaries, barriers, validation points) and result layers in this repository are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0). Source data remain subject to the licences of their providers.

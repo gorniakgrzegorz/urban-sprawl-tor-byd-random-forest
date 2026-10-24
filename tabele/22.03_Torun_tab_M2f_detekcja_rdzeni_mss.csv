@@ -1,0 +1,17 @@
+Miasto,Rok,Model,Rdzenie niezazielenione w epoce [ha],Stała nie-zabudowa [ha],Normalizacja PIF,Rdzenie wykryte przy progu 0.55 [%],Fałszywe alarmy w nie-zabudowie przy progu 0.55 [%],Rdzenie wykryte przy progu 0.45 [%],Fałszywe alarmy w nie-zabudowie przy progu 0.45 [%],Rdzenie wykryte przy progu 0.35 [%],Fałszywe alarmy w nie-zabudowie przy progu 0.35 [%],Zabudowa surowa w AOI przy progu [ha]
+Toruń,1975,bazowy (tylko 1985),301.7,35500.5,True,75.7,8.9,80.9,12.2,87.0,17.0,6044.4
+Toruń,1975,"wieloepokowy, p surowe",301.7,35500.5,True,79.3,5.5,87.0,8.8,92.4,12.8,3950.2
+Toruń,1975,"wieloepokowy po regułach (próg epoki, dziury)",301.7,35500.5,True,96.1,16.5,97.5,24.1,99.8,37.3,10144.9
+Toruń,1980,bazowy (tylko 1985),287.0,35500.5,True,70.9,8.9,77.4,12.0,83.4,16.1,5874.6
+Toruń,1980,"wieloepokowy, p surowe",287.0,35500.5,True,79.1,5.3,87.3,8.0,92.1,11.3,3807.2
+Toruń,1980,"wieloepokowy po regułach (próg epoki, dziury)",287.0,35500.5,True,96.5,14.3,98.6,19.4,99.9,29.6,9203.3
+Toruń,1985,bazowy (tylko 1985),337.8,35500.5,False,98.5,4.7,99.5,6.5,99.9,8.7,5511.1
+Toruń,1985,"wieloepokowy, p surowe",337.8,35500.5,False,97.4,3.5,98.6,5.0,99.4,6.9,4506.9
+Bydgoszcz,1975,bazowy (tylko 1985),482.7,48211.9,True,70.0,5.4,74.5,7.4,80.6,10.3,6835.7
+Bydgoszcz,1975,"wieloepokowy, p surowe",482.7,48211.9,True,66.2,2.8,75.4,4.6,82.8,7.0,4183.8
+Bydgoszcz,1975,"wieloepokowy po regułach (próg epoki, dziury)",482.7,48211.9,True,89.2,9.1,93.3,13.5,97.8,22.2,10330.0
+Bydgoszcz,1980,bazowy (tylko 1985),484.5,48211.9,True,73.0,8.1,78.2,10.2,83.0,12.9,8839.0
+Bydgoszcz,1980,"wieloepokowy, p surowe",484.5,48211.9,True,72.8,5.4,79.9,7.3,84.1,9.6,6285.2
+Bydgoszcz,1980,"wieloepokowy po regułach (próg epoki, dziury)",484.5,48211.9,True,90.6,11.7,94.6,15.5,99.0,23.7,12288.5
+Bydgoszcz,1985,bazowy (tylko 1985),635.5,48211.9,False,95.9,5.7,98.0,7.4,99.0,9.7,9295.4
+Bydgoszcz,1985,"wieloepokowy, p surowe",635.5,48211.9,False,95.0,3.6,97.1,4.9,98.5,6.5,7431.1

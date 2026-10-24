@@ -1,0 +1,16 @@
+Zbiór danych,Dostawca,Rozdzielczość,Zastosowanie
+"Landsat 4/5 TM, 7 ETM+, 8/9 OLI, Collection 2 Level 2",USGS (GEE),30 m,Cechy i klasyfikacja 1985–2025
+Sentinel-2 SR Harmonized + Cloud Score+,"ESA/Copernicus, Google (GEE)",10 m,"Cechy i klasyfikacja RF 2018–2025 (seria B), podkład rycin, atlas"
+Dynamic World V1,Google/WRI (GEE),10 m,"Nauczyciel (etykiety 2025), więz zasięgu, odniesienie porównawcze; nie jest serią wynikową"
+WSF Evolution (asset autora dla całej Polski: projects/tor-byd--urbansprawl-1985-2025/assets/WSFevolution),DLR,30 m,Test niezależny 1985–2010 (poza uczeniem modelu finalnego); wariant ablacyjny z kotwicą 1985
+"Urban Atlas 2012, 2018, 2021",Copernicus LMS,"wektor, MMU 0,25 ha",Walidacja niezależna DW i RF
+"CORINE Land Cover 1990, 2000, 2006, 2012, 2018",Copernicus LMS (GEE),100 m,"Kalibracja progu (2006), walidacja niezależna, wariant ablacyjny etykiet"
+Ortofotomapa standardowa i archiwalna,GUGiK (arkusze w folderach ortofotomapa_aoi_2023 i ortofotomapaGUGiK; awaryjnie WMS),"ok. 0,25 m (tło map: 10 m)","Tło wszystkich map (nasycenie 25%, przezroczystość 50%), ślepa fotointerpretacja (rok współczesny i 2006), atlas i rycina porównawcza"
+Ludność gmin i powiatów,GUS BDL,gminy,LCRPGR
+Granice gmin (PRG),GUGiK,wektor,Ważenie ludności pierścieni
+"Formy ochrony przyrody (Centralny Rejestr Form Ochrony Przyrody, WFS https://sdi.gdos.gov.pl/wfs, data pobrania w pliku dane/gdos_wfs)",GDOŚ,wektor,"Bariery z klasą ograniczenia zabudowy (9.3, 11.6, 13.6)"
+"Tereny wojskowe, lotniska Toruń i Bydgoszcz (pliki autora)",BDOO / autor,wektor,Bariery infrastrukturalne
+FAO GAUL 2015 level 2,FAO (GEE),wektor,"Granice drugiego miasta, gdy brak plików własnych"
+"Granice Bydgoszczy i pierścieni 0–2,5 i 2,5–5 km (PRG, opracowanie własne)",GUGiK / autor,wektor,"Strefy analizy dla miasta porównawczego (rozdz. 11, 12)"
+"Urban Atlas FUA Bydgoszcz 2012, 2018, 2021 (opcjonalnie)",Copernicus LMS,"wektor, MMU 0,25 ha",Walidacja niezależna map Bydgoszczy
+Ludność gmin powiatu bydgoskiego i Bydgoszczy,GUS BDL,gminy,LCRPGR dla Bydgoszczy

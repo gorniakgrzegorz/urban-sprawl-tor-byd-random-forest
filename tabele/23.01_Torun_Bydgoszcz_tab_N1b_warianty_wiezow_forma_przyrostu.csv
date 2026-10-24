@@ -1,0 +1,241 @@
+Miasto,Wariant więzów,Strefa,Okres,Nowa zabudowa [ha],Ubytek brutto [ha],Infill [%],Edge [%],Leapfrog [%],Śr. odległość przeskoku [m]
+Bydgoszcz,Bez więzów,miasto,1985–1990,1382.2,1135.1,34.6,40.2,25.2,103.0
+Bydgoszcz,Bez więzów,miasto,1990–1995,1833.2,906.3,27.0,39.4,33.5,118.0
+Bydgoszcz,Bez więzów,miasto,1995–2000,523.4,3338.6,43.0,42.1,14.9,82.0
+Bydgoszcz,Bez więzów,miasto,2000–2005,1742.6,634.1,32.9,42.2,24.9,98.0
+Bydgoszcz,Bez więzów,miasto,2005–2010,1160.5,1000.8,37.1,40.7,22.2,105.0
+Bydgoszcz,Bez więzów,miasto,2010–2015,1613.6,751.5,35.4,39.1,25.6,104.0
+Bydgoszcz,Bez więzów,miasto,2015–2020,1166.4,584.1,36.1,39.2,24.6,105.0
+Bydgoszcz,Bez więzów,miasto,2020–2025,740.3,799.1,39.7,38.2,22.1,101.0
+Bydgoszcz,Bez więzów,strefa_0_2_5,1985–1990,1051.0,1469.5,19.4,42.8,37.8,110.0
+Bydgoszcz,Bez więzów,strefa_0_2_5,1990–1995,1939.7,840.8,13.3,38.9,47.8,142.0
+Bydgoszcz,Bez więzów,strefa_0_2_5,1995–2000,185.5,2992.0,28.9,42.6,28.6,101.0
+Bydgoszcz,Bez więzów,strefa_0_2_5,2000–2005,864.7,305.4,8.8,40.4,50.8,151.0
+Bydgoszcz,Bez więzów,strefa_0_2_5,2005–2010,822.7,543.4,13.4,43.8,42.8,142.0
+Bydgoszcz,Bez więzów,strefa_0_2_5,2010–2015,1206.6,566.4,13.8,43.8,42.4,114.0
+Bydgoszcz,Bez więzów,strefa_0_2_5,2015–2020,1212.8,520.7,18.8,40.9,40.3,167.0
+Bydgoszcz,Bez więzów,strefa_0_2_5,2020–2025,869.5,804.0,25.4,41.5,33.1,115.0
+Bydgoszcz,Bez więzów,strefa_2_5_5,1985–1990,1328.8,1937.4,19.5,46.1,34.4,101.0
+Bydgoszcz,Bez więzów,strefa_2_5_5,1990–1995,2131.5,1155.1,15.0,43.0,42.0,116.0
+Bydgoszcz,Bez więzów,strefa_2_5_5,1995–2000,285.2,3400.3,24.3,47.8,27.9,96.0
+Bydgoszcz,Bez więzów,strefa_2_5_5,2000–2005,1005.8,472.0,8.8,40.2,51.0,148.0
+Bydgoszcz,Bez więzów,strefa_2_5_5,2005–2010,1186.0,588.9,11.2,42.7,46.1,131.0
+Bydgoszcz,Bez więzów,strefa_2_5_5,2010–2015,1460.0,824.1,15.1,46.0,39.0,107.0
+Bydgoszcz,Bez więzów,strefa_2_5_5,2015–2020,1674.2,568.4,19.8,42.9,37.4,134.0
+Bydgoszcz,Bez więzów,strefa_2_5_5,2020–2025,1097.2,943.4,28.5,43.3,28.2,113.0
+Bydgoszcz,Monotoniczność,miasto,1985–1990,1382.2,0.0,34.6,40.2,25.2,103.0
+Bydgoszcz,Monotoniczność,miasto,1990–1995,1259.3,0.0,32.3,39.5,28.2,101.0
+Bydgoszcz,Monotoniczność,miasto,1995–2000,247.9,0.0,45.7,39.9,14.3,73.0
+Bydgoszcz,Monotoniczność,miasto,2000–2005,276.3,0.0,52.8,35.3,12.0,77.0
+Bydgoszcz,Monotoniczność,miasto,2005–2010,351.6,0.0,44.2,37.5,18.3,84.0
+Bydgoszcz,Monotoniczność,miasto,2010–2015,541.8,0.0,43.2,39.4,17.4,82.0
+Bydgoszcz,Monotoniczność,miasto,2015–2020,477.1,0.0,42.7,37.0,20.3,86.0
+Bydgoszcz,Monotoniczność,miasto,2020–2025,273.0,0.0,42.8,38.6,18.5,85.0
+Bydgoszcz,Monotoniczność,strefa_0_2_5,1985–1990,1051.0,0.0,19.4,42.8,37.8,110.0
+Bydgoszcz,Monotoniczność,strefa_0_2_5,1990–1995,1353.5,0.0,21.2,44.2,34.7,108.0
+Bydgoszcz,Monotoniczność,strefa_0_2_5,1995–2000,101.2,0.0,39.0,38.1,22.8,88.0
+Bydgoszcz,Monotoniczność,strefa_0_2_5,2000–2005,215.9,0.0,32.5,42.6,24.9,96.0
+Bydgoszcz,Monotoniczność,strefa_0_2_5,2005–2010,345.1,0.0,28.7,40.5,30.8,109.0
+Bydgoszcz,Monotoniczność,strefa_0_2_5,2010–2015,607.4,0.0,28.6,46.4,25.1,81.0
+Bydgoszcz,Monotoniczność,strefa_0_2_5,2015–2020,691.1,0.0,29.4,38.3,32.3,110.0
+Bydgoszcz,Monotoniczność,strefa_0_2_5,2020–2025,436.9,0.0,37.7,39.1,23.2,89.0
+Bydgoszcz,Monotoniczność,strefa_2_5_5,1985–1990,1328.8,0.0,19.5,46.1,34.4,101.0
+Bydgoszcz,Monotoniczność,strefa_2_5_5,1990–1995,1417.6,0.0,26.0,46.8,27.2,90.0
+Bydgoszcz,Monotoniczność,strefa_2_5_5,1995–2000,145.2,0.0,36.8,43.4,19.8,84.0
+Bydgoszcz,Monotoniczność,strefa_2_5_5,2000–2005,238.1,0.0,34.4,43.4,22.3,91.0
+Bydgoszcz,Monotoniczność,strefa_2_5_5,2005–2010,462.0,0.0,33.0,44.3,22.7,95.0
+Bydgoszcz,Monotoniczność,strefa_2_5_5,2010–2015,729.6,0.0,32.2,44.6,23.3,87.0
+Bydgoszcz,Monotoniczność,strefa_2_5_5,2015–2020,880.6,0.0,31.8,41.9,26.3,92.0
+Bydgoszcz,Monotoniczność,strefa_2_5_5,2020–2025,561.1,0.0,41.4,39.7,18.9,99.0
+Bydgoszcz,Zasięg DW,miasto,1985–1990,762.0,457.9,39.1,38.0,22.9,117.0
+Bydgoszcz,Zasięg DW,miasto,1990–1995,733.4,473.8,35.2,38.5,26.3,101.0
+Bydgoszcz,Zasięg DW,miasto,1995–2000,398.1,1431.5,44.0,41.5,14.4,86.0
+Bydgoszcz,Zasięg DW,miasto,2000–2005,1124.4,402.3,42.9,40.9,16.2,92.0
+Bydgoszcz,Zasięg DW,miasto,2005–2010,797.5,486.7,43.3,40.8,15.9,100.0
+Bydgoszcz,Zasięg DW,miasto,2010–2015,1102.8,301.2,43.1,38.3,18.6,95.0
+Bydgoszcz,Zasięg DW,miasto,2015–2020,584.7,253.7,52.1,33.5,14.3,101.0
+Bydgoszcz,Zasięg DW,miasto,2020–2025,347.5,330.0,56.5,31.5,12.0,97.0
+Bydgoszcz,Zasięg DW,strefa_0_2_5,1985–1990,304.4,217.4,20.5,47.6,32.0,97.0
+Bydgoszcz,Zasięg DW,strefa_0_2_5,1990–1995,281.7,212.6,23.2,46.7,30.0,107.0
+Bydgoszcz,Zasięg DW,strefa_0_2_5,1995–2000,71.7,540.9,27.7,45.7,26.6,88.0
+Bydgoszcz,Zasięg DW,strefa_0_2_5,2000–2005,336.2,105.3,14.2,47.7,38.1,135.0
+Bydgoszcz,Zasięg DW,strefa_0_2_5,2005–2010,368.0,129.0,17.4,45.7,36.9,130.0
+Bydgoszcz,Zasięg DW,strefa_0_2_5,2010–2015,648.9,106.9,17.2,47.4,35.4,99.0
+Bydgoszcz,Zasięg DW,strefa_0_2_5,2015–2020,425.4,124.8,33.8,47.6,18.6,91.0
+Bydgoszcz,Zasięg DW,strefa_0_2_5,2020–2025,280.3,167.0,43.0,40.5,16.5,107.0
+Bydgoszcz,Zasięg DW,strefa_2_5_5,1985–1990,380.0,353.2,19.6,50.0,30.4,113.0
+Bydgoszcz,Zasięg DW,strefa_2_5_5,1990–1995,444.7,286.2,17.5,47.3,35.1,120.0
+Bydgoszcz,Zasięg DW,strefa_2_5_5,1995–2000,102.3,784.4,25.0,50.7,24.3,113.0
+Bydgoszcz,Zasięg DW,strefa_2_5_5,2000–2005,434.1,153.4,12.5,45.0,42.4,162.0
+Bydgoszcz,Zasięg DW,strefa_2_5_5,2005–2010,574.6,158.1,13.7,43.4,42.9,128.0
+Bydgoszcz,Zasięg DW,strefa_2_5_5,2010–2015,839.2,199.4,17.9,48.2,33.9,108.0
+Bydgoszcz,Zasięg DW,strefa_2_5_5,2015–2020,735.9,154.5,30.8,45.5,23.7,94.0
+Bydgoszcz,Zasięg DW,strefa_2_5_5,2020–2025,404.1,247.0,46.1,42.0,11.9,87.0
+Bydgoszcz,Zasięg DW + monotoniczność,miasto,1985–1990,762.0,0.0,39.1,38.0,22.9,117.0
+Bydgoszcz,Zasięg DW + monotoniczność,miasto,1990–1995,483.8,0.0,37.4,36.7,25.9,100.0
+Bydgoszcz,Zasięg DW + monotoniczność,miasto,1995–2000,177.5,0.0,45.9,39.2,14.9,78.0
+Bydgoszcz,Zasięg DW + monotoniczność,miasto,2000–2005,159.5,0.0,53.8,36.2,10.0,76.0
+Bydgoszcz,Zasięg DW + monotoniczność,miasto,2005–2010,210.4,0.0,45.2,38.9,15.9,81.0
+Bydgoszcz,Zasięg DW + monotoniczność,miasto,2010–2015,328.1,0.0,44.4,38.7,16.9,93.0
+Bydgoszcz,Zasięg DW + monotoniczność,miasto,2015–2020,213.6,0.0,49.3,36.1,14.7,90.0
+Bydgoszcz,Zasięg DW + monotoniczność,miasto,2020–2025,92.4,0.0,52.2,36.2,11.6,79.0
+Bydgoszcz,Zasięg DW + monotoniczność,strefa_0_2_5,1985–1990,304.4,0.0,20.5,47.6,32.0,97.0
+Bydgoszcz,Zasięg DW + monotoniczność,strefa_0_2_5,1990–1995,187.7,0.0,29.9,48.9,21.2,95.0
+Bydgoszcz,Zasięg DW + monotoniczność,strefa_0_2_5,1995–2000,37.4,0.0,35.3,44.5,20.2,79.0
+Bydgoszcz,Zasięg DW + monotoniczność,strefa_0_2_5,2000–2005,81.6,0.0,30.5,45.9,23.6,102.0
+Bydgoszcz,Zasięg DW + monotoniczność,strefa_0_2_5,2005–2010,149.5,0.0,28.5,42.6,28.9,107.0
+Bydgoszcz,Zasięg DW + monotoniczność,strefa_0_2_5,2010–2015,317.2,0.0,28.1,49.4,22.5,78.0
+Bydgoszcz,Zasięg DW + monotoniczność,strefa_0_2_5,2015–2020,241.3,0.0,40.4,43.8,15.7,85.0
+Bydgoszcz,Zasięg DW + monotoniczność,strefa_0_2_5,2020–2025,134.9,0.0,47.0,37.1,15.9,105.0
+Bydgoszcz,Zasięg DW + monotoniczność,strefa_2_5_5,1985–1990,380.0,0.0,19.6,50.0,30.4,113.0
+Bydgoszcz,Zasięg DW + monotoniczność,strefa_2_5_5,1990–1995,288.3,0.0,29.2,49.7,21.1,97.0
+Bydgoszcz,Zasięg DW + monotoniczność,strefa_2_5_5,1995–2000,46.2,0.0,38.8,45.0,16.2,86.0
+Bydgoszcz,Zasięg DW + monotoniczność,strefa_2_5_5,2000–2005,100.5,0.0,29.6,48.3,22.1,81.0
+Bydgoszcz,Zasięg DW + monotoniczność,strefa_2_5_5,2005–2010,231.7,0.0,27.9,47.1,25.1,91.0
+Bydgoszcz,Zasięg DW + monotoniczność,strefa_2_5_5,2010–2015,426.9,0.0,29.0,46.6,24.4,94.0
+Bydgoszcz,Zasięg DW + monotoniczność,strefa_2_5_5,2015–2020,399.0,0.0,34.8,44.1,21.1,93.0
+Bydgoszcz,Zasięg DW + monotoniczność,strefa_2_5_5,2020–2025,201.0,0.0,51.0,38.8,10.3,81.0
+Bydgoszcz,Seria A (obszar badań),miasto,1985–1990,729.7,0.0,39.1,38.1,22.8,120.0
+Bydgoszcz,Seria A (obszar badań),miasto,1990–1995,465.8,0.0,36.7,36.8,26.6,102.0
+Bydgoszcz,Seria A (obszar badań),miasto,1995–2000,175.4,0.0,44.8,39.8,15.3,78.0
+Bydgoszcz,Seria A (obszar badań),miasto,2000–2005,154.9,0.1,53.3,36.1,10.5,85.0
+Bydgoszcz,Seria A (obszar badań),miasto,2005–2010,199.7,0.0,45.6,39.0,15.4,80.0
+Bydgoszcz,Seria A (obszar badań),miasto,2010–2015,313.6,0.0,43.5,39.2,17.3,88.0
+Bydgoszcz,Seria A (obszar badań),miasto,2015–2020,201.5,0.0,47.9,37.5,14.6,88.0
+Bydgoszcz,Seria A (obszar badań),miasto,2020–2025,90.1,0.0,50.7,36.9,12.4,85.0
+Bydgoszcz,Seria A (obszar badań),strefa_0_2_5,1985–1990,284.3,0.0,20.2,47.1,32.6,99.0
+Bydgoszcz,Seria A (obszar badań),strefa_0_2_5,1990–1995,175.3,0.0,28.6,48.9,22.5,95.0
+Bydgoszcz,Seria A (obszar badań),strefa_0_2_5,1995–2000,36.1,0.0,34.2,45.1,20.7,80.0
+Bydgoszcz,Seria A (obszar badań),strefa_0_2_5,2000–2005,78.8,0.0,28.7,45.9,25.4,119.0
+Bydgoszcz,Seria A (obszar badań),strefa_0_2_5,2005–2010,143.7,0.0,27.9,43.0,29.1,107.0
+Bydgoszcz,Seria A (obszar badań),strefa_0_2_5,2010–2015,307.5,0.0,27.3,49.5,23.1,79.0
+Bydgoszcz,Seria A (obszar badań),strefa_0_2_5,2015–2020,232.3,0.0,39.9,43.9,16.2,111.0
+Bydgoszcz,Seria A (obszar badań),strefa_0_2_5,2020–2025,123.1,0.0,46.9,36.5,16.6,108.0
+Bydgoszcz,Seria A (obszar badań),strefa_2_5_5,1985–1990,353.3,0.0,19.8,49.8,30.4,115.0
+Bydgoszcz,Seria A (obszar badań),strefa_2_5_5,1990–1995,269.3,0.0,27.5,49.9,22.6,102.0
+Bydgoszcz,Seria A (obszar badań),strefa_2_5_5,1995–2000,44.3,0.0,40.4,43.3,16.3,88.0
+Bydgoszcz,Seria A (obszar badań),strefa_2_5_5,2000–2005,96.9,0.0,28.7,49.0,22.3,83.0
+Bydgoszcz,Seria A (obszar badań),strefa_2_5_5,2005–2010,218.8,0.0,27.1,47.3,25.6,93.0
+Bydgoszcz,Seria A (obszar badań),strefa_2_5_5,2010–2015,410.1,0.0,27.8,47.2,25.0,95.0
+Bydgoszcz,Seria A (obszar badań),strefa_2_5_5,2015–2020,377.0,0.0,34.2,44.3,21.5,90.0
+Bydgoszcz,Seria A (obszar badań),strefa_2_5_5,2020–2025,193.1,0.1,48.9,39.7,11.4,86.0
+Toruń,Bez więzów,miasto,1985–1990,946.7,810.2,32.0,41.9,26.0,95.0
+Toruń,Bez więzów,miasto,1990–1995,1042.5,752.5,27.8,43.0,29.2,109.0
+Toruń,Bez więzów,miasto,1995–2000,405.8,2251.6,35.0,43.0,22.0,86.0
+Toruń,Bez więzów,miasto,2000–2005,1263.7,306.0,27.0,42.1,30.9,115.0
+Toruń,Bez więzów,miasto,2005–2010,1175.8,379.3,30.7,43.6,25.8,94.0
+Toruń,Bez więzów,miasto,2010–2015,1031.4,609.2,30.7,41.7,27.5,95.0
+Toruń,Bez więzów,miasto,2015–2020,736.1,498.3,39.7,39.1,21.1,96.0
+Toruń,Bez więzów,miasto,2020–2025,510.0,438.6,47.9,35.9,16.2,95.0
+Toruń,Bez więzów,strefa_0_2_5,1985–1990,980.5,813.1,17.8,45.3,36.9,114.0
+Toruń,Bez więzów,strefa_0_2_5,1990–1995,1178.8,903.8,14.0,42.3,43.7,134.0
+Toruń,Bez więzów,strefa_0_2_5,1995–2000,247.4,2016.2,16.8,46.7,36.5,104.0
+Toruń,Bez więzów,strefa_0_2_5,2000–2005,871.1,237.3,8.2,38.0,53.8,147.0
+Toruń,Bez więzów,strefa_0_2_5,2005–2010,1085.8,385.9,14.6,45.2,40.2,124.0
+Toruń,Bez więzów,strefa_0_2_5,2010–2015,945.7,734.9,17.7,44.7,37.6,114.0
+Toruń,Bez więzów,strefa_0_2_5,2015–2020,703.3,589.9,24.6,44.4,31.0,117.0
+Toruń,Bez więzów,strefa_0_2_5,2020–2025,621.7,538.3,29.5,45.2,25.3,117.0
+Toruń,Bez więzów,strefa_2_5_5,1985–1990,797.5,940.7,15.2,41.6,43.2,129.0
+Toruń,Bez więzów,strefa_2_5_5,1990–1995,983.2,861.1,11.1,38.1,50.7,187.0
+Toruń,Bez więzów,strefa_2_5_5,1995–2000,168.5,1584.6,12.8,38.5,48.7,146.0
+Toruń,Bez więzów,strefa_2_5_5,2000–2005,651.4,179.7,5.3,35.9,58.8,190.0
+Toruń,Bez więzów,strefa_2_5_5,2005–2010,888.3,321.4,9.7,38.8,51.4,162.0
+Toruń,Bez więzów,strefa_2_5_5,2010–2015,914.0,616.9,12.7,44.5,42.9,114.0
+Toruń,Bez więzów,strefa_2_5_5,2015–2020,773.2,515.3,17.9,42.8,39.3,131.0
+Toruń,Bez więzów,strefa_2_5_5,2020–2025,652.5,561.1,24.4,45.5,30.1,126.0
+Toruń,Monotoniczność,miasto,1985–1990,946.7,0.0,32.0,41.9,26.0,95.0
+Toruń,Monotoniczność,miasto,1990–1995,726.8,0.0,33.0,42.8,24.2,95.0
+Toruń,Monotoniczność,miasto,1995–2000,160.7,0.0,41.7,38.3,19.9,82.0
+Toruń,Monotoniczność,miasto,2000–2005,254.4,0.0,41.0,41.4,17.6,80.0
+Toruń,Monotoniczność,miasto,2005–2010,423.2,0.0,41.3,40.6,18.1,84.0
+Toruń,Monotoniczność,miasto,2010–2015,494.9,0.0,39.5,43.2,17.3,84.0
+Toruń,Monotoniczność,miasto,2015–2020,341.5,0.0,43.6,39.9,16.5,81.0
+Toruń,Monotoniczność,miasto,2020–2025,181.3,0.0,52.3,36.5,11.2,74.0
+Toruń,Monotoniczność,strefa_0_2_5,1985–1990,980.5,0.0,17.8,45.3,36.9,114.0
+Toruń,Monotoniczność,strefa_0_2_5,1990–1995,943.2,0.0,20.0,46.7,33.3,95.0
+Toruń,Monotoniczność,strefa_0_2_5,1995–2000,121.7,0.0,31.1,44.0,24.9,85.0
+Toruń,Monotoniczność,strefa_0_2_5,2000–2005,268.1,0.0,32.7,42.5,24.8,91.0
+Toruń,Monotoniczność,strefa_0_2_5,2005–2010,497.1,0.0,34.1,43.4,22.5,92.0
+Toruń,Monotoniczność,strefa_0_2_5,2010–2015,535.0,0.0,32.1,44.2,23.7,95.0
+Toruń,Monotoniczność,strefa_0_2_5,2015–2020,377.2,0.0,36.6,42.6,20.8,87.0
+Toruń,Monotoniczność,strefa_0_2_5,2020–2025,249.5,0.0,46.8,37.0,16.1,96.0
+Toruń,Monotoniczność,strefa_2_5_5,1985–1990,797.5,0.0,15.2,41.6,43.2,129.0
+Toruń,Monotoniczność,strefa_2_5_5,1990–1995,793.9,0.0,15.3,42.5,42.2,128.0
+Toruń,Monotoniczność,strefa_2_5_5,1995–2000,99.9,0.0,19.8,35.8,44.4,123.0
+Toruń,Monotoniczność,strefa_2_5_5,2000–2005,254.2,0.0,25.9,42.8,31.4,102.0
+Toruń,Monotoniczność,strefa_2_5_5,2005–2010,477.2,0.0,24.3,42.6,33.1,117.0
+Toruń,Monotoniczność,strefa_2_5_5,2010–2015,574.4,0.0,26.2,48.4,25.4,84.0
+Toruń,Monotoniczność,strefa_2_5_5,2015–2020,472.0,0.0,30.3,43.6,26.1,93.0
+Toruń,Monotoniczność,strefa_2_5_5,2020–2025,314.2,0.0,41.5,38.1,20.5,105.0
+Toruń,Zasięg DW,miasto,1985–1990,518.2,412.6,37.8,40.6,21.6,99.0
+Toruń,Zasięg DW,miasto,1990–1995,424.1,420.2,40.0,42.7,17.2,84.0
+Toruń,Zasięg DW,miasto,1995–2000,346.2,1070.0,35.3,42.2,22.5,87.0
+Toruń,Zasięg DW,miasto,2000–2005,927.3,207.1,33.2,42.7,24.1,110.0
+Toruń,Zasięg DW,miasto,2005–2010,835.7,181.8,35.3,41.2,23.6,90.0
+Toruń,Zasięg DW,miasto,2010–2015,706.6,263.9,36.0,40.5,23.5,94.0
+Toruń,Zasięg DW,miasto,2015–2020,484.1,242.1,46.7,35.4,17.9,103.0
+Toruń,Zasięg DW,miasto,2020–2025,318.7,215.0,58.5,31.3,10.2,81.0
+Toruń,Zasięg DW,strefa_0_2_5,1985–1990,351.3,126.9,21.3,50.6,28.1,103.0
+Toruń,Zasięg DW,strefa_0_2_5,1990–1995,182.5,307.5,28.0,49.3,22.7,99.0
+Toruń,Zasięg DW,strefa_0_2_5,1995–2000,103.8,486.0,14.7,44.8,40.5,128.0
+Toruń,Zasięg DW,strefa_0_2_5,2000–2005,411.2,76.6,9.6,43.2,47.2,130.0
+Toruń,Zasięg DW,strefa_0_2_5,2005–2010,500.5,90.5,18.0,50.6,31.5,106.0
+Toruń,Zasięg DW,strefa_0_2_5,2010–2015,402.2,152.8,23.7,46.1,30.3,126.0
+Toruń,Zasięg DW,strefa_0_2_5,2015–2020,274.5,175.3,36.3,46.2,17.5,84.0
+Toruń,Zasięg DW,strefa_0_2_5,2020–2025,258.3,134.8,42.4,47.0,10.6,131.0
+Toruń,Zasięg DW,strefa_2_5_5,1985–1990,195.7,120.6,19.0,54.0,27.0,102.0
+Toruń,Zasięg DW,strefa_2_5_5,1990–1995,113.1,208.8,25.5,48.4,26.0,143.0
+Toruń,Zasięg DW,strefa_2_5_5,1995–2000,37.9,285.8,16.2,40.9,43.0,175.0
+Toruń,Zasięg DW,strefa_2_5_5,2000–2005,258.0,28.0,7.9,43.0,49.1,180.0
+Toruń,Zasięg DW,strefa_2_5_5,2005–2010,348.8,65.0,14.1,42.6,43.3,196.0
+Toruń,Zasięg DW,strefa_2_5_5,2010–2015,411.1,94.0,16.1,49.1,34.8,107.0
+Toruń,Zasięg DW,strefa_2_5_5,2015–2020,264.3,142.7,30.7,44.6,24.7,112.0
+Toruń,Zasięg DW,strefa_2_5_5,2020–2025,213.3,113.7,42.6,46.1,11.3,103.0
+Toruń,Zasięg DW + monotoniczność,miasto,1985–1990,518.2,0.0,37.8,40.6,21.6,99.0
+Toruń,Zasięg DW + monotoniczność,miasto,1990–1995,262.1,0.0,46.1,40.1,13.8,88.0
+Toruń,Zasięg DW + monotoniczność,miasto,1995–2000,133.8,0.0,41.8,37.9,20.2,80.0
+Toruń,Zasięg DW + monotoniczność,miasto,2000–2005,177.9,0.0,39.7,41.4,18.9,82.0
+Toruń,Zasięg DW + monotoniczność,miasto,2005–2010,300.2,0.0,39.2,41.5,19.3,84.0
+Toruń,Zasięg DW + monotoniczność,miasto,2010–2015,339.2,0.0,38.5,43.1,18.4,81.0
+Toruń,Zasięg DW + monotoniczność,miasto,2015–2020,219.3,0.0,44.4,39.6,16.0,115.0
+Toruń,Zasięg DW + monotoniczność,miasto,2020–2025,110.5,0.0,55.0,34.2,10.7,89.0
+Toruń,Zasięg DW + monotoniczność,strefa_0_2_5,1985–1990,351.3,0.0,21.3,50.6,28.1,103.0
+Toruń,Zasięg DW + monotoniczność,strefa_0_2_5,1990–1995,147.9,0.0,32.9,48.7,18.4,81.0
+Toruń,Zasięg DW + monotoniczność,strefa_0_2_5,1995–2000,41.9,0.0,29.8,46.6,23.6,81.0
+Toruń,Zasięg DW + monotoniczność,strefa_0_2_5,2000–2005,100.1,0.0,32.9,46.0,21.1,97.0
+Toruń,Zasięg DW + monotoniczność,strefa_0_2_5,2005–2010,209.2,0.0,32.7,47.2,20.1,97.0
+Toruń,Zasięg DW + monotoniczność,strefa_0_2_5,2010–2015,214.1,0.0,34.6,46.7,18.7,98.0
+Toruń,Zasięg DW + monotoniczność,strefa_0_2_5,2015–2020,140.9,0.0,41.0,45.2,13.8,79.0
+Toruń,Zasięg DW + monotoniczność,strefa_0_2_5,2020–2025,90.2,0.0,53.1,36.6,10.3,230.0
+Toruń,Zasięg DW + monotoniczność,strefa_2_5_5,1985–1990,195.7,0.0,19.0,54.0,27.0,102.0
+Toruń,Zasięg DW + monotoniczność,strefa_2_5_5,1990–1995,86.7,0.0,29.5,48.7,21.8,96.0
+Toruń,Zasięg DW + monotoniczność,strefa_2_5_5,1995–2000,17.3,0.0,26.6,45.8,27.6,79.0
+Toruń,Zasięg DW + monotoniczność,strefa_2_5_5,2000–2005,74.5,0.0,29.0,48.6,22.5,96.0
+Toruń,Zasięg DW + monotoniczność,strefa_2_5_5,2005–2010,185.1,0.0,22.3,41.6,36.1,157.0
+Toruń,Zasięg DW + monotoniczność,strefa_2_5_5,2010–2015,256.7,0.0,27.0,49.6,23.4,85.0
+Toruń,Zasięg DW + monotoniczność,strefa_2_5_5,2015–2020,161.2,0.0,35.4,43.8,20.8,96.0
+Toruń,Zasięg DW + monotoniczność,strefa_2_5_5,2020–2025,86.6,0.0,54.5,34.8,10.7,112.0
+Toruń,Seria A (obszar badań),miasto,1985–1990,500.5,0.0,38.1,40.3,21.6,99.0
+Toruń,Seria A (obszar badań),miasto,1990–1995,249.2,0.0,45.9,40.0,14.2,88.0
+Toruń,Seria A (obszar badań),miasto,1995–2000,133.0,0.0,41.7,37.6,20.7,82.0
+Toruń,Seria A (obszar badań),miasto,2000–2005,173.8,0.0,38.6,42.1,19.3,83.0
+Toruń,Seria A (obszar badań),miasto,2005–2010,323.7,0.0,37.4,42.1,20.5,87.0
+Toruń,Seria A (obszar badań),miasto,2010–2015,305.7,0.0,39.7,41.7,18.7,83.0
+Toruń,Seria A (obszar badań),miasto,2015–2020,205.7,0.0,44.3,40.0,15.7,112.0
+Toruń,Seria A (obszar badań),miasto,2020–2025,102.1,0.0,55.9,33.4,10.7,85.0
+Toruń,Seria A (obszar badań),strefa_0_2_5,1985–1990,323.7,0.0,21.7,50.1,28.2,103.0
+Toruń,Seria A (obszar badań),strefa_0_2_5,1990–1995,134.9,0.0,34.0,48.6,17.3,82.0
+Toruń,Seria A (obszar badań),strefa_0_2_5,1995–2000,38.7,0.0,31.2,47.2,21.6,79.0
+Toruń,Seria A (obszar badań),strefa_0_2_5,2000–2005,93.1,0.0,32.7,46.3,21.1,95.0
+Toruń,Seria A (obszar badań),strefa_0_2_5,2005–2010,225.6,0.0,32.7,46.9,20.3,100.0
+Toruń,Seria A (obszar badań),strefa_0_2_5,2010–2015,188.9,0.0,33.3,47.9,18.7,93.0
+Toruń,Seria A (obszar badań),strefa_0_2_5,2015–2020,122.3,0.0,40.7,45.7,13.6,78.0
+Toruń,Seria A (obszar badań),strefa_0_2_5,2020–2025,82.0,0.0,50.6,37.4,12.0,248.0
+Toruń,Seria A (obszar badań),strefa_2_5_5,1985–1990,186.2,0.0,18.1,53.7,28.2,108.0
+Toruń,Seria A (obszar badań),strefa_2_5_5,1990–1995,76.1,0.0,30.3,49.4,20.3,105.0
+Toruń,Seria A (obszar badań),strefa_2_5_5,1995–2000,15.8,0.0,31.4,42.9,25.7,76.0
+Toruń,Seria A (obszar badań),strefa_2_5_5,2000–2005,71.8,0.0,28.3,49.6,22.1,102.0
+Toruń,Seria A (obszar badań),strefa_2_5_5,2005–2010,195.9,0.0,23.4,41.5,35.1,153.0
+Toruń,Seria A (obszar badań),strefa_2_5_5,2010–2015,233.9,0.0,27.1,48.6,24.3,86.0
+Toruń,Seria A (obszar badań),strefa_2_5_5,2015–2020,146.5,0.0,35.7,44.5,19.7,97.0
+Toruń,Seria A (obszar badań),strefa_2_5_5,2020–2025,75.3,0.0,53.5,35.1,11.4,133.0

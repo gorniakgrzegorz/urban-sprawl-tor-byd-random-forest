@@ -1,0 +1,217 @@
+Miasto,Strefa,Rok,Klasa,Pow [ha]
+Bydgoszcz,miasto,1985,Zabudowa,5005.5
+Bydgoszcz,miasto,1985,Lasy i drzewa,4234.6
+Bydgoszcz,miasto,1985,Wody,566.5
+Bydgoszcz,miasto,1985,Pozostałe,7799.3
+Bydgoszcz,strefa_0_2_5,1985,Zabudowa,679.8
+Bydgoszcz,strefa_0_2_5,1985,Lasy i drzewa,12100.4
+Bydgoszcz,strefa_0_2_5,1985,Wody,548.3
+Bydgoszcz,strefa_0_2_5,1985,Pozostałe,9102.6
+Bydgoszcz,strefa_2_5_5,1985,Zabudowa,961.8
+Bydgoszcz,strefa_2_5_5,1985,Lasy i drzewa,9096.3
+Bydgoszcz,strefa_2_5_5,1985,Wody,378.7
+Bydgoszcz,strefa_2_5_5,1985,Pozostałe,13101.9
+Bydgoszcz,miasto,1990,Zabudowa,5733.2
+Bydgoszcz,miasto,1990,Lasy i drzewa,4289.3
+Bydgoszcz,miasto,1990,Wody,561.9
+Bydgoszcz,miasto,1990,Pozostałe,7021.5
+Bydgoszcz,strefa_0_2_5,1990,Zabudowa,962.3
+Bydgoszcz,strefa_0_2_5,1990,Lasy i drzewa,12229.4
+Bydgoszcz,strefa_0_2_5,1990,Wody,545.0
+Bydgoszcz,strefa_0_2_5,1990,Pozostałe,8694.2
+Bydgoszcz,strefa_2_5_5,1990,Zabudowa,1320.0
+Bydgoszcz,strefa_2_5_5,1990,Lasy i drzewa,9316.0
+Bydgoszcz,strefa_2_5_5,1990,Wody,372.1
+Bydgoszcz,strefa_2_5_5,1990,Pozostałe,12530.6
+Bydgoszcz,miasto,1995,Zabudowa,6198.2
+Bydgoszcz,miasto,1995,Lasy i drzewa,4931.8
+Bydgoszcz,miasto,1995,Wody,562.2
+Bydgoszcz,miasto,1995,Pozostałe,5913.7
+Bydgoszcz,strefa_0_2_5,1995,Zabudowa,1138.2
+Bydgoszcz,strefa_0_2_5,1995,Lasy i drzewa,13449.1
+Bydgoszcz,strefa_0_2_5,1995,Wody,550.5
+Bydgoszcz,strefa_0_2_5,1995,Pozostałe,7293.2
+Bydgoszcz,strefa_2_5_5,1995,Zabudowa,1591.2
+Bydgoszcz,strefa_2_5_5,1995,Lasy i drzewa,10395.3
+Bydgoszcz,strefa_2_5_5,1995,Wody,370.4
+Bydgoszcz,strefa_2_5_5,1995,Pozostałe,11181.8
+Bydgoszcz,miasto,2000,Zabudowa,6373.2
+Bydgoszcz,miasto,2000,Lasy i drzewa,5608.6
+Bydgoszcz,miasto,2000,Wody,561.4
+Bydgoszcz,miasto,2000,Pozostałe,5062.6
+Bydgoszcz,strefa_0_2_5,2000,Zabudowa,1173.7
+Bydgoszcz,strefa_0_2_5,2000,Lasy i drzewa,14381.9
+Bydgoszcz,strefa_0_2_5,2000,Wody,559.0
+Bydgoszcz,strefa_0_2_5,2000,Pozostałe,6316.3
+Bydgoszcz,strefa_2_5_5,2000,Zabudowa,1633.7
+Bydgoszcz,strefa_2_5_5,2000,Lasy i drzewa,11224.3
+Bydgoszcz,strefa_2_5_5,2000,Wody,373.8
+Bydgoszcz,strefa_2_5_5,2000,Pozostałe,10307.0
+Bydgoszcz,miasto,2005,Zabudowa,6525.4
+Bydgoszcz,miasto,2005,Lasy i drzewa,6278.5
+Bydgoszcz,miasto,2005,Wody,562.0
+Bydgoszcz,miasto,2005,Pozostałe,4239.8
+Bydgoszcz,strefa_0_2_5,2005,Zabudowa,1251.1
+Bydgoszcz,strefa_0_2_5,2005,Lasy i drzewa,14978.9
+Bydgoszcz,strefa_0_2_5,2005,Wody,567.0
+Bydgoszcz,strefa_0_2_5,2005,Pozostałe,5634.0
+Bydgoszcz,strefa_2_5_5,2005,Zabudowa,1730.9
+Bydgoszcz,strefa_2_5_5,2005,Lasy i drzewa,12007.6
+Bydgoszcz,strefa_2_5_5,2005,Wody,374.5
+Bydgoszcz,strefa_2_5_5,2005,Pozostałe,9425.7
+Bydgoszcz,miasto,2010,Zabudowa,6725.5
+Bydgoszcz,miasto,2010,Lasy i drzewa,6694.3
+Bydgoszcz,miasto,2010,Wody,570.8
+Bydgoszcz,miasto,2010,Pozostałe,3615.3
+Bydgoszcz,strefa_0_2_5,2010,Zabudowa,1396.0
+Bydgoszcz,strefa_0_2_5,2010,Lasy i drzewa,15398.6
+Bydgoszcz,strefa_0_2_5,2010,Wody,579.5
+Bydgoszcz,strefa_0_2_5,2010,Pozostałe,5056.8
+Bydgoszcz,strefa_2_5_5,2010,Zabudowa,1949.9
+Bydgoszcz,strefa_2_5_5,2010,Lasy i drzewa,12760.3
+Bydgoszcz,strefa_2_5_5,2010,Wody,378.5
+Bydgoszcz,strefa_2_5_5,2010,Pozostałe,8449.9
+Bydgoszcz,miasto,2015,Zabudowa,7041.8
+Bydgoszcz,miasto,2015,Lasy i drzewa,7110.2
+Bydgoszcz,miasto,2015,Wody,605.6
+Bydgoszcz,miasto,2015,Pozostałe,2848.3
+Bydgoszcz,strefa_0_2_5,2015,Zabudowa,1701.4
+Bydgoszcz,strefa_0_2_5,2015,Lasy i drzewa,16087.4
+Bydgoszcz,strefa_0_2_5,2015,Wody,610.7
+Bydgoszcz,strefa_0_2_5,2015,Pozostałe,4031.5
+Bydgoszcz,strefa_2_5_5,2015,Zabudowa,2357.8
+Bydgoszcz,strefa_2_5_5,2015,Lasy i drzewa,13596.8
+Bydgoszcz,strefa_2_5_5,2015,Wody,389.9
+Bydgoszcz,strefa_2_5_5,2015,Pozostałe,7194.2
+Bydgoszcz,miasto,2020,Zabudowa,7244.8
+Bydgoszcz,miasto,2020,Lasy i drzewa,7134.6
+Bydgoszcz,miasto,2020,Wody,610.8
+Bydgoszcz,miasto,2020,Pozostałe,2615.6
+Bydgoszcz,strefa_0_2_5,2020,Zabudowa,1930.6
+Bydgoszcz,strefa_0_2_5,2020,Lasy i drzewa,16090.7
+Bydgoszcz,strefa_0_2_5,2020,Wody,612.0
+Bydgoszcz,strefa_0_2_5,2020,Pozostałe,3797.7
+Bydgoszcz,strefa_2_5_5,2020,Zabudowa,2733.9
+Bydgoszcz,strefa_2_5_5,2020,Lasy i drzewa,13656.5
+Bydgoszcz,strefa_2_5_5,2020,Wody,388.5
+Bydgoszcz,strefa_2_5_5,2020,Pozostałe,6759.6
+Bydgoszcz,miasto,2025,Zabudowa,7334.2
+Bydgoszcz,miasto,2025,Lasy i drzewa,7151.9
+Bydgoszcz,miasto,2025,Wody,611.9
+Bydgoszcz,miasto,2025,Pozostałe,2507.8
+Bydgoszcz,strefa_0_2_5,2025,Zabudowa,2054.5
+Bydgoszcz,strefa_0_2_5,2025,Lasy i drzewa,16077.6
+Bydgoszcz,strefa_0_2_5,2025,Wody,610.9
+Bydgoszcz,strefa_0_2_5,2025,Pozostałe,3688.0
+Bydgoszcz,strefa_2_5_5,2025,Zabudowa,2927.8
+Bydgoszcz,strefa_2_5_5,2025,Lasy i drzewa,13661.9
+Bydgoszcz,strefa_2_5_5,2025,Wody,386.9
+Bydgoszcz,strefa_2_5_5,2025,Pozostałe,6561.9
+Toruń,miasto,1985,Zabudowa,2982.7
+Toruń,miasto,1985,Lasy i drzewa,2049.4
+Toruń,miasto,1985,Wody,658.2
+Toruń,miasto,1985,Pozostałe,5880.6
+Toruń,strefa_0_2_5,1985,Zabudowa,624.2
+Toruń,strefa_0_2_5,1985,Lasy i drzewa,5720.8
+Toruń,strefa_0_2_5,1985,Wody,400.9
+Toruń,strefa_0_2_5,1985,Pozostałe,9678.1
+Toruń,strefa_2_5_5,1985,Zabudowa,407.3
+Toruń,strefa_2_5_5,1985,Lasy i drzewa,7626.6
+Toruń,strefa_2_5_5,1985,Wody,206.1
+Toruń,strefa_2_5_5,1985,Pozostałe,10434.6
+Toruń,miasto,1990,Zabudowa,3484.4
+Toruń,miasto,1990,Lasy i drzewa,2089.0
+Toruń,miasto,1990,Wody,656.7
+Toruń,miasto,1990,Pozostałe,5340.8
+Toruń,strefa_0_2_5,1990,Zabudowa,951.2
+Toruń,strefa_0_2_5,1990,Lasy i drzewa,5807.1
+Toruń,strefa_0_2_5,1990,Wody,400.9
+Toruń,strefa_0_2_5,1990,Pozostałe,9264.9
+Toruń,strefa_2_5_5,1990,Zabudowa,594.2
+Toruń,strefa_2_5_5,1990,Lasy i drzewa,7794.4
+Toruń,strefa_2_5_5,1990,Wody,204.3
+Toruń,strefa_2_5_5,1990,Pozostałe,10081.8
+Toruń,miasto,1995,Zabudowa,3732.7
+Toruń,miasto,1995,Lasy i drzewa,2319.8
+Toruń,miasto,1995,Wody,660.6
+Toruń,miasto,1995,Pozostałe,4857.8
+Toruń,strefa_0_2_5,1995,Zabudowa,1086.8
+Toruń,strefa_0_2_5,1995,Lasy i drzewa,6100.8
+Toruń,strefa_0_2_5,1995,Wody,406.0
+Toruń,strefa_0_2_5,1995,Pozostałe,8830.5
+Toruń,strefa_2_5_5,1995,Zabudowa,672.1
+Toruń,strefa_2_5_5,1995,Lasy i drzewa,7573.2
+Toruń,strefa_2_5_5,1995,Wody,208.7
+Toruń,strefa_2_5_5,1995,Pozostałe,10220.6
+Toruń,miasto,2000,Zabudowa,3864.5
+Toruń,miasto,2000,Lasy i drzewa,2877.7
+Toruń,miasto,2000,Wody,666.8
+Toruń,miasto,2000,Pozostałe,4161.8
+Toruń,strefa_0_2_5,2000,Zabudowa,1124.8
+Toruń,strefa_0_2_5,2000,Lasy i drzewa,6829.3
+Toruń,strefa_0_2_5,2000,Wody,417.3
+Toruń,strefa_0_2_5,2000,Pozostałe,8052.7
+Toruń,strefa_2_5_5,2000,Zabudowa,687.9
+Toruń,strefa_2_5_5,2000,Lasy i drzewa,8472.8
+Toruń,strefa_2_5_5,2000,Wody,215.2
+Toruń,strefa_2_5_5,2000,Pozostałe,9298.7
+Toruń,miasto,2005,Zabudowa,4037.8
+Toruń,miasto,2005,Lasy i drzewa,3245.0
+Toruń,miasto,2005,Wody,663.2
+Toruń,miasto,2005,Pozostałe,3624.9
+Toruń,strefa_0_2_5,2005,Zabudowa,1218.1
+Toruń,strefa_0_2_5,2005,Lasy i drzewa,7180.4
+Toruń,strefa_0_2_5,2005,Wody,415.2
+Toruń,strefa_0_2_5,2005,Pozostałe,7610.3
+Toruń,strefa_2_5_5,2005,Zabudowa,761.3
+Toruń,strefa_2_5_5,2005,Lasy i drzewa,9477.4
+Toruń,strefa_2_5_5,2005,Wody,218.2
+Toruń,strefa_2_5_5,2005,Pozostałe,8217.7
+Toruń,miasto,2010,Zabudowa,4360.5
+Toruń,miasto,2010,Lasy i drzewa,3501.6
+Toruń,miasto,2010,Wody,672.8
+Toruń,miasto,2010,Pozostałe,3036.0
+Toruń,strefa_0_2_5,2010,Zabudowa,1439.6
+Toruń,strefa_0_2_5,2010,Lasy i drzewa,7767.8
+Toruń,strefa_0_2_5,2010,Wody,425.3
+Toruń,strefa_0_2_5,2010,Pozostałe,6791.4
+Toruń,strefa_2_5_5,2010,Zabudowa,957.2
+Toruń,strefa_2_5_5,2010,Lasy i drzewa,10170.9
+Toruń,strefa_2_5_5,2010,Wody,229.4
+Toruń,strefa_2_5_5,2010,Pozostałe,7317.1
+Toruń,miasto,2015,Zabudowa,4664.3
+Toruń,miasto,2015,Lasy i drzewa,3791.5
+Toruń,miasto,2015,Wody,682.5
+Toruń,miasto,2015,Pozostałe,2432.6
+Toruń,strefa_0_2_5,2015,Zabudowa,1626.5
+Toruń,strefa_0_2_5,2015,Lasy i drzewa,8305.4
+Toruń,strefa_0_2_5,2015,Wody,444.0
+Toruń,strefa_0_2_5,2015,Pozostałe,6048.2
+Toruń,strefa_2_5_5,2015,Zabudowa,1189.9
+Toruń,strefa_2_5_5,2015,Lasy i drzewa,10519.9
+Toruń,strefa_2_5_5,2015,Wody,240.4
+Toruń,strefa_2_5_5,2015,Pozostałe,6724.5
+Toruń,miasto,2020,Zabudowa,4870.2
+Toruń,miasto,2020,Lasy i drzewa,3919.2
+Toruń,miasto,2020,Wody,682.3
+Toruń,miasto,2020,Pozostałe,2099.2
+Toruń,strefa_0_2_5,2020,Zabudowa,1749.6
+Toruń,strefa_0_2_5,2020,Lasy i drzewa,8482.4
+Toruń,strefa_0_2_5,2020,Wody,443.6
+Toruń,strefa_0_2_5,2020,Pozostałe,5748.4
+Toruń,strefa_2_5_5,2020,Zabudowa,1338.6
+Toruń,strefa_2_5_5,2020,Lasy i drzewa,10597.6
+Toruń,strefa_2_5_5,2020,Wody,247.2
+Toruń,strefa_2_5_5,2020,Pozostałe,6491.2
+Toruń,miasto,2025,Zabudowa,4973.6
+Toruń,miasto,2025,Lasy i drzewa,3954.5
+Toruń,miasto,2025,Wody,679.2
+Toruń,miasto,2025,Pozostałe,1963.6
+Toruń,strefa_0_2_5,2025,Zabudowa,1831.7
+Toruń,strefa_0_2_5,2025,Lasy i drzewa,8513.6
+Toruń,strefa_0_2_5,2025,Wody,441.7
+Toruń,strefa_0_2_5,2025,Pozostałe,5637.2
+Toruń,strefa_2_5_5,2025,Zabudowa,1414.0
+Toruń,strefa_2_5_5,2025,Lasy i drzewa,10628.8
+Toruń,strefa_2_5_5,2025,Wody,249.6
+Toruń,strefa_2_5_5,2025,Pozostałe,6382.2

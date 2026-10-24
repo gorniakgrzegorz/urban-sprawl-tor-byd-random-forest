@@ -1,0 +1,9 @@
+Miasto,Okres,Kwadraty w AOI,Hot 99%,Hot 95%,Hot 90%,"Cold (<= -1,96)",Hot spoty po korekcie FDR 5%,Udział nowej zabudowy w hot spotach 95% [%],Hot 95% w strefie miasto [szt.],Hot 95% w strefie strefa_0_2_5 [szt.],Hot 95% w strefie strefa_2_5_5 [szt.]
+Bydgoszcz,1985–2025,612,60,22,12,40,51,45.9,34,24,24
+Bydgoszcz,1985–2005,612,52,30,17,0,45,44.9,53,17,12
+Bydgoszcz,2005–2025,612,44,27,12,0,37,48.6,19,24,28
+Bydgoszcz,1990–2025,612,60,17,17,0,51,47.2,30,23,24
+Toruń,1985–2025,449,58,15,14,55,56,53.9,45,15,13
+Toruń,1985–2005,449,51,24,12,0,38,56.7,47,22,6
+Toruń,2005–2025,449,45,23,11,0,39,52.5,36,16,16
+Toruń,1990–2025,449,58,13,17,38,55,53.7,44,13,14

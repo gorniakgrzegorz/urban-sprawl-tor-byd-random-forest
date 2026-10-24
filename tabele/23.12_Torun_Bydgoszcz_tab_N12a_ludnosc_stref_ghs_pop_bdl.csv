@@ -1,0 +1,55 @@
+Miasto,Strefa,Rok,Ludność GHS-POP,GHS-POP: typ epoki,Ludność BDL (gminy ważone powierzchnią / gmina miejska),GHS-POP / BDL
+Bydgoszcz,miasto,1985,366877,oszacowanie z danych spisowych,,
+Bydgoszcz,miasto,1990,382199,oszacowanie z danych spisowych,,
+Bydgoszcz,miasto,1995,386614,oszacowanie z danych spisowych,386055.0,1.001
+Bydgoszcz,miasto,2000,379771,oszacowanie z danych spisowych,375675.0,1.011
+Bydgoszcz,miasto,2005,372747,oszacowanie z danych spisowych,366073.0,1.018
+Bydgoszcz,miasto,2010,365646,oszacowanie z danych spisowych,364442.0,1.003
+Bydgoszcz,miasto,2015,356152,oszacowanie z danych spisowych,355644.0,1.001
+Bydgoszcz,miasto,2020,345832,oszacowanie z danych spisowych,339067.0,1.02
+Bydgoszcz,miasto,2025,350510,projekcja,321099.0,1.092
+Bydgoszcz,strefa_0_2_5,1985,10393,oszacowanie z danych spisowych,,
+Bydgoszcz,strefa_0_2_5,1990,11390,oszacowanie z danych spisowych,,
+Bydgoszcz,strefa_0_2_5,1995,12745,oszacowanie z danych spisowych,13398.0,0.951
+Bydgoszcz,strefa_0_2_5,2000,14577,oszacowanie z danych spisowych,14575.0,1.0
+Bydgoszcz,strefa_0_2_5,2005,17111,oszacowanie z danych spisowych,17163.0,0.997
+Bydgoszcz,strefa_0_2_5,2010,20310,oszacowanie z danych spisowych,20409.0,0.995
+Bydgoszcz,strefa_0_2_5,2015,23466,oszacowanie z danych spisowych,22578.0,1.039
+Bydgoszcz,strefa_0_2_5,2020,25512,oszacowanie z danych spisowych,26114.0,0.977
+Bydgoszcz,strefa_0_2_5,2025,28579,projekcja,28854.0,0.99
+Bydgoszcz,strefa_2_5_5,1985,15467,oszacowanie z danych spisowych,,
+Bydgoszcz,strefa_2_5_5,1990,16841,oszacowanie z danych spisowych,,
+Bydgoszcz,strefa_2_5_5,1995,18656,oszacowanie z danych spisowych,14280.0,1.306
+Bydgoszcz,strefa_2_5_5,2000,20972,oszacowanie z danych spisowych,15371.0,1.364
+Bydgoszcz,strefa_2_5_5,2005,23784,oszacowanie z danych spisowych,17734.0,1.341
+Bydgoszcz,strefa_2_5_5,2010,27148,oszacowanie z danych spisowych,20726.0,1.31
+Bydgoszcz,strefa_2_5_5,2015,30465,oszacowanie z danych spisowych,22754.0,1.339
+Bydgoszcz,strefa_2_5_5,2020,33124,oszacowanie z danych spisowych,25812.0,1.283
+Bydgoszcz,strefa_2_5_5,2025,36831,projekcja,28080.0,1.312
+Toruń,miasto,1985,186606,oszacowanie z danych spisowych,,
+Toruń,miasto,1990,199306,oszacowanie z danych spisowych,,
+Toruń,miasto,1995,207978,oszacowanie z danych spisowych,204659.0,1.016
+Toruń,miasto,2000,212023,oszacowanie z danych spisowych,210193.0,1.009
+Toruń,miasto,2005,210803,oszacowanie z danych spisowych,208006.0,1.013
+Toruń,miasto,2010,206446,oszacowanie z danych spisowych,205128.0,1.006
+Toruń,miasto,2015,202723,oszacowanie z danych spisowych,202688.0,1.0
+Toruń,miasto,2020,199308,oszacowanie z danych spisowych,198800.0,1.003
+Toruń,miasto,2025,204526,projekcja,192783.0,1.061
+Toruń,strefa_0_2_5,1985,11372,oszacowanie z danych spisowych,,
+Toruń,strefa_0_2_5,1990,12308,oszacowanie z danych spisowych,,
+Toruń,strefa_0_2_5,1995,13548,oszacowanie z danych spisowych,9641.0,1.405
+Toruń,strefa_0_2_5,2000,15159,oszacowanie z danych spisowych,10044.0,1.509
+Toruń,strefa_0_2_5,2005,17049,oszacowanie z danych spisowych,11604.0,1.469
+Toruń,strefa_0_2_5,2010,19185,oszacowanie z danych spisowych,12904.0,1.487
+Toruń,strefa_0_2_5,2015,21273,oszacowanie z danych spisowych,13634.0,1.56
+Toruń,strefa_0_2_5,2020,22718,oszacowanie z danych spisowych,14822.0,1.533
+Toruń,strefa_0_2_5,2025,24786,projekcja,15336.0,1.616
+Toruń,strefa_2_5_5,1985,7874,oszacowanie z danych spisowych,,
+Toruń,strefa_2_5_5,1990,8417,oszacowanie z danych spisowych,,
+Toruń,strefa_2_5_5,1995,9229,oszacowanie z danych spisowych,9566.0,0.965
+Toruń,strefa_2_5_5,2000,10271,oszacowanie z danych spisowych,10002.0,1.027
+Toruń,strefa_2_5_5,2005,12095,oszacowanie z danych spisowych,11488.0,1.053
+Toruń,strefa_2_5_5,2010,14227,oszacowanie z danych spisowych,12990.0,1.095
+Toruń,strefa_2_5_5,2015,16100,oszacowanie z danych spisowych,14016.0,1.149
+Toruń,strefa_2_5_5,2020,17626,oszacowanie z danych spisowych,15507.0,1.137
+Toruń,strefa_2_5_5,2025,19487,projekcja,16265.0,1.198

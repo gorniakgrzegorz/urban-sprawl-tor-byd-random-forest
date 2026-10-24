@@ -1,0 +1,21 @@
+Miasto,Próg [%],Reguła,Zakres,Front 1985 [km],Front 1990 [km],Front 1995 [km],Front 2000 [km],Front 2005 [km],Front 2010 [km],Front 2015 [km],Front 2020 [km],Front 2025 [km],Nachylenie front–epoka [m/rok],CI95 dolny [m/rok],CI95 górny [m/rok],R²
+Bydgoszcz,10,najdalszy pierścień ≥ progu,wszystkie sektory (profil pierścieni),6.75,7.25,9.75,9.75,9.75,11.25,11.75,12.25,16.75,201.7,130.6,272.8,0.865
+Bydgoszcz,10,front ciągły od centrum,wszystkie sektory (profil pierścieni),6.75,7.25,7.25,7.25,7.25,10.25,10.25,10.25,13.25,146.7,83.0,210.4,0.809
+Bydgoszcz,15,najdalszy pierścień ≥ progu,wszystkie sektory (profil pierścieni),6.75,6.75,6.75,7.25,7.25,7.25,9.25,9.25,9.25,75.0,41.9,108.1,0.804
+Bydgoszcz,15,front ciągły od centrum,wszystkie sektory (profil pierścieni),6.75,6.75,6.75,7.25,7.25,7.25,7.25,7.25,7.25,15.0,5.7,24.3,0.675
+Bydgoszcz,20,najdalszy pierścień ≥ progu,wszystkie sektory (profil pierścieni),5.75,6.25,6.75,6.75,6.75,6.75,6.75,6.75,7.25,25.0,9.5,40.5,0.675
+Bydgoszcz,20,front ciągły od centrum,wszystkie sektory (profil pierścieni),5.75,6.25,6.75,6.75,6.75,6.75,6.75,6.75,7.25,25.0,9.5,40.5,0.675
+Bydgoszcz,25,najdalszy pierścień ≥ progu,wszystkie sektory (profil pierścieni),4.25,5.75,5.75,5.75,6.25,6.25,6.25,6.75,6.75,48.3,24.7,72.0,0.769
+Bydgoszcz,25,front ciągły od centrum,wszystkie sektory (profil pierścieni),4.25,5.75,5.75,5.75,6.25,6.25,6.25,6.75,6.75,48.3,24.7,72.0,0.769
+Bydgoszcz,30,najdalszy pierścień ≥ progu,wszystkie sektory (profil pierścieni),4.25,4.25,4.75,5.25,5.25,5.75,5.75,5.75,6.25,50.0,38.5,61.5,0.938
+Bydgoszcz,30,front ciągły od centrum,wszystkie sektory (profil pierścieni),4.25,4.25,4.75,5.25,5.25,5.75,5.75,5.75,6.25,50.0,38.5,61.5,0.938
+Toruń,10,najdalszy pierścień ≥ progu,wszystkie sektory (profil pierścieni),4.75,5.75,6.25,6.25,7.75,7.75,8.25,9.25,9.25,113.3,93.6,133.1,0.963
+Toruń,10,front ciągły od centrum,wszystkie sektory (profil pierścieni),4.75,4.75,6.25,6.25,6.75,7.75,8.25,9.25,9.25,123.3,103.5,143.2,0.969
+Toruń,15,najdalszy pierścień ≥ progu,wszystkie sektory (profil pierścieni),4.25,4.25,4.25,4.25,4.25,5.75,5.75,7.75,7.75,96.7,51.3,142.1,0.784
+Toruń,15,front ciągły od centrum,wszystkie sektory (profil pierścieni),4.25,4.25,4.25,4.25,4.25,4.75,5.75,6.25,7.75,78.3,36.4,120.2,0.736
+Toruń,20,najdalszy pierścień ≥ progu,wszystkie sektory (profil pierścieni),3.75,4.25,4.25,4.25,4.25,4.25,4.25,4.25,4.25,6.7,-2.4,15.8,0.3
+Toruń,20,front ciągły od centrum,wszystkie sektory (profil pierścieni),3.75,4.25,4.25,4.25,4.25,4.25,4.25,4.25,4.25,6.7,-2.4,15.8,0.3
+Toruń,25,najdalszy pierścień ≥ progu,wszystkie sektory (profil pierścieni),3.75,3.75,3.75,3.75,4.25,4.25,4.25,4.25,4.25,16.7,8.1,25.3,0.75
+Toruń,25,front ciągły od centrum,wszystkie sektory (profil pierścieni),3.75,3.75,3.75,3.75,4.25,4.25,4.25,4.25,4.25,16.7,8.1,25.3,0.75
+Toruń,30,najdalszy pierścień ≥ progu,wszystkie sektory (profil pierścieni),3.75,3.75,3.75,3.75,3.75,3.75,4.25,4.25,4.25,15.0,5.7,24.3,0.675
+Toruń,30,front ciągły od centrum,wszystkie sektory (profil pierścieni),2.75,3.75,3.75,3.75,3.75,3.75,4.25,4.25,4.25,28.3,11.7,44.9,0.699

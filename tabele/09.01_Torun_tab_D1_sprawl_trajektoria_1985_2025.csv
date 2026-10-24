@@ -1,0 +1,55 @@
+Seria,Rok,Strefa,Zabudowa [ha],Tempo [%/rok],Tempo wykładnicze [%/rok]
+A: RF/Landsat 30 m,1985,miasto,2984.4,,
+A: RF/Landsat 30 m,1990,miasto,3485.5,3.36,3.15
+A: RF/Landsat 30 m,1995,miasto,3735.0,1.43,1.39
+A: RF/Landsat 30 m,2000,miasto,3868.3,0.71,0.7
+A: RF/Landsat 30 m,2005,miasto,4042.2,0.9,0.88
+A: RF/Landsat 30 m,2006,miasto,4142.6,2.48,2.48
+A: RF/Landsat 30 m,2010,miasto,4366.5,1.35,1.32
+A: RF/Landsat 30 m,2015,miasto,4672.6,1.4,1.36
+A: RF/Landsat 30 m,2020,miasto,4878.5,0.88,0.87
+A: RF/Landsat 30 m,2025,miasto,4980.9,0.42,0.42
+A: RF/Landsat 30 m,1985,strefa_0_2_5,624.9,,
+A: RF/Landsat 30 m,1990,strefa_0_2_5,948.9,10.37,8.71
+A: RF/Landsat 30 m,1995,strefa_0_2_5,1084.2,2.85,2.7
+A: RF/Landsat 30 m,2000,strefa_0_2_5,1122.8,0.71,0.7
+A: RF/Landsat 30 m,2005,strefa_0_2_5,1216.2,1.66,1.61
+A: RF/Landsat 30 m,2006,strefa_0_2_5,1287.1,5.83,5.83
+A: RF/Landsat 30 m,2010,strefa_0_2_5,1442.0,3.01,2.88
+A: RF/Landsat 30 m,2015,strefa_0_2_5,1631.0,2.62,2.49
+A: RF/Landsat 30 m,2020,strefa_0_2_5,1753.5,1.5,1.46
+A: RF/Landsat 30 m,2025,strefa_0_2_5,1835.6,0.94,0.92
+A: RF/Landsat 30 m,1985,strefa_2_5_5,408.9,,
+A: RF/Landsat 30 m,1990,strefa_2_5_5,595.5,9.13,7.81
+A: RF/Landsat 30 m,1995,strefa_2_5_5,671.7,2.56,2.44
+A: RF/Landsat 30 m,2000,strefa_2_5_5,687.5,0.47,0.47
+A: RF/Landsat 30 m,2005,strefa_2_5_5,759.3,2.09,2.01
+A: RF/Landsat 30 m,2006,strefa_2_5_5,806.7,6.24,6.24
+A: RF/Landsat 30 m,2010,strefa_2_5_5,955.5,4.61,4.32
+A: RF/Landsat 30 m,2015,strefa_2_5_5,1189.8,4.9,4.48
+A: RF/Landsat 30 m,2020,strefa_2_5_5,1336.7,2.47,2.36
+A: RF/Landsat 30 m,2025,strefa_2_5_5,1412.1,1.13,1.1
+B30: RF/Sentinel-2 agreg. 30 m,2018,miasto,4234.0,,
+B30: RF/Sentinel-2 agreg. 30 m,2020,miasto,4697.0,5.47,5.33
+B30: RF/Sentinel-2 agreg. 30 m,2025,miasto,5024.7,1.4,1.36
+B30: RF/Sentinel-2 agreg. 30 m,2018,strefa_0_2_5,1497.1,,
+B30: RF/Sentinel-2 agreg. 30 m,2020,strefa_0_2_5,1814.9,10.61,10.1
+B30: RF/Sentinel-2 agreg. 30 m,2025,strefa_0_2_5,1975.4,1.77,1.71
+B30: RF/Sentinel-2 agreg. 30 m,2018,strefa_2_5_5,1095.2,,
+B30: RF/Sentinel-2 agreg. 30 m,2020,strefa_2_5_5,1394.8,13.68,12.85
+B30: RF/Sentinel-2 agreg. 30 m,2025,strefa_2_5_5,1530.3,1.94,1.87
+B: RF/Sentinel-2 10 m,2018,miasto,4186.1,,
+B: RF/Sentinel-2 10 m,2020,miasto,4657.8,5.63,5.48
+B: RF/Sentinel-2 10 m,2025,miasto,4985.8,1.41,1.37
+B: RF/Sentinel-2 10 m,2018,strefa_0_2_5,1493.9,,
+B: RF/Sentinel-2 10 m,2020,strefa_0_2_5,1802.9,10.34,9.86
+B: RF/Sentinel-2 10 m,2025,strefa_0_2_5,1963.0,1.78,1.72
+B: RF/Sentinel-2 10 m,2018,strefa_2_5_5,1101.8,,
+B: RF/Sentinel-2 10 m,2020,strefa_2_5_5,1388.8,13.02,12.27
+B: RF/Sentinel-2 10 m,2025,strefa_2_5_5,1524.3,1.95,1.88
+C: Dynamic World 10 m (odniesienie),2015,miasto,4902.0,,
+C: Dynamic World 10 m (odniesienie),2025,miasto,4862.8,-0.08,-0.08
+C: Dynamic World 10 m (odniesienie),2015,strefa_0_2_5,1749.3,,
+C: Dynamic World 10 m (odniesienie),2025,strefa_0_2_5,1906.1,0.9,0.86
+C: Dynamic World 10 m (odniesienie),2015,strefa_2_5_5,1348.7,,
+C: Dynamic World 10 m (odniesienie),2025,strefa_2_5_5,1512.2,1.21,1.15

@@ -1,0 +1,17 @@
+Miasto,Strefa,Rok,Ograniczona do serii A 1985 [ha],"Maska M i kumulacja, bez ograniczenia 1985 [ha]",Różnica [ha],Różnica [% wersji wynikowej]
+Toruń,miasto,1975,1941.5,2933.5,992.0,51.1
+Toruń,miasto,1980,2386.5,3658.2,1271.7,53.3
+Toruń,strefa_0_2_5,1975,122.4,246.3,123.9,101.2
+Toruń,strefa_0_2_5,1980,185.5,353.3,167.8,90.5
+Toruń,strefa_2_5_5,1975,60.7,153.5,92.8,153.1
+Toruń,strefa_2_5_5,1980,91.8,213.1,121.2,132.0
+Toruń,AOI,1975,2124.6,3333.3,1208.7,56.9
+Toruń,AOI,1980,2663.8,4224.6,1560.7,58.6
+Bydgoszcz,miasto,1975,3226.8,4149.6,922.9,28.6
+Bydgoszcz,miasto,1980,4084.7,5495.4,1410.7,34.5
+Bydgoszcz,strefa_0_2_5,1975,208.6,477.4,268.9,128.9
+Bydgoszcz,strefa_0_2_5,1980,276.8,659.6,382.8,138.3
+Bydgoszcz,strefa_2_5_5,1975,174.9,504.1,329.3,188.3
+Bydgoszcz,strefa_2_5_5,1980,298.2,869.0,570.8,191.4
+Bydgoszcz,AOI,1975,3610.2,5131.3,1521.0,42.1
+Bydgoszcz,AOI,1980,4659.7,7024.0,2364.3,50.7

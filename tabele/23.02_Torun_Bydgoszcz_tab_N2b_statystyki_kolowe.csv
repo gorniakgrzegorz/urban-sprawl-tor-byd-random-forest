@@ -1,0 +1,27 @@
+Miasto,Typ okresu,Okres,Nowa zabudowa [ha],R (1. moment),Azymut wypadkowy [°],"R2 (2. moment, osiowy)",Azymut osiowy [°],Wzorzec,Entropia względna (16 sektorów),Sektor dominujący (krawędź),Udział sektora dominującego (krawędź) [%],Udział 3 sektorów (krawędź) [%],Sektor dominujący (centrowana),Udział sektora dominującego (centrowana) [%],Udział 3 sektorów (centrowana) [%]
+Bydgoszcz,pięciolecie,1985–1990,1367.4,0.133,339.4,0.12,64.5,"jednokierunkowy (R ≥ 0,1)",0.968,W,11.7,31.2,ENE,11.9,33.3
+Bydgoszcz,pięciolecie,1990–1995,910.4,0.215,302.6,0.234,81.8,"osiowy/dwumodalny (R2 > R, R2 ≥ 0,1)",0.938,W,18.1,37.7,ENE,15.1,40.6
+Bydgoszcz,pięciolecie,1995–2000,255.8,0.237,35.1,0.213,83.0,"jednokierunkowy (R ≥ 0,1)",0.937,ENE,14.6,39.4,ENE,23.4,40.9
+Bydgoszcz,pięciolecie,2000–2005,330.6,0.234,307.3,0.18,94.6,"jednokierunkowy (R ≥ 0,1)",0.947,W,17.7,36.8,W,16.5,36.8
+Bydgoszcz,pięciolecie,2005–2010,562.2,0.174,307.1,0.216,82.9,"osiowy/dwumodalny (R2 > R, R2 ≥ 0,1)",0.942,W,16.1,38.2,W,18.5,38.8
+Bydgoszcz,pięciolecie,2010–2015,1031.2,0.247,305.2,0.19,72.5,"jednokierunkowy (R ≥ 0,1)",0.93,W,17.8,39.6,W,20.2,40.5
+Bydgoszcz,pięciolecie,2015–2020,810.8,0.274,311.4,0.204,70.3,"jednokierunkowy (R ≥ 0,1)",0.916,WSW,16.0,42.5,W,21.1,40.8
+Bydgoszcz,pięciolecie,2020–2025,406.3,0.308,309.3,0.118,74.8,"jednokierunkowy (R ≥ 0,1)",0.927,WSW,14.6,39.4,W,19.3,39.2
+Bydgoszcz,dekada,1985–1995,2277.7,0.157,320.3,0.158,74.3,"osiowy/dwumodalny (R2 > R, R2 ≥ 0,1)",0.963,W,14.2,32.0,ENE,13.2,34.9
+Bydgoszcz,dekada,1995–2005,586.4,0.171,344.6,0.19,89.0,"osiowy/dwumodalny (R2 > R, R2 ≥ 0,1)",0.957,W,15.8,35.2,ENE,16.7,38.5
+Bydgoszcz,dekada,2005–2015,1593.5,0.222,305.7,0.196,76.5,"jednokierunkowy (R ≥ 0,1)",0.937,W,17.2,38.5,W,19.6,39.4
+Bydgoszcz,dekada,2015–2025,1217.1,0.285,310.6,0.175,71.3,"jednokierunkowy (R ≥ 0,1)",0.922,WSW,15.5,41.5,W,20.5,40.2
+Bydgoszcz,cały okres,1985–2025,5674.6,0.201,314.9,0.173,75.9,"jednokierunkowy (R ≥ 0,1)",0.955,W,15.5,34.7,W,15.8,37.2
+Toruń,pięciolecie,1985–1990,1010.4,0.212,45.8,0.355,75.6,"osiowy/dwumodalny (R2 > R, R2 ≥ 0,1)",0.919,ENE,18.6,41.9,E,16.6,41.2
+Toruń,pięciolecie,1990–1995,460.3,0.23,34.1,0.319,75.3,"osiowy/dwumodalny (R2 > R, R2 ≥ 0,1)",0.909,ENE,20.1,46.0,ENE,19.4,40.8
+Toruń,pięciolecie,1995–2000,187.5,0.242,78.3,0.199,101.3,"jednokierunkowy (R ≥ 0,1)",0.909,ENE,20.5,44.0,E,17.1,43.4
+Toruń,pięciolecie,2000–2005,338.8,0.331,58.4,0.335,80.8,"osiowy/dwumodalny (R2 > R, R2 ≥ 0,1)",0.907,ENE,21.4,43.8,ENE,19.7,43.6
+Toruń,pięciolecie,2005–2010,745.3,0.358,65.8,0.266,85.7,"jednokierunkowy (R ≥ 0,1)",0.902,ENE,19.5,43.7,E,16.6,43.5
+Toruń,pięciolecie,2010–2015,728.5,0.338,69.5,0.214,97.6,"jednokierunkowy (R ≥ 0,1)",0.914,ENE,18.8,38.5,E,19.1,42.4
+Toruń,pięciolecie,2015–2020,474.5,0.301,49.0,0.102,101.6,"jednokierunkowy (R ≥ 0,1)",0.924,ENE,16.2,37.1,E,14.3,38.1
+Toruń,pięciolecie,2020–2025,259.5,0.229,53.2,0.179,88.4,"jednokierunkowy (R ≥ 0,1)",0.915,ENE,18.7,41.0,ENE,13.8,34.7
+Toruń,dekada,1985–1995,1470.7,0.217,42.0,0.344,75.5,"osiowy/dwumodalny (R2 > R, R2 ≥ 0,1)",0.919,ENE,19.1,43.1,ENE,16.3,40.4
+Toruń,dekada,1995–2005,526.2,0.296,64.1,0.273,85.7,"jednokierunkowy (R ≥ 0,1)",0.922,ENE,21.1,41.9,ENE,17.5,41.7
+Toruń,dekada,2005–2015,1473.8,0.348,67.6,0.235,90.9,"jednokierunkowy (R ≥ 0,1)",0.915,ENE,19.2,41.0,E,17.8,43.0
+Toruń,dekada,2015–2025,733.9,0.275,50.2,0.126,95.2,"jednokierunkowy (R ≥ 0,1)",0.926,ENE,17.1,38.1,E,13.4,36.9
+Toruń,cały okres,1985–2025,4204.7,0.278,57.3,0.25,83.4,"jednokierunkowy (R ≥ 0,1)",0.932,ENE,19.0,38.9,E,16.0,40.2

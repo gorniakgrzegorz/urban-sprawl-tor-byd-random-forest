@@ -1,0 +1,63 @@
+Miasto,Strefa,Metoda,Rok,Ludność,Uwagi
+Bydgoszcz,miasto,siatka: wagi powierzchni,2011,353995,
+Bydgoszcz,miasto,siatka: wagi zabudowy,2011,364050,zabudowa 2010
+Bydgoszcz,miasto,BDL: gminy ważone powierzchnią,2011,363020,rok BDL 2011
+Bydgoszcz,strefa_0_2_5,siatka: wagi powierzchni,2011,28551,
+Bydgoszcz,strefa_0_2_5,siatka: wagi zabudowy,2011,18330,zabudowa 2010
+Bydgoszcz,strefa_0_2_5,BDL: gminy ważone powierzchnią,2011,20933,rok BDL 2011
+Bydgoszcz,strefa_2_5_5,siatka: wagi powierzchni,2011,27522,
+Bydgoszcz,strefa_2_5_5,siatka: wagi zabudowy,2011,27688,zabudowa 2010
+Bydgoszcz,strefa_2_5_5,BDL: gminy ważone powierzchnią,2011,21218,rok BDL 2011
+Bydgoszcz,miasto,siatka: wagi powierzchni,2021,327914,
+Bydgoszcz,miasto,siatka: wagi zabudowy,2021,337864,zabudowa 2020
+Bydgoszcz,miasto,BDL: gminy ważone powierzchnią,2021,334026,rok BDL 2021
+Bydgoszcz,strefa_0_2_5,siatka: wagi powierzchni,2021,33148,
+Bydgoszcz,strefa_0_2_5,siatka: wagi zabudowy,2021,23084,zabudowa 2020
+Bydgoszcz,strefa_0_2_5,BDL: gminy ważone powierzchnią,2021,26753,rok BDL 2021
+Bydgoszcz,strefa_2_5_5,siatka: wagi powierzchni,2021,35002,
+Bydgoszcz,strefa_2_5_5,siatka: wagi zabudowy,2021,35116,zabudowa 2020
+Bydgoszcz,strefa_2_5_5,BDL: gminy ważone powierzchnią,2021,26360,rok BDL 2021
+Bydgoszcz,miasto,siatka 125 m (NSP 2021),2021,337029,pokrycie strefy komórkami 125 m 100.0%
+Bydgoszcz,pierscienie,siatka: wagi powierzchni,2011,56073,suma stref
+Bydgoszcz,AOI,siatka: wagi powierzchni,2011,410069,suma stref
+Bydgoszcz,pierscienie,siatka: wagi zabudowy,2011,46018,suma stref
+Bydgoszcz,AOI,siatka: wagi zabudowy,2011,410069,suma stref
+Bydgoszcz,pierscienie,BDL: gminy ważone powierzchnią,2011,42151,suma stref
+Bydgoszcz,AOI,BDL: gminy ważone powierzchnią,2011,405171,suma stref
+Bydgoszcz,pierscienie,siatka: wagi powierzchni,2021,68150,suma stref
+Bydgoszcz,AOI,siatka: wagi powierzchni,2021,396064,suma stref
+Bydgoszcz,pierscienie,siatka: wagi zabudowy,2021,58200,suma stref
+Bydgoszcz,AOI,siatka: wagi zabudowy,2021,396064,suma stref
+Bydgoszcz,pierscienie,BDL: gminy ważone powierzchnią,2021,53113,suma stref
+Bydgoszcz,AOI,BDL: gminy ważone powierzchnią,2021,387139,suma stref
+Toruń,miasto,siatka: wagi powierzchni,2011,204222,
+Toruń,miasto,siatka: wagi zabudowy,2011,204762,zabudowa 2010
+Toruń,miasto,BDL: gminy ważone powierzchnią,2011,204921,rok BDL 2011
+Toruń,strefa_0_2_5,siatka: wagi powierzchni,2011,21021,
+Toruń,strefa_0_2_5,siatka: wagi zabudowy,2011,19710,zabudowa 2010
+Toruń,strefa_0_2_5,BDL: gminy ważone powierzchnią,2011,13105,rok BDL 2011
+Toruń,strefa_2_5_5,siatka: wagi powierzchni,2011,12212,
+Toruń,strefa_2_5_5,siatka: wagi zabudowy,2011,12982,zabudowa 2010
+Toruń,strefa_2_5_5,BDL: gminy ważone powierzchnią,2011,13243,rok BDL 2011
+Toruń,miasto,siatka: wagi powierzchni,2021,197235,
+Toruń,miasto,siatka: wagi zabudowy,2021,197946,zabudowa 2020
+Toruń,miasto,BDL: gminy ważone powierzchnią,2021,197112,rok BDL 2021
+Toruń,strefa_0_2_5,siatka: wagi powierzchni,2021,24734,
+Toruń,strefa_0_2_5,siatka: wagi zabudowy,2021,23200,zabudowa 2020
+Toruń,strefa_0_2_5,BDL: gminy ważone powierzchnią,2021,14971,rok BDL 2021
+Toruń,strefa_2_5_5,siatka: wagi powierzchni,2021,16137,
+Toruń,strefa_2_5_5,siatka: wagi zabudowy,2021,16960,zabudowa 2020
+Toruń,strefa_2_5_5,BDL: gminy ważone powierzchnią,2021,15720,rok BDL 2021
+Toruń,miasto,siatka 125 m (NSP 2021),2021,198226,pokrycie strefy komórkami 125 m 100.0%
+Toruń,pierscienie,siatka: wagi powierzchni,2011,33233,suma stref
+Toruń,AOI,siatka: wagi powierzchni,2011,237454,suma stref
+Toruń,pierscienie,siatka: wagi zabudowy,2011,32693,suma stref
+Toruń,AOI,siatka: wagi zabudowy,2011,237454,suma stref
+Toruń,pierscienie,BDL: gminy ważone powierzchnią,2011,26348,suma stref
+Toruń,AOI,BDL: gminy ważone powierzchnią,2011,231269,suma stref
+Toruń,pierscienie,siatka: wagi powierzchni,2021,40871,suma stref
+Toruń,AOI,siatka: wagi powierzchni,2021,238106,suma stref
+Toruń,pierscienie,siatka: wagi zabudowy,2021,40160,suma stref
+Toruń,AOI,siatka: wagi zabudowy,2021,238106,suma stref
+Toruń,pierscienie,BDL: gminy ważone powierzchnią,2021,30691,suma stref
+Toruń,AOI,BDL: gminy ważone powierzchnią,2021,227803,suma stref

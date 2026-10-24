@@ -1,0 +1,37 @@
+Rok,Okno [lata],Sceny letnie,Sensor,Obszar,blue,green,red,nir,swir1,swir2,ndvi,nbr
+1985,"[1984, 1986]",29,TM/ETM+ (harmonizacja),pożarzysko (lasy CORINE 1990),0.0352,0.0592,0.0537,0.2177,0.1428,0.0864,0.6144,0.509
+1985,"[1984, 1986]",29,TM/ETM+ (harmonizacja),lasy kontrolne,,,,,,,,
+1990,"[1989, 1991]",50,TM/ETM+ (harmonizacja),pożarzysko (lasy CORINE 1990),0.0295,0.0519,0.0459,0.2005,0.1287,0.075,0.6302,0.5133
+1990,"[1989, 1991]",50,TM/ETM+ (harmonizacja),lasy kontrolne,,,,,,,,
+1991,"[1991, 1991]",14,TM/ETM+ (harmonizacja),pożarzysko (lasy CORINE 1990),0.0276,0.0497,0.0423,0.207,0.1223,0.0679,0.6599,0.5666
+1991,"[1991, 1991]",14,TM/ETM+ (harmonizacja),lasy kontrolne,,,,,,,,
+1992,"[1992, 1992]",19,TM/ETM+ (harmonizacja),pożarzysko (lasy CORINE 1990),0.0401,0.0616,0.0602,0.2148,0.1347,0.0841,0.5615,0.4776
+1992,"[1992, 1992]",19,TM/ETM+ (harmonizacja),lasy kontrolne,,,,,,,,
+1993,"[1993, 1993]",12,TM/ETM+ (harmonizacja),pożarzysko (lasy CORINE 1990),0.0506,0.0738,0.0838,0.1786,0.2199,0.1914,0.3574,-0.0845
+1993,"[1993, 1993]",12,TM/ETM+ (harmonizacja),lasy kontrolne,,,,,,,,
+1994,"[1994, 1994]",19,TM/ETM+ (harmonizacja),pożarzysko (lasy CORINE 1990),0.0758,0.1056,0.1219,0.2198,0.2642,0.2252,0.2868,-0.0319
+1994,"[1994, 1994]",19,TM/ETM+ (harmonizacja),lasy kontrolne,,,,,,,,
+1995,"[1994, 1996]",48,TM/ETM+ (harmonizacja),pożarzysko (lasy CORINE 1990),0.0694,0.1003,0.1141,0.2265,0.2659,0.2188,0.3305,0.0021
+1995,"[1994, 1996]",48,TM/ETM+ (harmonizacja),lasy kontrolne,,,,,,,,
+1996,"[1996, 1996]",15,TM/ETM+ (harmonizacja),pożarzysko (lasy CORINE 1990),0.0576,0.091,0.1008,0.2396,0.2654,0.208,0.4112,0.0711
+1996,"[1996, 1996]",15,TM/ETM+ (harmonizacja),lasy kontrolne,,,,,,,,
+1997,"[1997, 1997]",16,TM/ETM+ (harmonizacja),pożarzysko (lasy CORINE 1990),0.0489,0.078,0.0834,0.2254,0.2322,0.1668,0.4605,0.1469
+1997,"[1997, 1997]",16,TM/ETM+ (harmonizacja),lasy kontrolne,,,,,,,,
+1998,"[1998, 1998]",10,TM/ETM+ (harmonizacja),pożarzysko (lasy CORINE 1990),0.0385,0.0652,0.0664,0.2174,0.2072,0.1454,0.5317,0.1984
+1998,"[1998, 1998]",10,TM/ETM+ (harmonizacja),lasy kontrolne,,,,,,,,
+1999,"[1999, 1999]",18,TM/ETM+ (harmonizacja),pożarzysko (lasy CORINE 1990),0.0468,0.073,0.0717,0.2369,0.1876,0.1208,0.535,0.3376
+1999,"[1999, 1999]",18,TM/ETM+ (harmonizacja),lasy kontrolne,,,,,,,,
+2000,"[1999, 2001]",90,TM/ETM+ (harmonizacja),pożarzysko (lasy CORINE 1990),0.0369,0.0604,0.0579,0.2365,0.1796,0.1111,0.604,0.3812
+2000,"[1999, 2001]",90,TM/ETM+ (harmonizacja),lasy kontrolne,,,,,,,,
+2005,"[2004, 2006]",84,TM/ETM+ (harmonizacja),pożarzysko (lasy CORINE 1990),0.029,0.0513,0.0459,0.2332,0.1378,0.0742,0.6711,0.5719
+2005,"[2004, 2006]",84,TM/ETM+ (harmonizacja),lasy kontrolne,,,,,,,,
+2006,"[2005, 2007]",80,TM/ETM+ (harmonizacja),pożarzysko (lasy CORINE 1990),0.0265,0.0485,0.0426,0.2314,0.1344,0.0716,0.6886,0.5846
+2006,"[2005, 2007]",80,TM/ETM+ (harmonizacja),lasy kontrolne,,,,,,,,
+2010,"[2009, 2011]",93,TM/ETM+ (harmonizacja),pożarzysko (lasy CORINE 1990),0.0239,0.0461,0.0381,0.2402,0.1273,0.065,0.7262,0.6384
+2010,"[2009, 2011]",93,TM/ETM+ (harmonizacja),lasy kontrolne,,,,,,,,
+2015,"[2014, 2016]",59,OLI,pożarzysko (lasy CORINE 1990),0.0181,0.037,0.0272,0.2275,0.1088,0.0518,0.787,0.6332
+2015,"[2014, 2016]",59,OLI,lasy kontrolne,,,,,,,,
+2020,"[2019, 2021]",56,OLI,pożarzysko (lasy CORINE 1990),0.0213,0.0413,0.0315,0.2386,0.1243,0.0612,0.7664,0.5941
+2020,"[2019, 2021]",56,OLI,lasy kontrolne,,,,,,,,
+2025,"[2024, 2026]",107,OLI,pożarzysko (lasy CORINE 1990),0.0207,0.0406,0.0314,0.2396,0.1212,0.0593,0.7737,0.614
+2025,"[2024, 2026]",107,OLI,lasy kontrolne,,,,,,,,

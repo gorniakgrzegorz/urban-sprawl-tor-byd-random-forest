@@ -1,0 +1,121 @@
+Plik,Sekcja,Miasto,Rozmiar [kB],Opis
+byd_mss_built_1975.tif,,,21,
+byd_mss_built_1980.tif,,,23,
+byd_v3_dw_2015.tif,,,301,Bydgoszcz: etykiety Dynamic World (odniesienie)
+byd_v3_dw_2025.tif,,,297,Bydgoszcz: etykiety Dynamic World (odniesienie)
+byd_v3_forma_przyrostu_1985_1990.tif,,,61,"Bydgoszcz: forma nowej zabudowy (1 infill, 2 edge, 3 leapfrog)"
+byd_v3_forma_przyrostu_1990_1995.tif,,,55,"Bydgoszcz: forma nowej zabudowy (1 infill, 2 edge, 3 leapfrog)"
+byd_v3_forma_przyrostu_1995_2000.tif,,,46,"Bydgoszcz: forma nowej zabudowy (1 infill, 2 edge, 3 leapfrog)"
+byd_v3_forma_przyrostu_2000_2005.tif,,,48,"Bydgoszcz: forma nowej zabudowy (1 infill, 2 edge, 3 leapfrog)"
+byd_v3_forma_przyrostu_2005_2010.tif,,,51,"Bydgoszcz: forma nowej zabudowy (1 infill, 2 edge, 3 leapfrog)"
+byd_v3_forma_przyrostu_2010_2015.tif,,,57,"Bydgoszcz: forma nowej zabudowy (1 infill, 2 edge, 3 leapfrog)"
+byd_v3_forma_przyrostu_2015_2020.tif,,,54,"Bydgoszcz: forma nowej zabudowy (1 infill, 2 edge, 3 leapfrog)"
+byd_v3_forma_przyrostu_2020_2025.tif,,,49,"Bydgoszcz: forma nowej zabudowy (1 infill, 2 edge, 3 leapfrog)"
+byd_v3_gestosc_klasa_1985.tif,,,77,Bydgoszcz: klasa gęstości zabudowy w oknie 330 m
+byd_v3_gestosc_klasa_2005.tif,,,82,Bydgoszcz: klasa gęstości zabudowy w oknie 330 m
+byd_v3_gestosc_klasa_2025.tif,,,82,Bydgoszcz: klasa gęstości zabudowy w oknie 330 m
+byd_v3_rf_4kl_1985.tif,,,68,Bydgoszcz: mapa 4-klasowa RF dla epoki z nazwy
+byd_v3_rf_4kl_1990.tif,,,70,Bydgoszcz: mapa 4-klasowa RF dla epoki z nazwy
+byd_v3_rf_4kl_1995.tif,,,67,Bydgoszcz: mapa 4-klasowa RF dla epoki z nazwy
+byd_v3_rf_4kl_2000.tif,,,66,Bydgoszcz: mapa 4-klasowa RF dla epoki z nazwy
+byd_v3_rf_4kl_2005.tif,,,64,Bydgoszcz: mapa 4-klasowa RF dla epoki z nazwy
+byd_v3_rf_4kl_2010.tif,,,66,Bydgoszcz: mapa 4-klasowa RF dla epoki z nazwy
+byd_v3_rf_4kl_2015.tif,,,67,Bydgoszcz: mapa 4-klasowa RF dla epoki z nazwy
+byd_v3_rf_4kl_2020.tif,,,67,Bydgoszcz: mapa 4-klasowa RF dla epoki z nazwy
+byd_v3_rf_4kl_2025.tif,,,66,Bydgoszcz: mapa 4-klasowa RF dla epoki z nazwy
+byd_v3_rf_built_1985.tif,,,30,Bydgoszcz: mapa zabudowy RF/Landsat 30 m
+byd_v3_rf_built_1990.tif,,,32,Bydgoszcz: mapa zabudowy RF/Landsat 30 m
+byd_v3_rf_built_1995.tif,,,33,Bydgoszcz: mapa zabudowy RF/Landsat 30 m
+byd_v3_rf_built_2000.tif,,,33,Bydgoszcz: mapa zabudowy RF/Landsat 30 m
+byd_v3_rf_built_2005.tif,,,33,Bydgoszcz: mapa zabudowy RF/Landsat 30 m
+byd_v3_rf_built_2010.tif,,,33,Bydgoszcz: mapa zabudowy RF/Landsat 30 m
+byd_v3_rf_built_2015.tif,,,33,Bydgoszcz: mapa zabudowy RF/Landsat 30 m
+byd_v3_rf_built_2020.tif,,,33,Bydgoszcz: mapa zabudowy RF/Landsat 30 m
+byd_v3_rf_built_2025.tif,,,33,Bydgoszcz: mapa zabudowy RF/Landsat 30 m
+byd_v3_rf_pbuilt_1985.tif,,,664,Bydgoszcz: p(zabudowa) RF/Landsat w procentach
+byd_v3_rf_pbuilt_1990.tif,,,650,Bydgoszcz: p(zabudowa) RF/Landsat w procentach
+byd_v3_rf_pbuilt_1995.tif,,,668,Bydgoszcz: p(zabudowa) RF/Landsat w procentach
+byd_v3_rf_pbuilt_2000.tif,,,585,Bydgoszcz: p(zabudowa) RF/Landsat w procentach
+byd_v3_rf_pbuilt_2005.tif,,,600,Bydgoszcz: p(zabudowa) RF/Landsat w procentach
+byd_v3_rf_pbuilt_2010.tif,,,597,Bydgoszcz: p(zabudowa) RF/Landsat w procentach
+byd_v3_rf_pbuilt_2015.tif,,,532,Bydgoszcz: p(zabudowa) RF/Landsat w procentach
+byd_v3_rf_pbuilt_2020.tif,,,568,Bydgoszcz: p(zabudowa) RF/Landsat w procentach
+byd_v3_rf_pbuilt_2025.tif,,,556,Bydgoszcz: p(zabudowa) RF/Landsat w procentach
+byd_v3_rf_s2_built_2018.tif,,,198,Bydgoszcz: mapa zabudowy RF/Sentinel-2 10 m
+byd_v3_rf_s2_built_2020.tif,,,188,Bydgoszcz: mapa zabudowy RF/Sentinel-2 10 m
+byd_v3_rf_s2_built_2025.tif,,,180,Bydgoszcz: mapa zabudowy RF/Sentinel-2 10 m
+byd_v3_rok_zabudowania_5lat (1).tif,,,81,
+byd_v3_rok_zabudowania_5lat.tif,,,81,Bydgoszcz: rok pierwszego zabudowania w serii 5-letniej RF/Landsat
+byd_v3_zmiana_4kl_1985_1990.tif,,,166,Bydgoszcz: mapa zmian klas między kolejnymi epokami
+byd_v3_zmiana_4kl_1990_1995.tif,,,179,Bydgoszcz: mapa zmian klas między kolejnymi epokami
+byd_v3_zmiana_4kl_1995_2000.tif,,,167,Bydgoszcz: mapa zmian klas między kolejnymi epokami
+byd_v3_zmiana_4kl_2000_2005.tif,,,164,Bydgoszcz: mapa zmian klas między kolejnymi epokami
+byd_v3_zmiana_4kl_2005_2010.tif,,,165,Bydgoszcz: mapa zmian klas między kolejnymi epokami
+byd_v3_zmiana_4kl_2010_2015.tif,,,172,Bydgoszcz: mapa zmian klas między kolejnymi epokami
+byd_v3_zmiana_4kl_2015_2020.tif,,,168,Bydgoszcz: mapa zmian klas między kolejnymi epokami
+byd_v3_zmiana_4kl_2020_2025.tif,,,153,Bydgoszcz: mapa zmian klas między kolejnymi epokami
+tor_mss_built_1975.tif,,,13,
+tor_mss_built_1980.tif,,,14,
+tor_v3_dw_2015.tif,,,265,"Toruń: etykiety Dynamic World (odniesienie, klasy 0–8)"
+tor_v3_dw_2025.tif,,,251,"Toruń: etykiety Dynamic World (odniesienie, klasy 0–8)"
+tor_v3_dw_pewnosc_2025.tif,,,2746,Toruń: pewność Dynamic World w procentach (odniesienie)
+tor_v3_forma_przyrostu_1985_1990.tif,,,40,"Toruń: forma nowej zabudowy w okresie z nazwy (1 infill, 2 edge, 3 leapfrog)"
+tor_v3_forma_przyrostu_1990_1995.tif,,,34,"Toruń: forma nowej zabudowy w okresie z nazwy (1 infill, 2 edge, 3 leapfrog)"
+tor_v3_forma_przyrostu_1995_2000.tif,,,30,"Toruń: forma nowej zabudowy w okresie z nazwy (1 infill, 2 edge, 3 leapfrog)"
+tor_v3_forma_przyrostu_2000_2005.tif,,,32,"Toruń: forma nowej zabudowy w okresie z nazwy (1 infill, 2 edge, 3 leapfrog)"
+tor_v3_forma_przyrostu_2005_2010.tif,,,37,"Toruń: forma nowej zabudowy w okresie z nazwy (1 infill, 2 edge, 3 leapfrog)"
+tor_v3_forma_przyrostu_2010_2015.tif,,,37,"Toruń: forma nowej zabudowy w okresie z nazwy (1 infill, 2 edge, 3 leapfrog)"
+tor_v3_forma_przyrostu_2015_2020.tif,,,34,"Toruń: forma nowej zabudowy w okresie z nazwy (1 infill, 2 edge, 3 leapfrog)"
+tor_v3_forma_przyrostu_2020_2025.tif,,,31,"Toruń: forma nowej zabudowy w okresie z nazwy (1 infill, 2 edge, 3 leapfrog)"
+tor_v3_gestosc_klasa_1985.tif,,,49,"Toruń: klasa gęstości zabudowy w oknie 330 m (1 zwarta, 2 średnia, 3 rozproszona, 4 pojedyncza) dla epoki z nazwy"
+tor_v3_gestosc_klasa_2005.tif,,,53,"Toruń: klasa gęstości zabudowy w oknie 330 m (1 zwarta, 2 średnia, 3 rozproszona, 4 pojedyncza) dla epoki z nazwy"
+tor_v3_gestosc_klasa_2025.tif,,,54,"Toruń: klasa gęstości zabudowy w oknie 330 m (1 zwarta, 2 średnia, 3 rozproszona, 4 pojedyncza) dla epoki z nazwy"
+tor_v3_rf_4kl_1985.tif,,,52,"Toruń: mapa 4-klasowa RF (1 zabudowa, 2 lasy i drzewa, 3 wody, 4 pozostałe) dla epoki z nazwy"
+tor_v3_rf_4kl_1990.tif,,,53,"Toruń: mapa 4-klasowa RF (1 zabudowa, 2 lasy i drzewa, 3 wody, 4 pozostałe) dla epoki z nazwy"
+tor_v3_rf_4kl_1995.tif,,,55,"Toruń: mapa 4-klasowa RF (1 zabudowa, 2 lasy i drzewa, 3 wody, 4 pozostałe) dla epoki z nazwy"
+tor_v3_rf_4kl_2000.tif,,,56,"Toruń: mapa 4-klasowa RF (1 zabudowa, 2 lasy i drzewa, 3 wody, 4 pozostałe) dla epoki z nazwy"
+tor_v3_rf_4kl_2005.tif,,,54,"Toruń: mapa 4-klasowa RF (1 zabudowa, 2 lasy i drzewa, 3 wody, 4 pozostałe) dla epoki z nazwy"
+tor_v3_rf_4kl_2006.tif,,,54,"Toruń: mapa 4-klasowa RF (1 zabudowa, 2 lasy i drzewa, 3 wody, 4 pozostałe) dla epoki z nazwy"
+tor_v3_rf_4kl_2010.tif,,,52,"Toruń: mapa 4-klasowa RF (1 zabudowa, 2 lasy i drzewa, 3 wody, 4 pozostałe) dla epoki z nazwy"
+tor_v3_rf_4kl_2015.tif,,,54,"Toruń: mapa 4-klasowa RF (1 zabudowa, 2 lasy i drzewa, 3 wody, 4 pozostałe) dla epoki z nazwy"
+tor_v3_rf_4kl_2020.tif,,,56,"Toruń: mapa 4-klasowa RF (1 zabudowa, 2 lasy i drzewa, 3 wody, 4 pozostałe) dla epoki z nazwy"
+tor_v3_rf_4kl_2021.tif,,,70,"Toruń: mapa 4-klasowa RF (1 zabudowa, 2 lasy i drzewa, 3 wody, 4 pozostałe) dla epoki z nazwy"
+tor_v3_rf_4kl_2025.tif,,,56,"Toruń: mapa 4-klasowa RF (1 zabudowa, 2 lasy i drzewa, 3 wody, 4 pozostałe) dla epoki z nazwy"
+tor_v3_rf_built_1985.tif,,,21,Toruń: mapa zabudowy RF/Landsat 30 m (1 = zabudowa) dla epoki z nazwy
+tor_v3_rf_built_1990.tif,,,23,Toruń: mapa zabudowy RF/Landsat 30 m (1 = zabudowa) dla epoki z nazwy
+tor_v3_rf_built_1995.tif,,,23,Toruń: mapa zabudowy RF/Landsat 30 m (1 = zabudowa) dla epoki z nazwy
+tor_v3_rf_built_2000.tif,,,23,Toruń: mapa zabudowy RF/Landsat 30 m (1 = zabudowa) dla epoki z nazwy
+tor_v3_rf_built_2005.tif,,,23,Toruń: mapa zabudowy RF/Landsat 30 m (1 = zabudowa) dla epoki z nazwy
+tor_v3_rf_built_2006.tif,,,24,Toruń: mapa zabudowy RF/Landsat 30 m (1 = zabudowa) dla epoki z nazwy
+tor_v3_rf_built_2010.tif,,,24,Toruń: mapa zabudowy RF/Landsat 30 m (1 = zabudowa) dla epoki z nazwy
+tor_v3_rf_built_2015.tif,,,24,Toruń: mapa zabudowy RF/Landsat 30 m (1 = zabudowa) dla epoki z nazwy
+tor_v3_rf_built_2020.tif,,,24,Toruń: mapa zabudowy RF/Landsat 30 m (1 = zabudowa) dla epoki z nazwy
+tor_v3_rf_built_2025.tif,,,24,Toruń: mapa zabudowy RF/Landsat 30 m (1 = zabudowa) dla epoki z nazwy
+tor_v3_rf_pbuilt_1985.tif,,,626,Toruń: p(zabudowa) RF/Landsat w procentach (0–100)
+tor_v3_rf_pbuilt_1990.tif,,,626,Toruń: p(zabudowa) RF/Landsat w procentach (0–100)
+tor_v3_rf_pbuilt_1995.tif,,,625,Toruń: p(zabudowa) RF/Landsat w procentach (0–100)
+tor_v3_rf_pbuilt_2000.tif,,,553,Toruń: p(zabudowa) RF/Landsat w procentach (0–100)
+tor_v3_rf_pbuilt_2005.tif,,,580,Toruń: p(zabudowa) RF/Landsat w procentach (0–100)
+tor_v3_rf_pbuilt_2006.tif,,,579,Toruń: p(zabudowa) RF/Landsat w procentach (0–100)
+tor_v3_rf_pbuilt_2010.tif,,,588,Toruń: p(zabudowa) RF/Landsat w procentach (0–100)
+tor_v3_rf_pbuilt_2015.tif,,,525,Toruń: p(zabudowa) RF/Landsat w procentach (0–100)
+tor_v3_rf_pbuilt_2020.tif,,,553,Toruń: p(zabudowa) RF/Landsat w procentach (0–100)
+tor_v3_rf_pbuilt_2025.tif,,,521,Toruń: p(zabudowa) RF/Landsat w procentach (0–100)
+tor_v3_rf_s2_built_2018.tif,,,156,Toruń: mapa zabudowy RF/Sentinel-2 10 m
+tor_v3_rf_s2_built_2020.tif,,,152,Toruń: mapa zabudowy RF/Sentinel-2 10 m
+tor_v3_rf_s2_built_2025.tif,,,145,Toruń: mapa zabudowy RF/Sentinel-2 10 m
+tor_v3_rf_s2_pbuilt_2018.tif,,,4418,Toruń: p(zabudowa) RF/Sentinel-2 w procentach
+tor_v3_rf_s2_pbuilt_2020.tif,,,4519,Toruń: p(zabudowa) RF/Sentinel-2 w procentach
+tor_v3_rf_s2_pbuilt_2025.tif,,,4405,Toruń: p(zabudowa) RF/Sentinel-2 w procentach
+tor_v3_rok_zabudowania_5lat (1).tif,,,64,
+tor_v3_rok_zabudowania_5lat.tif,,,64,Toruń: rok pierwszego zabudowania w serii 5-letniej RF/Landsat
+tor_v3_s2_rgb_2015.tif,,,57401,Toruń: kompozyt Sentinel-2 RGB (podkład)
+tor_v3_s2_rgb_2025.tif,,,54579,Toruń: kompozyt Sentinel-2 RGB (podkład)
+tor_v3_zmiana_4kl_1985_1990.tif,,,107,Toruń: mapa zmian klas między kolejnymi epokami (kod = 10·klasa_t1 + klasa_t2)
+tor_v3_zmiana_4kl_1990_1995.tif,,,114,Toruń: mapa zmian klas między kolejnymi epokami (kod = 10·klasa_t1 + klasa_t2)
+tor_v3_zmiana_4kl_1995_2000.tif,,,113,Toruń: mapa zmian klas między kolejnymi epokami (kod = 10·klasa_t1 + klasa_t2)
+tor_v3_zmiana_4kl_2000_2005.tif,,,115,Toruń: mapa zmian klas między kolejnymi epokami (kod = 10·klasa_t1 + klasa_t2)
+tor_v3_zmiana_4kl_2005_2010.tif,,,115,Toruń: mapa zmian klas między kolejnymi epokami (kod = 10·klasa_t1 + klasa_t2)
+tor_v3_zmiana_4kl_2010_2015.tif,,,113,Toruń: mapa zmian klas między kolejnymi epokami (kod = 10·klasa_t1 + klasa_t2)
+tor_v3_zmiana_4kl_2015_2020.tif,,,113,Toruń: mapa zmian klas między kolejnymi epokami (kod = 10·klasa_t1 + klasa_t2)
+tor_v3_zmiana_4kl_2020_2025.tif,,,108,Toruń: mapa zmian klas między kolejnymi epokami (kod = 10·klasa_t1 + klasa_t2)

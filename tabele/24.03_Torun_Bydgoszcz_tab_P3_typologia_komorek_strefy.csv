@@ -1,0 +1,53 @@
+Miasto,Strefa dominująca (całe komórki),Typ,Komórki [n],Komórki [%],Ludność 2011,Ludność 2021,ΔP [os.],Nowa zabudowa [ha],Udział w nowej zabudowie strefy [%]
+Bydgoszcz,miasto,"ludność wzrost, nowa zabudowa",31,17.4,14593,23219,8626,207.4,39.8
+Bydgoszcz,miasto,"ludność wzrost, bez nowej zabudowy",6,3.4,3917,4764,847,1.8,0.3
+Bydgoszcz,miasto,"ludność stała, nowa zabudowa",34,19.1,31014,30719,-295,161.5,31.0
+Bydgoszcz,miasto,"ludność stała, bez nowej zabudowy",47,26.4,29403,28551,-852,5.1,1.0
+Bydgoszcz,miasto,"ludność spadek, nowa zabudowa",39,21.9,115930,102752,-13178,142.7,27.4
+Bydgoszcz,miasto,"ludność spadek, bez nowej zabudowy",21,11.8,166213,145259,-20954,2.6,0.5
+Bydgoszcz,strefa_0_2_5,"ludność wzrost, nowa zabudowa",55,24.7,9899,14599,4700,472.1,86.6
+Bydgoszcz,strefa_0_2_5,"ludność wzrost, bez nowej zabudowy",7,3.1,82,219,137,0.5,0.1
+Bydgoszcz,strefa_0_2_5,"ludność stała, nowa zabudowa",20,9.0,5117,5061,-56,50.5,9.3
+Bydgoszcz,strefa_0_2_5,"ludność stała, bez nowej zabudowy",123,55.2,2329,2266,-63,6.3,1.2
+Bydgoszcz,strefa_0_2_5,"ludność spadek, nowa zabudowa",7,3.1,2568,2347,-221,14.2,2.6
+Bydgoszcz,strefa_0_2_5,"ludność spadek, bez nowej zabudowy",11,4.9,766,612,-154,1.5,0.3
+Bydgoszcz,strefa_2_5_5,"ludność wzrost, nowa zabudowa",72,31.0,12390,18368,5978,533.5,87.5
+Bydgoszcz,strefa_2_5_5,"ludność wzrost, bez nowej zabudowy",7,3.0,225,302,77,1.4,0.2
+Bydgoszcz,strefa_2_5_5,"ludność stała, nowa zabudowa",14,6.0,3616,3754,138,48.5,8.0
+Bydgoszcz,strefa_2_5_5,"ludność stała, bez nowej zabudowy",68,29.3,165,164,-1,1.4,0.2
+Bydgoszcz,strefa_2_5_5,"ludność spadek, nowa zabudowa",6,2.6,1998,1815,-183,24.2,4.0
+Bydgoszcz,strefa_2_5_5,"ludność spadek, bez nowej zabudowy",7,3.0,486,376,-110,1.0,0.2
+Bydgoszcz,strefa_2_5_5,n.d. (klasyfikacja niepełna),58,25.0,10639,12416,1777,,
+Bydgoszcz,AOI,"ludność wzrost, nowa zabudowa",158,25.0,36882,56186,19304,1213.1,72.4
+Bydgoszcz,AOI,"ludność wzrost, bez nowej zabudowy",20,3.2,4224,5285,1061,3.7,0.2
+Bydgoszcz,AOI,"ludność stała, nowa zabudowa",68,10.7,39747,39534,-213,260.6,15.5
+Bydgoszcz,AOI,"ludność stała, bez nowej zabudowy",238,37.6,31897,30981,-916,12.9,0.8
+Bydgoszcz,AOI,"ludność spadek, nowa zabudowa",52,8.2,120496,106914,-13582,181.2,10.8
+Bydgoszcz,AOI,"ludność spadek, bez nowej zabudowy",39,6.2,167465,146247,-21218,5.1,0.3
+Bydgoszcz,AOI,n.d. (klasyfikacja niepełna),58,9.2,10639,12416,1777,,
+Toruń,miasto,"ludność wzrost, nowa zabudowa",31,26.7,24783,37504,12721,310.4,59.4
+Toruń,miasto,"ludność wzrost, bez nowej zabudowy",3,2.6,2408,3621,1213,1.1,0.2
+Toruń,miasto,"ludność stała, nowa zabudowa",20,17.2,16319,16169,-150,86.1,16.5
+Toruń,miasto,"ludność stała, bez nowej zabudowy",21,18.1,276,266,-10,1.7,0.3
+Toruń,miasto,"ludność spadek, nowa zabudowa",28,24.1,89006,78183,-10823,121.1,23.2
+Toruń,miasto,"ludność spadek, bez nowej zabudowy",13,11.2,72039,62631,-9408,2.2,0.4
+Toruń,strefa_0_2_5,"ludność wzrost, nowa zabudowa",53,31.5,11872,15443,3571,251.7,78.3
+Toruń,strefa_0_2_5,"ludność wzrost, bez nowej zabudowy",4,2.4,517,582,65,0.6,0.2
+Toruń,strefa_0_2_5,"ludność stała, nowa zabudowa",21,12.5,7779,7769,-10,47.7,14.8
+Toruń,strefa_0_2_5,"ludność stała, bez nowej zabudowy",76,45.2,372,375,3,2.2,0.7
+Toruń,strefa_0_2_5,"ludność spadek, nowa zabudowa",8,4.8,771,604,-167,18.5,5.8
+Toruń,strefa_0_2_5,"ludność spadek, bez nowej zabudowy",6,3.6,281,201,-80,0.8,0.3
+Toruń,strefa_2_5_5,"ludność wzrost, nowa zabudowa",35,19.3,6499,9674,3175,231.5,85.1
+Toruń,strefa_2_5_5,"ludność wzrost, bez nowej zabudowy",6,3.3,151,228,77,1.5,0.6
+Toruń,strefa_2_5_5,"ludność stała, nowa zabudowa",10,5.5,868,867,-1,29.4,10.8
+Toruń,strefa_2_5_5,"ludność stała, bez nowej zabudowy",71,39.2,377,378,1,1.9,0.7
+Toruń,strefa_2_5_5,"ludność spadek, nowa zabudowa",6,3.3,714,630,-84,6.7,2.4
+Toruń,strefa_2_5_5,"ludność spadek, bez nowej zabudowy",7,3.9,286,206,-80,1.1,0.4
+Toruń,strefa_2_5_5,n.d. (klasyfikacja niepełna),46,25.4,1493,2042,549,,
+Toruń,AOI,"ludność wzrost, nowa zabudowa",119,25.6,43154,62621,19467,793.6,71.1
+Toruń,AOI,"ludność wzrost, bez nowej zabudowy",13,2.8,3076,4431,1355,3.2,0.3
+Toruń,AOI,"ludność stała, nowa zabudowa",51,11.0,24966,24805,-161,163.3,14.6
+Toruń,AOI,"ludność stała, bez nowej zabudowy",168,36.1,1025,1019,-6,5.8,0.5
+Toruń,AOI,"ludność spadek, nowa zabudowa",42,9.0,90491,79417,-11074,146.3,13.1
+Toruń,AOI,"ludność spadek, bez nowej zabudowy",26,5.6,72606,63038,-9568,4.1,0.4
+Toruń,AOI,n.d. (klasyfikacja niepełna),46,9.9,1493,2042,549,,

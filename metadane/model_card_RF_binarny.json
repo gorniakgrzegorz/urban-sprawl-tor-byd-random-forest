@@ -1,0 +1,234 @@
+{
+  "nazwa": "RF binarny zabudowa/natura (Landsat, słaba superwizja: wyłącznie Dynamic World 2025; seria 1985–2025, transfer wstecz do 1985)",
+  "wersja_data": "2026-09-25",
+  "schemat": "1 = zabudowa, 0 = natura",
+  "cechy": {
+    "lista": [
+      "blue",
+      "green",
+      "red",
+      "nir",
+      "swir1",
+      "swir2",
+      "ndvi",
+      "ndbi",
+      "ndwi",
+      "mndwi",
+      "bu",
+      "bsi",
+      "glcm_kontrast",
+      "glcm_entropia",
+      "ndvi_sucha",
+      "ndbi_sucha",
+      "bu_sucha",
+      "bsi_sucha",
+      "ndvi_ampl"
+    ],
+    "liczba": 19,
+    "glcm": "NIR × 10 000 toInt, glcmTexture(size = 3) → okno 7 × 7 (210 m przy 30 m; 70 m przy 10 m); wariant wyrównany 90 m: 21.8 (tab_L8d)"
+  },
+  "liczba_cech": 19,
+  "hiperparametry": {
+    "numberOfTrees": 300,
+    "variablesPerSplit": 4,
+    "minLeafPopulation": 1
+  },
+  "tryb_wyjscia": "setOutputMode(MULTIPROBABILITY); p(zabudowa) = arrayGet([1]); test semantyki: 21.14 (tab_L14)",
+  "prog_p_zabudowy": 0.55,
+  "prog_kalibracja": "CORINE 2006, rdzenie płatów, maks. F1",
+  "prog_wg_DW2015_porownawczo": 0.7,
+  "lata_dw": [
+    2015,
+    2025
+  ],
+  "rok_startowy_dw_regula": 2015,
+  "seed": 42,
+  "kotwice_uczace_lata": [
+    2025
+  ],
+  "punktow_na_klase_na_kotwice": 1500,
+  "zrodla_etykiet": {
+    "2025": "Dynamic World V1"
+  },
+  "wsf_evolution": "wyłącznie test niezależny (nie w uczeniu)",
+  "sensory": {
+    "przed_2013": "Landsat 4/5 TM, 7 ETM+ (harmonizacja do OLI)",
+    "od_2013": "Landsat 8/9 OLI"
+  },
+  "harmonizacja_Roy_2016": {
+    "slope": [
+      0.8474,
+      0.8483,
+      0.9047,
+      0.8462,
+      0.8937,
+      0.9071
+    ],
+    "offset": [
+      0.0003,
+      0.0088,
+      0.0061,
+      0.0412,
+      0.0254,
+      0.0172
+    ],
+    "pasma": [
+      "blue",
+      "green",
+      "red",
+      "nir",
+      "swir1",
+      "swir2"
+    ],
+    "uwaga": "współczynniki wyznaczone dla pary ETM+ -> OLI (Roy i in. 2016); zastosowane także do Landsat 4/5 TM jako przybliżenie (pasma TM i ETM+ mają zbliżone zakresy); Landsat Collection 2 nie harmonizuje sensorów; różnice TM/ETM+/OLI są źródłem dryfu w epokach 1985–2010 (diagnostyka: tab_C25, tab_E18, ryc_E14)"
+  },
+  "okna_sezonowe_miesiace": {
+    "lato": [
+      6,
+      9
+    ],
+    "sucha": [
+      3,
+      5
+    ]
+  },
+  "okno_lat": "[rok-1, rok+1]",
+  "cv": {
+    "blok_m": 5000,
+    "bufor_m": 500,
+    "foldy": 5
+  },
+  "wiez_zasiegu_DW": true,
+  "skala_klasyfikacji_m": 30,
+  "crs_powierzchni": "EPSG:2180",
+  "asset_zbioru_uczacego": "projects/tor-byd--urbansprawl-1985-2025/assets/uczacy_wsf_dw_2025_v3",
+  "skrot_modelu": "a67b95fe",
+  "asset_klasyfikatora": "projects/tor-byd--urbansprawl-1985-2025/assets/rf_bin_a67b95fe_v3",
+  "asset_p_zabudowy_landsat": "tor_rf_pbuilt_ls_a67b95fe_v3",
+  "test_multiprobability_21_14": {
+    "data": "2026-09-25",
+    "n_woda": 50,
+    "n_zabudowa": 50,
+    "kolejnosc_klas": [
+      0,
+      1
+    ],
+    "skladowa_0_woda_min": 0.7187,
+    "skladowa_1_zabudowa_min": 0.369,
+    "maks_roznica_multi1_vs_udzial_glosow": 0.1443,
+    "suma_skladowych_zakres": [
+      1.0,
+      1.0
+    ],
+    "postac_RAW": "wyjścia 300 drzew",
+    "wniosek": "rozbieżność: sprawdzić tab_L14"
+  },
+  "konfiguracja_finalna": {
+    "prog_p_zabudowy": 0.55,
+    "wiezy": "maska M = DW2015 ∪ DW2025 (10 m, And z mapą 30 m) i kumulacja B_t = M ∩ ⋃_{s ≤ t} R_s (seria_monotoniczna)",
+    "identyfikatory_wersji_map": {
+      "RF-S": "surowa p ≥ próg",
+      "RF-M": "RF-S ∩ M",
+      "RF-K": "kumulacja bez maski",
+      "RF-MK": "seria A",
+      "MASKA": "sama maska M",
+      "RF-S2": "RF/Sentinel-2",
+      "DW-10": "etykieta roczna Dynamic World"
+    }
+  },
+  "przebieg_ablacyjny_8_9": {
+    "prog_p_zabudowy": 0.5,
+    "wiezy": "iloczyn z maską i z mapą 2010 (więz wsteczny), inaczej niż w serii A; powtórzenie z konfiguracją finalną w 21.3 (tab_L3c–L3f)"
+  },
+  "kody_klas": {
+    "0": "nie-zabudowa (podtypy DW: drzewa, trawa, uprawy, krzewy → trawa, woda i roślinność podmokła → woda, gleba odkryta; śnieg wykluczony)",
+    "1": "zabudowa (DW built, erozja 1 px 10 m)"
+  },
+  "siatka": {
+    "crs": "EPSG:2180",
+    "skala_m": 30,
+    "zakotwiczenie": "siatka scale = 30 w EPSG:2180 (początek układu); ramki rycin wyrównane do wielokrotności 30 m; audyt 21.7 (tab_L7a–L7d)",
+    "agregacja_10_do_30_m": "moda w bloku 3 × 3 (≥ 5 z 9)"
+  },
+  "maski": {
+    "chmury_landsat": "QA_PIXEL bity 1–5 (dilated cloud, cirrus, cloud, shadow, snow); bez QA_RADSAT",
+    "chmury_s2": "CLOUDY_PIXEL_PERCENTAGE < 60, Cloud Score+ cs_cdf ≥ 0,60",
+    "etykiety": "erozja focal_min 1 px (10 m) rdzeni płatów DW",
+    "maska_zasiegu": "DW_BUILT[2015] ∪ DW_BUILT[2025]"
+  },
+  "zakresy_czasowe": {
+    "kompozyty": "[rok − 1, rok + 1], lato VI–IX (mediana), przedwiośnie III–V (mediana), amplituda NDVI z całego okna",
+    "epoki_landsat": [
+      1985,
+      1990,
+      1995,
+      2000,
+      2005,
+      2006,
+      2010,
+      2015,
+      2020,
+      2025
+    ],
+    "lata_s2": [
+      2018,
+      2020,
+      2025
+    ],
+    "lata_dw": [
+      2015,
+      2025
+    ],
+    "listy_scen": "tab_L12a, tab_L12b (data sporządzenia = data odcięcia kompozytu 2025)"
+  },
+  "zrodla_nadzoru": {
+    "uczenie": "Dynamic World 2025 (etykiety), Landsat 2025 (cechy)",
+    "strojenie_hiperparametrow": "CV blokowa 5 km / bufor 500 m na próbie 2025 (tab_C9; zagnieżdżona: tab_L6a)",
+    "dobor_progu": "CORINE 2006 rdzenie płatów (rozwojowe; stabilność: tab_L13c–L13d)",
+    "walidacja_niezalezna": "WSF Evolution 1985–2015, CORINE 1990–2018 (rdzenie), Urban Atlas 2012/2018/2021, fotointerpretacja ortofotomapy GUGiK 2023 (mapy 2021) i archiwalnej 2006",
+    "wyjatki": "DW 2015–2025 wyłącznie jako odniesienie wewnętrzne"
+  },
+  "identyfikatory_eksperymentow": "tab_L15a_identyfikatory_eksperymentow.csv (369 plików)",
+  "srodowisko": {
+    "plik": "environment_pip_freeze_2026-09-25.txt",
+    "python": "3.13.15",
+    "earthengine_api": "1.7.39",
+    "wersje_tabela": "00_WERSJE_OPROGRAMOWANIA.csv"
+  },
+  "hash_kodu": [
+    {
+      "Plik": "Torun_GeoAI_RF_urbansprawl_1985_2025_v3_18c.ipynb",
+      "Zmodyfikowany": "2026-09-25 10:13",
+      "SHA-256": "8b217e594486581c36f2a262ee6ad753a928b8637db3d3905f0110eefa19fc8d"
+    },
+    {
+      "Plik": "Torun_GeoAI_RF_urbansprawl_1985_2025_v3_18b.ipynb",
+      "Zmodyfikowany": "2026-09-24 18:49",
+      "SHA-256": "77e46929ecf293f15906f133361e5ab26bda8b884c030241ec05a732329cc591"
+    },
+    {
+      "Plik": "Torun_GeoAI_RF_urbansprawl_1985_2025_v3_18.ipynb",
+      "Zmodyfikowany": "2026-09-24 11:20",
+      "SHA-256": "cdc6fe629643b60ea3d0cc10c8b6086aa7f786933c85eae54c24bef769428886"
+    },
+    {
+      "Plik": "Torun_GeoAI_RF_urbansprawl_1985_2025_v_finalna.ipynb",
+      "Zmodyfikowany": "2026-09-17 19:32",
+      "SHA-256": "43904428a7f81bed7addbdfe479230b10021d1f367e7b1ab63edd2bd835795f2"
+    }
+  ],
+  "daty_pobrania_danych": {
+    "listy_scen": "2026-09-25",
+    "pakiet": "2026-09-25"
+  },
+  "parametry_redukcji_i_eksportow": {
+    "reduceRegion": "scale 30 (Landsat) / 10 (S2), maxPixels 1e10–1e11, tileScale 4",
+    "eksport_assetow": "crs EPSG:2180, scale 30/10, maxPixels 1e10",
+    "eksport_geotiff": "crs EPSG:2180, scale 30/10, folder Artykul_GeoAI_Torun_RF_geotiff"
+  },
+  "depozyt": {
+    "zenodo_doi": "DOI rekordu Zenodo (CITATION.cff)",
+    "manifest": "tab_L15c_manifest_pakietu.csv",
+    "archiwum": "zenodo_pakiet_2026-09-25.zip"
+  }
+}
