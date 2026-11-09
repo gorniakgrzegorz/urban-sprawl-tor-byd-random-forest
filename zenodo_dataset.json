@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "title": "Reconstructing built-up land in Toruń and Bydgoszcz (Poland) 1975–2025 from Landsat with a Dynamic World-trained Random Forest: GeoTIFF map series and probability stacks",
+    "upload_type": "dataset",
+    "description": "<p>GeoTIFF rasters (EPSG:2180) produced by the Random Forest label-transfer procedure described in the companion code record: series A built-up maps 1985–2025 (30 m, cumulative, 11 epochs), series B maps 2018–2025 from Sentinel-2 (10 m), Landsat MSS maps 1975 and 1980 (60 m, shown on the 30 m grid), raw probability stacks p(built-up) per epoch and the Sentinel-2 summer 2025 median composite used as map background, for the Toruń and Bydgoszcz map frames and study zones. Nodata value, band order and epoch years are given in README_rastry.md. Code, result tables, model cards and point panels are deposited in the companion software record (see related identifiers).</p><p>Rastry GeoTIFF (EPSG:2180) z procedury transferu etykiet: seria A 1985–2025 (30 m), seria B 2018–2025 (10 m), mapy MSS 1975 i 1980 (60 m), stosy prawdopodobieństwa p(zabudowa) oraz kompozyt Sentinel-2 z lata 2025 dla ramek map Torunia i Bydgoszczy. Opis pasm, wartości nodata i lat epok w README_rastry.md.</p>",
+    "creators": [
+      {"name": "Górniak, Grzegorz", "orcid": "0009-0009-9248-8018", "affiliation": "Nicolaus Copernicus University in Toruń, Faculty of Earth Sciences and Spatial Management"},
+      {"name": "Kunz, Mieczysław", "orcid": "0000-0002-3334-5238", "affiliation": "Nicolaus Copernicus University in Toruń, Faculty of Earth Sciences and Spatial Management"}
+    ],
+    "keywords": ["built-up land", "Landsat", "Landsat MSS", "Sentinel-2", "Dynamic World", "Random Forest", "GeoTIFF", "land cover change", "Toruń", "Bydgoszcz", "Poland"],
+    "license": "cc-by-4.0",
+    "access_right": "open",
+    "language": "eng",
+    "version": "3.1",
+    "related_identifiers": [
+      {"identifier": "https://github.com/gorniakgrzegorz/urban-sprawl-tor-byd-random-forest", "relation": "isSupplementTo", "scheme": "url"}
+    ],
+    "notes": "After publication add the DOI of the companion code record (relation: isSupplementedBy / isPartOf) and, after acceptance, the DOIs of the articles (isSupplementTo)."
+  }
+}
