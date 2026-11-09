@@ -1,32 +1,64 @@
 {
-  "title": "Seria zabudowy Torunia i Bydgoszczy 1975–2025 z klasyfikatora Random Forest uczonego na etykietach Dynamic World: kod i dane wynikowe",
+  "title": "Reconstructing built-up land in Toruń and Bydgoszcz (Poland) 1975–2025 from Landsat with a Dynamic World-trained Random Forest: code and result data",
   "upload_type": "software",
-  "description": "<p>Kod analizy (notatnik Google Colab) i dane wynikowe do rekonstrukcji przyrostu zabudowy Torunia i Bydgoszczy w latach 1975–2025. Klasyfikator Random Forest uczony wyłącznie na etykietach Dynamic World 2025 jest stosowany wstecz do archiwalnych zdjęć Landsat (1985–2025) i, przez most sensorowy w epoce 1985, do zdjęć Landsat MSS (1975 i 1980). Na tej podstawie liczone są wskaźniki urban sprawl, metryki krajobrazowe oraz wskaźnik SDG 11.3.1 (LCRPGR), także na siatce kilometrowej spisów powszechnych NSP 2011 i NSP 2021.</p><p>Code and result data for reconstructing built-up expansion of Toruń and Bydgoszcz (Poland), 1975–2025, with a Random Forest classifier trained on Dynamic World 2025 labels and transferred back to archival Landsat and Landsat MSS imagery; includes urban sprawl indicators, landscape metrics and the SDG 11.3.1 indicator (LCRPGR).</p>",
+  "description": "<p>Code (Google Colab notebook) and result data for reconstructing built-up land expansion in Toruń and Bydgoszcz (Kuyavian-Pomeranian Voivodeship, Poland), 1975–2025. A Random Forest classifier trained only on the Dynamic World built-up label of 2025 is applied without retraining to Landsat TM, ETM+ and OLI median composites for the epochs 1985–2025 (30 m); two constraints (a present-day extent mask and monotonic accumulation) produce the final series. A second-stage classifier trained on the 1985 map and pseudo-labels extends the series to Landsat MSS data for 1975 and 1980 (60 m). Every map version is compared with a static model (the present-day extent assigned to every year) on shared point panels against WSF Evolution, CORINE Land Cover patch cores, Urban Atlas and a blind photo-interpretation of the 2023 orthophoto, and the frozen procedure is transferred from Toruń to Bydgoszcz. The notebook also computes urban sprawl indicators, landscape metrics and the SDG 11.3.1 indicator (LCRPGR), including on the 1 km census grids of the 2011 and 2021 Polish censuses.</p><p>Contents: the notebook (24 chapters, 167 code cells, no stored outputs), the environment file of the executed run (Google Colab, Python 3.13, Google Earth Engine Python API 1.7.39), result tables (CSV), model cards and classifier register, evaluation point panels, own input data (zone boundaries, barriers, census grid indicators) and file lists with data sources and licences. All random draws use seed 42. Code: MIT licence. Result tables, model cards, metadata and own data: CC BY 4.0. Source data (Landsat, Sentinel-2, Dynamic World, WSF Evolution, CORINE Land Cover, Urban Atlas, GUGiK orthophoto and boundaries, GUS, GDOŚ, GHS-POP) remain subject to their providers' licences and are not redistributed. GeoTIFF rasters of the map series are deposited in a separate Zenodo record (see related identifiers). Documentation is in Polish with an English summary.</p><p>Kod analizy (notatnik Google Colab) i dane wynikowe do rekonstrukcji rozwoju zabudowy Torunia i Bydgoszczy w latach 1975–2025. Klasyfikator Random Forest uczony wyłącznie na etykiecie zabudowy Dynamic World z 2025 r. jest stosowany bez ponownego uczenia do kompozytów Landsat z epok 1985–2025 (30 m), a przez most sensorowy w epoce 1985 do danych Landsat MSS z lat 1975 i 1980 (60 m). Każda wersja mapy jest porównywana z modelem statycznym na wspólnych panelach punktów względem WSF Evolution, CORINE Land Cover, Urban Atlas i ślepej fotointerpretacji ortofotomapy z 2023 r.; procedura jest przenoszona z Torunia do Bydgoszczy. Notatnik oblicza także wskaźniki urban sprawl, metryki krajobrazowe i wskaźnik SDG 11.3.1 (LCRPGR) na siatce kilometrowej NSP 2011 i NSP 2021. Kod: licencja MIT; dane wynikowe: CC BY 4.0.</p>",
   "creators": [
     {
       "name": "Górniak, Grzegorz",
-      "affiliation": "Uniwersytet Mikołaja Kopernika w Toruniu, Wydział Nauk o Ziemi i Gospodarki Przestrzennej"
+      "orcid": "0009-0009-9248-8018",
+      "affiliation": "Nicolaus Copernicus University in Toruń, Faculty of Earth Sciences and Spatial Management, Department of Geoinformation and Environmental Remote Sensing"
     },
     {
       "name": "Kunz, Mieczysław",
-      "affiliation": "Uniwersytet Mikołaja Kopernika w Toruniu, Wydział Nauk o Ziemi i Gospodarki Przestrzennej"
+      "orcid": "0000-0002-3334-5238",
+      "affiliation": "Nicolaus Copernicus University in Toruń, Faculty of Earth Sciences and Spatial Management, Department of Geoinformation and Environmental Remote Sensing"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Kunz, Mieczysław",
+      "type": "Supervisor",
+      "orcid": "0000-0002-3334-5238",
+      "affiliation": "Nicolaus Copernicus University in Toruń"
     }
   ],
   "keywords": [
-    "Random Forest",
-    "Dynamic World",
+    "built-up land",
+    "urban expansion",
+    "urban sprawl",
     "Landsat",
     "Landsat MSS",
+    "Dynamic World",
+    "Random Forest",
+    "label transfer",
+    "temporal extrapolation",
+    "land cover change",
     "Google Earth Engine",
-    "urban sprawl",
     "SDG 11.3.1",
     "LCRPGR",
     "Toruń",
-    "Bydgoszcz"
+    "Bydgoszcz",
+    "Poland"
   ],
   "license": "MIT",
   "access_right": "open",
   "language": "pol",
   "version": "3.2",
-  "notes": "Kod: licencja MIT. Tabele wynikowe, karty modeli, metadane i dane własne: CC BY 4.0. Dane źródłowe (Landsat, Sentinel-2, Dynamic World, WSF Evolution, CORINE Land Cover, Urban Atlas, ortofotomapa i PRG GUGiK, dane GUS, GDOŚ, GHS-POP) podlegają licencjom dostawców i nie są redystrybuowane."
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/gorniakgrzegorz/urban-sprawl-tor-byd-random-forest",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.24076408",
+      "relation": "isVersionOf",
+      "scheme": "doi"
+    }
+  ],
+  "references": [
+    "Brown, C.F. et al. (2022). Dynamic World, Near real-time global 10 m land use land cover mapping. Scientific Data 9, 251. https://doi.org/10.1038/s41597-022-01307-4",
+    "Marconcini, M., Gorelick, N., Metz-Marconcini, A., Esch, T. (2020). Accurately monitoring urbanization at global scale: the World Settlement Footprint. IOP Conference Series: Earth and Environmental Science 509, 012036. https://doi.org/10.1088/1755-1315/509/1/012036"
+  ],
+  "notes": "Code: MIT. Result tables, model cards, metadata and own data: CC BY 4.0 (LICENSE_DANE.txt). Source data remain subject to the licences of their providers and are not redistributed. GeoTIFF rasters (series A 1985–2025, series B 2018–2025, MSS maps 1975 and 1980, p(built-up) stacks, Sentinel-2 2025 composite) are deposited in a separate Zenodo dataset record; its DOI is added to related identifiers after publication."
 }
