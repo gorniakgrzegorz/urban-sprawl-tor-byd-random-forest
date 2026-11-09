@@ -3,10 +3,11 @@ message: "If you use this code or data, please cite the version and the Zenodo D
 type: software
 title: "Reconstructing built-up land in Toruń and Bydgoszcz (Poland) 1975–2025 from Landsat with a Dynamic World-trained Random Forest: code and result data"
 abstract: "Code (Google Colab notebook) and result data for reconstructing built-up land expansion in Toruń and Bydgoszcz, Poland, 1975–2025. A Random Forest classifier trained only on the Dynamic World built-up label of 2025 is applied without retraining to archival Landsat imagery (1985–2025) and, through a sensor bridge at the 1985 epoch, to Landsat MSS imagery (1975 and 1980). The series is validated against a static model on shared point panels and used for urban sprawl indicators, landscape metrics and the SDG 11.3.1 indicator (LCRPGR)."
-version: "3.1"
-date-released: "2026-10-12"
+version: "3.2"
+date-released: "2026-11-09"
 license: MIT
 repository-code: "https://github.com/gorniakgrzegorz/urban-sprawl-tor-byd-random-forest"
+doi: 10.5281/zenodo.24076408
 authors:
   - family-names: "Górniak"
     given-names: "Grzegorz"
