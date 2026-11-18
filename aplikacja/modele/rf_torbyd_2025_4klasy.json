@@ -1,0 +1,50 @@
+{
+ "nazwa": "rf_torbyd_2025_4klasy",
+ "data": "2026-11-17",
+ "epoka_uczenia": 2025,
+ "okno_lat": [
+  2024,
+  2026
+ ],
+ "etykiety": "mapy 2025 projektu Toruń/Bydgoszcz (seria A i model czteroklasowy, transfer z Dynamic World 2025)",
+ "punkty_na_klase": 1500,
+ "ziarno": 42,
+ "drzewa": 300,
+ "cechy_na_podzial": 4,
+ "min_lisc": 1,
+ "prog_zabudowy": null,
+ "prog_kalibracja": null,
+ "uwaga_cechy": "amplituda NDVI pominięta: niestabilna między epokami (test Grudziądz 1985 i Toruń/Bydgoszcz)",
+ "dane": "Microsoft Planetary Computer, landsat-c2-l2",
+ "trafnosc_transferu_miedzy_miastami": {
+  "tor->byd": 0.87655,
+  "byd->tor": 0.8838
+ },
+ "cechy": [
+  "blue",
+  "green",
+  "red",
+  "nir",
+  "swir1",
+  "swir2",
+  "ndvi",
+  "ndbi",
+  "ndwi",
+  "mndwi",
+  "bu",
+  "bsi",
+  "glcm_kontrast",
+  "glcm_entropia",
+  "ndvi_sucha",
+  "ndbi_sucha",
+  "bu_sucha",
+  "bsi_sucha"
+ ],
+ "klasy": [
+  1,
+  2,
+  3,
+  4
+ ],
+ "oob": 0.8775
+}

@@ -1,0 +1,95 @@
+{
+ "prog": 0.65,
+ "epoki": [
+  {
+   "miasto": "Toruń",
+   "tryb": "gotowy",
+   "epoka": 1990,
+   "projekt_ha": 3481.0,
+   "aplikacja_ha": 4131.6,
+   "roznica_proc": 18.7,
+   "zgodnosc_proc": 88.8,
+   "f1_proc": 83.0
+  },
+  {
+   "miasto": "Toruń",
+   "tryb": "gotowy",
+   "epoka": 2005,
+   "projekt_ha": 4037.2,
+   "aplikacja_ha": 4526.7,
+   "roznica_proc": 12.1,
+   "zgodnosc_proc": 90.1,
+   "f1_proc": 86.6
+  },
+  {
+   "miasto": "Toruń",
+   "tryb": "gotowy",
+   "epoka": 2025,
+   "projekt_ha": 4974.5,
+   "aplikacja_ha": 5486.8,
+   "roznica_proc": 10.3,
+   "zgodnosc_proc": 92.6,
+   "f1_proc": 91.8
+  },
+  {
+   "miasto": "Toruń",
+   "tryb": "lokalny",
+   "epoka": 1990,
+   "projekt_ha": 3481.0,
+   "aplikacja_ha": 4161.9,
+   "roznica_proc": 19.6,
+   "zgodnosc_proc": 89.2,
+   "f1_proc": 83.6
+  },
+  {
+   "miasto": "Toruń",
+   "tryb": "lokalny",
+   "epoka": 2005,
+   "projekt_ha": 4037.2,
+   "aplikacja_ha": 4521.1,
+   "roznica_proc": 12.0,
+   "zgodnosc_proc": 90.3,
+   "f1_proc": 86.9
+  },
+  {
+   "miasto": "Toruń",
+   "tryb": "lokalny",
+   "epoka": 2025,
+   "projekt_ha": 4974.5,
+   "aplikacja_ha": 5445.6,
+   "roznica_proc": 9.5,
+   "zgodnosc_proc": 92.7,
+   "f1_proc": 91.9
+  },
+  {
+   "miasto": "Bydgoszcz",
+   "tryb": "gotowy",
+   "epoka": 1990,
+   "projekt_ha": 5730.6,
+   "aplikacja_ha": 6667.9,
+   "roznica_proc": 16.4,
+   "zgodnosc_proc": 89.9,
+   "f1_proc": 85.7
+  },
+  {
+   "miasto": "Bydgoszcz",
+   "tryb": "gotowy",
+   "epoka": 2005,
+   "projekt_ha": 6526.5,
+   "aplikacja_ha": 7205.5,
+   "roznica_proc": 10.4,
+   "zgodnosc_proc": 90.7,
+   "f1_proc": 88.1
+  },
+  {
+   "miasto": "Bydgoszcz",
+   "tryb": "gotowy",
+   "epoka": 2025,
+   "projekt_ha": 7331.6,
+   "aplikacja_ha": 8256.9,
+   "roznica_proc": 12.6,
+   "zgodnosc_proc": 92.5,
+   "f1_proc": 91.5
+  }
+ ]
+}
