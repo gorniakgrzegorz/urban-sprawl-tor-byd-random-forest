@@ -1,0 +1,6 @@
+cache_uczenia/
+__pycache__/
+*.pyc
+wyniki*/
+.venv/
+.git/
