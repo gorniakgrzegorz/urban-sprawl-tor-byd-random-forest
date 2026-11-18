@@ -1,5 +1,9 @@
 # Seria zabudowy Torunia i Bydgoszczy 1975–2025 z klasyfikatora Random Forest uczonego na etykietach Dynamic World
 
+**Strona projektu:** https://gorniakgrzegorz.github.io/urban-sprawl-tor-byd-random-forest/
+
+**Aplikacja Land Cover Rewind 1985–2025** dla dowolnego obszaru, bez konta Google: folder aplikacja w tym repozytorium, DOI https://doi.org/10.5281/zenodo.24332552
+
 Kod analizy (notatnik Google Colab) i dane wynikowe do rekonstrukcji przyrostu zabudowy Torunia i Bydgoszczy w latach 1975–2025. Klasyfikator Random Forest uczony wyłącznie na współczesnych etykietach Dynamic World 2025 jest stosowany wstecz do archiwalnych zdjęć Landsat (1985–2025) i, przez most sensorowy w epoce 1985, do zdjęć Landsat MSS (1975 i 1980). Na tej podstawie liczone są wskaźniki urban sprawl, metryki krajobrazowe oraz wskaźnik SDG 11.3.1 (LCRPGR), także na siatce kilometrowej spisów powszechnych NSP 2011 i NSP 2021.
 
 **Autorzy:** Grzegorz Górniak, Mieczysław Kunz
