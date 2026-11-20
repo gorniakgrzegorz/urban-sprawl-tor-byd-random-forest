@@ -24,14 +24,15 @@ Requirements: an internet connection (tested on a machine with 8 GB RAM and two 
 
 ```bash
 python -m venv .venv && source .venv/bin/activate      # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
+pip install -r requirements.txt                          # or requirements-lock.txt for the exact tested environment
+pip install -e .                                         # optional: import landcoverrewind from anywhere (keeps models/ next to the package)
 streamlit run app.py                                     # browser app
 python landcoverrewind_cli.py --file examples/torun_centre.geojson --epochs 1990 2005 2025 --out results_example
 python landcoverrewind_cli.py --bbox 18.55 52.98 18.70 53.06 --mode local --out results_local
-pytest -q                                                # unit tests on synthetic data, no network
+pip install -r requirements-dev.txt && pytest -q        # unit tests on synthetic data, no network
 ```
 
-Docker: `docker build -t landcoverrewind . && docker run -p 8501:8501 landcoverrewind`.
+Docker: `docker build -t landcoverrewind . && docker run -p 8501:8501 landcoverrewind`; command line in Docker: `docker run -v "$PWD/out:/app/out" landcoverrewind python landcoverrewind_cli.py --file examples/torun_centre.geojson --out out`.
 
 Python API:
 
@@ -75,8 +76,8 @@ LCR follows the linear form of the UN-Habitat metadata (2025) by default (`--lcr
 2. **Scenes.** For epoch *t*, Landsat Collection 2 Level 2 scenes from years *t* − 1 … *t* + 1 with scene cloud cover below 70% (Landsat 4/5 TM up to 2012, Landsat 7 ETM+ 2000–2012, Landsat 8 OLI from 2013, Landsat 9 OLI from 2022).
 3. **Cloud mask and harmonisation.** Pixels with QA_PIXEL bits 0–5 set (fill, dilated cloud, cirrus, cloud, shadow, snow) are removed; reflectance = DN · 2.75·10⁻⁵ − 0.2; TM and ETM+ are transformed to OLI with the ETM+→OLI OLS coefficients of Roy et al. (2016), applied to TM as an approximation.
 4. **Features (18).** Summer (June–September) median of six bands, NDVI, NDBI, NDWI, MNDWI, BU (NDBI − NDVI), BSI, GLCM contrast and entropy of NIR in a 7 × 7 window (own implementation, 32 and 8 grey levels over 0–0.6 reflectance, four directions), and the spring (March–May) median NDVI, NDBI, BU and BSI. NDVI amplitude is computed but not used (unstable between epochs). Areas larger than 768 × 768 pixels are processed in tiles.
-5. **Models.** `pretrained` (default): Random Forest `rf_torun_bydgoszcz_2025` trained on the 2025 maps of the reference project for Toruń and Bydgoszcz (labels transferred from Dynamic World 2025) and on features computed by this code. `local`: models trained in the user's area on Impact Observatory LULC 2024 labels aggregated to 30 m (built-up when at least 5 of 9 10 m cells are built-up; mixed pixels with 1–4 built-up cells ignored; otherwise the dominant class), 1500 points per class. Both: 300 trees, 4 features per split, minimum leaf size 1, seed 42 (scikit-learn 1.9).
-6. **Series constraints.** B<sub>t</sub> = M ∩ ⋃<sub>s ≤ t</sub> (p<sub>s</sub> ≥ 0.65), where M are the 30 m pixels with at least 5 of 9 built-up 10 m cells in IO LULC 2017 or 2024. The threshold was selected on the development epoch 2005 against the reference series ([models/threshold_calibration.json](models/threshold_calibration.json)).
+5. **Models.** `pretrained` (default): Random Forest `rf_torun_bydgoszcz_2025` trained on the 2025 maps of the reference project for Toruń and Bydgoszcz (labels transferred from Dynamic World 2025) and on features computed by this code. `local`: models trained in the user's area on Impact Observatory LULC 2023 labels aggregated to 30 m (built-up when at least 5 of 9 10 m cells are built-up; mixed pixels with 1–4 built-up cells ignored; otherwise the dominant class), 1500 points per class. Both: 300 trees, 4 features per split, minimum leaf size 1, seed 42 (scikit-learn 1.9).
+6. **Series constraints.** B<sub>t</sub> = M ∩ ⋃<sub>s ≤ t</sub> (p<sub>s</sub> ≥ 0.65), where M are the 30 m pixels with at least 5 of 9 built-up 10 m cells in IO LULC 2017 or 2023. The threshold was selected on the development epoch 2005 against the reference series ([models/threshold_calibration.json](models/threshold_calibration.json)).
 
 ## Evaluation shipped with the package
 
@@ -104,3 +105,12 @@ Settings: the number of download threads is set by the environment variable `LCR
 Code: MIT. Models and results: CC BY 4.0. Please cite: Górniak, G., Kunz, M., 2026. Land Cover Rewind 1985–2025. Zenodo. https://doi.org/10.5281/zenodo.24332551 (see [CITATION.cff](CITATION.cff)). Reference project code and data: https://doi.org/10.5281/zenodo.24076776; rasters: https://doi.org/10.5281/zenodo.24155226.
 
 Data: Landsat Collection 2 courtesy of the U.S. Geological Survey; Impact Observatory/Esri 10 m Annual Land Use Land Cover (CC BY 4.0); both via Microsoft Planetary Computer. Base map and search in the app © OpenStreetMap contributors.
+
+## Notes for GIS users
+
+- **IO LULC year.** The last Impact Observatory map in the Planetary Computer catalogue is 2023. The extent mask uses the 2017 and 2023 maps and the local model learns from the 2023 map. Versions up to 1.3.0 requested the year 2024, which the catalogue answers with the 2023 map, so their results are the same; 1.3.1 selects maps by their start year and records the item ids in `metadata.json`.
+- **Grid.** The 30 m grid is aligned to multiples of 30 m in the chosen CRS so that it nests the 10 m IO LULC cells; it is offset by half a pixel from the native Landsat grid, so Landsat values are bilinearly interpolated. A user CRS must be projected in metres (`--crs`); Mercator is rejected because areas would be wrong.
+- **No data.** In `built_up_<epoch>.tif`, 255 marks pixels outside the area and pixels without a valid observation in that epoch that were not built-up earlier; their share per epoch is in `metadata.json` (`no_data_share_in_area`). Areas in the tables count built-up pixels only.
+- **Memory.** Downloads are tiled, but the features of an epoch are held in memory for the whole area, so memory use grows with the area; the command line refuses areas above `--max-area` (default 2500 km²).
+- **Reproducibility.** `metadata.json` records the software and library versions (including GDAL), settings, grid, Landsat scene ids and IO LULC item ids. A scene whose assets cannot be read is skipped by the loader, which can change a composite; rerun if the network was unstable.
+

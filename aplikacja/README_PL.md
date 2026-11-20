@@ -25,9 +25,10 @@ Wymagania: połączenie z internetem (sprawdzono na komputerze z 8 GB pamięci R
 cd aplikacja
 python -m venv .venv
 # Windows: .venv\Scripts\activate    Linux/macOS: source .venv/bin/activate
-pip install -r requirements.txt
+pip install -r requirements.txt   # albo requirements-lock.txt: dokładnie sprawdzone środowisko
+pip install -e .                  # nieobowiązkowe: import pakietu z dowolnego miejsca
 streamlit run app.py
-pytest -q   # testy jednostkowe na danych syntetycznych, bez internetu
+pip install -r requirements-dev.txt && pytest -q   # testy jednostkowe na danych syntetycznych, bez internetu
 ```
 
 W PowerShell aktywacja środowiska może wymagać polecenia `Set-ExecutionPolicy -Scope Process RemoteSigned`.
@@ -76,9 +77,9 @@ Domyślnie LCR ma postać liniową z metadanych UN-Habitat (2025) (`--lcr-form l
 4. **Cechy.** Mediana lata (VI–IX) w sześciu pasmach, wskaźniki NDVI, NDBI, NDWI, MNDWI, BU, BSI, kontrast i entropia GLCM pasma NIR w oknie 7 × 7 oraz cztery wskaźniki mediany przedwiośnia (III–V): 18 cech modelu. Liczona jest też amplituda NDVI (95. minus 5. percentyl w oknie lat), dziewiętnasta cecha modelu GEE, ale model jej nie używa: w teście dla Grudziądza była zawyżona w epoce 1985 i zaniżała tam wykrycia zabudowy, a jej pominięcie zmniejszyło też różnicę wobec serii A w Toruniu i Bydgoszczy. Obszary większe niż 768 × 768 pikseli liczone są w kaflach.
 5. **Model.**
    - `pretrained` (gotowy, domyślny): Random Forest `rf_torun_bydgoszcz_2025` uczony na mapach 2025 projektu (Toruń i Bydgoszcz; etykiety z transferu Dynamic World 2025) i cechach liczonych tym kodem. Zalecany dla Polski i podobnego krajobrazu Europy Środkowej.
-   - `local` (lokalny): model (zapisywany w folderze wyników) uczony w obszarze użytkownika na etykietach Impact Observatory LULC 2024 (10 m, Sentinel-2), sprowadzonych do czterech klas i do 30 m (zabudowa, gdy co najmniej 5 z 9 pikseli 10 m jest zabudową; piksele z 1–4 pikselami zabudowy pomijane; pozostałe według klasy dominującej), 1500 punktów na klasę, ziarno 42. Zalecany poza Polską.
+   - `local` (lokalny): model (zapisywany w folderze wyników) uczony w obszarze użytkownika na etykietach Impact Observatory LULC 2023 (10 m, Sentinel-2), sprowadzonych do czterech klas i do 30 m (zabudowa, gdy co najmniej 5 z 9 pikseli 10 m jest zabudową; piksele z 1–4 pikselami zabudowy pomijane; pozostałe według klasy dominującej), 1500 punktów na klasę, ziarno 42. Zalecany poza Polską.
    - Oba warianty: 300 drzew, 4 cechy na podział, minimalny liść 1 (jak w modelu GEE projektu), ziarno 42.
-6. **Więzy.** Seria A: B<sub>t</sub> = M ∩ ⋃<sub>s ≤ t</sub> (p<sub>s</sub> ≥ 0,65). Maska zasięgu M to piksele 30 m, w których co najmniej 5 z 9 pikseli 10 m jest zabudową w IO LULC 2017 lub 2024; zastępuje maskę Dynamic World 2015 ∪ 2025 z projektu, dostępną tylko w Google Earth Engine. Próg wybrano jak w projekcie na epoce rozwojowej 2005: progi 0,55 i 0,65 dały tę samą F1 serii 2005 względem serii A projektu (87% w Toruniu, 88% w Bydgoszczy), a próg 0,75 niższą (85% i 86%); wybrano 0,65, bo daje mniejszą różnicę powierzchni (tabela w `models/threshold_calibration.json`).
+6. **Więzy.** Seria A: B<sub>t</sub> = M ∩ ⋃<sub>s ≤ t</sub> (p<sub>s</sub> ≥ 0,65). Maska zasięgu M to piksele 30 m, w których co najmniej 5 z 9 pikseli 10 m jest zabudową w IO LULC 2017 lub 2023; zastępuje maskę Dynamic World 2015 ∪ 2025 z projektu, dostępną tylko w Google Earth Engine. Próg wybrano jak w projekcie na epoce rozwojowej 2005: progi 0,55 i 0,65 dały tę samą F1 serii 2005 względem serii A projektu (87% w Toruniu, 88% w Bydgoszczy), a próg 0,75 niższą (85% i 86%); wybrano 0,65, bo daje mniejszą różnicę powierzchni (tabela w `models/threshold_calibration.json`).
 7. **Wskaźniki i wizualizacje** jak w artykułach projektu: płaty w sąsiedztwie ośmiu pikseli, gęstość krawędzi bez granicy obszaru, formy przyrostu według liczby zabudowanych sąsiadów w oknie 3 × 3.
 
 Czas: dla obszaru około 150 km² od kilku do kilkunastu minut na wszystkie epoki, zależnie od łącza i liczby scen; obszary większe niż 768 × 768 pikseli liczone są w kaflach. Cechy epok zapisywane są w `<folder wyników>/cache` pod nazwą zależną od siatki, więc ponowne uruchomienie dla tego samego obszaru z innym progiem trwa sekundy. Liczbę wątków pobierania ustawia zmienna środowiskowa `LCR_THREADS` (domyślnie 8).
@@ -88,6 +89,13 @@ Czas: dla obszaru około 150 km² od kilku do kilkunastu minut na wszystkie epok
 Aplikację uruchomiono dla miast Toruń i Bydgoszcz (granice administracyjne, siatka 30 m EPSG:2180) i porównano piksel po pikselu z serią A projektu z Google Earth Engine (`tools/compare_reference.py`, wynik w `models/app_test.json`). F1 względem serii A wynosiła 83–92%, a aplikacja wskazywała o 9,5–19,6% więcej zabudowy niż seria A, najwięcej w epoce 1990. Próg wybrano na epoce 2005; epoka 1990 jest testem, a zgodność w 2025 r. dotyczy roku i miast, na których uczono model, więc nie jest niezależną oceną. Tryb lokalny (bez map projektu) dał w Toruniu prawie te same wartości. Model `rf_torun_bydgoszcz_2025` uczony w jednym mieście i oceniany w drugim zachował trafność 88,6–90,3% (zabudowa) i 87,7–88,4% (cztery klasy) na zrównoważonej próbie pikseli map 2025. Są to zgodności z mapami projektu, a nie dokładności wobec niezależnych danych.
 
 Przykład obszaru spoza miejsc uczenia: Grudziądz z okolicą (140 km², wszystkie epoki 1985–2025); epoka 1985 nadal pokazuje mniej zabudowy niż 1990 (2226 wobec 2947 ha), co odpowiada artefaktowi pierwszej epoki opisanemu w artykułach.
+
+## Uwagi dla użytkowników GIS
+
+- **Rok mapy IO LULC.** Ostatnia mapa Impact Observatory w katalogu Planetary Computer jest z 2023 r. Maska zasięgu używa map 2017 i 2023, a model lokalny uczy się na mapie 2023. Wersje do 1.3.0 zamawiały rok 2024, na co katalog zwraca mapę 2023, więc wyniki są takie same; wersja 1.3.1 wybiera mapę po roku jej początku i zapisuje identyfikatory w `metadata.json`.
+- **Siatka.** Siatka 30 m jest wyrównana do wielokrotności 30 m, aby zagnieżdżać piksele 10 m map IO LULC, i jest przesunięta o pół piksela względem natywnej siatki Landsat (interpolacja dwuliniowa). Układ podany opcją `--crs` musi być odwzorowaniem w metrach; odwzorowanie Merkatora jest odrzucane.
+- **Brak danych.** W `built_up_<epoka>.tif` wartość 255 oznacza piksele poza obszarem oraz piksele bez ważnej obserwacji w danej epoce, które nie były wcześniej zabudową; ich udział podaje `metadata.json`.
+- **Pamięć.** Pobieranie odbywa się w kaflach, ale cechy epoki są trzymane w pamięci dla całego obszaru; wiersz poleceń odrzuca domyślnie obszary większe niż 2500 km² (`--max-area`).
 
 ## Ograniczenia, które trzeba znać
 
