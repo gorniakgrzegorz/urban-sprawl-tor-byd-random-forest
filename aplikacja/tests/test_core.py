@@ -193,3 +193,39 @@ def test_check_crs_requires_projected_metres():
     for bad in ("EPSG:4326", "EPSG:3857"):
         with pytest.raises(ValueError):
             data.check_crs(bad)
+
+
+def test_accuracy_change_map_and_allocation():
+    from landcoverrewind import accuracy as A
+    b0 = np.array([[0, 1], [0, 0]], bool); b1 = np.array([[1, 1], [0, 0]], bool)
+    m = A.change_map(b0, b1)
+    assert m.tolist() == [[2, 1], [0, 0]]
+    n = A.allocate({0: 9000, 1: 900, 2: 100}, 600, 100)
+    assert n[2] == 100 and n[1] >= 100 and sum(n.values()) <= 600 + 2
+
+
+def test_accuracy_estimator_unbiased_and_covers():
+    """Stratified estimator recovers the true area of new built-up land; the 95% CI covers it in most draws."""
+    from affine import Affine
+    from landcoverrewind import accuracy as A
+    rng = np.random.default_rng(7)
+    ref0 = rng.random((200, 200)) < 0.3; ref1 = ref0 | (rng.random((200, 200)) < 0.05)
+    b0 = ref0 ^ (rng.random((200, 200)) < 0.05); b1 = (b0 | ref1) ^ (rng.random((200, 200)) < 0.04); b1 |= b0
+    m, r = A.change_map(b0, b1), A.change_map(ref0, ref1)
+    counts = A.class_counts(m); true = (r == 2).sum() * 0.09
+    est, cover = [], 0
+    for s in range(60):
+        pts = A.draw_sample(m, Affine.identity(), A.allocate(counts, 600, 100), seed=s)
+        c = A.estimate([p["map_class"] for p in pts], [int(r[p["row"], p["col"]]) for p in pts], counts)["classes_detail"][2]
+        est.append(c["adjusted_area_ha"]); cover += abs(c["adjusted_area_ha"] - true) <= c["adjusted_area_ci95_ha"]
+    assert abs(np.mean(est) - true) / true < 0.05
+    assert cover / 60 >= 0.85
+    assert (m == 2).sum() * 0.09 > 1.5 * true  # the map itself overestimates new built-up land
+
+
+def test_multiscale_agreement():
+    from landcoverrewind import accuracy as A
+    a = np.zeros((6, 6), bool); r = np.zeros((6, 6), bool)
+    a[0, 0] = True; r[0, 1] = True  # one-pixel shift
+    out = A.multiscale_agreement(a, r, sizes=(1, 3))
+    assert out[1] == 0.0 and out[3] == 1.0 and out["area"] == 1.0
