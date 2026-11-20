@@ -105,13 +105,16 @@ nav.top{position:sticky}nav.top::after{content:"";position:absolute;right:0;top:
 @media (prefers-reduced-motion: reduce){.sc.on *{animation:none!important;opacity:1!important}.sc.on .a-chm{opacity:0!important}}
 img[width]{height:auto}
 @media(max-width:860px){.fig,.cols{grid-template-columns:1fr}header.hero{min-height:78vh}}
+nav.top a.lang{border:1px solid currentColor;border-radius:4px;padding:1px 7px;margin-left:6px;font-weight:700}
 </style>
+<link rel="alternate" hreflang="en" href="en/">
+<link rel="alternate" hreflang="pl" href="./">
 </head>
 <body>
 <nav class="top"><div class="wrap">
 <span class="logo">Toruń · Bydgoszcz · 1975–2025</span>
 <a href="#projekt">Projekt</a><a href="#proces">Metoda w animacjach</a><a href="#slowniczek">Słowniczek</a><a href="#animacje">Animacje</a><a href="#wykres">Wykres</a>
-<a href="#aplikacja">Aplikacja</a><a href="#ryciny">Wyniki w rycinach</a><a href="#dane">Dane i kod</a><a href="#bibliografia">Bibliografia</a>
+<a href="#aplikacja">Aplikacja</a><a href="#ludnosc">Ludność i SDG</a><a href="#ryciny">Wyniki w rycinach</a><a href="#dane">Dane i kod</a><a href="#bibliografia">Bibliografia</a><a href="en/" class="lang" hreflang="en" lang="en" title="English version">EN</a>
 </div></nav>
 
 <header class="hero">
@@ -281,7 +284,7 @@ img[width]{height:auto}
 </div></section>
 
 <section id="aplikacja" class="alt"><div class="wrap">
-<h2>Aplikacja Land Cover Rewind 1985–2025<small>Twój obszar, bez konta Google · folder <code>aplikacja/</code> w repozytorium · Zenodo: <a href="https://doi.org/10.5281/zenodo.24332552">10.5281/zenodo.24332552</a> · Python · Streamlit · Microsoft Planetary Computer</small></h2>
+<h2>Aplikacja Land Cover Rewind 1985–2025<small>Twój obszar, bez konta Google · folder <code>aplikacja/</code> w repozytorium · Zenodo: <a href="https://doi.org/10.5281/zenodo.24332551">10.5281/zenodo.24332551</a> · Python · Streamlit · Microsoft Planetary Computer</small></h2>
 <p class="intro">Notatnik projektu działa w Google Earth Engine i wymaga konta Google. Aplikacja <b>Land Cover Rewind 1985–2025</b> wykonuje analogiczną procedurę (z różnicami opisanymi niżej) na otwartych danych katalogu STAC Microsoft Planetary Computer (<a href="#ref-mspc2022" class="cyt">Microsoft Open Source et al., 2022</a>), które można czytać anonimowo: Landsat Collection 2 Level 2 (TM, ETM+, OLI) (<a href="#ref-10_1016_j_srs_2023_100103" class="cyt">Crawford et al., 2023</a>), roczne mapy pokrycia terenu Impact Observatory 10 m (<a href="#ref-karra2021" class="cyt">Karra et al., 2021</a>), które pełnią rolę Dynamic World: są nauczycielem w trybie lokalnym i wyznaczają maskę zasięgu. Model Random Forest działa w scikit-learn (<a href="#ref-pedregosa2011" class="cyt">Pedregosa et al., 2011</a>) na komputerze użytkownika.</p>
 <div class="cols">
 <div class="box"><h3>Co robi</h3><ol>
@@ -289,21 +292,22 @@ img[width]{height:auto}
 <li>Aplikacja wyszukuje sceny Landsat z okna trzech lat wokół każdej epoki 1985–2025, maskuje chmury (QA_PIXEL), harmonizuje TM i ETM+ do OLI (<a href="#ref-10_1016_j_rse_2015_12_024" class="cyt">Roy et al., 2016</a>) i liczy 19 cech (model używa 18; amplitudę NDVI pominięto).</li>
 <li>Model Random Forest (300 drzew, 4 cechy na podział) daje prawdopodobieństwo zabudowy i mapę czterech klas.</li>
 <li>Maska zasięgu M (piksele 30 m z co najmniej 5 z 9 pikseli zabudowy 10 m w IO LULC 2017 lub 2024) i kumulacja tworzą serię monotoniczną (próg p ≥ 0,65); dalej powstają mapy, animacje GIF, wskaźniki krajobrazowe i formy przyrostu.</li></ol>
-<p><b>Model gotowy</b> <code>rf_torbyd_2025</code> uczono na mapach 2025 projektu (Toruń i Bydgoszcz) i cechach liczonych kodem aplikacji. Model czteroklasowy przeniesiony z jednego miasta do drugiego zachował trafność Toruń → Bydgoszcz: 87,7%, Bydgoszcz → Toruń: 88,4%. <b>Model lokalny</b> uczy się w obszarze użytkownika na etykietach IO LULC 2024.</p></div>
+<p><b>Model gotowy</b> <code>rf_torun_bydgoszcz_2025</code> uczono na mapach 2025 projektu (Toruń i Bydgoszcz) i cechach liczonych kodem aplikacji. Model czteroklasowy przeniesiony z jednego miasta do drugiego zachował trafność Toruń → Bydgoszcz: 87,7%, Bydgoszcz → Toruń: 88,4%. <b>Model lokalny</b> uczy się w obszarze użytkownika na etykietach IO LULC 2024.</p></div>
 <div class="box"><h3>Jak uruchomić (Windows, bez programowania)</h3>
 <ol>
 <li>Zainstaluj <b>Python 3.12</b> ze strony <a href="https://www.python.org/downloads/windows/" target="_blank" rel="noopener">python.org</a>; w instalatorze zaznacz pole <b>„Add python.exe to PATH”</b>.</li>
-<li>Pobierz i rozpakuj aplikację: <a class="dl" href="https://doi.org/10.5281/zenodo.24332552" target="_blank" rel="noopener">⬇ Pobierz z Zenodo (ZIP)</a> albo <a href="https://github.com/gorniakgrzegorz/urban-sprawl-tor-byd-random-forest/archive/refs/heads/main.zip">całe repozytorium z GitHub (ZIP, folder <code>aplikacja</code>)</a>.</li>
-<li>W folderze <code>aplikacja</code> kliknij dwukrotnie <code>uruchom_windows.bat</code>. Pierwsze uruchomienie instaluje pakiety (około 5–10 minut); czarne okno musi pozostać otwarte.</li>
+<li>Pobierz i rozpakuj aplikację: <a class="dl" href="https://doi.org/10.5281/zenodo.24332551" target="_blank" rel="noopener">⬇ Pobierz z Zenodo (ZIP)</a> albo <a href="https://github.com/gorniakgrzegorz/urban-sprawl-tor-byd-random-forest/archive/refs/heads/main.zip">całe repozytorium z GitHub (ZIP, folder <code>aplikacja</code>)</a>.</li>
+<li>W folderze <code>aplikacja</code> kliknij dwukrotnie <code>run_windows.bat</code>. Pierwsze uruchomienie instaluje pakiety (około 5–10 minut); czarne okno musi pozostać otwarte.</li>
 <li>Aplikacja otworzy się w przeglądarce. Instrukcja na ekranie prowadzi przez cztery kroki: wskaż obszar na mapie (z wyszukiwarką miejscowości), sprawdź ustawienia (każde ma objaśnienie pod znakiem „?”), uruchom obliczenia (pasek postępu pokazuje liczony rok) i pobierz wyniki.</li></ol>
-<p>Mały obszar (kilka km²) i dwa lata liczą się zwykle w około minutę; obszar około 150 km² ze wszystkimi latami od kilku do kilkunastu minut, zależnie od łącza. Wyniki: mapy GeoTIFF (otwierane w bezpłatnym QGIS), tabele CSV (Excel), animacje GIF i wykres, spakowane do <code>wyniki.zip</code>.</p>
+<p>Mały obszar (kilka km²) i dwa lata liczą się zwykle w około minutę; obszar około 150 km² ze wszystkimi latami od kilku do kilkunastu minut, zależnie od łącza. Wyniki: mapy GeoTIFF (otwierane w bezpłatnym QGIS), tabele CSV (Excel), animacje GIF i wykres, spakowane do <code>results.zip</code>. Interfejs aplikacji jest polski i angielski (przełącznik u góry panelu bocznego).</p>
 <details class="vals"><summary>Dla zaawansowanych: Linux, macOS, wiersz poleceń, Docker</summary>
 <pre>cd aplikacja
 python -m venv .venv
 source .venv/bin/activate      # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-streamlit run aplikacja.py
-python landcoverrewind_cli.py --bbox 18.55 52.98 18.70 53.06
+streamlit run app.py
+python landcoverrewind_cli.py --bbox 18.55 52.98 18.70 53.06 --lang pl
+pytest -q
 docker build -t landcoverrewind . &amp;&amp; docker run -p 8501:8501 landcoverrewind</pre></details>
 <p><b>Ograniczenia:</b> mapy historyczne są przybliżeniem (zgodność serii A w projekcie 62–77% F1), epoka 1985 pomija część zabudowy, seria nie rejestruje rozbiórek, a lata MSS 1975–1980 wymagają drugiego etapu transferu i nie są obsługiwane.</p></div>
 </div><div class="box" style="margin-top:20px"><h3>Tak wygląda aplikacja</h3>
@@ -316,6 +320,27 @@ docker build -t landcoverrewind . &amp;&amp; docker run -p 8501:8501 landcoverre
 <p>Prostokąt 140 km² wokół Grudziądza, wszystkie epoki 1985–2025, model gotowy, próg 0,65. Poniżej wyniki zapisane przez aplikację bez zmian. Epoka 1985 pokazuje mniej zabudowy niż 1990 (2226 wobec 2947 ha): to artefakt pierwszej epoki, widoczny także w serii projektu, dlatego dynamikę liczymy od 1990 r.</p>
 <div class="cols"><a href="assets/app/animacja_zabudowa.gif" class="lb" data-cap="Aplikacja: narastanie zabudowy, Grudziądz 1985–2025"><img loading="lazy" width="660" height="652" src="assets/app/animacja_zabudowa.gif" alt="animacja zabudowy Grudziądza z aplikacji" style="width:100%;border-radius:10px;border:1px solid var(--line)"></a>
 <a href="assets/app/mapa_epoka_detekcji.png" class="lb" data-cap="Aplikacja: epoka pierwszej detekcji zabudowy, Grudziądz"><img loading="lazy" width="1400" height="1484" src="assets/app/mapa_epoka_detekcji.png" alt="mapa epoki pierwszej detekcji z aplikacji" style="width:100%;border-radius:10px;border:1px solid var(--line)"></a></div></div>
+</div></section>
+
+<section id="ludnosc"><div class="wrap">
+<h2>Ludność i wskaźnik SDG 11.3.1<small>zabudowa z serii a ludność z siatki kilometrowej GUS (NSP 2011 i 2021) · nowa funkcja aplikacji od wersji 1.3.0</small></h2>
+<p class="intro">Wskaźnik ONZ SDG 11.3.1 to stosunek tempa zużycia terenu (LCR) do tempa wzrostu ludności (PGR), w skrócie LCRPGR (<a href="#ref-sdg_indicator_metadata_indicator_11_3_1_ratio_of_land_consum" class="cyt">UN-Habitat, 2025</a>). Wartość 1 oznacza, że zabudowa i ludność rosną jednakowo; powyżej 1 zabudowa rośnie szybciej niż liczba mieszkańców, a wartość ujemna pojawia się, gdy zabudowa przybywa, a ludności ubywa. Ludność pochodzi z siatek kilometrowych Narodowych Spisów Powszechnych 2011 i 2021 (<a href="#ref-nsp_2011_dane_o_populacji_w_siatce_kilometrowej_zasób_nr_183" class="cyt">Główny Urząd Statystyczny, 2022</a>; <a href="#ref-nsp_2021_dane_o_ludności_krajowej_w_siatce_kilometrowej_2021" class="cyt">Główny Urząd Statystyczny, 2024</a>), a zabudowę w datach spisów interpolujemy liniowo między epokami 2010, 2015 i 2020.</p>
+<div class="cols">
+<div class="box"><h3>Wynik projektu (seria A, strefy)</h3>
+<table class="src"><thead><tr><th>Strefa</th><th>Toruń</th><th>Bydgoszcz</th></tr></thead><tbody>
+<tr><td>miasto, LCRPGR 2011–2021</td><td>−3,19</td><td>−0,96</td></tr>
+<tr><td>tempo wzrostu ludności miasta</td><td>−0,35%/rok</td><td>−0,77%/rok</td></tr>
+<tr><td>pierścień 0–2,5 km, LCRPGR</td><td>1,20</td><td>1,42</td></tr>
+<tr><td>pierścień 2,5–5 km, LCRPGR</td><td>1,25</td><td>1,43</td></tr>
+<tr><td>zabudowa na mieszkańca w obszarze badań</td><td>284 → 334 m²</td><td>246 → 301 m²</td></tr>
+</tbody></table>
+<p style="font-size:14px;color:var(--muted)">Ludność miast: siatka z wagami powierzchni; pierścieni: siatka z wagami zabudowy (rozkład dazymetryczny). Oba miasta tracą mieszkańców przy rosnącej zabudowie, a w pierścieniach zabudowa rośnie szybciej niż ludność.</p></div>
+<div class="box"><h3>Jak policzyć to dla swojego obszaru</h3>
+<p>Po obliczeniu serii otwórz w aplikacji panel <b>„Wskaźnik SDG 11.3.1”</b> i wczytaj siatkę ludności z dwóch lat: dwa pliki GUS (kolumna <code>tot</code>, identyfikator <code>code</code>) albo jeden plik z dwiema kolumnami. Aplikacja poda ludność, zabudowę i zabudowę na mieszkańca dla całego obszaru, LCR, PGR i LCRPGR, a dla każdej komórki leżącej w całości w obszarze także klasę wskaźnika. Iloraz przy stałej ludności (|PGR| poniżej 0,13% na rok) oznacza jako nieinterpretowalny. W wierszu poleceń służy do tego opcja <code>--population</code>.</p>
+<p>W samych granicach miast aplikacja (model wstępnie wyuczony) dała LCRPGR −2,26 w Toruniu i −0,76 w Bydgoszczy. Wartości różnią się od serii A, bo aplikacja korzysta z innych danych (Microsoft Planetary Computer, maska IO LULC) i innego progu; znak i tempo ubytku ludności są te same.</p></div>
+</div>
+<div class="fig"><div class="fig-img"><a class="lb" data-cap="Wskaźnik SDG 11.3.1 w komórkach 1 km, Toruń 2011–2021" href="assets/sdg/sdg_torun_pl.jpg"><img src="assets/sdg/sdg_torun_pl.jpg" alt="Wskaźnik SDG 11.3.1 w komórkach 1 km, Toruń 2011–2021" loading="lazy"></a></div><div><p class="fig-nr">Aplikacja · Toruń</p><h3>Gdzie zabudowa rośnie szybciej niż ludność</h3><p>Komórki siatki 1 km w granicach Torunia, lata 2011–2021, wynik panelu SDG 11.3.1 aplikacji. Po lewej klasy wskaźnika: fioletowe komórki tracą mieszkańców, choć przybywa w nich zabudowy; zielone zyskują mieszkańców szybciej niż zabudowy. Po prawej każda komórka jako punkt; komórki nad linią przerywaną zużywają teren szybciej, niż rośnie ludność. 35,2% nowej zabudowy powstało w komórkach o malejącej ludności.</p></div></div>
+<div class="fig"><div class="fig-img"><a class="lb" data-cap="Wskaźnik SDG 11.3.1 w komórkach 1 km, Bydgoszcz 2011–2021" href="assets/sdg/sdg_bydgoszcz_pl.jpg"><img src="assets/sdg/sdg_bydgoszcz_pl.jpg" alt="Wskaźnik SDG 11.3.1 w komórkach 1 km, Bydgoszcz 2011–2021" loading="lazy"></a></div><div><p class="fig-nr">Aplikacja · Bydgoszcz</p><h3>Spadek ludności w centrum, wzrost na obrzeżach</h3><p>To samo dla Bydgoszczy. Niebieskie komórki tracą mieszkańców bez przyrostu zabudowy, głównie w śródmieściu; komórki o rosnącej ludności leżą na obrzeżach. 39,7% nowej zabudowy powstało w komórkach o malejącej ludności.</p></div></div>
 </div></section>
 
 <section id="ryciny"><div class="wrap">
@@ -638,7 +663,7 @@ docker build -t landcoverrewind . &amp;&amp; docker run -p 8501:8501 landcoverre
 <div class="box"><h3>Repozytoria</h3>
 <p><b>Kod notatnika, tabele wynikowe, karty modeli:</b> <a href="#ref-gorniak_kod" class="cyt">Górniak and Kunz (2026a)</a>, <a href="https://doi.org/10.5281/zenodo.24076776">https://doi.org/10.5281/zenodo.24076776</a> (licencja MIT; dane CC BY 4.0).</p>
 <p><b>Rastry GeoTIFF serii zabudowy i map pokrycia terenu:</b> <a href="#ref-gorniak_dane" class="cyt">Górniak and Kunz (2026b)</a>, <a href="https://doi.org/10.5281/zenodo.24155226">https://doi.org/10.5281/zenodo.24155226</a> (CC BY 4.0).</p>
-<p><b>Aplikacja Land Cover Rewind 1985–2025:</b> rekord Zenodo <a href="https://doi.org/10.5281/zenodo.24332552">https://doi.org/10.5281/zenodo.24332552</a> (kod MIT; modele CC BY 4.0).</p>
+<p><b>Aplikacja Land Cover Rewind 1985–2025:</b> rekord Zenodo <a href="https://doi.org/10.5281/zenodo.24332551">https://doi.org/10.5281/zenodo.24332551</a> (kod MIT; modele CC BY 4.0).</p>
 <p><b>Repozytorium GitHub:</b> <a href="https://github.com/gorniakgrzegorz/urban-sprawl-tor-byd-random-forest">gorniakgrzegorz/urban-sprawl-tor-byd-random-forest</a>; wydania są archiwizowane w Zenodo automatycznie.</p></div>
 <div class="box"><h3>Dane wejściowe</h3>
 <table class="src"><tr><th>Dane</th><th>Rola</th></tr>
