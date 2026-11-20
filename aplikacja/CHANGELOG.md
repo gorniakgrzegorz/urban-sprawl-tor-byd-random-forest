@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.4.0 (2026-11-20)
+- New module `accuracy` (API and `python -m landcoverrewind.accuracy`): stratified random sample of map classes of a state map (built-up, non-built-up) or a change map between two epochs (stable non-built-up, stable built-up, new built-up), with a minimum sample size per class; export to GPKG or CSV with an empty `ref` field for photointerpretation in QGIS; stratified estimators of overall, user's and producer's accuracy and of error-adjusted class areas with 95% confidence intervals (Olofsson et al. 2014); sample-size formula for a target standard error of overall accuracy.
+- `accuracy.multiscale_agreement`: agreement of two binary maps in blocks of s x s pixels (pixel F1 to quantity agreement).
+- Unit tests of the module: allocation, unbiasedness and interval coverage of the area estimator on a synthetic map, multi-scale agreement (19 tests).
+- The computation of the series is unchanged.
+
 ## 1.3.1 (2026-11-20)
 - IO LULC maps are selected by their start year. The collection io-lulc-annual-v02 ends with the 2023 map; earlier versions requested 2024, which the catalogue answers with the 2023 map, so the default extent mask (2017 and 2023) and the local-model labels (2023) are unchanged and now named correctly. A search for 2018–2022 no longer merges two consecutive maps. The STAC item ids of the maps are written to `metadata.json`.
 - A user CRS must be projected in metres (Mercator rejected); the command line validates epochs, threshold, cloud limit, input CRS and geometry (made valid), rejects areas crossing the antimeridian and areas larger than `--max-area` (default 2500 km²), checks population fields before the run and prints short error messages.

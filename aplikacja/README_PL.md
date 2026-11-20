@@ -69,6 +69,20 @@ python landcoverrewind_cli.py --file miasto.gpkg --population nsp2011.gpkg nsp20
 
 Domyślnie LCR ma postać liniową z metadanych UN-Habitat (2025) (`--lcr-form log` daje postać logarytmiczną), PGR jest logarytmiczne, a zabudowę w datach spisów interpoluje się między najbliższymi epokami. Iloraz komórki podaje się tylko dla komórek leżących w całości w obszarze; przy stałej ludności (|PGR| < 0,0013 na rok) iloraz oznacza się jako nieinterpretowalny. Pliki: `sdg_11_3_1_cells.gpkg/.csv`, `sdg_11_3_1_summary.json`, `sdg_11_3_1.png`.
 
+## Ocena dokładności i powierzchnia skorygowana o błąd
+
+Powierzchnie z mapy są obciążone błędami klasyfikacji. Wersja 1.4.0 dodaje procedurę dobrej praktyki Olofssona i in. (2014):
+
+```bash
+# 1. losowa próba warstwowa mapy zmian 1990-2015 (co najmniej 100 pikseli na klasę)
+python -m landcoverrewind.accuracy sample --results wyniki --t0 1990 --t1 2015 --n 600 --min-n 100 --out proba.gpkg
+# 2. w QGIS uzupełnić pole `ref` na podstawie zdjęć (0 stała niezabudowa, 1 stała zabudowa, 2 nowa zabudowa)
+# 3. powierzchnie skorygowane i dokładności z przedziałami ufności 95%
+python -m landcoverrewind.accuracy estimate --results wyniki --t0 1990 --t1 2015 --labels proba.gpkg
+```
+
+Bez `--t0` oceniana jest mapa stanu jednej epoki (0 niezabudowa, 1 zabudowa). Funkcja `accuracy.multiscale_agreement` porównuje dwie mapy binarne w blokach różnej wielkości.
+
 ## Jak to działa
 
 1. **Siatka.** Obszar dostaje siatkę 30 m w strefie UTM swojego środka (albo w układzie podanym opcją `--crs`).

@@ -70,6 +70,20 @@ python landcoverrewind_cli.py --file city.gpkg --population nsp2011.gpkg nsp2021
 
 LCR follows the linear form of the UN-Habitat metadata (2025) by default (`--lcr-form log` for the logarithmic form), PGR is logarithmic, and built-up land at the census dates is interpolated between the nearest epochs. A cell ratio is reported only for cells lying wholly inside the area; when population is stable (|PGR| < 0.0013 per year) the ratio is flagged as not interpretable. Outputs: `sdg_11_3_1_cells.gpkg/.csv`, `sdg_11_3_1_summary.json`, `sdg_11_3_1.png`.
 
+## Accuracy assessment and area estimation
+
+Map areas are biased by classification errors. Version 1.4.0 adds the good-practice workflow of Olofsson et al. (2014):
+
+```bash
+# 1. stratified random sample of the change map 1990-2015 (at least 100 pixels per class)
+python -m landcoverrewind.accuracy sample --results results --t0 1990 --t1 2015 --n 600 --min-n 100 --out sample.gpkg
+# 2. open sample.gpkg in QGIS and fill the field `ref` (0 stable non-built-up, 1 stable built-up, 2 new built-up) from imagery
+# 3. error-adjusted areas and accuracies with 95% confidence intervals
+python -m landcoverrewind.accuracy estimate --results results --t0 1990 --t1 2015 --labels sample.gpkg
+```
+
+Omit `--t0` to assess the state map of one epoch (classes 0 non-built-up, 1 built-up). `accuracy.multiscale_agreement` compares two binary maps at several block sizes.
+
 ## Method
 
 1. **Grid.** 30 m grid aligned to multiples of 30 m in the UTM zone of the area centroid (or in a CRS given with `--crs`).
