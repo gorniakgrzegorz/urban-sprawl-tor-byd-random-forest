@@ -1,0 +1,13 @@
+{
+ "test": "landcoverrewind 1.1.0 (potok.uruchom) vs 1.2.0 (pipeline.run), box 18.60-18.645 E, 53.00-53.027 N, epochs 1990 and 2025, independent downloads",
+ "identical": {
+  "b1990": true,
+  "b2025": true,
+  "p1990": true,
+  "p2025": true,
+  "k1990": true,
+  "k2025": true,
+  "M": true
+ },
+ "series_rule_seconds_per_epoch_bydgoszcz": 0.0012101915147569443
+}

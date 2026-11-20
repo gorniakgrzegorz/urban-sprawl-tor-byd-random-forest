@@ -1,0 +1,16 @@
+{
+ "torun": {
+  "n_growth": 19,
+  "n_decline": 33,
+  "n_stable": 1,
+  "median_dist_km_growth": 3.6,
+  "median_dist_km_decline": 3.1
+ },
+ "bydgoszcz": {
+  "n_growth": 18,
+  "n_decline": 58,
+  "n_stable": 3,
+  "median_dist_km_growth": 5.6,
+  "median_dist_km_decline": 4.3
+ }
+}

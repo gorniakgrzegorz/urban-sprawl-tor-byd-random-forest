@@ -1,0 +1,110 @@
+{
+ "torun": {
+  "linear": {
+   "years": [
+    2011,
+    2021
+   ],
+   "lcr_form": "linear",
+   "population_t0": 204224,
+   "population_t1": 197238,
+   "built_t0_ha": 5190.7,
+   "built_t1_ha": 5598.4,
+   "built_per_capita_t0_m2": 254.2,
+   "built_per_capita_t1_m2": 283.8,
+   "cells": 159,
+   "cells_full": 86,
+   "grid_coverage_of_area": 1.0,
+   "min_pop": 100,
+   "full_cover": 0.99,
+   "cells_below_min_pop": 19,
+   "lcr": 0.00786,
+   "pgr": -0.00348,
+   "lcrpgr": -2.25688,
+   "status": "population decline",
+   "cells_with_ratio": 52,
+   "cells_ratio_above_1_pct": 5.8,
+   "new_built_in_declining_cells_pct": 35.2
+  },
+  "log": {
+   "years": [
+    2011,
+    2021
+   ],
+   "lcr_form": "log",
+   "population_t0": 204224,
+   "population_t1": 197238,
+   "built_t0_ha": 5190.7,
+   "built_t1_ha": 5598.4,
+   "built_per_capita_t0_m2": 254.2,
+   "built_per_capita_t1_m2": 283.8,
+   "cells": 159,
+   "cells_full": 86,
+   "grid_coverage_of_area": 1.0,
+   "min_pop": 100,
+   "full_cover": 0.99,
+   "cells_below_min_pop": 19,
+   "lcr": 0.00756,
+   "pgr": -0.00348,
+   "lcrpgr": -2.17262,
+   "status": "population decline",
+   "cells_with_ratio": 52,
+   "cells_ratio_above_1_pct": 5.8,
+   "new_built_in_declining_cells_pct": 35.2
+  }
+ },
+ "bydgoszcz": {
+  "linear": {
+   "years": [
+    2011,
+    2021
+   ],
+   "lcr_form": "linear",
+   "population_t0": 354008,
+   "population_t1": 327927,
+   "built_t0_ha": 8019.6,
+   "built_t1_ha": 8488.4,
+   "built_per_capita_t0_m2": 226.5,
+   "built_per_capita_t1_m2": 258.8,
+   "cells": 231,
+   "cells_full": 131,
+   "grid_coverage_of_area": 1.0,
+   "min_pop": 100,
+   "full_cover": 0.99,
+   "cells_below_min_pop": 17,
+   "lcr": 0.00585,
+   "pgr": -0.00765,
+   "lcrpgr": -0.76387,
+   "status": "population decline",
+   "cells_with_ratio": 76,
+   "cells_ratio_above_1_pct": 2.6,
+   "new_built_in_declining_cells_pct": 39.7
+  },
+  "log": {
+   "years": [
+    2011,
+    2021
+   ],
+   "lcr_form": "log",
+   "population_t0": 354008,
+   "population_t1": 327927,
+   "built_t0_ha": 8019.6,
+   "built_t1_ha": 8488.4,
+   "built_per_capita_t0_m2": 226.5,
+   "built_per_capita_t1_m2": 258.8,
+   "cells": 231,
+   "cells_full": 131,
+   "grid_coverage_of_area": 1.0,
+   "min_pop": 100,
+   "full_cover": 0.99,
+   "cells_below_min_pop": 17,
+   "lcr": 0.00568,
+   "pgr": -0.00765,
+   "lcrpgr": -0.74238,
+   "status": "population decline",
+   "cells_with_ratio": 76,
+   "cells_ratio_above_1_pct": 2.6,
+   "new_built_in_declining_cells_pct": 39.7
+  }
+ }
+}
