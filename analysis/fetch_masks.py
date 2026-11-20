@@ -11,9 +11,11 @@ for site in sys.argv[1:]:
     s = load_site(site, "gotowy")
     gb = GeoBox(s["shape"], s["tr"], s["crs"])
     out = {}
-    for y in (2017, 2024):
+    # key "io2024" holds the 2023 map: the runs of the manuscript requested year 2024, which the catalogue answers
+    # with the last map (2023); landcoverrewind 1.3.0 selects maps by their start year, so 2023 is requested here
+    for y, key in ((2017, "io2017"), (2023, "io2024")):
         a, _ = data.load_10m_map("io-lulc-annual-v02", y, gb, "data")
-        out[f"io{y}"] = series.built_fraction(a, gb.shape).astype("float32")
+        out[key] = series.built_fraction(a, gb.shape).astype("float32")
     a, _ = data.load_10m_map("esa-worldcover", 2021, gb, "map")
     out["wc2021"] = series.built_fraction(a, gb.shape, code=50).astype("float32")
     np.savez_compressed(f, **out)

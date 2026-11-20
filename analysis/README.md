@@ -27,3 +27,5 @@ Place them under `data/`: `wsf_evolution/WSFevolution_v1_<lon>_<lat>.tif` (DLR, 
 The site runs reported in the manuscript were produced with landcoverrewind 1.1.0 (Polish file names); these scripts are adapted to the 1.2.0 names. Version 1.2.0 reproduces the 1.1.0 outputs bit for bit in the tested epochs 1990 and 2025 (`eq_compare.json`), and `sens2.py` asserts that the series recomputed with 1.2.0 equal the stored 1.1.0 series for all seven sites.
 
 Version 1.3.0 adds the `population` module and `pipeline.run_sdg`; the modules that compute the series (`data`, `features`, `model`, `series`) are identical to 1.2.0, so the series outputs are unchanged. `sdg_sites.py` requires 1.3.0.
+
+IO LULC years: the variant names and the mask keys use "2024" (e.g. `IO 2024 >=5/9`, `io2024`), because the runs requested the year 2024; the Planetary Computer collection io-lulc-annual-v02 ends with the 2023 map, which is what a 2024 search returns. All these masks are therefore built from the IO LULC 2017 and 2023 maps (checked: identical arrays). Version 1.3.0 selects maps by their start year and requests 2023.

@@ -27,9 +27,9 @@ def agg(rr):
 
 
 VAR = [("threshold", "0.65", "default"), ("threshold", "0.45", "τ = 0.45"), ("threshold", "0.55", "τ = 0.55"), ("threshold", "0.75", "τ = 0.75"), ("threshold", "0.85", "τ = 0.85"),
-       ("mask", "IO 2017|2024 any", "mask: IO any 10 m cell"), ("mask", "IO 2024 >=5/9", "mask: IO 2024 only"), ("mask", "WorldCover 2021 >=5/9", "mask: WorldCover ≥ 5/9"),
+       ("mask", "IO 2017|2024 any", "mask: IO any 10 m cell"), ("mask", "IO 2024 >=5/9", "mask: IO 2023 only"), ("mask", "WorldCover 2021 >=5/9", "mask: WorldCover ≥ 5/9"),
        ("mask", "WorldCover 2021 any", "mask: WorldCover any cell"), ("mask", "none", "no extent mask"), ("rule", "per-epoch (no accumulation)", "no accumulation"),
-       ("mode", "local", "local model (IO LULC 2024)")]
+       ("mode", "local", "local model (IO LULC 2023)")]
 FV = [("no GLCM texture", "features: no GLCM"), ("no spring features", "features: no spring"), ("18 + NDVI amplitude", "features: + NDVI amplitude"), ("summer bands + indices only", "features: summer only")]
 NULL = [("baseline", "no change: extent mask M", "no change: mask M"), ("baseline", "no change: series state of last epoch", "no change: series 2015 state")]
 tab, rowsets = [], []
