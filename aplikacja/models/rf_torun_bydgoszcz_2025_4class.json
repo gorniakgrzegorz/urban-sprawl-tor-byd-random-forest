@@ -1,0 +1,52 @@
+{
+ "name": "rf_torun_bydgoszcz_2025_4class",
+ "date": "2026-11-17",
+ "training_epoch": 2025,
+ "scene_window": [
+  2024,
+  2026
+ ],
+ "labels": "2025 maps of the reference project for Torun and Bydgoszcz (series A built-up land and four-class model, label transfer from Dynamic World 2025), 30 m, EPSG:2180",
+ "points_per_class": 1500,
+ "points_note": "750 per class and city, seeds 42 and 43",
+ "seed": 42,
+ "trees": 300,
+ "max_features": 4,
+ "min_samples_leaf": 1,
+ "built_up_threshold": null,
+ "threshold_calibration": null,
+ "feature_note": "NDVI amplitude excluded: unstable between epochs (Grudziadz 1985 test and Torun/Bydgoszcz)",
+ "data": "Microsoft Planetary Computer, landsat-c2-l2",
+ "cross_city_transfer_accuracy": {
+  "torun->bydgoszcz": 0.87655,
+  "bydgoszcz->torun": 0.8838
+ },
+ "cross_city_transfer_note": "model trained on one city (1500 points per class, seed 7) and evaluated on 5000 points per class of the other city (seed 8); overall accuracy, binary model at threshold 0.65",
+ "features": [
+  "blue",
+  "green",
+  "red",
+  "nir",
+  "swir1",
+  "swir2",
+  "ndvi",
+  "ndbi",
+  "ndwi",
+  "mndwi",
+  "bu",
+  "bsi",
+  "glcm_contrast",
+  "glcm_entropy",
+  "ndvi_spring",
+  "ndbi_spring",
+  "bu_spring",
+  "bsi_spring"
+ ],
+ "classes": [
+  1,
+  2,
+  3,
+  4
+ ],
+ "oob": 0.8775
+}

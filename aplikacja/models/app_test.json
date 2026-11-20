@@ -1,0 +1,96 @@
+{
+ "threshold": 0.65,
+ "reference": "reference project series A (GEE), city boundaries, 30 m EPSG:2180",
+ "epochs": [
+  {
+   "city": "Torun",
+   "mode": "pretrained",
+   "epoch": 1990,
+   "reference_ha": 3481.0,
+   "app_ha": 4131.6,
+   "area_difference_pct": 18.7,
+   "agreement_pct": 88.8,
+   "f1_pct": 83.0
+  },
+  {
+   "city": "Torun",
+   "mode": "pretrained",
+   "epoch": 2005,
+   "reference_ha": 4037.2,
+   "app_ha": 4526.7,
+   "area_difference_pct": 12.1,
+   "agreement_pct": 90.1,
+   "f1_pct": 86.6
+  },
+  {
+   "city": "Torun",
+   "mode": "pretrained",
+   "epoch": 2025,
+   "reference_ha": 4974.5,
+   "app_ha": 5486.8,
+   "area_difference_pct": 10.3,
+   "agreement_pct": 92.6,
+   "f1_pct": 91.8
+  },
+  {
+   "city": "Torun",
+   "mode": "local",
+   "epoch": 1990,
+   "reference_ha": 3481.0,
+   "app_ha": 4161.9,
+   "area_difference_pct": 19.6,
+   "agreement_pct": 89.2,
+   "f1_pct": 83.6
+  },
+  {
+   "city": "Torun",
+   "mode": "local",
+   "epoch": 2005,
+   "reference_ha": 4037.2,
+   "app_ha": 4521.1,
+   "area_difference_pct": 12.0,
+   "agreement_pct": 90.3,
+   "f1_pct": 86.9
+  },
+  {
+   "city": "Torun",
+   "mode": "local",
+   "epoch": 2025,
+   "reference_ha": 4974.5,
+   "app_ha": 5445.6,
+   "area_difference_pct": 9.5,
+   "agreement_pct": 92.7,
+   "f1_pct": 91.9
+  },
+  {
+   "city": "Bydgoszcz",
+   "mode": "pretrained",
+   "epoch": 1990,
+   "reference_ha": 5730.6,
+   "app_ha": 6667.9,
+   "area_difference_pct": 16.4,
+   "agreement_pct": 89.9,
+   "f1_pct": 85.7
+  },
+  {
+   "city": "Bydgoszcz",
+   "mode": "pretrained",
+   "epoch": 2005,
+   "reference_ha": 6526.5,
+   "app_ha": 7205.5,
+   "area_difference_pct": 10.4,
+   "agreement_pct": 90.7,
+   "f1_pct": 88.1
+  },
+  {
+   "city": "Bydgoszcz",
+   "mode": "pretrained",
+   "epoch": 2025,
+   "reference_ha": 7331.6,
+   "app_ha": 8256.9,
+   "area_difference_pct": 12.6,
+   "agreement_pct": 92.5,
+   "f1_pct": 91.5
+  }
+ ]
+}
