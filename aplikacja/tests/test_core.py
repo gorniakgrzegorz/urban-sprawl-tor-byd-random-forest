@@ -184,3 +184,12 @@ def test_sdg_cover_grid_beyond_raster():
     cells, s = population.sdg_11_3_1(B, area, tr, "EPSG:2180", g, (2010, 2020))
     assert s["population_t0"] == 2250 and s["cells_full"] == 1
     assert sorted(round(c, 2) for c in cells.cover) == [0.25, 0.5, 0.5, 1.0]
+
+
+def test_check_crs_requires_projected_metres():
+    import pytest
+    from landcoverrewind import data
+    data.check_crs("EPSG:2180"); data.check_crs("EPSG:32634")
+    for bad in ("EPSG:4326", "EPSG:3857"):
+        with pytest.raises(ValueError):
+            data.check_crs(bad)
