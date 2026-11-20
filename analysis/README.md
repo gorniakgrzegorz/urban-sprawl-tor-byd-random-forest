@@ -29,3 +29,9 @@ The site runs reported in the manuscript were produced with landcoverrewind 1.1.
 Version 1.3.0 adds the `population` module and `pipeline.run_sdg`; the modules that compute the series (`data`, `features`, `model`, `series`) are identical to 1.2.0, so the series outputs are unchanged. `sdg_sites.py` requires 1.3.0.
 
 IO LULC years: the variant names and the mask keys use "2024" (e.g. `IO 2024 >=5/9`, `io2024`), because the runs requested the year 2024; the Planetary Computer collection io-lulc-annual-v02 ends with the 2023 map, which is what a 2024 search returns. All these masks are therefore built from the IO LULC 2017 and 2023 maps (checked: identical arrays). Version 1.3.0 selects maps by their start year and requests 2023.
+
+## Version 1.4.0 additions
+
+- `accuracy_demo.py` → `accuracy_demo.json`: error-adjusted built-up area of the 2025 epoch in the six Polish areas with `landcoverrewind.accuracy` (stratified sample of 600 pixels, at least 100 per class, seed 42, reference labels from BDOT10k built-up, transport areas and squares; comparison with the full BDOT10k reference area; empirical coverage of the 95% interval over 200 further samples). Uses `bdot_ref.py` (reference construction of `bdot_eval.py`; BDOT10k county exports in `data/bdot10k`, not redistributed).
+- `multiscale_demo.py` → `multiscale_demo.json`: agreement of new built-up land 1990–2015 with WSF Evolution in blocks of 1, 3, 10 and 33 pixels and for the whole area.
+- `memory_run.py` → `memory_run_9km2.json`, `memory_run_torun_city.json`: wall time and peak resident memory of the command line (nine epochs, default settings) on a Linux machine with 2 cores and 7.6 GB of memory.

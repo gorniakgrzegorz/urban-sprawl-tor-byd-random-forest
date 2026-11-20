@@ -1,0 +1,14 @@
+{
+ "cmd": [
+  "python3",
+  "/home/claude/cg/pkg2/aplikacja/landcoverrewind_cli.py",
+  "--file",
+  "/home/claude/cg/pkg2/aplikacja/examples/torun_centre.geojson",
+  "--out",
+  "out_small"
+ ],
+ "rc": 0,
+ "seconds": 294.25234746932983,
+ "peak_rss_mb": 673.8359375,
+ "tail": "[  0%] prepare\nArea: 9.1 km2, grid 105 x 105 pixels of 30 m, CRS EPSG:32634\nModel: rf_torun_bydgoszcz_2025 (trained on the 2025 maps of Torun and Bydgoszcz)\n[  8%] epoch 1985 (1/9)\n  epoch 1985: searching Landsat scenes 1984-1986\n    scenes: summer 24, spring 14, other months 15\n[ 15%] epoch 1990 (2/9)\n  epoch 1990: searching Landsat scenes 1989-1991\n    scenes: summer 28, spring 21, other months 11\n[ 23%] epoch 1995 (3/9)\n  epoch 1995: searching Landsat scenes 1994-1996\n    scenes: summer 24, spring 18, other months 14\n[ 31%] epoch 2000 (4/9)\n  epoch 2000: searching Landsat scenes 1999-2001\n    scenes: summer 35, spring 33, other months 24\n[ 38%] epoch 2005 (5/9)\n  epoch 2005: searching Landsat scenes 2004-2006\n    scenes: summer 43, spring 27, other months 16\n[ 46%] epoch 2010 (6/9)\n  epoch 2010: searching Landsat scenes 2009-2011\n    scenes: summer 54, spring 34, other months 19\n[ 54%] epoch 2015 (7/9)\n  epoch 2015: searching Landsat scenes 2014-2016\n    scenes: summer 27, spring 16, other months 17\n[ 62%] epoch 2020 (8/9)\n  epoch 2020: searching Landsat scenes 2019-2021\n    scenes: summer 25, spring 17, other months 10\n[ 69%] epoch 2025 (9/9)\n  epoch 2025: searching Landsat scenes 2024-2026\n    scenes: summer 64, spring 38, other months 31\n[ 77%] series\n  extent mask: IO LULC 2017 loaded\n  extent mask: IO LULC 2023 loaded\n[ 85%] tables\n[ 92%] figures\n[100%] done\nDone in 291 s: /tmp/memrun/out_small\n"
+}

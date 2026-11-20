@@ -1,0 +1,131 @@
+{
+ "rows": [
+  {
+   "site": "torun",
+   "n": {
+    "0": 303,
+    "1": 297
+   },
+   "mapped_ha": 5682.06,
+   "adjusted_ha": 3215.350336033603,
+   "ci95_ha": 332.9747264005906,
+   "ua": 0.5488215488215489,
+   "ua_ci95": 0.05668811173215433,
+   "pa": 0.969859158036202,
+   "pa_ci95": 0.025631050715358095,
+   "oa": 0.7697504029300135,
+   "oa_ci95": 0.02881648102429947,
+   "bdot_census_ha": 3126.6,
+   "ratio_mapped": 1.817328727691422,
+   "ratio_adjusted": 1.0283855741168053,
+   "coverage_200_seeds": 0.935,
+   "mean_adjusted_200_seeds": 3135.2338926942693
+  },
+  {
+   "site": "bydgoszcz",
+   "n": {
+    "0": 305,
+    "1": 295
+   },
+   "mapped_ha": 8570.43,
+   "adjusted_ha": 5028.322336204501,
+   "ci95_ha": 501.8004279671327,
+   "ua": 0.5694915254237288,
+   "ua_ci95": 0.05659902039953812,
+   "pa": 0.9706591836993139,
+   "pa_ci95": 0.024959538977534557,
+   "oa": 0.7816071405674578,
+   "oa_ci95": 0.0285599561053048,
+   "bdot_census_ha": 5252.67,
+   "ratio_mapped": 1.6316330551890752,
+   "ratio_adjusted": 0.957288833337046,
+   "coverage_200_seeds": 0.945,
+   "mean_adjusted_200_seeds": 5241.739538010558
+  },
+  {
+   "site": "olsztyn",
+   "n": {
+    "0": 334,
+    "1": 266
+   },
+   "mapped_ha": 4172.22,
+   "adjusted_ha": 2499.6799664580617,
+   "ci95_ha": 254.45718170469706,
+   "ua": 0.5864661654135338,
+   "ua_ci95": 0.05929282771044618,
+   "pa": 0.9788716545697478,
+   "pa_ci95": 0.023426504572484443,
+   "oa": 0.8231063840680736,
+   "oa_ci95": 0.02531360645836351,
+   "bdot_census_ha": 2631.87,
+   "ratio_mapped": 1.5852682693294122,
+   "ratio_adjusted": 0.9497733423224026,
+   "coverage_200_seeds": 0.91,
+   "mean_adjusted_200_seeds": 2637.3110244766112
+  },
+  {
+   "site": "opole",
+   "n": {
+    "0": 332,
+    "1": 268
+   },
+   "mapped_ha": 4210.29,
+   "adjusted_ha": 2949.1030187915844,
+   "ci95_ha": 250.8905033639583,
+   "ua": 0.6753731343283582,
+   "ua_ci95": 0.05616381284533869,
+   "pa": 0.9641971594795268,
+   "pa_ci95": 0.02756253202106546,
+   "oa": 0.8535363516846769,
+   "oa_ci95": 0.02495744970410608,
+   "bdot_census_ha": 2927.25,
+   "ratio_mapped": 1.4383089930822444,
+   "ratio_adjusted": 1.007465374939477,
+   "coverage_200_seeds": 0.955,
+   "mean_adjusted_200_seeds": 2925.973096697986
+  },
+  {
+   "site": "rzeszow",
+   "n": {
+    "0": 263,
+    "1": 337
+   },
+   "mapped_ha": 5944.5,
+   "adjusted_ha": 4277.291217971139,
+   "ci95_ha": 314.1277744454586,
+   "ua": 0.685459940652819,
+   "ua_ci95": 0.04964865381811624,
+   "pa": 0.952639511682222,
+   "pa_ci95": 0.02417929928052614,
+   "oa": 0.7936461579658765,
+   "oa_ci95": 0.03127909061127327,
+   "bdot_census_ha": 4162.32,
+   "ratio_mapped": 1.428169866805051,
+   "ratio_adjusted": 1.027621907486964,
+   "coverage_200_seeds": 0.96,
+   "mean_adjusted_200_seeds": 4156.113940174431
+  },
+  {
+   "site": "zielona_gora",
+   "n": {
+    "0": 360,
+    "1": 240
+   },
+   "mapped_ha": 3508.83,
+   "adjusted_ha": 2345.3435,
+   "ci95_ha": 243.15657682469606,
+   "ua": 0.6166666666666667,
+   "ua_ci95": 0.061640006185935424,
+   "pa": 0.9225849006765959,
+   "pa_ci95": 0.044287794741420736,
+   "oa": 0.8480248218795701,
+   "oa_ci95": 0.02420631774521447,
+   "bdot_census_ha": 2485.71,
+   "ratio_mapped": 1.4116007096563958,
+   "ratio_adjusted": 0.9435306210298063,
+   "coverage_200_seeds": 0.96,
+   "mean_adjusted_200_seeds": 2482.492604375
+  }
+ ],
+ "rules": "Demonstration of landcoverrewind.accuracy (version 1.4.0) on the six Polish sites: error-adjusted built-up area of\nthe 2025 epoch from a stratified random sample whose reference labels are read from BDOT10k (built-up, transport\nareas and squares, >= 5 of 9 10 m sub-pixels; the main reference of the manuscript). Rules fixed before computing:\nsample of 600 pixels per site, at least 100 per map class, seed 42, evaluated pixels = site area covered by BDOT10k.\nBecause BDOT10k covers every pixel, the census reference area is known and the estimate can be checked against it;\nthe sample is repeated with 200 seeds to report the empirical coverage of the 95% confidence interval."
+}
