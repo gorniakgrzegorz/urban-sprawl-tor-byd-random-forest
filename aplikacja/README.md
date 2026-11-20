@@ -1,98 +1,106 @@
-# Land Cover Rewind 1985–2025: zabudowa i pokrycie terenu z archiwum Landsat dla dowolnego obszaru
+# Land Cover Rewind 1985–2025
 
-Aplikacja odtwarza mapy zabudowy i pokrycia terenu w epokach 1985–2025 (co pięć lat) dla obszaru wskazanego przez użytkownika. Powtarza procedurę z projektu *urban-sprawl-tor-byd-random-forest* (Górniak i Kunz): klasyfikator Random Forest uczony na współczesnej mapie 10 m klasyfikuje kompozyty Landsat z dawnych lat, a więz zasięgu i reguła nieodwracalności zabudowy porządkują wynik w serię monotoniczną.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24332551.svg)](https://doi.org/10.5281/zenodo.24332551)
+[![tests](https://github.com/gorniakgrzegorz/urban-sprawl-tor-byd-random-forest/actions/workflows/tests.yml/badge.svg)](https://github.com/gorniakgrzegorz/urban-sprawl-tor-byd-random-forest/actions/workflows/tests.yml)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24332552.svg)](https://doi.org/10.5281/zenodo.24332552)
+Land Cover Rewind reconstructs built-up land and four-class land cover for the epochs 1985, 1990, … 2025 for any area on Earth covered by the Landsat archive. A Random Forest classifier trained on a present-day 10 m land cover map labels annual Landsat composites of earlier years; an extent mask and a monotonic accumulation rule turn the per-epoch probabilities into a consistent series. The package also reports landscape metrics and growth forms (infill, edge expansion, leapfrog) for every period.
 
-**W skrócie:** na podstawie bezpłatnych zdjęć satelitarnych z ostatnich czterdziestu lat aplikacja rysuje dla wskazanej miejscowości mapy zabudowy co pięć lat, animację i wykres. Nie trzeba znać GIS ani programowania: instrukcja na ekranie prowadzi krok po kroku.
+No Google account or any other account is needed. Landsat Collection 2 Level 2 scenes and the Impact Observatory/Esri annual 10 m land use/land cover maps are read anonymously from the [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com) STAC catalogue, and all computation runs on the user's computer.
 
-**Nie wymaga konta Google ani żadnego innego konta.** Zdjęcia satelitarne i mapy pokrycia terenu pobierane są anonimowo z katalogu STAC [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com); obliczenia wykonuje komputer użytkownika.
+A Polish version of this document is in [README_PL.md](README_PL.md). A step-by-step tutorial is in [USER_GUIDE.md](USER_GUIDE.md). The browser app has a Polish and an English interface (switch at the top of the side panel).
 
-## Instalacja w systemie Windows (bez znajomości programowania)
+## Installation
 
-1. **Zainstaluj Python 3.12.** Wejdź na https://www.python.org/downloads/windows/, pobierz instalator *Python 3.12* (Windows installer 64-bit) i uruchom go. **Zaznacz pole „Add python.exe to PATH”** na pierwszym ekranie instalatora, potem kliknij *Install Now*. Nowsze wersje (3.14 i dalsze) nie są jeszcze sprawdzone.
-2. **Pobierz aplikację.** Pobierz archiwum ZIP aplikacji (z rekordu Zenodo albo ze strony repozytorium GitHub: zielony przycisk *Code* → *Download ZIP*) i rozpakuj je (prawy przycisk myszy → *Wyodrębnij wszystkie*).
-3. **Uruchom.** W rozpakowanym folderze `aplikacja` kliknij dwukrotnie plik `uruchom_windows.bat`. Pierwsze uruchomienie instaluje potrzebne pakiety (około 5–10 minut, zależnie od łącza); czarne okno konsoli musi pozostać otwarte przez cały czas pracy aplikacji.
-4. **Pracuj w przeglądarce.** Aplikacja otworzy się sama w przeglądarce (adres http://localhost:8501). Na ekranie znajdziesz instrukcję krok po kroku: wskaż obszar na mapie, sprawdź ustawienia, kliknij **Uruchom obliczenia**, obejrzyj i pobierz wyniki.
+### Windows, no programming
 
-Wymagania: około 8 GB pamięci RAM, połączenie z internetem, około 2 GB miejsca na dysku na pakiety.
+1. Install Python 3.12 from https://www.python.org/downloads/windows/ and tick **Add python.exe to PATH** in the first screen of the installer.
+2. Download the ZIP of this repository (or of the Zenodo record) and extract it.
+3. Double-click `run_windows.bat` in the application folder. The first start installs the packages (5–10 min); keep the black console window open while you work.
+4. The app opens in the browser at http://localhost:8501.
 
-## Dla zaawansowanych: Linux, macOS, wiersz poleceń, Docker
+Requirements: an internet connection (tested on a machine with 8 GB RAM and two cores; peak memory use was not measured), about 2 GB of disk space for the packages.
+
+### Linux, macOS, command line, Docker
 
 ```bash
-cd aplikacja
-python -m venv .venv
-# Windows: .venv\Scripts\activate    Linux/macOS: source .venv/bin/activate
+python -m venv .venv && source .venv/bin/activate      # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-streamlit run aplikacja.py
+streamlit run app.py                                     # browser app
+python landcoverrewind_cli.py --file examples/torun_centre.geojson --epochs 1990 2005 2025 --out results_example
+python landcoverrewind_cli.py --bbox 18.55 52.98 18.70 53.06 --mode local --out results_local
+pytest -q                                                # unit tests on synthetic data, no network
 ```
 
-W PowerShell aktywacja środowiska może wymagać polecenia `Set-ExecutionPolicy -Scope Process RemoteSigned`.
+Docker: `docker build -t landcoverrewind . && docker run -p 8501:8501 landcoverrewind`.
 
-Wiersz poleceń (bez okna, z paskiem postępu w konsoli):
+Python API:
 
-```bash
-python landcoverrewind_cli.py --bbox 18.55 52.98 18.70 53.06 --wyniki wyniki_torun
-python landcoverrewind_cli.py --plik moj_obszar.gpkg --epoki 1990 2005 2025 --tryb lokalny
+```python
+from odc.geo.geom import box
+from landcoverrewind import pipeline
+r = pipeline.run(box(18.60, 53.00, 18.645, 53.027, "EPSG:4326"), epochs=[1990, 2025], mode="pretrained", out_dir="results")
+r["table"]          # per-epoch metrics; r["B"][1990] is the built-up map (bool array) of epoch 1990
 ```
 
-Docker: `docker build -t landcoverrewind . && docker run -p 8501:8501 landcoverrewind`, a następnie http://localhost:8501.
+> The pretrained models are read from the `models/` folder next to the package, so run the app, the command line and the API from the unpacked source folder (or the Docker image); `pip install -e .` keeps this layout. `requirements-lock.txt` lists the exact library versions used for the tests and the published evaluation; results are bit-identical only with identical library versions and unchanged provider data.
 
-## Co powstaje
+## Outputs
 
-| Plik | Zawartość |
+| File | Content |
 |---|---|
-| `seria_A_<epoka>.tif` | zabudowa serii monotonicznej (1 = zabudowa, 0 = brak, 255 = poza obszarem), 30 m |
-| `p_zabudowy_<epoka>.tif` | prawdopodobieństwo zabudowy przed więzami, 0–100 (255 = brak danych) |
-| `pokrycie_4klasy_<epoka>.tif` | 1 zabudowa, 2 lasy i drzewa, 3 wody, 4 pozostałe, 0 = brak danych lub poza obszarem |
-| `epoka_pierwszej_detekcji.tif` | epoka, w której piksel pierwszy raz jest zabudową; 0 = nigdy niezabudowany, −1 = poza obszarem |
-| `wskazniki_epok.csv` | `zabudowa_ha` powierzchnia zabudowy [ha], `platy` liczba skupisk zabudowy (płatów), `sredni_plat_ha` średnia wielkość płatu [ha], `lpi_klasowe_proc` udział największego płatu w zabudowie [%], `gestosc_krawedzi_km_km2` długość granic zabudowy [km/km²], `tempo_liniowe_od_bazy_proc_rok` średni roczny przyrost od 1990 r. albo od najstarszej wybranej epoki, gdy 1990 nie wybrano [%/rok]; liczby zaokrąglone do 0,01, pusta komórka = brak danych |
-| `formy_przyrostu.csv` | `nowa_ha` nowa zabudowa w okresie [ha] i jej udział [%]: `wypelnianie_proc` dogęszczanie, `krawedziowy_proc` rozrastanie się na obrzeżach, `przeskok_proc` nowe skupiska bez kontaktu z istniejącą zabudową (tylko przy co najmniej dwóch epokach) |
-| `dane_wejsciowe.csv` | liczba scen i dni pozyskania oraz sensory w każdej epoce |
-| `animacja_zabudowa.gif`, `animacja_pokrycie.gif`, `mapa_epoka_detekcji.png`, `wykres_powierzchni.png` | wizualizacje z polskimi opisami |
-| `metadane.json` | ustawienia, data obliczeń i identyfikatory scen Landsat każdej epoki (okno epoki 2025 obejmuje lata 2024–2026, więc wynik tej epoki może się zmieniać, dopóki przybywają sceny z 2026 r.; zapis identyfikatorów pozwala odtworzyć obliczenia) |
-| `wyniki.zip` | wszystko powyżej w jednym pliku |
+| `built_up_<epoch>.tif` | built-up land of the monotonic series (1 built-up, 0 not built-up, 255 outside the area), 30 m |
+| `built_up_probability_<epoch>.tif` | Random Forest built-up probability before the series constraints, 0–100 (255 no data) |
+| `land_cover_4class_<epoch>.tif` | 1 built-up, 2 trees and forest, 3 water, 4 other, 0 no data or outside the area |
+| `first_detection_epoch.tif` | first epoch in which the pixel is built-up; 0 never built-up, −1 outside the area |
+| `epoch_metrics.csv` | `built_up_ha` built-up area [ha], `patches` number of patches (8-neighbourhood), `mean_patch_ha` mean patch size [ha], `lpi_class_pct` share of the largest patch in the built-up area [%], `edge_density_km_per_km2` built-up boundary length [km km⁻²] (study-area boundary not counted), `linear_rate_from_base_pct_per_year` = 100·(A<sub>t</sub>/A<sub>base</sub> − 1)/(t − base), base 1990 or the earliest epoch [% yr⁻¹] |
+| `growth_forms.csv` | `new_ha` new built-up land of the period [ha] and its shares [%]: `infill_pct` (≥ 4 of 8 neighbours built-up), `edge_expansion_pct` (1–3), `leapfrog_pct` (0) |
+| `input_scenes.csv` | number of scenes, summer and spring scenes and sensors per epoch |
+| `metadata.json` | software version, settings, date and the identifiers of all Landsat scenes of every epoch |
+| `*_animation.gif`, `first_detection_map.png`, `built_up_area_chart.png` | figures (labels in English or Polish) |
+| `results.zip` | all of the above |
 
-## Jak to działa
+## SDG indicator 11.3.1 (population)
 
-1. **Siatka.** Obszar dostaje siatkę 30 m w strefie UTM swojego środka (albo w układzie podanym opcją `--crs`).
-2. **Sceny.** Dla epoki *t* wyszukiwane są sceny Landsat Collection 2 Level 2 z lat *t* − 1 … *t* + 1 (Landsat 4/5 TM do 2012 r., 7 ETM+ w latach 2000–2012, 8 OLI od 2013 r., 9 OLI od 2022 r.), z zachmurzeniem sceny poniżej 70%.
-3. **Maska chmur i harmonizacja.** Piksele z bitami 0–5 pasma QA_PIXEL (wypełnienie, chmura rozszerzona, cirrus, chmura, cień, śnieg) są usuwane; odbicie to DN · 2,75e-5 − 0,2; TM i ETM+ harmonizowane do OLI współczynnikami Roy i in. (2016).
-4. **Cechy.** Mediana lata (VI–IX) w sześciu pasmach, wskaźniki NDVI, NDBI, NDWI, MNDWI, BU, BSI, kontrast i entropia GLCM pasma NIR w oknie 7 × 7 oraz cztery wskaźniki mediany przedwiośnia (III–V): 18 cech modelu. Liczona jest też amplituda NDVI (95. minus 5. percentyl w oknie lat), dziewiętnasta cecha modelu GEE, ale model jej nie używa: w teście dla Grudziądza była zawyżona w epoce 1985 i zaniżała tam wykrycia zabudowy, a jej pominięcie zmniejszyło też różnicę wobec serii A w Toruniu i Bydgoszczy. Obszary większe niż 768 × 768 pikseli liczone są w kaflach.
-5. **Model.**
-   - `gotowy` (domyślny): Random Forest `rf_torbyd_2025` uczony na mapach 2025 projektu (Toruń i Bydgoszcz; etykiety z transferu Dynamic World 2025) i cechach liczonych tym kodem. Zalecany dla Polski i podobnego krajobrazu Europy Środkowej.
-   - `lokalny`: model (zapisywany w folderze wyników) uczony w obszarze użytkownika na etykietach Impact Observatory LULC 2024 (10 m, Sentinel-2), sprowadzonych do czterech klas i do 30 m (zabudowa, gdy co najmniej 5 z 9 pikseli 10 m jest zabudową; piksele z 1–4 pikselami zabudowy pomijane; pozostałe według klasy dominującej), 1500 punktów na klasę, ziarno 42. Zalecany poza Polską.
-   - Oba warianty: 300 drzew, 4 cechy na podział, minimalny liść 1 (jak w modelu GEE projektu), ziarno 42.
-6. **Więzy.** Seria A: B<sub>t</sub> = M ∩ ⋃<sub>s ≤ t</sub> (p<sub>s</sub> ≥ 0,65). Maska zasięgu M to piksele 30 m, w których co najmniej 5 z 9 pikseli 10 m jest zabudową w IO LULC 2017 lub 2024; zastępuje maskę Dynamic World 2015 ∪ 2025 z projektu, dostępną tylko w Google Earth Engine. Próg wybrano jak w projekcie na epoce rozwojowej 2005: progi 0,55 i 0,65 dały tę samą F1 serii 2005 względem serii A projektu (87% w Toruniu, 88% w Bydgoszczy), a próg 0,75 niższą (85% i 86%); wybrano 0,65, bo daje mniejszą różnicę powierzchni (tabela w `modele/kalibracja_progu.json`).
-7. **Wskaźniki i wizualizacje** jak w artykułach projektu: płaty w sąsiedztwie ośmiu pikseli, gęstość krawędzi bez granicy obszaru, formy przyrostu według liczby zabudowanych sąsiadów w oknie 3 × 3.
+After a run, the app (panel "SDG indicator 11.3.1") and the command line combine the built-up series with a population grid of two dates and compute the ratio of land consumption rate to population growth rate (LCRPGR) for the whole area and for every grid cell. Any polygon layer with population works: one file with two population columns, or two files joined by a cell identifier, such as the 1 km census grids NSP 2011 and NSP 2021 of Statistics Poland (field `tot`, identifier `code`).
 
-Czas: dla obszaru około 150 km² od kilku do kilkunastu minut na wszystkie epoki, zależnie od łącza i liczby scen; obszary większe niż 768 × 768 pikseli liczone są w kaflach. Cechy epok zapisywane są w `wyniki/cache` pod nazwą zależną od siatki, więc ponowne uruchomienie dla tego samego obszaru z innym progiem trwa sekundy. Liczbę wątków pobierania ustawia zmienna środowiskowa `URBANRF_WATKI` (domyślnie 8).
+```
+python landcoverrewind_cli.py --file city.gpkg --population nsp2011.gpkg nsp2021.gpkg --pop-fields tot tot --pop-years 2011 2021
+```
 
-## Sprawdzian
+LCR follows the linear form of the UN-Habitat metadata (2025) by default (`--lcr-form log` for the logarithmic form), PGR is logarithmic, and built-up land at the census dates is interpolated between the nearest epochs. A cell ratio is reported only for cells lying wholly inside the area; when population is stable (|PGR| < 0.0013 per year) the ratio is flagged as not interpretable. Outputs: `sdg_11_3_1_cells.gpkg/.csv`, `sdg_11_3_1_summary.json`, `sdg_11_3_1.png`.
 
-Aplikację uruchomiono dla miast Toruń i Bydgoszcz (granice administracyjne, siatka 30 m EPSG:2180) i porównano piksel po pikselu z serią A projektu z Google Earth Engine (`narzedzia/test_miasta.py`, wynik w `modele/test_aplikacji.json`). F1 względem serii A wynosiła 83–92%, a aplikacja wskazywała o 9,5–19,6% więcej zabudowy niż seria A, najwięcej w epoce 1990. Próg wybrano na epoce 2005; epoka 1990 jest testem, a zgodność w 2025 r. dotyczy roku i miast, na których uczono model, więc nie jest niezależną oceną. Tryb lokalny (bez map projektu) dał w Toruniu prawie te same wartości. Model `rf_torbyd_2025` uczony w jednym mieście i oceniany w drugim zachował trafność 88,6–90,3% (zabudowa) i 87,7–88,4% (cztery klasy) na zrównoważonej próbie pikseli map 2025. Są to zgodności z mapami projektu, a nie dokładności wobec niezależnych danych.
+## Method
 
-Przykład obszaru spoza miejsc uczenia: Grudziądz z okolicą (140 km², wszystkie epoki 1985–2025); epoka 1985 nadal pokazuje mniej zabudowy niż 1990 (2226 wobec 2947 ha), co odpowiada artefaktowi pierwszej epoki opisanemu w artykułach.
+1. **Grid.** 30 m grid aligned to multiples of 30 m in the UTM zone of the area centroid (or in a CRS given with `--crs`).
+2. **Scenes.** For epoch *t*, Landsat Collection 2 Level 2 scenes from years *t* − 1 … *t* + 1 with scene cloud cover below 70% (Landsat 4/5 TM up to 2012, Landsat 7 ETM+ 2000–2012, Landsat 8 OLI from 2013, Landsat 9 OLI from 2022).
+3. **Cloud mask and harmonisation.** Pixels with QA_PIXEL bits 0–5 set (fill, dilated cloud, cirrus, cloud, shadow, snow) are removed; reflectance = DN · 2.75·10⁻⁵ − 0.2; TM and ETM+ are transformed to OLI with the ETM+→OLI OLS coefficients of Roy et al. (2016), applied to TM as an approximation.
+4. **Features (18).** Summer (June–September) median of six bands, NDVI, NDBI, NDWI, MNDWI, BU (NDBI − NDVI), BSI, GLCM contrast and entropy of NIR in a 7 × 7 window (own implementation, 32 and 8 grey levels over 0–0.6 reflectance, four directions), and the spring (March–May) median NDVI, NDBI, BU and BSI. NDVI amplitude is computed but not used (unstable between epochs). Areas larger than 768 × 768 pixels are processed in tiles.
+5. **Models.** `pretrained` (default): Random Forest `rf_torun_bydgoszcz_2025` trained on the 2025 maps of the reference project for Toruń and Bydgoszcz (labels transferred from Dynamic World 2025) and on features computed by this code. `local`: models trained in the user's area on Impact Observatory LULC 2024 labels aggregated to 30 m (built-up when at least 5 of 9 10 m cells are built-up; mixed pixels with 1–4 built-up cells ignored; otherwise the dominant class), 1500 points per class. Both: 300 trees, 4 features per split, minimum leaf size 1, seed 42 (scikit-learn 1.9).
+6. **Series constraints.** B<sub>t</sub> = M ∩ ⋃<sub>s ≤ t</sub> (p<sub>s</sub> ≥ 0.65), where M are the 30 m pixels with at least 5 of 9 built-up 10 m cells in IO LULC 2017 or 2024. The threshold was selected on the development epoch 2005 against the reference series ([models/threshold_calibration.json](models/threshold_calibration.json)).
 
-## Ograniczenia, które trzeba znać
+## Evaluation shipped with the package
 
-- Mapy historyczne są przybliżeniem: w projekcie zgodność F1 serii A z niezależnymi źródłami wynosiła 62–77%, a epoka 1985 pomija część istniejącej zabudowy (artefakt pierwszej epoki). Wskaźniki dynamiki liczymy od 1990 r.
-- Seria monotoniczna nie rejestruje rozbiórek; zabudowa raz wykryta pozostaje zabudową.
-- Model `gotowy` uczono w dwóch miastach jednego regionu. W innym klimacie, przy innej zabudowie lub innym rolnictwie użyj trybu `lokalny` i sprawdź wynik na ortofotomapie.
-- Cechy GLCM liczone są inaczej niż w GEE (skala tekstury), a amplituda NDVI nie jest używana, dlatego modelu z GEE nie da się przenieść bez ponownego uczenia; model `rf_torbyd_2025` uczono na cechach z tego kodu.
-- Lata 1975 i 1980 (Landsat MSS) nie są obsługiwane: wymagają drugiego etapu transferu i normalizacji radiometrycznej opisanej w artykule.
-- Klasy niezabudowane (lasy, wody, pozostałe) mają większy błąd niż zabudowa; ich zmiany interpretuj ostrożnie.
+`tools/compare_reference.py` compares the app series with the reference series A of the project ([10.5281/zenodo.24155226](https://doi.org/10.5281/zenodo.24155226)) in Toruń and Bydgoszcz; results are in [models/app_test.json](models/app_test.json). F1 against the reference series was 83.0–91.9%, and the app mapped 9.5–19.6% more built-up land than the reference, most in 1990. These are agreements with the maps of the reference project, not accuracies against independent data; the 2025 agreement concerns the year and cities used for training. The cross-city transfer of the pretrained model (trained in one city, tested in the other on a balanced pixel sample of the 2025 maps) is recorded in the model cards `models/*.json`.
 
-## Odtworzenie modelu
+## Known limitations
 
-`narzedzia/trenuj_model_torbyd.py` odtwarza modele z plików etykiet `tor_v3_rf_4kl_2025.tif` i `byd_v3_rf_4kl_2025.tif` (mapy czteroklasowe 2025 projektu; jeśli w rekordzie Zenodo 10.5281/zenodo.24155226 mają inne nazwy, podaj ich ścieżki), a `narzedzia/zapisz_punkty.py` zapisuje punkty uczące, z których aplikacja odtwarza model, gdy plik `.joblib` nie pasuje do zainstalowanej wersji scikit-learn. Karta modelu z hiperparametrami i wynikiem testu przeniesienia między miastami jest w `modele/*.json`.
+- Historical maps are approximations: in the reference project, the F1 agreement of series A with independent sources was 62–77%, and the first epoch (1985) misses part of the existing built-up land.
+- The monotonic series does not record demolition.
+- The pretrained model comes from two cities of one region. Elsewhere, use `--mode local` and check the result against orthophotos.
+- GLCM features are scaled differently from Google Earth Engine `glcmTexture`; models trained on GEE features cannot be reused without retraining.
+- Landsat MSS (1975, 1980) is not supported.
+- The non-built classes (trees, water, other) are less accurate than built-up land.
 
-## Autor i kontakt
+## Reproducing the pretrained models
 
-© 2026 [Grzegorz Górniak](mailto:ggorniak@doktorant.umk.pl), Uniwersytet Mikołaja Kopernika w Toruniu. Uwagi i zgłoszenia błędów: ggorniak@doktorant.umk.pl.
+`tools/train_pretrained.py tor_v3_rf_4kl_2025.tif byd_v3_rf_4kl_2025.tif` rebuilds both models from the 2025 four-class maps of the reference project and stores the training points (`models/*_points.npz`). When a stored `.joblib` file does not match the installed scikit-learn version, the package retrains the model from these points with the same seed.
 
-## Licencja i cytowanie
+Settings: the number of download threads is set by the environment variable `LCR_THREADS` (default 8).
 
-Kod: MIT. Modele i wyniki: CC BY 4.0. Cytuj aplikację: Górniak, G., Kunz, M., 2026. Land Cover Rewind 1985–2025: aplikacja do odtwarzania zabudowy i pokrycia terenu z archiwum Landsat dla dowolnego obszaru. Zenodo. https://doi.org/10.5281/zenodo.24332552. Metoda i dane projektu: Górniak, G., Kunz, M., 2026a. Reconstructing built-up land in Toruń and Bydgoszcz (Poland) 1975–2025 from Landsat with a Dynamic World-trained Random Forest: code and result data. Zenodo. https://doi.org/10.5281/zenodo.24076776 (oraz Górniak, G., Kunz, M., 2026b, rastry GeoTIFF: https://doi.org/10.5281/zenodo.24155226)
+## Author, licence, citation
 
-Dane: Landsat Collection 2 (U.S. Geological Survey) i Impact Observatory/Esri 10 m Annual Land Use Land Cover (CC BY 4.0), udostępniane przez Microsoft Planetary Computer.
+© 2026 [Grzegorz Górniak](mailto:ggorniak@doktorant.umk.pl), Nicolaus Copernicus University in Toruń. Bug reports: GitHub issues or e-mail.
+
+Code: MIT. Models and results: CC BY 4.0. Please cite: Górniak, G., Kunz, M., 2026. Land Cover Rewind 1985–2025. Zenodo. https://doi.org/10.5281/zenodo.24332551 (see [CITATION.cff](CITATION.cff)). Reference project code and data: https://doi.org/10.5281/zenodo.24076776; rasters: https://doi.org/10.5281/zenodo.24155226.
+
+Data: Landsat Collection 2 courtesy of the U.S. Geological Survey; Impact Observatory/Esri 10 m Annual Land Use Land Cover (CC BY 4.0); both via Microsoft Planetary Computer. Base map and search in the app © OpenStreetMap contributors.

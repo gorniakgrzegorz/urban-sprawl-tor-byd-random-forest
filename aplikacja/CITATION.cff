@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the version and the Zenodo DOI."
+type: software
+title: "Land Cover Rewind 1985–2025"
+abstract: "Software that reconstructs built-up land and four-class land cover for the epochs 1985–2025 for any area covered by the Landsat archive. A Random Forest classifier trained on a present-day 10 m land cover map labels Landsat Collection 2 composites of earlier years; an extent mask and monotonic accumulation turn per-epoch probabilities into a consistent series. Data are read anonymously from the Microsoft Planetary Computer; no account is required. Computes SDG indicator 11.3.1 from the series and a population grid of two dates. Browser app (Polish and English), command line and Python API."
+version: "1.3.0"
+date-released: "2026-11-20"
+license: MIT
+repository-code: "https://github.com/gorniakgrzegorz/urban-sprawl-tor-byd-random-forest"
+doi: 10.5281/zenodo.24332551
+authors:
+  - family-names: "Górniak"
+    given-names: "Grzegorz"
+    orcid: "https://orcid.org/0009-0009-9248-8018"
+    affiliation: "Nicolaus Copernicus University in Toruń, Faculty of Earth Sciences and Spatial Management"
+    email: "ggorniak@doktorant.umk.pl"
+  - family-names: "Kunz"
+    given-names: "Mieczysław"
+    orcid: "https://orcid.org/0000-0002-3334-5238"
+    affiliation: "Nicolaus Copernicus University in Toruń, Faculty of Earth Sciences and Spatial Management"
+keywords:
+  - built-up land
+  - land cover change
+  - Landsat
+  - Random Forest
+  - label transfer
+  - STAC
+  - Microsoft Planetary Computer
+  - uncertainty

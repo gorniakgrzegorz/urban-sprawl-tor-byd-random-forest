@@ -1,6 +1,7 @@
-cache_uczenia/
+training_cache/
 __pycache__/
 *.pyc
-wyniki*/
+results*/
 .venv/
+.pytest_cache/
 .git/
