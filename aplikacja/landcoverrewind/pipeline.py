@@ -15,7 +15,7 @@ IO_TO_4 = {1: 3, 2: 2, 4: 3, 5: 4, 7: 1, 8: 4, 11: 4}
 PRETRAINED = ("rf_torun_bydgoszcz_2025_binary", "rf_torun_bydgoszcz_2025_4class")
 
 
-def teacher_labels(geobox, year=2024, log=print):
+def teacher_labels(geobox, year=2023, log=print):
     """30 m labels from IO LULC (Sentinel-2, 10 m): built-up when at least 5 of 9 cells are built-up,
     otherwise the dominant class; mixed pixels (1-4 built-up cells) and pixels with < 5 valid cells are ignored (255)."""
     a, _ = data.load_10m_map("io-lulc-annual-v02", year, geobox, "data")
@@ -44,11 +44,29 @@ def _rounded(rows, nd=2):
     return [{k: ("" if np.isnan(v) else round(v, nd)) if isinstance(v, float) else v for k, v in r.items()} for r in rows]
 
 
+def _versions():
+    """Versions of the libraries that affect the results (recorded in metadata.json)."""
+    import importlib.metadata as md, platform
+    v = {"python": platform.python_version()}
+    for name in ("numpy", "scikit-learn", "rasterio", "odc-stac", "odc-geo", "pystac-client", "pyproj", "geopandas", "scipy"):
+        try:
+            v[name] = md.version(name)
+        except md.PackageNotFoundError:
+            pass
+    try:
+        import rasterio
+        v["gdal"] = rasterio.__gdal_version__
+    except Exception:
+        pass
+    return v
+
+
 def run(geom, epochs=None, mode="pretrained", threshold=0.65, out_dir="results", crs=None, max_cloud=70,
-        log=print, progress=None, lang="en", extent_years=(2017, 2024)):
+        log=print, progress=None, lang="en", extent_years=(2017, 2023)):
     """Reconstruct the built-up series and four-class maps for `geom` (odc.geo Geometry).
 
-    mode: "pretrained" uses the Torun/Bydgoszcz 2025 models; "local" trains on IO LULC 2024 labels in the area.
+    mode: "pretrained" uses the Torun/Bydgoszcz 2025 models; "local" trains on IO LULC 2023 labels in the area
+    (the most recent IO LULC map in the catalogue).
     progress(fraction 0-1, step description) lets a user interface show a progress bar.
     Returns a dict with the series B, four-class maps K4, probabilities P, extent mask M and tables.
     """
@@ -70,7 +88,7 @@ def run(geom, epochs=None, mode="pretrained", threshold=0.65, out_dir="results",
     area = series.area_mask(geom, gb)
     km2 = area.sum() * 900 / 1e6
     log(f"Area: {km2:.1f} km2, grid {gb.shape[1]} x {gb.shape[0]} pixels of 30 m, CRS {gb.crs}")
-    key = hashlib.md5(f"{gb.crs}|{tuple(gb.affine)}|{gb.shape}|{max_cloud}".encode()).hexdigest()[:10]
+    key = hashlib.md5(f"{gb.crs}|{tuple(gb.affine)}|{gb.shape}|{max_cloud}|{__version__}".encode()).hexdigest()[:10]
 
     def epoch_features(t):
         # the cache key includes the grid and the cloud limit, so a different area never reuses these features
@@ -87,14 +105,14 @@ def run(geom, epochs=None, mode="pretrained", threshold=0.65, out_dir="results",
         log("Model: rf_torun_bydgoszcz_2025 (trained on the 2025 maps of Torun and Bydgoszcz)")
     elif mode == "local":
         step("train")
-        log("Model: local training on IO LULC 2024 labels and epoch 2025 features")
+        log("Model: local training on IO LULC 2023 labels and epoch 2025 features")
         F25, _ = epoch_features(2025)
-        lab = teacher_labels(gb, 2024, log)
+        lab = teacher_labels(gb, 2023, log)
         X, y = model.sample_points(np.where(lab == 255, 255, (lab == 1).astype("uint8")), F25, mask=area)
         rf2 = model.train(X, y)
         X4, y4 = model.sample_points(lab, F25, mask=area)
         rf4 = model.train(X4, y4)
-        model.save(rf2, "local_model_binary", dict(name="local_model_binary", labels="IO LULC 2024", training_epoch=2025),
+        model.save(rf2, "local_model_binary", dict(name="local_model_binary", labels="IO LULC 2023", training_epoch=2025),
                    directory=out.resolve())
         log(f"  OOB: binary {rf2.oob_score_:.3f}, four-class {rf4.oob_score_:.3f}")
     else:
@@ -125,7 +143,9 @@ def run(geom, epochs=None, mode="pretrained", threshold=0.65, out_dir="results",
     B = series.monotonic_series(P, threshold, M)
     for t in B:
         K4[t][B[t]] = 1
-        write_tif(out / f"built_up_{t}.tif", np.where(area, B[t], 255), gb, "uint8", 255)
+        # 255: outside the area, or no valid observation in this epoch and not built-up in an earlier epoch
+        nodata = area & np.isnan(P[t]) & ~B[t]
+        write_tif(out / f"built_up_{t}.tif", np.where(area & ~nodata, B[t], 255), gb, "uint8", 255)
         write_tif(out / f"land_cover_4class_{t}.tif", np.where(area, K4[t], 0), gb, "uint8", 0)
     fd = series.first_detection(B)
     # inside the area: first-detection epoch or 0 (never built-up); outside: -1 (no data)
@@ -148,6 +168,9 @@ def run(geom, epochs=None, mode="pretrained", threshold=0.65, out_dir="results",
                 mode=mode, threshold=threshold, max_cloud=max_cloud, extent_years=list(extent_years),
                 scenes={o["epoch"]: o.get("scene_ids", []) for o in inputs}, date=time.strftime("%Y-%m-%d"),
                 runtime_s=round(time.time() - t0), skipped_epochs=[t for t in epochs if t not in P],
+                no_data_share_in_area={t: round(float((np.isnan(P[t]) & area).sum() / max(area.sum(), 1)), 4) for t in P},
+                grid=dict(transform=list(gb.affine)[:6], shape=list(gb.shape)),
+                io_lulc_items=dict(data.LAST_ITEMS), libraries=_versions(),
                 source="Microsoft Planetary Computer (landsat-c2-l2, io-lulc-annual-v02)")
     (out / "metadata.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
     with zipfile.ZipFile(out / "results.zip", "w", zipfile.ZIP_DEFLATED) as z:
@@ -173,7 +196,8 @@ def run_sdg(result, pop_paths, value_fields, years, id_field=None, lcr_form="lin
         outline = gpd.GeoSeries([area_geom.geom], crs=str(area_geom.crs)).to_crs(str(gb.crs))
     cells, summary = population.sdg_11_3_1(result["B"], result["area"], gb.affine, str(gb.crs), pop, tuple(years), lcr_form,
                                            area_geom=None if outline is None else outline.union_all())
-    cells.to_file(out / "sdg_11_3_1_cells.gpkg", driver="GPKG")
+    # the cell layer is written in the coordinate reference system of the population grid
+    cells.to_crs(pop.crs).to_file(out / "sdg_11_3_1_cells.gpkg", driver="GPKG")
     cells.drop(columns="geometry").to_csv(out / "sdg_11_3_1_cells.csv", index=False, float_format="%.5f")
     (out / "sdg_11_3_1_summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=1), encoding="utf-8")
     viz.sdg_figure(cells, outline, out / "sdg_11_3_1.png", lang)

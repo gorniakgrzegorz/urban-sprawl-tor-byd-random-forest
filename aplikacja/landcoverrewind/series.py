@@ -19,8 +19,8 @@ def built_fraction(a10, shape30, code=IO_BUILT):
     return (data.to_blocks(a10, shape30) == code).mean(axis=-1)
 
 
-def extent_mask(geobox, log=print, min_share=5 / 9, years=(2017, 2024)):
-    """Extent constraint M: 30 m pixels in which at least 5 of 9 10 m cells are built-up in IO LULC 2017 or 2024.
+def extent_mask(geobox, log=print, min_share=5 / 9, years=(2017, 2023)):
+    """Extent constraint M: 30 m pixels in which at least 5 of 9 10 m cells are built-up in IO LULC 2017 or 2023 (the first and the last map in the catalogue).
 
     Counterpart of the Dynamic World 2015 and 2025 union used in the reference project (which needs a Google account).
     The variant was chosen by comparison with the reference series in Torun and Bydgoszcz (see the paper, Section 2.4).

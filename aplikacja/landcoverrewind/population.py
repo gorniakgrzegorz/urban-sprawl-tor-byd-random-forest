@@ -46,6 +46,7 @@ def rates(a0, a1, p0, p1, years, lcr_form="linear"):
     ratio = lcr / pgr if pgr != 0 else nan
     if abs(pgr) < STABLE_PGR:
         status = "population stable"
+        ratio = nan  # not interpretable; kept as NaN so that a GIS filter cannot select it by mistake
     elif pgr < 0:
         status = "population decline"
     else:
@@ -58,15 +59,22 @@ def read_population(paths, value_fields, id_field=None):
     Returns a GeoDataFrame with columns pop0, pop1 and geometry."""
     if len(paths) == 1:
         g = gpd.read_file(paths[0])
+        missing = [f for f in value_fields if f not in g.columns]
+        if missing:
+            raise ValueError(f"population field(s) {missing} not found; available: {list(g.columns)}")
         g = g.rename(columns={value_fields[0]: "pop0", value_fields[1]: "pop1"})
     else:
+        f0, f1 = gpd.read_file(paths[0], rows=1), gpd.read_file(paths[1], rows=1)
+        for f, fld, path in ((f0, value_fields[0], paths[0]), (f1, value_fields[-1], paths[1])):
+            if fld not in f.columns or id_field not in f.columns:
+                raise ValueError(f"fields {id_field!r} and {fld!r} are required in {path}; available: {list(f.columns)}")
         g0 = gpd.read_file(paths[0])[[id_field, value_fields[0], "geometry"]].rename(columns={value_fields[0]: "pop0"})
         g1 = gpd.read_file(paths[1])[[id_field, value_fields[-1]]].rename(columns={value_fields[-1]: "pop1"})
         g = g0.merge(g1, on=id_field, how="inner")
     if g.crs is None:
         raise ValueError("the population layer has no coordinate reference system")
     for c in ("pop0", "pop1"):
-        g[c] = g[c].astype(float).fillna(0.0)
+        g[c] = g[c].astype(float)  # missing values stay NaN (no data), they are not treated as zero population
     return g[["pop0", "pop1", "geometry"] + ([id_field] if id_field and id_field in g.columns else [])]
 
 

@@ -5,5 +5,5 @@ by transferring labels from present-day 10 m land cover maps to Landsat composit
 Random Forest classifier and two series constraints (extent mask and monotonic accumulation).
 All input data are read anonymously from the Microsoft Planetary Computer STAC catalogue.
 """
-__version__ = "1.3.0"
+__version__ = "1.3.1"
 EPOCHS = [1985, 1990, 1995, 2000, 2005, 2010, 2015, 2020, 2025]

@@ -66,7 +66,15 @@ def load(name_or_path: str):
         with warnings.catch_warnings():
             warnings.simplefilter("error", category=UserWarning)
             return joblib.load(p), card
-    except Exception:
+    except FileNotFoundError:
+        if not p.with_name(p.stem + "_points.npz").exists():
+            raise FileNotFoundError(f"Model {p} not found. Run the tool from the source folder (aplikacja) or install it "
+                                    "with 'pip install -e .' so that the folder models/ is next to the package.")
+        warnings.warn(f"{p.name} not found; the model is rebuilt from the stored training points")
+        d = np.load(p.with_name(p.stem + "_points.npz"))
+        return train(d["X"], d["y"], int(card.get("seed", 42))), card
+    except Exception as e:  # e.g. a pickle from another scikit-learn version
+        warnings.warn(f"{p.name} could not be loaded ({type(e).__name__}); the model is rebuilt from the stored training points")
         d = np.load(p.with_name(p.stem + "_points.npz"))
         return train(d["X"], d["y"], int(card.get("seed", 42))), card
 

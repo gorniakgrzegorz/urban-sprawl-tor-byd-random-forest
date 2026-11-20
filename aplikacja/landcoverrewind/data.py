@@ -2,12 +2,13 @@
 
 Collections (open, anonymous read, SAS signing handled by the planetary-computer package):
   landsat-c2-l2        Landsat 4/5 TM, 7 ETM+, 8/9 OLI, Collection 2 Level 2 surface reflectance
-  io-lulc-annual-v02   Impact Observatory/Esri annual 10 m land use/land cover, 2017-2024
+  io-lulc-annual-v02   Impact Observatory/Esri annual 10 m land use/land cover, maps for 2017-2023
   esa-worldcover       ESA WorldCover 10 m, 2020 and 2021 (optional extent mask)
 """
 from __future__ import annotations
 import os
 import numpy as np
+import pyproj
 import dask
 import pystac_client
 import planetary_computer as pc
@@ -40,6 +41,19 @@ def catalog():
     return pystac_client.Client.open(STAC_URL, modifier=pc.sign_inplace)
 
 
+LAST_ITEMS = {}  # STAC item ids of the most recent 10 m map loaded per collection (recorded in metadata.json)
+
+
+def check_crs(crs: str) -> None:
+    """The 30 m grid and the areas in hectares require a projected CRS in metres."""
+    c = pyproj.CRS.from_user_input(crs)
+    if not c.is_projected or c.axis_info[0].unit_name not in ("metre", "meter"):
+        raise ValueError(f"{crs} is not a projected coordinate reference system in metres; use e.g. a UTM zone or EPSG:2180")
+    method = (c.coordinate_operation.method_name if c.coordinate_operation else "").lower()
+    if "mercator" in method and "transverse" not in method:
+        raise ValueError(f"{crs} (Mercator) distorts areas strongly; use a UTM zone or a national CRS such as EPSG:2180")
+
+
 def utm_crs(geom_4326: Geometry) -> str:
     lon, lat = geom_4326.centroid.coords[0]
     zone = int((lon + 180) // 6) + 1
@@ -49,6 +63,7 @@ def utm_crs(geom_4326: Geometry) -> str:
 def make_grid(geom_4326: Geometry, crs: str | None = None, res: int = 30) -> GeoBox:
     """30 m grid covering the area, aligned to multiples of the resolution (UTM zone of the centroid by default)."""
     crs = crs or utm_crs(geom_4326)
+    check_crs(crs)
     x0, y0, x1, y1 = geom_4326.to_crs(crs).boundingbox
     x0, y0 = np.floor(x0 / res) * res, np.floor(y0 / res) * res
     x1, y1 = np.ceil(x1 / res) * res, np.ceil(y1 / res) * res
@@ -95,8 +110,12 @@ def load_10m_map(collection: str, year: int, geobox: GeoBox, asset: str = "data"
     """Categorical 10 m map (IO LULC or ESA WorldCover) on a 10 m grid nested in the 30 m grid."""
     items = list(catalog().search(collections=[collection], bbox=list(geobox.geographic_extent.boundingbox),
                                   datetime=f"{year}-01-01/{year}-12-31").items())
+    # keep only the map of the requested year: the annual items end on 1 January of the next year, so a search
+    # for year Y also returns the item of year Y-1 (and a search for a year after the last map returns that map)
+    items = [it for it in items if str(it.properties.get("start_datetime") or it.datetime.isoformat())[:4] == str(year)]
     if not items:
-        raise RuntimeError(f"No {collection} data for {year} in this area")
+        raise RuntimeError(f"No {collection} map for {year} in this area")
+    LAST_ITEMS[collection] = sorted(it.id for it in items)
     gb10 = GeoBox.from_bbox(geobox.boundingbox, crs=geobox.crs, resolution=10)
     ds = stac_load(items, bands=[asset], geobox=gb10, resampling="nearest", groupby="solar_day")
     a = ds[asset].max("time").values if "time" in ds.dims else ds[asset].values
