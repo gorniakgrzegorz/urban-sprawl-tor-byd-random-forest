@@ -107,14 +107,16 @@ nav.top{position:sticky}nav.top::after{content:"";position:absolute;right:0;top:
 img[width]{height:auto}
 @media(max-width:860px){.fig,.cols{grid-template-columns:1fr}header.hero{min-height:78vh}}
 nav.top a.lang{border:1px solid currentColor;border-radius:4px;padding:1px 7px;margin-left:6px;font-weight:700}
+nav.top .langsw{display:inline-flex;flex:none;border:1px solid rgba(220,231,239,.5);border-radius:6px;overflow:hidden;margin-right:10px}nav.top .langsw a{padding:2px 9px;font-weight:700;font-size:13px}nav.top .langsw a[aria-current]{background:#ffd166;color:#0b1d2c}
 </style>
 <link href="./" hreflang="en" rel="alternate"/>
 <link href="../" hreflang="pl" rel="alternate"/>
 </head>
 <body>
 <nav class="top"><div class="wrap"><span class="logo">Toruń · Bydgoszcz · 1975–2025</span>
+<span class="langsw" role="navigation" aria-label="Language"><a href="../" hreflang="pl" lang="pl" title="Wersja polska">PL</a><a aria-current="page" lang="en">EN</a></span>
 <a href="#projekt">Project</a><a href="#proces">Method in animations</a><a href="#slowniczek">Glossary</a><a href="#animacje">Animations</a><a href="#wykres">Chart</a>
-<a href="#aplikacja">App</a><a href="#ludnosc">Population and SDG</a><a href="#ryciny">Results in figures</a><a href="#dane">Data and code</a><a href="#bibliografia">References</a><a class="lang" href="../" hreflang="pl" lang="pl" title="Polska wersja">PL</a></div></nav>
+<a href="#aplikacja">App</a><a href="#ludnosc">Population and SDG</a><a href="#ryciny">Results in figures</a><a href="#dane">Data and code</a><a href="#bibliografia">References</a></div></nav>
 <header class="hero">
 <video aria-hidden="true" autoplay="" id="hvid" loop="" muted="" playsinline="" poster="../assets/anim/klatki/built_2025.jpg"><source src="../assets/anim/anim_built.mp4" type="video/mp4"/></video>
 <div class="shade"></div>
@@ -126,7 +128,8 @@ nav.top a.lang{border:1px solid currentColor;border-radius:4px;padding:1px 7px;m
 <div class="badges"><a class="btn-main" href="#aplikacja">▶ The Land Cover Rewind app for your town</a>
 <a href="#proces">How it works (animations)</a>
 <a href="#animacje">See the results</a>
-<a href="https://github.com/gorniakgrzegorz/urban-sprawl-tor-byd-random-forest" target="_blank">GitHub repository</a></div>
+<a href="https://github.com/gorniakgrzegorz/urban-sprawl-tor-byd-random-forest" target="_blank">GitHub repository</a>
+<a href="../" hreflang="pl" lang="pl">Wersja polska</a></div>
 </div>
 </header>
 <section id="projekt"><div class="wrap">
