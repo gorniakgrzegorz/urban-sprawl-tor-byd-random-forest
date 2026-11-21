@@ -106,6 +106,7 @@ nav.top{position:sticky}nav.top::after{content:"";position:absolute;right:0;top:
 img[width]{height:auto}
 @media(max-width:860px){.fig,.cols{grid-template-columns:1fr}header.hero{min-height:78vh}}
 nav.top a.lang{border:1px solid currentColor;border-radius:4px;padding:1px 7px;margin-left:6px;font-weight:700}
+nav.top .langsw{display:inline-flex;flex:none;border:1px solid rgba(220,231,239,.5);border-radius:6px;overflow:hidden;margin-right:10px}nav.top .langsw a{padding:2px 9px;font-weight:700;font-size:13px}nav.top .langsw a[aria-current]{background:#ffd166;color:#0b1d2c}
 </style>
 <link rel="alternate" hreflang="en" href="en/">
 <link rel="alternate" hreflang="pl" href="./">
@@ -113,8 +114,9 @@ nav.top a.lang{border:1px solid currentColor;border-radius:4px;padding:1px 7px;m
 <body>
 <nav class="top"><div class="wrap">
 <span class="logo">Toruń · Bydgoszcz · 1975–2025</span>
+<span class="langsw" role="navigation" aria-label="Language"><a aria-current="page" lang="pl">PL</a><a href="en/" hreflang="en" lang="en" title="English version">EN</a></span>
 <a href="#projekt">Projekt</a><a href="#proces">Metoda w animacjach</a><a href="#slowniczek">Słowniczek</a><a href="#animacje">Animacje</a><a href="#wykres">Wykres</a>
-<a href="#aplikacja">Aplikacja</a><a href="#ludnosc">Ludność i SDG</a><a href="#ryciny">Wyniki w rycinach</a><a href="#dane">Dane i kod</a><a href="#bibliografia">Bibliografia</a><a href="en/" class="lang" hreflang="en" lang="en" title="English version">EN</a>
+<a href="#aplikacja">Aplikacja</a><a href="#ludnosc">Ludność i SDG</a><a href="#ryciny">Wyniki w rycinach</a><a href="#dane">Dane i kod</a><a href="#bibliografia">Bibliografia</a>
 </div></nav>
 
 <header class="hero">
@@ -130,6 +132,7 @@ nav.top a.lang{border:1px solid currentColor;border-radius:4px;padding:1px 7px;m
 <a href="#proces">Jak to działa (animacje)</a>
 <a href="#animacje">Zobacz wyniki</a>
 <a href="https://github.com/gorniakgrzegorz/urban-sprawl-tor-byd-random-forest" target="_blank">Repozytorium GitHub</a>
+<a href="en/" hreflang="en" lang="en">English version</a>
 </div>
 </div>
 </header>
