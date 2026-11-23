@@ -2,138 +2,275 @@
 
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Half a century of built-up land in Toruń and Bydgoszcz from the Landsat archive</title>
-<meta content="A Random Forest trained on Dynamic World reconstructs the built-up land of Toruń and Bydgoszcz in 1975–2025; urban sprawl in landscape metrics; an app for any area without a Google account." name="description"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&amp;display=swap" rel="stylesheet"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Built-up land in Toruń and Bydgoszcz 1975–2025 from Landsat: urban sprawl</title>
+<meta name="description" content="Half a century of built-up land in Toruń and Bydgoszcz (Poland) reconstructed from the Landsat archive with a Random Forest model. Maps, animations, 31 described figures, SDG 11.3.1 and a free app for any area.">
+<meta name="author" content="Grzegorz Górniak, Mieczysław Kunz">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0050AA">
+<meta name="color-scheme" content="light">
+<link rel="canonical" href="https://gorniakgrzegorz.github.io/urban-sprawl-tor-byd-random-forest/en/">
+<link rel="alternate" hreflang="pl" href="https://gorniakgrzegorz.github.io/urban-sprawl-tor-byd-random-forest/">
+<link rel="alternate" hreflang="en" href="https://gorniakgrzegorz.github.io/urban-sprawl-tor-byd-random-forest/en/">
+<link rel="alternate" hreflang="x-default" href="https://gorniakgrzegorz.github.io/urban-sprawl-tor-byd-random-forest/en/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://gorniakgrzegorz.github.io/urban-sprawl-tor-byd-random-forest/en/">
+<meta property="og:title" content="Built-up land in Toruń and Bydgoszcz 1975–2025 from Landsat: urban sprawl">
+<meta property="og:description" content="Half a century of built-up land in Toruń and Bydgoszcz (Poland) reconstructed from the Landsat archive with a Random Forest model. Maps, animations, 31 described figures, SDG 11.3.1 and a free app for any area.">
+<meta property="og:image" content="https://gorniakgrzegorz.github.io/urban-sprawl-tor-byd-random-forest/assets/anim/klatki/built_2025.jpg">
+<meta property="og:image:width" content="1320">
+<meta property="og:image:height" content="726">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="citation_title" content="Built-up land in Toruń and Bydgoszcz 1975–2025 from Landsat: urban sprawl">
+<meta name="citation_author" content="Górniak, Grzegorz">
+<meta name="citation_author" content="Kunz, Mieczysław">
+<meta name="citation_doi" content="10.5281/zenodo.24076408">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="../assets/anim/klatki/built_2025.jpg" fetchpriority="high">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://gorniakgrzegorz.github.io/urban-sprawl-tor-byd-random-forest/#umk", "name": "Nicolaus Copernicus University in Toruń, Faculty of Earth Sciences and Spatial Management", "alternateName": "Uniwersytet Mikołaja Kopernika w Toruniu, Wydział Nauk o Ziemi i Gospodarki Przestrzennej"}, {"@type": "Person", "@id": "https://orcid.org/0009-0009-9248-8018", "name": "Grzegorz Górniak", "affiliation": {"@id": "https://gorniakgrzegorz.github.io/urban-sprawl-tor-byd-random-forest/#umk"}, "sameAs": "https://orcid.org/0009-0009-9248-8018"}, {"@type": "Person", "@id": "https://orcid.org/0000-0002-3334-5238", "name": "Mieczysław Kunz", "affiliation": {"@id": "https://gorniakgrzegorz.github.io/urban-sprawl-tor-byd-random-forest/#umk"}, "sameAs": "https://orcid.org/0000-0002-3334-5238"}, {"@type": "WebPage", "@id": "https://gorniakgrzegorz.github.io/urban-sprawl-tor-byd-random-forest/en/", "url": "https://gorniakgrzegorz.github.io/urban-sprawl-tor-byd-random-forest/en/", "name": "Built-up land in Toruń and Bydgoszcz 1975–2025 from Landsat: urban sprawl", "description": "Half a century of built-up land in Toruń and Bydgoszcz (Poland) reconstructed from the Landsat archive with a Random Forest model. Maps, animations, 31 described figures, SDG 11.3.1 and a free app for any area.", "inLanguage": "en", "primaryImageOfPage": "https://gorniakgrzegorz.github.io/urban-sprawl-tor-byd-random-forest/assets/anim/klatki/built_2025.jpg", "author": [{"@id": "https://orcid.org/0009-0009-9248-8018"}, {"@id": "https://orcid.org/0000-0002-3334-5238"}], "about": ["urban sprawl", "built-up land", "Landsat", "Random Forest", "Dynamic World", "SDG 11.3.1", "Toruń", "Bydgoszcz"]}, {"@type": "SoftwareSourceCode", "name": "Reconstructing built-up land in Toruń and Bydgoszcz (Poland) 1975–2025 from Landsat with a Dynamic World-trained Random Forest: code and result data", "version": "3.2", "datePublished": "2026-11-09", "license": "https://opensource.org/licenses/MIT", "codeRepository": "https://github.com/gorniakgrzegorz/urban-sprawl-tor-byd-random-forest", "identifier": "https://doi.org/10.5281/zenodo.24076408", "author": [{"@id": "https://orcid.org/0009-0009-9248-8018"}, {"@id": "https://orcid.org/0000-0002-3334-5238"}]}, {"@type": "SoftwareApplication", "name": "Land Cover Rewind", "applicationCategory": "ScienceApplication", "softwareVersion": "1.4.0", "license": "https://opensource.org/licenses/MIT", "identifier": "https://doi.org/10.5281/zenodo.24332551", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "author": [{"@id": "https://orcid.org/0009-0009-9248-8018"}, {"@id": "https://orcid.org/0000-0002-3334-5238"}]}]}</script>
 <style>
-:root{--ink:#14202b;--muted:#5a6773;--bg:#f6f7f4;--card:#fff;--line:#dfe3df;--red:#b3261e;--red2:#e31a1c;--teal:#0f766e;--navy:#0b1d2c;--gold:#d9a400;--kid:#fff7e0}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,Segoe UI,Arial,sans-serif}
-a{color:var(--teal)}h1,h2,h3{line-height:1.2}
-.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
-nav.top{position:sticky;top:0;z-index:50;background:rgba(11,29,44,.92);backdrop-filter:blur(6px)}
-nav.top .wrap{display:flex;gap:18px;align-items:center;overflow-x:auto;white-space:nowrap;padding-top:10px;padding-bottom:10px}
-nav.top a{color:#dce7ef;text-decoration:none;font-size:14px;font-weight:500}nav.top a:hover{color:#fff}
-nav.top .logo{font-weight:800;color:#fff;margin-right:8px}
-header.hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--navy)}
-header.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;opacity:.5}
-header.hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,29,44,.15) 0%,rgba(11,29,44,.6) 55%,rgba(11,29,44,.97) 100%)}
-header.hero .wrap{position:relative;padding-bottom:64px}
-.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:12.5px;font-weight:700;color:#ffd166}
-header.hero h1{font-size:clamp(32px,5vw,60px);margin:.25em 0 .3em;font-weight:800;max-width:980px}
-header.hero p.lead{font-size:clamp(17px,2vw,21px);max-width:820px;color:#e6eef3}
-.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
-.badges a{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);color:#fff;padding:8px 14px;border-radius:30px;text-decoration:none;font-size:14px}
-.badges a:hover{background:rgba(255,255,255,.25)}
-section{padding:72px 0}section.alt{background:#fff}
-h2{font-size:clamp(26px,3vw,38px);margin:0 0 .4em}h2 small{display:block;font-size:15px;color:var(--muted);font-weight:500;margin-top:8px}
-.intro{font-family:"Source Serif 4",Georgia,serif;font-size:19px;max-width:860px}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:30px}
-.stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
-.stat .num{font-size:34px;font-weight:800;color:var(--red)}.stat .lab{font-size:14.5px;color:var(--muted)}
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:26px;counter-reset:s}
-.step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;position:relative}
-.step::before{counter-increment:s;content:counter(s);position:absolute;top:-14px;left:18px;background:var(--teal);color:#fff;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-weight:700}
-.step h3{margin:.3em 0 .4em;font-size:18px}.step p{margin:.3em 0;font-size:15px}
-.player{background:var(--navy);border-radius:18px;padding:18px;color:#fff}
-.ptabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
-.ptabs button,.tabs button,.ctl button{border:1px solid var(--line);background:#fff;border-radius:30px;padding:7px 14px;font:500 14px Inter,sans-serif;cursor:pointer;color:var(--ink)}
-.player .ptabs button{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.3)}
-.ptabs button.on,.tabs button.on,.ctl button.on{background:var(--teal);color:#fff;border-color:var(--teal)}
-.player video,.player img{width:100%;border-radius:10px;background:#fff;display:block}
-.slider{display:flex;align-items:center;gap:14px;margin-top:12px}.slider input{flex:1;accent-color:#ffd166}
-.slider .yr{font-size:28px;font-weight:800;min-width:110px;text-align:right}
-.slider button{background:#ffd166;border:0;border-radius:50%;width:44px;height:44px;font-size:18px;cursor:pointer}
-.pdesc{font-size:15px;color:#d5e1ea;margin-top:12px}
-.chart{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
-.ctl{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
-#tip{position:fixed;pointer-events:none;background:var(--navy);color:#fff;padding:6px 10px;border-radius:8px;font-size:13px;display:none;z-index:99}
-.fig{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:28px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;margin:24px 0;align-items:start}
-.fig-img img{width:100%;border-radius:10px;border:1px solid var(--line);cursor:zoom-in;display:block}
-.fig-img.wiele{display:grid;grid-template-columns:1fr 1fr;gap:8px}.fig-img.wiele a:first-child{grid-column:1/-1}
-.fig-nr{font-size:12.5px;text-transform:uppercase;letter-spacing:.12em;color:var(--teal);font-weight:700;margin:0}
-.fig h3{font-size:22px;margin:.25em 0 .6em}
-.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}.tabs button{font-size:13px;padding:6px 11px}
-.tab{display:none}.tab.on{display:block;animation:fd .25s}.tab p{margin:0}
-@keyframes fd{from{opacity:0;transform:translateY(4px)}to{opacity:1}}
-.cyt{text-decoration:none;border-bottom:1px dotted var(--teal)}
-.lbox{position:fixed;inset:0;background:rgba(5,12,18,.92);display:none;z-index:100;align-items:center;justify-content:center;flex-direction:column;padding:20px}
-.lbox img{max-width:96vw;max-height:86vh;background:#fff;border-radius:6px}.lbox p{color:#fff;margin-top:10px}
-.cols{display:grid;grid-template-columns:1fr 1fr;gap:28px}.cols>*,.fig>*,.steps>*{min-width:0}pre{max-width:100%;white-space:pre}
-.box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
-pre{background:#0f1b26;color:#e6eef3;padding:14px 16px;border-radius:10px;overflow-x:auto;font-size:13.5px}
-table.src{border-collapse:collapse;width:100%;font-size:14.5px}table.src td,table.src th{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
-ol.bib{padding-left:0;list-style:none}ol.bib li{padding:9px 0;border-bottom:1px solid var(--line);font-size:14.5px;padding-left:2em;text-indent:-2em}
-ol.bib li:target{background:#fff4c2}ol.bib li{overflow-wrap:anywhere}[id]{scroll-margin-top:66px}
-.vctl{position:absolute;right:22px;bottom:22px;z-index:3;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.4);color:#fff;border-radius:30px;padding:6px 14px;cursor:pointer;font:500 13px Inter,sans-serif}
-.lbox button{position:absolute;top:14px;right:18px;background:#fff;border:0;border-radius:50%;width:40px;height:40px;font-size:22px;cursor:pointer}
-@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}.tab.on{animation:none}}
-.vals{font-size:13.5px;margin-top:8px}.vals summary{cursor:pointer;color:var(--teal)}
-.tag{display:inline-block;font-size:11px;border-radius:20px;padding:1px 8px;margin-left:4px;text-indent:0;font-weight:600}
-.t-sr{background:#e0f2f1;color:#0f766e}.t-lup{background:#fde8e7;color:#b3261e}.t-app{background:#e8eaf6;color:#303f9f}.t-own{background:#fff3cd;color:#7a5b00}
-#szukaj{width:100%;max-width:420px;padding:10px 14px;border:1px solid var(--line);border-radius:30px;font-size:15px;margin:10px 0 6px}
-footer{background:var(--navy);color:#b9c7d2;padding:40px 0;font-size:14px}footer a{color:#ffd166}
+:root{--blue:#0050AA;--blue-d:#003B80;--ink:#0A2247;--muted:#44546D;--yellow:#A9D03C;--green:#A9D03C;--bg:#F5F8FD;--paper:#fff;--line:#C6D4E8;--soft:#E8F0FB;--red:#B3261E;--teal:#0050AA;--navy:#0A2247;--card:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth;color-scheme:light}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.62 Figtree,system-ui,"Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--blue);text-underline-offset:3px}a:hover{color:var(--blue-d)}
+h1,h2,h3{line-height:1.12;letter-spacing:-.015em;color:var(--blue-d)}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:2px;box-shadow:0 0 0 5px var(--ink)}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+.skip{position:absolute;left:-999px;top:0;background:var(--yellow);color:var(--ink);padding:10px 16px;font-weight:700;z-index:200}.skip:focus{left:8px;top:8px}
+#postep{position:fixed;left:0;top:0;height:4px;width:0;background:var(--yellow);z-index:120}
 
-.pr{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px}
-.pr-nav{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
-.pr-nav button{border:1px solid var(--line);background:#fff;border-radius:30px;padding:7px 13px;font:500 14px Inter,sans-serif;cursor:pointer;color:var(--ink)}
-.pr-nav button.on{background:var(--teal);color:#fff;border-color:var(--teal)}
-.pr-stage{position:relative;aspect-ratio:2/1;border-radius:12px;overflow:hidden;background:#f6f7f4}
+/* nagłówek: logo i menu */
+.masthead{background:var(--paper)}
+.masthead .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:10px 24px;padding-top:14px;padding-bottom:10px}
+.masthead .brand{margin-right:auto;font-weight:800;font-size:21px;color:var(--blue);text-decoration:none;letter-spacing:-.01em}.masthead .brand span{color:var(--muted);font-weight:600;font-size:15px;margin-left:10px;letter-spacing:0}
+.langsw{display:inline-flex;border:2px solid var(--blue);border-radius:6px;overflow:hidden}
+.langsw a{padding:7px 12px;font-weight:700;font-size:15px;text-decoration:none;color:var(--blue)}.langsw a[aria-current]{background:var(--blue);color:#fff}
+.btn-main{display:inline-block;background:var(--yellow);color:var(--ink);font-weight:800;text-decoration:none;padding:13px 22px;border-radius:6px;border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink);transition:transform .12s,box-shadow .12s}
+.btn-main:hover{color:var(--ink);transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
+.btn-ghost{display:inline-block;color:var(--blue);font-weight:700;text-decoration:none;padding:13px 20px;border-radius:6px;border:2px solid var(--blue);background:var(--paper)}.btn-ghost:hover{background:var(--soft)}
+.masthead .btn-main{padding:9px 16px;font-size:15px;box-shadow:3px 3px 0 var(--ink)}
+nav.top{position:sticky;top:0;z-index:50;background:var(--blue);box-shadow:0 2px 0 var(--yellow)}
+nav.top .wrap{display:flex;flex-wrap:wrap;gap:0 4px;align-items:center}
+nav.top a{color:#fff;text-decoration:none;font-size:14.5px;font-weight:600;padding:13px 9px;border-bottom:4px solid transparent}
+nav.top a:hover{color:#fff;background:var(--blue-d)}nav.top a.tu{border-bottom-color:var(--yellow);background:var(--blue-d)}
+
+/* pierwszy ekran */
+header.hero{position:relative;background:var(--bg);overflow:hidden;border-bottom:2px solid var(--blue)}
+header.hero .pierscienie{position:absolute;right:-180px;top:-220px;width:980px;height:980px;pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:minmax(0,6fr) minmax(0,7fr);gap:52px;align-items:center;padding-top:48px;padding-bottom:64px}
+header.hero h1{font-size:clamp(32px,3.5vw,50px);font-weight:800;margin:0 0 .35em;color:var(--blue);line-height:1.02;letter-spacing:-.025em}
+header.hero p.lead{font-size:clamp(17px,1.5vw,20px);margin:0 0 26px;max-width:34em}
+.cta{display:flex;flex-wrap:wrap;gap:14px 16px;align-items:center}
+.fakty{list-style:none;margin:30px 0 0;padding:18px 0 0;border-top:2px solid var(--line);display:flex;flex-wrap:wrap;gap:8px 26px;font-size:15.5px;color:var(--muted)}
+.fakty b{color:var(--blue-d);font-weight:800;font-size:19px;margin-right:4px}
+.arkusz{margin:0;background:var(--paper);border:2px solid var(--blue);padding:10px;box-shadow:14px 14px 0 var(--yellow)}
+.arkusz img{display:block;width:100%;height:auto}
+.epoki{display:flex;margin-top:30px;border:2px solid var(--blue);background:var(--paper);overflow-x:auto}
+.epoki button{flex:1 0 46px;min-height:46px;border:0;border-left:1px solid var(--line);background:var(--paper);color:var(--ink);font:600 15px Figtree,sans-serif;cursor:pointer}
+.epoki button:first-child{border-left:0}.epoki button:hover{background:var(--soft)}
+.epoki button.on{background:var(--blue);color:#fff;font-weight:800}.epoki button.byl{background:var(--soft)}
+.epoka-opis{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;justify-content:space-between;margin:14px 0 0;font-size:15px;color:var(--muted)}
+.epoka-opis b{font-size:34px;font-weight:800;color:var(--blue);line-height:1;margin-right:10px;font-variant-numeric:tabular-nums}
+.epoka-opis button{border:2px solid var(--blue);background:var(--paper);color:var(--blue);font:700 15px Figtree,sans-serif;padding:9px 16px;border-radius:6px;cursor:pointer;min-height:44px}.epoka-opis button:hover{background:var(--soft)}
+
+/* sekcje */
+section{padding:84px 0}section.alt{background:var(--bg)}
+h2{font-size:clamp(28px,3.2vw,44px);font-weight:800;margin:0 0 .5em;position:relative;padding-top:22px}
+h2::before{content:"";position:absolute;left:0;top:0;width:72px;height:8px;background:var(--yellow)}
+h2 small{display:block;font-size:17px;line-height:1.5;color:var(--muted);font-weight:500;margin-top:12px;letter-spacing:0;max-width:60em}
+h3{font-size:22px;font-weight:800;margin:.2em 0 .5em}
+.intro{font-size:19px;max-width:46em}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:34px 36px;margin-top:40px}
+.stat{border-top:4px solid var(--blue);padding-top:16px;display:flex;flex-direction:column}
+.stat .num{font-size:clamp(34px,3.4vw,46px);font-weight:800;color:var(--blue);line-height:1.05;letter-spacing:-.02em}
+.stat .lab{font-size:16px;color:var(--ink);margin-top:8px}
+.stat .ex{font-size:15px;color:var(--ink);background:#F0F7DA;border-left:5px solid var(--yellow);margin-top:12px;padding:10px 12px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:30px 28px;margin-top:34px;counter-reset:s}
+.step{position:relative;border-top:2px solid var(--blue);padding:16px 0 0 58px}
+.step::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:12px;font-size:44px;font-weight:800;color:var(--blue);line-height:1}
+.step h3{margin:0 0 .4em;font-size:19px}.step p{margin:.3em 0;font-size:15.5px}
+.gl{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:0 32px;margin-top:22px}
+.gl div{border-top:1px solid var(--line);padding:14px 0;font-size:15.5px}.gl b{display:block;color:var(--blue-d);font-weight:800;font-size:17px;margin-bottom:2px}
+
+/* przyciski zakładek */
+.ptabs,.tabs,.ctl,.pr-nav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.ptabs button,.tabs button,.ctl button,.pr-nav button{border:2px solid var(--blue);background:var(--paper);border-radius:6px;padding:8px 14px;min-height:42px;font:600 15px Figtree,sans-serif;cursor:pointer;color:var(--blue)}
+.tabs button{font-size:14px;padding:6px 12px;min-height:38px}
+.ptabs button:hover,.tabs button:hover,.ctl button:hover,.pr-nav button:hover{background:var(--soft)}
+.ptabs button.on,.tabs button.on,.ctl button.on,.pr-nav button.on{background:var(--blue);color:#fff}
+
+/* metoda w animacjach */
+.pr{background:var(--paper);border:2px solid var(--blue);padding:20px;box-shadow:14px 14px 0 var(--soft)}
+.pr-stage{position:relative;aspect-ratio:2/1;overflow:hidden;background:#F3F7FC;max-width:980px;margin:0 auto}
+.pr-txt{min-height:120px;margin:14px auto 0;max-width:980px}.pr-pro{font-size:18.5px;margin:.2em 0 .5em}.pr-fach{font-size:15px;color:var(--muted);margin:0}
+.pr-ctl{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:10px}
+.pr-ctl button{background:var(--ink);color:#fff;border:0;border-radius:6px;padding:10px 18px;min-height:44px;font:700 15px Figtree,sans-serif;cursor:pointer}
+.pr-ctl button#prPlay{background:var(--yellow);color:var(--ink)}
+
+/* odtwarzacz klatek */
+.player{background:var(--paper);border:2px solid var(--blue);padding:20px;color:var(--ink)}
+.player video,.player img{width:100%;background:#fff;display:block}
+.slider{display:flex;align-items:center;gap:16px;margin-top:14px}.slider input{flex:1;accent-color:var(--blue);height:44px}
+.slider .yr{font-size:34px;font-weight:800;min-width:130px;text-align:right;color:var(--blue);font-variant-numeric:tabular-nums}
+.slider button{background:var(--yellow);border:2px solid var(--ink);border-radius:50%;width:50px;height:50px;font-size:18px;cursor:pointer;color:var(--ink)}
+.pdesc{font-size:15.5px;color:var(--muted);margin-top:12px;max-width:62em}
+.kino{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));gap:30px 28px;margin-top:34px}
+.kino figure{margin:0}.kino video{display:block;width:100%;aspect-ratio:16/10;object-fit:contain;background:#fff;border:2px solid var(--blue)}
+.kino figcaption{font-size:15px;margin-top:10px;color:var(--ink)}.kino figcaption b{display:block;color:var(--blue-d);font-weight:800;font-size:17px}
+
+/* wykres, tabele, pola */
+.chart{background:var(--paper);border:2px solid var(--blue);padding:20px}
+#tip{position:fixed;pointer-events:none;background:var(--ink);color:#fff;padding:6px 10px;border-radius:6px;font-size:13px;display:none;z-index:99}
+.vals{font-size:14px;margin-top:8px}.vals summary{cursor:pointer;color:var(--blue);font-weight:600}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:30px}.cols>*,.fig>*,.steps>*{min-width:0}
+.box{background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--blue);padding:22px 24px}
+.box img,.fig-img img{border:1px solid var(--line)}
+pre{background:var(--ink);color:#E8F0FB;padding:16px 18px;border-radius:6px;overflow-x:auto;font-size:14px;max-width:100%;white-space:pre}
+code{font-size:.93em}
+table.src{border-collapse:collapse;width:100%;font-size:15px}table.src td,table.src th{border-bottom:1px solid var(--line);padding:9px 8px;text-align:left;vertical-align:top}
+table.src th{color:var(--blue-d);border-bottom:2px solid var(--blue)}
+.dl{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;padding:11px 18px;border-radius:6px;font-weight:700;margin:6px 8px 6px 0}.dl:hover{background:var(--blue-d);color:#fff}
+.notka{font-size:14.5px;color:var(--muted)}
+
+/* ryciny z opisem */
+.fig{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:34px;border-top:2px solid var(--blue);padding:30px 0 34px;margin:0;align-items:start}
+.fig-img img{width:100%;cursor:zoom-in;display:block;background:#fff}
+.fig-img.wiele{display:grid;grid-template-columns:1fr 1fr;gap:8px}.fig-img.wiele a:first-child{grid-column:1/-1}
+.fig-nr{display:inline-block;font-size:15px;color:var(--ink);font-weight:800;margin:0;background:var(--yellow);padding:2px 10px}
+.fig h3{font-size:25px;margin:.45em 0 .7em}
+.tab{display:none}.tab.on{display:block}.tab p{margin:0}
+.cyt{text-decoration:none;border-bottom:1px dotted var(--blue)}
+.spis{display:flex;flex-wrap:wrap;gap:6px;margin:22px 0 10px;padding:0;list-style:none}
+.spis a{display:block;min-width:44px;text-align:center;padding:9px 8px;border:1px solid var(--line);background:var(--paper);text-decoration:none;font-weight:700;font-size:15px}.spis a:hover{background:var(--blue);color:#fff;border-color:var(--blue)}
+
+/* atlas dodatkowy */
+h3.grupa{margin:52px 0 14px;font-size:27px}
+.atlas-wstep{margin-top:72px;border-top:8px solid var(--green);padding-top:26px}.atlas-wstep h3{font-size:clamp(24px,2.6vw,34px);margin:0 0 .4em}
+.kafle{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:26px 24px}
+.kafle figure{margin:0}.kafle a{display:block;background:#fff;border:1px solid var(--line);aspect-ratio:16/10;overflow:hidden}
+.kafle a:hover{border-color:var(--blue);box-shadow:6px 6px 0 var(--yellow)}
+.kafle a img{display:block;width:100%;height:100%;object-fit:contain;cursor:zoom-in}
+.kafle figcaption{font-size:14.5px;margin-top:9px;color:var(--ink)}
+
+/* lightbox */
+.lbox{position:fixed;inset:0;background:rgba(10,34,71,.94);display:none;z-index:150;align-items:center;justify-content:center;flex-direction:column;padding:20px}
+.lbox img{max-width:96vw;max-height:84vh;background:#fff}.lbox p{color:#fff;margin-top:12px;max-width:70em;text-align:center}
+.lbox button{position:absolute;top:14px;right:18px;background:var(--yellow);border:0;border-radius:50%;width:44px;height:44px;font-size:24px;cursor:pointer;color:var(--ink)}
+
+/* wezwanie końcowe */
+.final-cta{background:var(--blue);color:#fff;padding:72px 0}
+.final-cta .wrap{display:flex;flex-wrap:wrap;gap:24px 48px;align-items:center;justify-content:space-between}
+.final-cta h2::before{display:none}.final-cta h2{color:#fff;margin:0;max-width:17em}.final-cta p{margin:10px 0 0;max-width:36em;font-size:18px}
+.final-cta .btn-main{font-size:18px;padding:16px 26px}
+
+/* bibliografia i stopka */
+ol.bib{padding-left:0;list-style:none}ol.bib li{padding:10px 0 10px 2em;border-bottom:1px solid var(--line);font-size:15px;text-indent:-2em;overflow-wrap:anywhere}
+ol.bib li:target{background:#F0F7DA}[id]{scroll-margin-top:64px}
+.tag{display:inline-block;font-size:12px;border-radius:4px;padding:1px 8px;margin-left:4px;text-indent:0;font-weight:700}
+.t-sr{background:#E8F0FB;color:#003B80}.t-lup{background:#E3F0BE;color:#3D5210}.t-app{background:#DDE9F8;color:#003B80}.t-own{background:#EDEFF3;color:#33415A}
+#szukaj{width:100%;max-width:440px;padding:11px 14px;border:2px solid var(--blue);border-radius:6px;font:16px Figtree,sans-serif;margin:10px 0 6px;background:#fff;color:var(--ink);-webkit-appearance:none;appearance:none}#szukaj::placeholder{color:var(--muted);opacity:1}
+footer{background:var(--bg);border-top:4px solid var(--blue);color:var(--ink);padding:44px 0;font-size:15px}
+footer .stopka{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:24px 48px;align-items:start}footer img.logo{display:block;width:100%;max-width:340px;height:auto;margin:-28px 0 0 -18px}footer p{margin:0 0 .8em;max-width:70em}
+
+img[width]{height:auto}
+.hero-grid>*{min-width:0}
+@media(max-width:980px){.hero-grid{grid-template-columns:minmax(0,1fr);gap:36px;padding-top:36px}.arkusz{box-shadow:8px 8px 0 var(--yellow)}header.hero .pierscienie{display:none}}
+@media(max-width:860px){nav.top{position:static}nav.top a{padding:10px 9px}.fig,.cols,.promo-grid,footer .stopka{grid-template-columns:1fr}section{padding:60px 0}.masthead .brand span{display:none}.pr{box-shadow:none;padding:12px}}
+@media(max-width:640px){body{font-size:16px}.wrap{padding-left:18px;padding-right:18px}pre{white-space:pre-wrap;word-break:break-word}.pr-txt{min-height:170px}.slider .yr{font-size:24px;min-width:96px}.przewin::before{content:"Scroll the table sideways to see all columns";display:block;font-size:13px;color:var(--muted);margin-bottom:4px}}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}.btn-main{transition:none}}
+@media print{nav.top,#postep,.final-cta,.lbox{display:none}}
+
+/* promocja aplikacji */
+.promo{background:var(--paper);padding:72px 0;border-bottom:2px solid var(--blue)}
+.promo-grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,7fr);gap:52px;align-items:center}
+.promo h2{margin-bottom:.4em}.promo .wer{display:inline-block;background:var(--green);color:var(--ink);font-weight:800;font-size:14px;padding:2px 10px;margin-bottom:14px}
+.zalety{list-style:none;margin:18px 0 26px;padding:0}.zalety li{position:relative;padding:9px 0 9px 34px;border-top:1px solid var(--line)}
+.zalety li::before{content:"";position:absolute;left:2px;top:15px;width:18px;height:10px;border-left:4px solid var(--green);border-bottom:4px solid var(--green);transform:rotate(-45deg) scale(.8)}
+.promo .arkusz{box-shadow:14px 14px 0 var(--green)}
+.cta .tekst{font-weight:700;padding:13px 4px}
+/* zwijana bibliografia */
+details.zwin{border:2px solid var(--blue);background:var(--paper);margin-top:18px}
+details.zwin>summary{cursor:pointer;list-style:none;padding:16px 20px;font-weight:800;font-size:18px;color:var(--blue);display:flex;justify-content:space-between;gap:16px;align-items:center}
+details.zwin>summary::-webkit-details-marker{display:none}
+details.zwin>summary::after{content:"+";font-size:26px;line-height:1;width:34px;height:34px;display:grid;place-items:center;background:var(--green);color:var(--ink);border-radius:50%;flex:none}
+details.zwin[open]>summary::after{content:"\2212"}
+details.zwin>summary:hover{background:var(--soft)}details.zwin .srodek{padding:4px 20px 20px}
+.fig.rob .fig-nr{background:var(--soft);color:var(--blue-d)}
+/* poprawki dla mniejszych ekranów (na końcu, by miały pierwszeństwo) */
+main a{overflow-wrap:anywhere}
+.epoki button{flex:1 1 0;min-width:0;padding:0}
+@media(max-width:1180px){nav.top a{font-size:14px;padding:12px 7px}.epoki button{font-size:13.5px}}
+@media(max-width:980px){.promo-grid{grid-template-columns:minmax(0,1fr);gap:34px}.promo .arkusz{box-shadow:8px 8px 0 var(--green)}.promo{padding:52px 0}}
+@media(max-width:860px){.fig,.cols,footer .stopka{grid-template-columns:minmax(0,1fr)}footer img.logo{margin:-20px 0 0 -14px;max-width:300px}.fig{gap:18px;padding:22px 0 26px}.pr-ctl button{padding:10px 14px}}
+@media(max-width:640px){.epoki{flex-wrap:wrap;overflow:visible}.epoki button{flex:1 0 16%;min-height:42px;border-top:1px solid var(--line)}nav.top a{padding:9px 7px}.masthead .wrap{gap:8px 12px}.masthead .btn-main{padding:8px 12px}.btn-main,.btn-ghost{padding:12px 16px}.slider{flex-wrap:wrap}.slider input{flex:1 1 100%;order:3}.fig h3{font-size:21px}h2{padding-top:18px}.stat .num{font-size:32px}.spis a{min-width:40px;padding:8px 6px}.final-cta{padding:52px 0}}
+@media(max-width:640px){.box{overflow-x:auto}.box table.src{min-width:300px}}\nsup.orcid{line-height:0;margin-left:2px}sup.orcid a{display:inline-block;border:0}sup.orcid img{display:block;width:14px;height:14px}sup.orcid a:hover img{outline:2px solid var(--blue);border-radius:50%}
+
+/* sceny metody (bez zmian względem poprzedniej wersji) */
 .sc{position:absolute;inset:0;opacity:0;transition:opacity .4s;pointer-events:none}.sc.on{opacity:1}.sc svg{width:100%;height:100%;display:block}
-.pr-txt{min-height:110px;margin-top:12px}.pr-pro{font-size:17px;margin:.2em 0 .5em}.pr-fach{font-size:14.5px;color:var(--muted);margin:0}
-.pr-ctl{display:flex;gap:8px;justify-content:center;margin-top:8px}.pr-ctl button{background:var(--navy);color:#fff;border:0;border-radius:30px;padding:8px 16px;font:600 14px Inter,sans-serif;cursor:pointer}
 .sc.on .a-sat{animation:sat 6s linear infinite}@keyframes sat{from{transform:translate(-80px,70px)}to{transform:translate(680px,70px)}}
 .sc.on .a-beam{animation:blink 1.5s ease-in-out infinite}@keyframes blink{50%{opacity:.05}}
 .sc.on .a-cards g{opacity:0;animation:pop .6s forwards}.sc.on .a-cards .c1{animation-delay:1s}.sc.on .a-cards .c2{animation-delay:2.4s}.sc.on .a-cards .c3{animation-delay:3.8s}
-@keyframes pop{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
 .sc.on .a-chm{animation:znik 3s 1s forwards}@keyframes znik{to{opacity:0}}
 .sc.on .a-strz,.sc.on .a-komp{opacity:0;animation:pop .8s forwards}.sc.on .a-strz{animation-delay:2.6s}.sc.on .a-komp{animation-delay:3.3s}
 .sc.on .a-pkt circle{opacity:0;animation:pop .4s forwards}
 .sc.on .a-drz g{opacity:0;animation:pop .5s forwards}.sc.on .a-wyn{opacity:0;animation:pop .8s 3.4s forwards}
 .sc.on .a-prog{animation:prog 2.4s ease-out}@keyframes prog{from{transform:translateX(-143px)}to{transform:none}}
-.pc{transition:fill .6s}.sc.on .pc.hi{animation:hi .5s 2.4s forwards}@keyframes hi{to{fill:#b3261e}}
-.sc.on .sr{opacity:0;animation:pop .5s forwards}.sc.on .naprawa{animation:pop .5s 1.1s forwards,napr 1.2s 3.2s forwards}@keyframes napr{0%{fill:#ededed}100%{fill:#b3261e}}
+.pc{transition:fill .6s}.sc.on .pc.hi{animation:hi .5s 2.4s forwards}@keyframes hi{to{fill:#B3261E}}
+.sc.on .sr{opacity:0;animation:pop .5s forwards}.sc.on .naprawa{animation:pop .5s 1.1s forwards,napr 1.2s 3.2s forwards}@keyframes napr{0%{fill:#ededed}100%{fill:#B3261E}}
 .sc.on .a-lin{stroke-dasharray:700;stroke-dashoffset:700;animation:rys 3s .4s forwards}@keyframes rys{to{stroke-dashoffset:0}}
-.gl{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:20px}.gl div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:15px}.gl b{display:block;color:var(--teal);margin-bottom:2px}
-.btn-main{background:#ffd166!important;color:#14202b!important;font-weight:700;border-color:#ffd166!important}
-.dl{display:inline-block;background:var(--teal);color:#fff;text-decoration:none;padding:10px 18px;border-radius:30px;font-weight:600;margin:6px 8px 6px 0}
-.stat .ex{font-size:13px;color:var(--muted);border-top:1px dashed var(--line);margin-top:8px;padding-top:6px}
-nav.top{position:sticky}nav.top::after{content:"";position:absolute;right:0;top:0;bottom:0;width:36px;background:linear-gradient(90deg,rgba(11,29,44,0),rgba(11,29,44,.95));pointer-events:none}
-@media(max-width:640px){pre{white-space:pre-wrap;word-break:break-word}.pr-txt{min-height:150px}.przewin::before{content:"Scroll the table sideways to see all columns →";display:block;font-size:12.5px;color:var(--muted);margin-bottom:4px}}
 @media (prefers-reduced-motion: reduce){.sc.on *{animation:none!important;opacity:1!important}.sc.on .a-chm{opacity:0!important}}
-img[width]{height:auto}
-@media(max-width:860px){.fig,.cols{grid-template-columns:1fr}header.hero{min-height:78vh}}
-nav.top a.lang{border:1px solid currentColor;border-radius:4px;padding:1px 7px;margin-left:6px;font-weight:700}
-nav.top .langsw{display:inline-flex;flex:none;border:1px solid rgba(220,231,239,.5);border-radius:6px;overflow:hidden;margin-right:10px}nav.top .langsw a{padding:2px 9px;font-weight:700;font-size:13px}nav.top .langsw a[aria-current]{background:#ffd166;color:#0b1d2c}
 </style>
-<link href="./" hreflang="en" rel="alternate"/>
-<link href="../" hreflang="pl" rel="alternate"/>
 </head>
 <body>
-<nav class="top"><div class="wrap"><span class="logo">Toruń · Bydgoszcz · 1975–2025</span>
-<span class="langsw" role="navigation" aria-label="Language"><a href="../" hreflang="pl" lang="pl" title="Wersja polska">PL</a><a aria-current="page" lang="en">EN</a></span>
-<a href="#projekt">Project</a><a href="#proces">Method in animations</a><a href="#slowniczek">Glossary</a><a href="#animacje">Animations</a><a href="#wykres">Chart</a>
-<a href="#aplikacja">App</a><a href="#ludnosc">Population and SDG</a><a href="#ryciny">Results in figures</a><a href="#dane">Data and code</a><a href="#bibliografia">References</a></div></nav>
+<a class="skip" href="#tresc">Skip to content</a>
+<div id="postep" aria-hidden="true"></div>
+<div class="masthead"><div class="wrap">
+<a class="brand" href="https://gorniakgrzegorz.github.io/urban-sprawl-tor-byd-random-forest/en/">Toruń and Bydgoszcz 1975–2025<span>urban sprawl from the Landsat archive</span></a>
+<span class="langsw" role="navigation" aria-label="Language"><a href="../" hreflang="pl" title="Wersja polska" lang="pl">PL</a><a aria-current="page" lang="en">EN</a></span>
+<a class="btn-main" href="https://doi.org/10.5281/zenodo.24332551" target="_blank" rel="noopener">Download the app</a>
+</div></div>
+<nav class="top" aria-label="Page sections"><div class="wrap"><a href="#pobierz">Download the app</a><a href="#projekt">Project</a><a href="#proces">Method in animations</a><a href="#slowniczek">Glossary</a><a href="#aplikacja">App</a><a href="#ludnosc">Population and SDG</a><a href="#ryciny">Results in figures</a><a href="#dane">Data and code</a><a href="#bibliografia">References</a></div></nav>
+
 <header class="hero">
-<video aria-hidden="true" autoplay="" id="hvid" loop="" muted="" playsinline="" poster="../assets/anim/klatki/built_2025.jpg"><source src="../assets/anim/anim_built.mp4" type="video/mp4"/></video>
-<div class="shade"></div>
-<button aria-label="Pause the background animation" class="vctl" id="vctl">❚❚ pause</button>
-<div class="wrap">
-<p class="eyebrow">GeoAI · remote sensing · urban studies</p>
+<svg class="pierscienie" viewBox="0 0 980 980" aria-hidden="true"><g fill="none" stroke="#0050AA"><circle cx="490" cy="490" r="210" stroke-opacity=".16" stroke-width="2"/><circle cx="490" cy="490" r="340" stroke-opacity=".13" stroke-width="2" stroke-dasharray="10 9"/><circle cx="490" cy="490" r="470" stroke-opacity=".1" stroke-width="2" stroke-dasharray="3 9"/></g></svg>
+<div class="wrap hero-grid">
+<div>
 <h1>Half a century of built-up land in Toruń and Bydgoszcz reconstructed from the Landsat satellite archive</h1>
 <p class="lead">Using satellite images from the last fifty years, we reconstructed how built-up land grew in Toruń and Bydgoszcz and how the cities spread into the surrounding fields. A free app lets you do the same for any town, without creating an account.</p>
-<div class="badges"><a class="btn-main" href="#aplikacja">▶ The Land Cover Rewind app for your town</a>
-<a href="#proces">How it works (animations)</a>
-<a href="#animacje">See the results</a>
-<a href="https://github.com/gorniakgrzegorz/urban-sprawl-tor-byd-random-forest" target="_blank">GitHub repository</a>
-<a href="../" hreflang="pl" lang="pl">Wersja polska</a></div>
+<div class="cta badges">
+<a class="btn-main" href="https://doi.org/10.5281/zenodo.24332551" target="_blank" rel="noopener">Download the Land Cover Rewind app</a>
+<a class="btn-ghost" href="#aplikacja">How to run it</a>
+<a class="tekst" href="#proces">See the method in animations</a>
+</div>
+<ul class="fakty"><li><b>11</b> map epochs, 1975–2025</li><li><b>31</b> figures with descriptions, 25 more in the atlas</li><li><b>100</b> references</li><li>MIT code, data with a DOI</li></ul>
+</div>
+<div>
+<figure class="arkusz"><img id="hframe" src="../assets/anim/klatki/built_2025.jpg" width="1320" height="726" alt="Built-up map of Toruń (a) and Bydgoszcz (b), epoch 2025" fetchpriority="high"></figure>
+<div class="epoki" id="hepoki" role="group" aria-label="Choose a map epoch"><button type="button" data-i="0" aria-pressed="false">1975</button><button type="button" data-i="1" aria-pressed="false">1980</button><button type="button" data-i="2" aria-pressed="false">1985</button><button type="button" data-i="3" aria-pressed="false">1990</button><button type="button" data-i="4" aria-pressed="false">1995</button><button type="button" data-i="5" aria-pressed="false">2000</button><button type="button" data-i="6" aria-pressed="false">2005</button><button type="button" data-i="7" aria-pressed="false">2010</button><button type="button" data-i="8" aria-pressed="false">2015</button><button type="button" data-i="9" aria-pressed="false">2020</button><button type="button" data-i="10" class="on" aria-pressed="true">2025</button></div>
+<p class="epoka-opis"><span><b id="hyr">2025</b><span id="hsens">Landsat TM, ETM+ and OLI, 30 m pixel, series A</span></span><button type="button" id="hplay">Play 1975–2025</button></p>
+</div>
 </div>
 </header>
+
+<main id="tresc">
+<section id="pobierz" class="promo"><div class="wrap promo-grid">
+<div>
+<p class="wer">version 1.4.0, free, MIT code</p>
+<h2>Land Cover Rewind: a built-up map of your town since 1985</h2>
+<ul class="zalety"><li>No Google account and no programming: on Windows the run_windows.bat file is enough.</li><li>Draw an area on the map or load a GPKG, GeoJSON or SHP file.</li><li>A small area (a few km²) and two years usually compute in about a minute.</li><li>You get GeoTIFF maps, CSV tables, GIF animations and a chart.</li></ul>
+<div class="cta">
+<a class="btn-main" href="https://doi.org/10.5281/zenodo.24332551" target="_blank" rel="noopener">Download from Zenodo (ZIP)</a>
+<a class="btn-ghost" href="#aplikacja">How to run it</a>
+<a class="tekst" href="https://github.com/gorniakgrzegorz/urban-sprawl-tor-byd-random-forest/tree/main/aplikacja" target="_blank" rel="noopener">Code on GitHub</a>
+</div>
+</div>
+<figure class="arkusz"><a class="lb" href="../assets/app/ekran_start.jpg" data-cap="Start screen of the Land Cover Rewind app"><img src="../assets/app/ekran_start.jpg" width="1366" height="900" loading="lazy" alt="Start screen of the Land Cover Rewind app"></a></figure>
+</div></section>
 <section id="projekt"><div class="wrap">
-<h2>About the project<small>Grzegorz Górniak, Mieczysław Kunz · Department of Geoinformation and Environmental Remote Sensing, Faculty of Earth Sciences and Spatial Management, Nicolaus Copernicus University in Toruń</small></h2>
+<h2>About the project<small>Grzegorz Górniak<sup class="orcid"><a href="https://orcid.org/0009-0009-9248-8018" target="_blank" rel="noopener" title="ORCID: 0009-0009-9248-8018" aria-label="ORCID Grzegorz Górniak: 0009-0009-9248-8018"><img src="../assets/orcid.png" width="14" height="14" alt="" loading="lazy"></a></sup>, Mieczysław Kunz<sup class="orcid"><a href="https://orcid.org/0000-0002-3334-5238" target="_blank" rel="noopener" title="ORCID: 0000-0002-3334-5238" aria-label="ORCID Mieczysław Kunz: 0000-0002-3334-5238"><img src="../assets/orcid.png" width="14" height="14" alt="" loading="lazy"></a></sup> · Department of Geoinformation and Environmental Remote Sensing, Faculty of Earth Sciences and Spatial Management, Nicolaus Copernicus University in Toruń</small></h2>
 <p class="intro">The Landsat archive spans more than fifty years of observations (<a class="cyt" href="#ref-10_1016_j_srs_2023_100103">Crawford et al., 2023</a>), whereas present-day 10 m land cover maps such as Dynamic World exist only since 2015 (<a class="cyt" href="#ref-10_1038_s41597_022_01307_4">Brown et al., 2022</a>). The project links these two sources. Built-up labels from the 2025 map train a Random Forest classifier (<a class="cyt" href="#ref-10_1023_a_1010933404324">Breiman, 2001</a>), which classifies Landsat composites from 1985–2025 without retraining. An extent constraint and an irreversibility rule for built-up land turn the result into a consistent series of 30 m maps (series A). The 1985 map then trains a model for the Landsat MSS data of 1975 and 1980.</p>
 <p class="intro">With this series, the project tests how much of the agreement of historical maps with independent data comes from the classifier itself and how much from the constraints, compares the series with a static model (the present-day extent assigned to every epoch) and repeats the procedure in a second city. It then describes the sprawl of both cities: the growth of built-up area, its relation to population (SDG indicator 11.3.1), patch configuration, concentration and directions of expansion.</p>
 <div class="stats">
@@ -155,70 +292,70 @@ nav.top .langsw{display:inline-flex;flex:none;border:1px solid rgba(220,231,239,
 <div class="pr-stage">
  1. images 
 <div class="sc on" data-i="0"><svg aria-label="A Landsat satellite passes over the area and takes images in different years" role="img" viewbox="0 0 600 300">
-<rect fill="#0b1d2c" height="300" width="600"></rect>
+<rect fill="#0A2247" height="300" width="600"></rect>
 <g fill="#fff" opacity=".7"><circle cx="40" cy="30" r="1.2"></circle><circle cx="130" cy="60" r="1"></circle><circle cx="260" cy="22" r="1.4"></circle><circle cx="420" cy="48" r="1"></circle><circle cx="540" cy="18" r="1.2"></circle><circle cx="500" cy="80" r="1"></circle></g>
 <path d="M0 300 Q300 210 600 300Z" fill="#2f6b3a"></path><path d="M0 300 Q300 235 600 300Z" fill="#3d8a4a"></path>
 <g class="a-sat"><rect fill="#cfd8dc" height="16" rx="3" width="44" x="-22" y="-8"></rect><rect fill="#1e88e5" height="10" width="34" x="-60" y="-5"></rect><rect fill="#1e88e5" height="10" width="34" x="26" y="-5"></rect>
-<polygon class="a-beam" fill="#ffd166" opacity=".25" points="-14,8 14,8 60,150 -60,150"></polygon></g>
+<polygon class="a-beam" fill="#A9D03C" opacity=".25" points="-14,8 14,8 60,150 -60,150"></polygon></g>
 <g class="a-cards"><g class="c1"><rect fill="#c9b27c" height="60" rx="4" width="78" x="380" y="150"></rect><rect fill="#8d6e63" height="14" width="20" x="392" y="160"></rect><text fill="#fff" font-size="13" text-anchor="middle" x="419" y="226">1990</text></g>
 <g class="c2"><rect fill="#c9b27c" height="60" rx="4" width="78" x="460" y="150"></rect><rect fill="#8d6e63" height="14" width="20" x="472" y="160"></rect><rect fill="#8d6e63" height="16" width="22" x="498" y="176"></rect><text fill="#fff" font-size="13" text-anchor="middle" x="499" y="226">2005</text></g>
 <g class="c3"><rect fill="#c9b27c" height="60" rx="4" width="78" x="420" y="80"></rect><rect fill="#8d6e63" height="14" width="20" x="432" y="90"></rect><rect fill="#8d6e63" height="16" width="22" x="458" y="106"></rect><rect fill="#8d6e63" height="18" width="16" x="430" y="114"></rect><text fill="#fff" font-size="13" text-anchor="middle" x="459" y="76">2025</text></g></g>
 </svg></div>
  2. clouds 
 <div class="sc" data-i="1"><svg aria-label="Several cloudy images are combined into one cloud-free image" role="img" viewbox="0 0 600 300">
-<rect fill="#f6f7f4" height="300" width="600"></rect>
+<rect fill="#F3F7FC" height="300" width="600"></rect>
 <g id="kafel"><rect fill="#9ccc65" height="90" rx="6" width="120"></rect><rect fill="#8d6e63" height="20" width="26" x="18" y="16"></rect><rect fill="#8d6e63" height="24" width="34" x="62" y="40"></rect><rect fill="#64b5f6" height="10" width="120" x="0" y="66"></rect></g>
 <use href="#kafel" x="40" y="30"></use><use href="#kafel" x="40" y="150"></use><use href="#kafel" x="200" y="90"></use>
 <g class="a-chm"><ellipse cx="80" cy="60" fill="#fff" rx="38" ry="22"></ellipse><ellipse cx="130" cy="210" fill="#fff" rx="34" ry="20"></ellipse><ellipse cx="250" cy="150" fill="#fff" rx="40" ry="22"></ellipse><ellipse cx="290" cy="110" fill="#fff" rx="22" ry="14"></ellipse></g>
-<path class="a-strz" d="M340 135 h70 l-10 -10 m10 10 l-10 10" fill="none" stroke="#0f766e" stroke-width="4"></path>
-<g class="a-komp"><use href="#kafel" x="440" y="90"></use><text fill="#14202b" font-size="14" text-anchor="middle" x="500" y="205">cloud-free image</text><text fill="#5a6773" font-size="12" text-anchor="middle" x="500" y="222">(pixel median)</text></g>
+<path class="a-strz" d="M340 135 h70 l-10 -10 m10 10 l-10 10" fill="none" stroke="#0050AA" stroke-width="4"></path>
+<g class="a-komp"><use href="#kafel" x="440" y="90"></use><text fill="#0A2247" font-size="14" text-anchor="middle" x="500" y="205">cloud-free image</text><text fill="#44546D" font-size="12" text-anchor="middle" x="500" y="222">(pixel median)</text></g>
 </svg></div>
  3. teacher 
 <div class="sc" data-i="2"><svg aria-label="A present-day map with labelled classes, from which training points are drawn" role="img" viewbox="0 0 600 300">
-<rect fill="#f6f7f4" height="300" width="600"></rect>
+<rect fill="#F3F7FC" height="300" width="600"></rect>
 <g transform="translate(60 30)"><rect fill="#fee8a6" height="240" width="240"></rect><path d="M0 0h110v90H0z" fill="#b3261e"></path><path d="M150 140h90v100h-90z" fill="#4daf4a"></path><path d="M0 170h240v24H0z" fill="#3182bd"></path><path d="M120 30h60v60h-60z" fill="#b3261e"></path>
-<g class="a-pkt" fill="#fff" stroke="#14202b" stroke-width="1.5"><circle cx="30" cy="30" r="5"></circle><circle cx="80" cy="60" r="5"></circle><circle cx="150" cy="60" r="5"></circle><circle cx="200" cy="120" r="5"></circle><circle cx="60" cy="130" r="5"></circle><circle cx="190" cy="200" r="5"></circle><circle cx="215" cy="225" r="5"></circle><circle cx="100" cy="182" r="5"></circle><circle cx="20" cy="220" r="5"></circle><circle cx="130" cy="110" r="5"></circle></g></g>
-<g fill="#14202b" font-size="14"><rect fill="#b3261e" height="16" width="16" x="340" y="60"></rect><text x="364" y="73">built-up</text><rect fill="#4daf4a" height="16" width="16" x="340" y="88"></rect><text x="364" y="101">trees and forest</text><rect fill="#3182bd" height="16" width="16" x="340" y="116"></rect><text x="364" y="129">water</text><rect fill="#fee8a6" height="16" width="16" x="340" y="144"></rect><text x="364" y="157">other</text>
-<circle cx="348" cy="196" fill="#fff" r="6" stroke="#14202b" stroke-width="1.5"></circle><text x="364" y="201">training point</text><text fill="#5a6773" font-size="12.5" x="340" y="236">1500 points each of built-up land and other classes</text></g>
+<g class="a-pkt" fill="#fff" stroke="#0A2247" stroke-width="1.5"><circle cx="30" cy="30" r="5"></circle><circle cx="80" cy="60" r="5"></circle><circle cx="150" cy="60" r="5"></circle><circle cx="200" cy="120" r="5"></circle><circle cx="60" cy="130" r="5"></circle><circle cx="190" cy="200" r="5"></circle><circle cx="215" cy="225" r="5"></circle><circle cx="100" cy="182" r="5"></circle><circle cx="20" cy="220" r="5"></circle><circle cx="130" cy="110" r="5"></circle></g></g>
+<g fill="#0A2247" font-size="14"><rect fill="#b3261e" height="16" width="16" x="340" y="60"></rect><text x="364" y="73">built-up</text><rect fill="#4daf4a" height="16" width="16" x="340" y="88"></rect><text x="364" y="101">trees and forest</text><rect fill="#3182bd" height="16" width="16" x="340" y="116"></rect><text x="364" y="129">water</text><rect fill="#fee8a6" height="16" width="16" x="340" y="144"></rect><text x="364" y="157">other</text>
+<circle cx="348" cy="196" fill="#fff" r="6" stroke="#0A2247" stroke-width="1.5"></circle><text x="364" y="201">training point</text><text fill="#44546D" font-size="12.5" x="340" y="236">1500 points each of built-up land and other classes</text></g>
 </svg></div>
  4. random forest 
 <div class="sc" data-i="3"><svg aria-label="Many decision trees vote on whether a pixel is built-up; the share of votes is the probability" role="img" viewbox="0 0 600 300">
-<rect fill="#f6f7f4" height="300" width="600"></rect>
-<rect fill="#8d6e63" height="60" width="60" x="20" y="115"></rect><text fill="#5a6773" font-size="14" text-anchor="middle" x="50" y="195">30 m pixel</text>
+<rect fill="#F3F7FC" height="300" width="600"></rect>
+<rect fill="#8d6e63" height="60" width="60" x="20" y="115"></rect><text fill="#44546D" font-size="14" text-anchor="middle" x="50" y="195">30 m pixel</text>
 <g class="a-drz" font-size="15" text-anchor="middle">
-<g class="d1"><path d="M140 70v40M140 110l-22 30M140 110l22 30" fill="none" stroke="#0f766e" stroke-width="3"></path><circle cx="140" cy="66" fill="#0f766e" r="8"></circle><text fill="#b3261e" font-weight="700" x="140" y="165">yes</text></g>
-<g class="d2"><path d="M220 70v40M220 110l-22 30M220 110l22 30" fill="none" stroke="#0f766e" stroke-width="3"></path><circle cx="220" cy="66" fill="#0f766e" r="8"></circle><text fill="#b3261e" font-weight="700" x="220" y="165">yes</text></g>
-<g class="d3"><path d="M300 70v40M300 110l-22 30M300 110l22 30" fill="none" stroke="#0f766e" stroke-width="3"></path><circle cx="300" cy="66" fill="#0f766e" r="8"></circle><text fill="#4daf4a" font-weight="700" x="300" y="165">no</text></g>
-<g class="d4"><path d="M380 70v40M380 110l-22 30M380 110l22 30" fill="none" stroke="#0f766e" stroke-width="3"></path><circle cx="380" cy="66" fill="#0f766e" r="8"></circle><text fill="#b3261e" font-weight="700" x="380" y="165">yes</text></g>
-<g class="d5"><path d="M460 70v40M460 110l-22 30M460 110l22 30" fill="none" stroke="#0f766e" stroke-width="3"></path><circle cx="460" cy="66" fill="#0f766e" r="8"></circle><text fill="#b3261e" font-weight="700" x="460" y="165">yes</text></g>
+<g class="d1"><path d="M140 70v40M140 110l-22 30M140 110l22 30" fill="none" stroke="#0050AA" stroke-width="3"></path><circle cx="140" cy="66" fill="#0050AA" r="8"></circle><text fill="#b3261e" font-weight="700" x="140" y="165">yes</text></g>
+<g class="d2"><path d="M220 70v40M220 110l-22 30M220 110l22 30" fill="none" stroke="#0050AA" stroke-width="3"></path><circle cx="220" cy="66" fill="#0050AA" r="8"></circle><text fill="#b3261e" font-weight="700" x="220" y="165">yes</text></g>
+<g class="d3"><path d="M300 70v40M300 110l-22 30M300 110l22 30" fill="none" stroke="#0050AA" stroke-width="3"></path><circle cx="300" cy="66" fill="#0050AA" r="8"></circle><text fill="#4daf4a" font-weight="700" x="300" y="165">no</text></g>
+<g class="d4"><path d="M380 70v40M380 110l-22 30M380 110l22 30" fill="none" stroke="#0050AA" stroke-width="3"></path><circle cx="380" cy="66" fill="#0050AA" r="8"></circle><text fill="#b3261e" font-weight="700" x="380" y="165">yes</text></g>
+<g class="d5"><path d="M460 70v40M460 110l-22 30M460 110l22 30" fill="none" stroke="#0050AA" stroke-width="3"></path><circle cx="460" cy="66" fill="#0050AA" r="8"></circle><text fill="#b3261e" font-weight="700" x="460" y="165">yes</text></g>
 </g>
-<text fill="#5a6773" font-size="15" text-anchor="middle" x="300" y="40">the model has 300 trees; 5 are shown here</text>
-<g class="a-wyn"><rect fill="#0b1d2c" height="56" rx="10" width="200" x="200" y="200"></rect><text fill="#fff" font-size="14" text-anchor="middle" x="300" y="224">4 of 5 trees: ‘built-up’</text><text fill="#ffd166" font-size="14" font-weight="700" text-anchor="middle" x="300" y="245">probability 0.80</text></g>
+<text fill="#44546D" font-size="15" text-anchor="middle" x="300" y="40">the model has 300 trees; 5 are shown here</text>
+<g class="a-wyn"><rect fill="#0A2247" height="56" rx="10" width="200" x="200" y="200"></rect><text fill="#fff" font-size="14" text-anchor="middle" x="300" y="224">4 of 5 trees: ‘built-up’</text><text fill="#A9D03C" font-size="14" font-weight="700" text-anchor="middle" x="300" y="245">probability 0.80</text></g>
 </svg></div>
  5. threshold 
 <div class="sc" data-i="4"><svg aria-label="Pixels with a probability above the threshold become built-up" role="img" viewbox="0 0 600 300">
-<rect fill="#f6f7f4" height="300" width="600"></rect>
+<rect fill="#F3F7FC" height="300" width="600"></rect>
 <g id="siatkaP" transform="translate(40 40)"></g>
-<g fill="#14202b" font-size="13" transform="translate(340 60)"><text x="0" y="0">built-up probability</text>
+<g fill="#0A2247" font-size="13" transform="translate(340 60)"><text x="0" y="0">built-up probability</text>
 <defs><lineargradient id="gp"><stop offset="0" stop-color="#fff5f0"></stop><stop offset="1" stop-color="#67000d"></stop></lineargradient></defs>
 <rect fill="url(#gp)" height="16" stroke="#ccc" width="220" x="0" y="12"></rect><text x="0" y="46">0</text><text text-anchor="end" x="220" y="46">1</text>
-<line class="a-prog" stroke="#0f766e" stroke-width="3" x1="143" x2="143" y1="6" y2="34"></line><text fill="#0f766e" font-weight="700" text-anchor="middle" x="143" y="62">threshold 0.65</text>
-<text fill="#5a6773" x="0" y="110">squares above the threshold</text><text fill="#5a6773" x="0" y="128">are classed as built-up</text></g>
+<line class="a-prog" stroke="#0050AA" stroke-width="3" x1="143" x2="143" y1="6" y2="34"></line><text fill="#0050AA" font-weight="700" text-anchor="middle" x="143" y="62">threshold 0.65</text>
+<text fill="#44546D" x="0" y="110">squares above the threshold</text><text fill="#44546D" x="0" y="128">are classed as built-up</text></g>
 </svg></div>
  6. order 
 <div class="sc" data-i="5"><svg aria-label="Built-up land once detected stays built-up in later years and can appear only within the extent mask" role="img" viewbox="0 0 600 300">
-<rect fill="#f6f7f4" height="300" width="600"></rect>
-<g fill="#14202b" font-size="14" text-anchor="middle"><text x="110" y="34">1990</text><text x="300" y="34">2005</text><text x="490" y="34">2025</text></g>
+<rect fill="#F3F7FC" height="300" width="600"></rect>
+<g fill="#0A2247" font-size="14" text-anchor="middle"><text x="110" y="34">1990</text><text x="300" y="34">2005</text><text x="490" y="34">2025</text></g>
 <g id="serie"></g>
-<text fill="#5a6773" font-size="11" text-anchor="middle" x="300" y="276">in 2005 the model missed one square already built-up in 1990: the rule restores it</text>
+<text fill="#44546D" font-size="11" text-anchor="middle" x="300" y="276">in 2005 the model missed one square already built-up in 1990: the rule restores it</text>
 </svg></div>
  7. results 
 <div class="sc" data-i="6"><svg aria-label="The map series yields a built-up area chart and indicators" role="img" viewbox="0 0 600 300">
-<rect fill="#f6f7f4" height="300" width="600"></rect>
-<g transform="translate(60 30)"><line stroke="#5a6773" x1="0" x2="480" y1="220" y2="220"></line><line stroke="#5a6773" x1="0" x2="0" y1="0" y2="220"></line>
+<rect fill="#F3F7FC" height="300" width="600"></rect>
+<g transform="translate(60 30)"><line stroke="#44546D" x1="0" x2="480" y1="220" y2="220"></line><line stroke="#44546D" x1="0" x2="0" y1="0" y2="220"></line>
 <polyline class="a-lin" fill="none" points="0,200 60,180 120,165 180,150 240,128 300,110 360,88 420,64 480,40" stroke="#b3261e" stroke-width="4"></polyline>
-<g fill="#5a6773" font-size="12" text-anchor="middle"><text x="0" y="238">1985</text><text x="240" y="238">2005</text><text x="480" y="238">2025</text></g>
-<text fill="#5a6773" font-size="12" x="10" y="12">built-up area [ha] (schematic)</text></g>
+<g fill="#44546D" font-size="12" text-anchor="middle"><text x="0" y="238">1985</text><text x="240" y="238">2005</text><text x="480" y="238">2025</text></g>
+<text fill="#44546D" font-size="12" x="10" y="12">built-up area [ha] (schematic)</text></g>
 </svg></div>
 </div>
 <div aria-live="polite" class="pr-txt"><p class="pr-pro" id="prPro"></p><p class="pr-fach" id="prFach"></p></div>
@@ -257,12 +394,12 @@ nav.top .langsw{display:inline-flex;flex:none;border:1px solid rgba(220,231,239,
 <h2>Animations<small>Toruń always on the left (panel a), Bydgoszcz on the right</small></h2>
 <div class="player">
 <div class="ptabs" id="ptabs">
-<button class="on" data-m="built">Growth of built-up land 1975–2025</button><button data-m="lc">Four land cover classes 1985–2025</button><button data-m="forms">Growth forms 1985–2025</button>
+<button class="on" data-m="lc">Four land cover classes 1985–2025</button><button data-m="built">Growth of built-up land 1975–2025</button><button data-m="forms">Growth forms 1985–2025</button>
 </div>
-<img alt="Growth of built-up land, epoch 1975: Toruń (a) and Bydgoszcz (b)" id="frame" src="../assets/anim/klatki/built_1975.jpg"/>
+<img alt="Growth of built-up land, epoch 1975: Toruń (a) and Bydgoszcz (b)" id="frame" src="../assets/anim/klatki/lc_1985.jpg"/>
 <div class="slider"><button aria-label="play" id="play">▶</button><input aria-label="Animation epoch" id="rng" max="10" min="0" type="range" value="0"/><span class="yr" id="yr">1975</span></div>
 <p class="pdesc" id="pdesc"></p>
-<p class="pdesc">MP4 videos to download: <a href="../assets/anim/anim_built.mp4" style="color:#ffd166">built-up land</a> · <a href="../assets/anim/anim_lc.mp4" style="color:#ffd166">land cover</a> · <a href="../assets/anim/anim_forms.mp4" style="color:#ffd166">growth forms</a></p>
+<p class="pdesc">MP4 videos to download: <a href="../assets/anim/anim_built.mp4" style="color:#A9D03C">built-up land</a> · <a href="../assets/anim/anim_lc.mp4" style="color:#A9D03C">land cover</a> · <a href="../assets/anim/anim_forms.mp4" style="color:#A9D03C">growth forms</a></p>
 </div>
 </div></section>
 <section id="wykres"><div class="wrap">
@@ -276,8 +413,8 @@ nav.top .langsw{display:inline-flex;flex:none;border:1px solid rgba(220,231,239,
 </div>
 </div></section>
 <section class="alt" id="aplikacja"><div class="wrap">
-<h2>Land Cover Rewind 1985–2025 app<small>your area, no Google account · folder <code>aplikacja/</code> in the repository · Zenodo: <a href="https://doi.org/10.5281/zenodo.24332551">10.5281/zenodo.24332551</a> · Python · Streamlit · Microsoft Planetary Computer</small></h2>
-<p class="intro">The project notebook runs in Google Earth Engine and needs a Google account. The <b>Land Cover Rewind 1985–2025</b> app runs an analogous procedure (with the differences described below) on open data from the Microsoft Planetary Computer STAC catalogue (<a class="cyt" href="#ref-mspc2022">Microsoft Open Source et al., 2022</a>), which can be read anonymously: Landsat Collection 2 Level 2 (TM, ETM+, OLI) (<a class="cyt" href="#ref-10_1016_j_srs_2023_100103">Crawford et al., 2023</a>) and the Impact Observatory annual 10 m land cover maps (<a class="cyt" href="#ref-karra2021">Karra et al., 2021</a>), which take the role of Dynamic World: they are the teacher in the local mode and define the extent mask. The Random Forest model runs in scikit-learn (<a class="cyt" href="#ref-pedregosa2011">Pedregosa et al., 2011</a>) on the user’s computer.</p>
+<h2>Land Cover Rewind app<small>your area, no Google account · folder <code>aplikacja/</code> in the repository · Zenodo: <a href="https://doi.org/10.5281/zenodo.24332551">10.5281/zenodo.24332551</a> · Python · Streamlit · Microsoft Planetary Computer</small></h2>
+<p class="intro">The project notebook runs in Google Earth Engine and needs a Google account. The <b>Land Cover Rewind</b> app runs an analogous procedure (with the differences described below) on open data from the Microsoft Planetary Computer STAC catalogue (<a class="cyt" href="#ref-mspc2022">Microsoft Open Source et al., 2022</a>), which can be read anonymously: Landsat Collection 2 Level 2 (TM, ETM+, OLI) (<a class="cyt" href="#ref-10_1016_j_srs_2023_100103">Crawford et al., 2023</a>) and the Impact Observatory annual 10 m land cover maps (<a class="cyt" href="#ref-karra2021">Karra et al., 2021</a>), which take the role of Dynamic World: they are the teacher in the local mode and define the extent mask. The Random Forest model runs in scikit-learn (<a class="cyt" href="#ref-pedregosa2011">Pedregosa et al., 2011</a>) on the user’s computer.</p>
 <div class="cols">
 <div class="box"><h3>What it does</h3><ol>
 <li>The user draws an area on the map or loads a GPKG, GeoJSON or SHP file.</li>
@@ -335,6 +472,8 @@ docker build -t landcoverrewind . &amp;&amp; docker run -p 8501:8501 landcoverre
 </div></section>
 <section id="ryciny"><div class="wrap">
 <h2>Results in figures<small>every figure with a description: what it shows, how it was made and what follows from it</small></h2>
+<nav aria-label="List of figures"><ul class="spis"><li><a href="#sr1" aria-label="Fig. 1">1</a></li><li><a href="#sr2" aria-label="Fig. 2">2</a></li><li><a href="#sr3" aria-label="Fig. 3">3</a></li><li><a href="#sr4" aria-label="Fig. 4">4</a></li><li><a href="#sr5" aria-label="Fig. 5">5</a></li><li><a href="#lup1" aria-label="Fig. 6">6</a></li><li><a href="#lup2" aria-label="Fig. 7">7</a></li><li><a href="#lup3" aria-label="Fig. 8">8</a></li><li><a href="#lup4" aria-label="Fig. 9">9</a></li><li><a href="#lup5" aria-label="Fig. 10">10</a></li><li><a href="#lup6" aria-label="Fig. 11">11</a></li><li><a href="#lup7" aria-label="Fig. 12">12</a></li><li><a href="#lup8" aria-label="Fig. 13">13</a></li><li><a href="#lup9" aria-label="Fig. 14">14</a></li><li><a href="#srs1" aria-label="Fig. 15">15</a></li><li><a href="#srs2" aria-label="Fig. 16">16</a></li><li><a href="#srs3" aria-label="Fig. 17">17</a></li><li><a href="#srs4" aria-label="Fig. 18">18</a></li><li><a href="#srs5" aria-label="Fig. 19">19</a></li><li><a href="#srs6" aria-label="Fig. 20">20</a></li><li><a href="#srs7" aria-label="Fig. 21">21</a></li><li><a href="#srs8" aria-label="Fig. 22">22</a></li><li><a href="#srs9" aria-label="Fig. 23">23</a></li><li><a href="#srs10" aria-label="Fig. 24">24</a></li><li><a href="#srs11" aria-label="Fig. 25">25</a></li><li><a href="#srs12" aria-label="Fig. 26">26</a></li><li><a href="#srs13" aria-label="Fig. 27">27</a></li><li><a href="#lups1" aria-label="Fig. 28">28</a></li><li><a href="#lups2" aria-label="Fig. 29">29</a></li><li><a href="#lups3" aria-label="Fig. 30">30</a></li><li><a href="#lups4" aria-label="Fig. 31">31</a></li><li><a href="#at1">A1</a></li><li><a href="#at2">A2</a></li><li><a href="#at3">A3</a></li><li><a href="#at4">A4</a></li><li><a href="#at5">A5</a></li><li><a href="#at6">A6</a></li><li><a href="#at7">A7</a></li><li><a href="#at8">A8</a></li><li><a href="#at9">A9</a></li><li><a href="#at10">A10</a></li><li><a href="#at11">A11</a></li><li><a href="#at12">A12</a></li><li><a href="#at13">A13</a></li><li><a href="#at14">A14</a></li><li><a href="#at15">A15</a></li><li><a href="#at16">A16</a></li><li><a href="#at17">A17</a></li><li><a href="#at18">A18</a></li><li><a href="#at19">A19</a></li><li><a href="#at20">A20</a></li><li><a href="#at21">A21</a></li><li><a href="#at22">A22</a></li><li><a href="#at23">A23</a></li><li><a href="#at24">A24</a></li><li><a href="#at25">A25</a></li></ul></nav>
+
 <article class="fig" id="sr1">
 <div class="fig-img"><a class="lb" data-cap="Fig. 1. Two-stage label transfer scheme" href="../assets/img/sr_fig1.jpg"><img alt="Fig. 1: Two-stage label transfer scheme" height="1633" loading="lazy" src="../assets/img/sr_fig1.jpg" width="1800"/></a></div>
 <div class="fig-txt">
@@ -614,14 +753,130 @@ docker build -t landcoverrewind . &amp;&amp; docker run -p 8501:8501 landcoverre
 <div aria-labelledby="lups4-t-co" class="tab co on" id="lups4-p-co" role="tabpanel"><p>(a, b) Gini coefficient for the reference grid and its range for nine origins of the 1 km grid; (c, d) parameter b of the Clark gradient by four fitting methods.</p></div><div aria-labelledby="lups4-t-jak" class="tab jak" id="lups4-p-jak" role="tabpanel"><p>The grid was shifted by 0, ⅓ and ⅔ of a cell side in both directions; b was fitted by regression of ln D without and with pixel weights, and by non-linear fitting without and with the constraint D0 ≤ 1. Sources of methods and data: <a class="cyt" href="#ref-10_2307_2981088">Clark (1951)</a>.</p></div><div aria-labelledby="lups4-t-wynik" class="tab wynik" id="lups4-p-wynik" role="tabpanel"><p>Across the nine grid shifts, the Gini coefficient changed by no more than 0.012, and parameter b decreased with each of the four methods. The direction of change of concentration and gradient does not depend on these choices.</p></div>
 </div>
 </article>
+
+<div class="atlas-wstep" id="atlas">
+<h3>Supplementary figures from the project notebook</h3>
+<p class="intro">25 working figures (A1–A25) that are not in the manuscripts. The figures come from the notebook export and show the same map series from other angles: directions, distances, patch shape and the link with population. Bydgoszcz is on the left and Toruń on the right. Some figures cover the period from 1985, in which growth in the first five years is overstated (first-epoch artefact), which is why the dynamics indicators on this page are computed from 1990.</p>
+</div>
+<h3 class="grupa">Directions and fronts of expansion</h3>
+<article class="fig rob" id="at1">
+  <div class="fig-img"><a class="lb" href="../assets/galeria/h3_zegar_ekspansji.jpg" data-cap="A1. Expansion clock: mean year in which built-up land appeared in sector × ring cells (polar chart), both cities"><img loading="lazy" width="2200" height="963" src="../assets/galeria/h3_zegar_ekspansji.jpg" alt="A1: Expansion clock: mean year in which built-up land appeared in sector × ring cells (polar chart), both cities"></a></div>
+  <div class="fig-txt"><p class="fig-nr">A1</p><h3>Expansion clock</h3><p>Expansion clock: mean year in which built-up land appeared in sector × ring cells (polar chart), both cities.</p></div>
+</article>
+<article class="fig rob" id="at2">
+  <div class="fig-img"><a class="lb" href="../assets/galeria/h4_odcisk_palca.jpg" data-cap="A2. Expansion fingerprint: new built-up land in 16 sectors and 8 five-year periods (heat map), both cities"><img loading="lazy" width="2200" height="1141" src="../assets/galeria/h4_odcisk_palca.jpg" alt="A2: Expansion fingerprint: new built-up land in 16 sectors and 8 five-year periods (heat map), both cities"></a></div>
+  <div class="fig-txt"><p class="fig-nr">A2</p><h3>Expansion fingerprint</h3><p>Expansion fingerprint: new built-up land in 16 sectors and 8 five-year periods (heat map), both cities.</p></div>
+</article>
+<article class="fig rob" id="at3">
+  <div class="fig-img"><a class="lb" href="../assets/galeria/g4_roze_dekady_oba_miasta.jpg" data-cap="A3. Directional roses for both cities by decade, common scale"><img loading="lazy" width="2200" height="1269" src="../assets/galeria/g4_roze_dekady_oba_miasta.jpg" alt="A3: Directional roses for both cities by decade, common scale"></a></div>
+  <div class="fig-txt"><p class="fig-nr">A3</p><h3>Directional roses by decade</h3><p>Directional roses for both cities by decade, common scale.</p></div>
+</article>
+<article class="fig rob" id="at4">
+  <div class="fig-img"><a class="lb" href="../assets/galeria/h6_roza_na_mapie_oba_miasta.jpg" data-cap="A4. Rose on the map: azimuthal sectors coloured by the amount of growth 1985–2025 over an orthophoto (frame), both cities"><img loading="lazy" width="2200" height="1114" src="../assets/galeria/h6_roza_na_mapie_oba_miasta.jpg" alt="A4: Rose on the map: azimuthal sectors coloured by the amount of growth 1985–2025 over an orthophoto (frame), both cities"></a></div>
+  <div class="fig-txt"><p class="fig-nr">A4</p><h3>Directional rose on the map</h3><p>Rose on the map: azimuthal sectors coloured by the amount of growth 1985–2025 over an orthophoto (frame), both cities.</p></div>
+</article>
+<article class="fig rob" id="at5">
+  <div class="fig-img"><a class="lb" href="../assets/galeria/j9_oba_miasta_izochrony_ekspansji.jpg" data-cap="A5. Built-up envelopes by epoch: outlines of the largest patch after a 300 m closing in the epochs 1985–2025 over an orthophoto (frame), both cities"><img loading="lazy" width="2200" height="1264" src="../assets/galeria/j9_oba_miasta_izochrony_ekspansji.jpg" alt="A5: Built-up envelopes by epoch: outlines of the largest patch after a 300 m closing in the epochs 1985–2025 over an orthophoto (frame), both cities"></a></div>
+  <div class="fig-txt"><p class="fig-nr">A5</p><h3>Built-up envelopes by epoch</h3><p>Built-up envelopes by epoch: outlines of the largest patch after a 300 m closing in the epochs 1985–2025 over an orthophoto (frame), both cities.</p></div>
+</article>
+<h3 class="grupa">Distance from the centre and density gradient</h3>
+<article class="fig rob" id="at6">
+  <div class="fig-img"><a class="lb" href="../assets/galeria/h1_hovmoller_odleglosc_czas.jpg" data-cap="A6. Hovmöller diagram: built-up share as a function of distance from the centroid and time (suburbanisation wave), both cities"><img loading="lazy" width="2200" height="1054" src="../assets/galeria/h1_hovmoller_odleglosc_czas.jpg" alt="A6: Hovmöller diagram: built-up share as a function of distance from the centroid and time (suburbanisation wave), both cities"></a></div>
+  <div class="fig-txt"><p class="fig-nr">A6</p><h3>Hovmöller diagram: distance and time</h3><p>Hovmöller diagram: built-up share as a function of distance from the centroid and time (suburbanisation wave), both cities.</p></div>
+</article>
+<article class="fig rob" id="at7">
+  <div class="fig-img"><a class="lb" href="../assets/galeria/h2_profile_gradientowe.jpg" data-cap="A7. Gradient profiles: built-up share in 500 m rings in successive epochs, both cities"><img loading="lazy" width="2200" height="975" src="../assets/galeria/h2_profile_gradientowe.jpg" alt="A7: Gradient profiles: built-up share in 500 m rings in successive epochs, both cities"></a></div>
+  <div class="fig-txt"><p class="fig-nr">A7</p><h3>Gradient profiles</h3><p>Gradient profiles: built-up share in 500 m rings in successive epochs, both cities.</p></div>
+</article>
+<article class="fig rob" id="at8">
+  <div class="fig-img"><a class="lb" href="../assets/galeria/j13_oba_miasta_ridgeline_odleglosci.jpg" data-cap="A8. Distributions of the distance of new built-up land from the centroid by five-year period (ridgeline plot), both cities"><img loading="lazy" width="2200" height="1194" src="../assets/galeria/j13_oba_miasta_ridgeline_odleglosci.jpg" alt="A8: Distributions of the distance of new built-up land from the centroid by five-year period (ridgeline plot), both cities"></a></div>
+  <div class="fig-txt"><p class="fig-nr">A8</p><h3>Distance of new built-up land from the centre</h3><p>Distributions of the distance of new built-up land from the centroid by five-year period (ridgeline plot), both cities.</p></div>
+</article>
+<article class="fig rob" id="at9">
+  <div class="fig-img"><a class="lb" href="../assets/galeria/k3_gradient_clarka_oba_miasta.jpg" data-cap="A9. Clark&#x27;s built-up density gradient D(r) = D0·exp(−b·r) by epoch: fits and trajectories of the parameters b and D0 with 95% CI"><img loading="lazy" width="2200" height="865" src="../assets/galeria/k3_gradient_clarka_oba_miasta.jpg" alt="A9: Clark&#x27;s built-up density gradient D(r) = D0·exp(−b·r) by epoch: fits and trajectories of the parameters b and D0 with 95% CI"></a></div>
+  <div class="fig-txt"><p class="fig-nr">A9</p><h3>Clark&#x27;s density gradient</h3><p>Clark&#x27;s built-up density gradient D(r) = D0·exp(−b·r) by epoch: fits and trajectories of the parameters b and D0 with 95% CI.</p></div>
+</article>
+<h3 class="grupa">Where built-up land was added</h3>
+<article class="fig rob" id="at10">
+  <div class="fig-img"><a class="lb" href="../assets/galeria/g3b_dynamika_1985_2025_oba_miasta.jpg" data-cap="A10. Dynamics maps: total new built-up land 1985–2025 on a 1 km grid"><img loading="lazy" width="2200" height="937" src="../assets/galeria/g3b_dynamika_1985_2025_oba_miasta.jpg" alt="A10: Dynamics maps: total new built-up land 1985–2025 on a 1 km grid"></a></div>
+  <div class="fig-txt"><p class="fig-nr">A10</p><h3>Total new built-up land on a 1 km grid</h3><p>Dynamics maps: total new built-up land 1985–2025 on a 1 km grid.</p></div>
+</article>
+<article class="fig rob" id="at11">
+  <div class="fig-img"><a class="lb" href="../assets/galeria/j14_oba_miasta_hexbin_nowej_zabudowy.jpg" data-cap="A11. Hexagonal map of new built-up land 1985–2025 (diameter approx. 1 km), both cities, common scale"><img loading="lazy" width="2200" height="1109" src="../assets/galeria/j14_oba_miasta_hexbin_nowej_zabudowy.jpg" alt="A11: Hexagonal map of new built-up land 1985–2025 (diameter approx. 1 km), both cities, common scale"></a></div>
+  <div class="fig-txt"><p class="fig-nr">A11</p><h3>New built-up land on a hexagonal grid</h3><p>Hexagonal map of new built-up land 1985–2025 (diameter approx. 1 km), both cities, common scale.</p></div>
+</article>
+<article class="fig rob" id="at12">
+  <div class="fig-img"><a class="lb" href="../assets/galeria/j6_oba_miasta_hot_spoty_gi.jpg" data-cap="A12. Getis-Ord Gi* hot spots and cold spots of new built-up density on a 1 km grid for the whole period and its halves; outline: significant after a 5% FDR correction"><img loading="lazy" width="2200" height="1684" src="../assets/galeria/j6_oba_miasta_hot_spoty_gi.jpg" alt="A12: Getis-Ord Gi* hot spots and cold spots of new built-up density on a 1 km grid for the whole period and its halves; outline: significant after a 5% FDR correction"></a></div>
+  <div class="fig-txt"><p class="fig-nr">A12</p><h3>Hot spots and cold spots of growth</h3><p>Getis-Ord Gi* hot spots and cold spots of new built-up density on a 1 km grid for the whole period and its halves; outline: significant after a 5% FDR correction.</p></div>
+</article>
+<article class="fig rob" id="at13">
+  <div class="fig-img"><a class="lb" href="../assets/galeria/j10_oba_miasta_mapa_dwuzmienna.jpg" data-cap="A13. Bivariate 1 km map: built-up share in 2025 × new built-up land 1985–2025 (common terciles), both cities"><img loading="lazy" width="2200" height="1011" src="../assets/galeria/j10_oba_miasta_mapa_dwuzmienna.jpg" alt="A13: Bivariate 1 km map: built-up share in 2025 × new built-up land 1985–2025 (common terciles), both cities"></a></div>
+  <div class="fig-txt"><p class="fig-nr">A13</p><h3>Bivariate map: share and growth</h3><p>Bivariate 1 km map: built-up share in 2025 × new built-up land 1985–2025 (common terciles), both cities.</p></div>
+</article>
+<h3 class="grupa">Shape and compactness of built-up land</h3>
+<article class="fig rob" id="at14">
+  <div class="fig-img"><a class="lb" href="../assets/galeria/j5_oba_miasta_morfotypy_gestosci.jpg" data-cap="A14. Built-up density morphotypes (built-up share in a 330 m window: compact, moderately compact, dispersed, isolated) in three epochs"><img loading="lazy" width="2200" height="1648" src="../assets/galeria/j5_oba_miasta_morfotypy_gestosci.jpg" alt="A14: Built-up density morphotypes (built-up share in a 330 m window: compact, moderately compact, dispersed, isolated) in three epochs"></a></div>
+  <div class="fig-txt"><p class="fig-nr">A14</p><h3>Built-up density morphotypes</h3><p>Built-up density morphotypes (built-up share in a 330 m window: compact, moderately compact, dispersed, isolated) in three epochs.</p></div>
+</article>
+<article class="fig rob" id="at15">
+  <div class="fig-img"><a class="lb" href="../assets/galeria/j5b_oba_miasta_morfotypy_udzialy.jpg" data-cap="A15. Shares of built-up density morphotypes in the epochs 1985–2025 (stacked area chart)"><img loading="lazy" width="2200" height="898" src="../assets/galeria/j5b_oba_miasta_morfotypy_udzialy.jpg" alt="A15: Shares of built-up density morphotypes in the epochs 1985–2025 (stacked area chart)"></a></div>
+  <div class="fig-txt"><p class="fig-nr">A15</p><h3>Shares of density morphotypes</h3><p>Shares of built-up density morphotypes in the epochs 1985–2025 (stacked area chart).</p></div>
+</article>
+<article class="fig rob" id="at16">
+  <div class="fig-img"><a class="lb" href="../assets/galeria/j12_oba_miasta_diagram_fazowy_platow.jpg" data-cap="A16. Phase diagram of fragmentation: number of patches versus mean patch size by epoch, both cities"><img loading="lazy" width="2200" height="1360" src="../assets/galeria/j12_oba_miasta_diagram_fazowy_platow.jpg" alt="A16: Phase diagram of fragmentation: number of patches versus mean patch size by epoch, both cities"></a></div>
+  <div class="fig-txt"><p class="fig-nr">A16</p><h3>Phase diagram of fragmentation</h3><p>Phase diagram of fragmentation: number of patches versus mean patch size by epoch, both cities.</p></div>
+</article>
+<article class="fig rob" id="at17">
+  <div class="fig-img"><a class="lb" href="../assets/galeria/k5_wymiar_fraktalny_oba_miasta.jpg" data-cap="A17. Fractal dimension of built-up land (box-counting method) in the epochs 1985–2025 with a log-log fit"><img loading="lazy" width="2200" height="974" src="../assets/galeria/k5_wymiar_fraktalny_oba_miasta.jpg" alt="A17: Fractal dimension of built-up land (box-counting method) in the epochs 1985–2025 with a log-log fit"></a></div>
+  <div class="fig-txt"><p class="fig-nr">A17</p><h3>Fractal dimension of built-up land</h3><p>Fractal dimension of built-up land (box-counting method) in the epochs 1985–2025 with a log-log fit.</p></div>
+</article>
+<article class="fig rob" id="at18">
+  <div class="fig-img"><a class="lb" href="../assets/galeria/j11_oba_miasta_lorenz_gini.jpg" data-cap="A18. Lorenz curves of the distribution of built-up land among 1 km squares and the trajectory of the Gini coefficient, both cities"><img loading="lazy" width="2200" height="842" src="../assets/galeria/j11_oba_miasta_lorenz_gini.jpg" alt="A18: Lorenz curves of the distribution of built-up land among 1 km squares and the trajectory of the Gini coefficient, both cities"></a></div>
+  <div class="fig-txt"><p class="fig-nr">A18</p><h3>Lorenz curves and the Gini coefficient</h3><p>Lorenz curves of the distribution of built-up land among 1 km squares and the trajectory of the Gini coefficient, both cities.</p></div>
+</article>
+<article class="fig rob" id="at19">
+  <div class="fig-img"><a class="lb" href="../assets/galeria/n4_kohorty_leapfrog_obudowanie.jpg" data-cap="A19. Share of leapfrog pixels enclosed after 5–20 years, by five-year cohort (rules ≥ 4 and ≥ 6 of 8)"><img loading="lazy" width="2200" height="1055" src="../assets/galeria/n4_kohorty_leapfrog_obudowanie.jpg" alt="A19: Share of leapfrog pixels enclosed after 5–20 years, by five-year cohort (rules ≥ 4 and ≥ 6 of 8)"></a></div>
+  <div class="fig-txt"><p class="fig-nr">A19</p><h3>What happens to leapfrog pixels over time</h3><p>Share of leapfrog pixels enclosed after 5–20 years, by five-year cohort (rules ≥ 4 and ≥ 6 of 8).</p></div>
+</article>
+<h3 class="grupa">Land cover, population and indicators</h3>
+<article class="fig rob" id="at20">
+  <div class="fig-img"><a class="lb" href="../assets/galeria/j2_oba_miasta_przeplywy_klas.jpg" data-cap="A20. Flow diagram between four land cover classes 1985→2025 (band width proportional to area)"><img loading="lazy" width="2200" height="1194" src="../assets/galeria/j2_oba_miasta_przeplywy_klas.jpg" alt="A20: Flow diagram between four land cover classes 1985→2025 (band width proportional to area)"></a></div>
+  <div class="fig-txt"><p class="fig-nr">A20</p><h3>Flows between land cover classes</h3><p>Flow diagram between four land cover classes 1985→2025 (band width proportional to area).</p></div>
+</article>
+<article class="fig rob" id="at21">
+  <div class="fig-img"><a class="lb" href="../assets/galeria/i2_udzialy_klas_oba_miasta.jpg" data-cap="A21. Shares of the 4 land cover classes in the AOI over time, both cities"><img loading="lazy" width="2200" height="1003" src="../assets/galeria/i2_udzialy_klas_oba_miasta.jpg" alt="A21: Shares of the 4 land cover classes in the AOI over time, both cities"></a></div>
+  <div class="fig-txt"><p class="fig-nr">A21</p><h3>Shares of four classes over time</h3><p>Shares of the 4 land cover classes in the AOI over time, both cities.</p></div>
+</article>
+<article class="fig rob" id="at22">
+  <div class="fig-img"><a class="lb" href="../assets/galeria/j8_oba_miasta_zabudowa_na_mieszkanca.jpg" data-cap="A22. Built-up land per inhabitant of the zone [m²/person] in epochs with population data (GUS BDL)"><img loading="lazy" width="2200" height="896" src="../assets/galeria/j8_oba_miasta_zabudowa_na_mieszkanca.jpg" alt="A22: Built-up land per inhabitant of the zone [m²/person] in epochs with population data (GUS BDL)"></a></div>
+  <div class="fig-txt"><p class="fig-nr">A22</p><h3>Built-up land per inhabitant</h3><p>Built-up land per inhabitant of the zone [m²/person] in epochs with population data (GUS BDL).</p></div>
+</article>
+<article class="fig rob" id="at23">
+  <div class="fig-img"><a class="lb" href="../assets/galeria/j15_oba_miasta_karta_wskaznikow.jpg" data-cap="A23. Sprawl indicator card for both cities (radar chart)"><img loading="lazy" width="2200" height="2053" src="../assets/galeria/j15_oba_miasta_karta_wskaznikow.jpg" alt="A23: Sprawl indicator card for both cities (radar chart)"></a></div>
+  <div class="fig-txt"><p class="fig-nr">A23</p><h3>Sprawl indicator card</h3><p>Sprawl indicator card for both cities (radar chart).</p></div>
+</article>
+<h3 class="grupa">Barriers and validation</h3>
+<article class="fig rob" id="at24">
+  <div class="fig-img"><a class="lb" href="../assets/galeria/g5_bariery_oba_miasta.jpg" data-cap="A24. Barriers in both cities (a separate colour for each barrier, line style by restriction class) over built-up land of 1985 and new built-up land 1985–2025, and the built-up share in the 500 m ring"><img loading="lazy" width="2200" height="1712" src="../assets/galeria/g5_bariery_oba_miasta.jpg" alt="A24: Barriers in both cities (a separate colour for each barrier, line style by restriction class) over built-up land of 1985 and new built-up land 1985–2025, and the built-up share in the 500 m ring"></a></div>
+  <div class="fig-txt"><p class="fig-nr">A24</p><h3>Barriers to built-up growth</h3><p>Barriers in both cities (a separate colour for each barrier, line style by restriction class) over built-up land of 1985 and new built-up land 1985–2025, and the built-up share in the 500 m ring.</p></div>
+</article>
+<article class="fig rob" id="at25">
+  <div class="fig-img"><a class="lb" href="../assets/galeria/e12_walidacja_f1_oba_miasta.jpg" data-cap="A25. F1 of the built-up class of the RF/Landsat, RF/Sentinel-2 and Dynamic World maps against independent sources"><img loading="lazy" width="2200" height="725" src="../assets/galeria/e12_walidacja_f1_oba_miasta.jpg" alt="A25: F1 of the built-up class of the RF/Landsat, RF/Sentinel-2 and Dynamic World maps against independent sources"></a></div>
+  <div class="fig-txt"><p class="fig-nr">A25</p><h3>Agreement of maps with independent sources</h3><p>F1 of the built-up class of the RF/Landsat, RF/Sentinel-2 and Dynamic World maps against independent sources.</p></div>
+</article>
 </div></section>
+<section class="final-cta" aria-label="Make a map series like this for your own town"><div class="wrap">
+<div><h2>Make a map series like this for your own town</h2><p>Land Cover Rewind runs on your computer, on open Landsat data, with no Google account.</p></div>
+<a class="btn-main" href="https://doi.org/10.5281/zenodo.24332551" target="_blank" rel="noopener">Download the app (ZIP)</a>
+</div></section>
+
 <section id="dane"><div class="wrap">
 <h2>Data, code and citation</h2>
 <div class="cols">
 <div class="box"><h3>Repositories</h3>
 <p><b>Notebook code, result tables, model cards:</b> <a class="cyt" href="#ref-gorniak_kod">Górniak and Kunz (2026a)</a>, <a href="https://doi.org/10.5281/zenodo.24076776">https://doi.org/10.5281/zenodo.24076776</a> (MIT licence; data CC BY 4.0).</p>
 <p><b>GeoTIFF rasters of the built-up series and land cover maps:</b> <a class="cyt" href="#ref-gorniak_dane">Górniak and Kunz (2026b)</a>, <a href="https://doi.org/10.5281/zenodo.24155226">https://doi.org/10.5281/zenodo.24155226</a> (CC BY 4.0).</p>
-<p><b>Land Cover Rewind 1985–2025 app:</b> Zenodo record <a href="https://doi.org/10.5281/zenodo.24332551">https://doi.org/10.5281/zenodo.24332551</a> (DOI that always resolves to the latest version; version 1.4.0 with the accuracy module and error-adjusted area estimation: <a href="https://doi.org/10.5281/zenodo.24403903">https://doi.org/10.5281/zenodo.24403903</a>; code MIT; models CC BY 4.0).</p>
+<p><b>Land Cover Rewind app:</b> Zenodo record <a href="https://doi.org/10.5281/zenodo.24332551">https://doi.org/10.5281/zenodo.24332551</a> (DOI that always resolves to the latest version; version 1.4.0 with the accuracy module and error-adjusted area estimation: <a href="https://doi.org/10.5281/zenodo.24403903">https://doi.org/10.5281/zenodo.24403903</a>; code MIT; models CC BY 4.0).</p>
 <p><b>GitHub repository:</b> <a href="https://github.com/gorniakgrzegorz/urban-sprawl-tor-byd-random-forest">gorniakgrzegorz/urban-sprawl-tor-byd-random-forest</a>; releases are archived in Zenodo automatically.</p></div>
 <div class="box"><h3>Input data</h3>
 <table class="src"><tr><th>Data</th><th>Role</th></tr>
@@ -643,14 +898,14 @@ docker build -t landcoverrewind . &amp;&amp; docker run -p 8501:8501 landcoverre
 </div></section>
 <section id="bibliografia" class="alt"><div class="wrap">
 <h2>References<small>100 pozycji: literatura projektu, opisów rycin i aplikacji; styl Elsevier (author-date, Harvard); każdy identyfikator DOI zweryfikowany w Crossref, DataCite i scite (17 listopada 2026 r.)</small></h2>
-<label for="szukaj" style="display:block;font-size:14px;color:var(--muted)">Search the references</label><input id="szukaj" placeholder="autor, rok, tytuł…">
+<details class="zwin" id="bibd"><summary>Show the references (100 items)</summary><div class="srodek"><label for="szukaj" style="display:block;font-size:14px;color:var(--muted)">Search the references</label><input id="szukaj" placeholder="autor, rok, tytuł…">
 <ol class="bib" id="bib">
 <li id="ref-10_1177_0956247811433536">Angel, S., Parent, J., Civco, D.L., 2012. The fragmentation of urban landscapes: global evidence of a key attribute of the spatial structure of cities, 1990–2000. Environment and Urbanization 24, 249–283. <a href="https://doi.org/10.1177/0956247811433536" target="_blank" rel="noopener">https://doi.org/10.1177/0956247811433536</a> </li>
 <li id="ref-10_1016_j_progress_2011_04_001">Angel, S., Parent, J., Civco, D.L., Blei, A., Potere, D., 2011. The dimensions of global urban expansion: Estimates and projections for all countries, 2000–2050. Progress in Planning 75, 53–107. <a href="https://doi.org/10.1016/j.progress.2011.04.001" target="_blank" rel="noopener">https://doi.org/10.1016/j.progress.2011.04.001</a> </li>
 <li id="ref-10_1016_s0169_2046_03_00026_4">Antrop, M., 2004. Landscape change and the urbanization process in Europe. Landscape and Urban Planning 67, 9–26. <a href="https://doi.org/10.1016/s0169-2046(03)00026-4" target="_blank" rel="noopener">https://doi.org/10.1016/s0169-2046(03)00026-4</a> </li>
 <li id="ref-10_1111_j_2517_6161_1995_tb02031_x">Benjamini, Y., Hochberg, Y., 1995. Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing. Journal of the Royal Statistical Society Series B: Statistical Methodology 57, 289–300. <a href="https://doi.org/10.1111/j.2517-6161.1995.tb02031.x" target="_blank" rel="noopener">https://doi.org/10.1111/j.2517-6161.1995.tb02031.x</a> </li>
 <li id="ref-10_2478_bog_2013_0017">Biegańska, J., Szymańska, D., 2013. The scale and the dynamics of permanent migration in rural and peri-urban areas in Poland – some problems. Bulletin of Geography. Socio-economic Series 21, 21–30. <a href="https://doi.org/10.2478/bog-2013-0017" target="_blank" rel="noopener">https://doi.org/10.2478/bog-2013-0017</a> </li>
-<li id="ref-10_1023_a_1010933404324">Breiman, L., 2001. Random Forests. Machine Learning 45, 5–32. <a href="https://doi.org/10.1023/a:1010933404324" target="_blank" rel="noopener">https://doi.org/10.1023/a:1010933404324</a> <span class="tag t-app">Aplikacja</span></li>
+<li id="ref-10_1023_a_1010933404324">Breiman, L., 2001. Random Forests. Machine Learning 45, 5–32. <a href="https://doi.org/10.1023/a:1010933404324" target="_blank" rel="noopener">https://doi.org/10.1023/a:1010933404324</a> </li>
 <li id="ref-10_1038_s41597_022_01307_4">Brown, C.F., Brumby, S.P., Guzder-Williams, B., Birch, T., Hyde, S.B., Mazzariello, J., Czerwinski, W., Pasquarella, V.J., Haertel, R., Ilyushchenko, S., Schwehr, K., Weisse, M., Stolle, F., Hanson, C., Guinan, O., Moore, R., Tait, A.M., 2022. Dynamic World, Near real-time global 10 m land use land cover mapping. Scientific Data 9, 251. <a href="https://doi.org/10.1038/s41597-022-01307-4" target="_blank" rel="noopener">https://doi.org/10.1038/s41597-022-01307-4</a> </li>
 <li id="ref-10_1007_978_94_007_7969_3_5">Büttner, G., 2014. CORINE Land Cover and Land Cover Change Products, in: Manakos, I., Braun, M. (Eds), Land Use and Land Cover Mapping in Europe: Practices &#38; Trends, Remote Sensing and Digital Image Processing. Springer, Dordrecht, pp. 55–74. <a href="https://doi.org/10.1007/978-94-007-7969-3_5" target="_blank" rel="noopener">https://doi.org/10.1007/978-94-007-7969-3_5</a> </li>
 <li id="ref-10_3390_ijgi8050222">Całka, B., Bielecka, E., 2019. Reliability Analysis of LandScan Gridded Population Data. The Case Study of Poland. ISPRS International Journal of Geo-Information 8, 222. <a href="https://doi.org/10.3390/ijgi8050222" target="_blank" rel="noopener">https://doi.org/10.3390/ijgi8050222</a> </li>
@@ -680,14 +935,14 @@ docker build -t landcoverrewind . &amp;&amp; docker run -p 8501:8501 landcoverre
 <li id="ref-gorniak_dane">Górniak, G., Kunz, M., 2026b. Built-up land in Toruń and Bydgoszcz 1975–2025: Random Forest maps from Landsat and Sentinel-2 trained on Dynamic World (GeoTIFF rasters). Zenodo. <a href="https://doi.org/10.5281/zenodo.24155226" target="_blank" rel="noopener">https://doi.org/10.5281/zenodo.24155226</a> <span class="tag t-own">Dane i kod</span></li>
 <li id="ref-10_1068_a46269">Haase, A., Rink, D., Grossmann, K., Bernt, M., Mykhnenko, V., 2014. Conceptualizing Urban Shrinkage. Environment and Planning A: Economy and Space 46, 1519–1534. <a href="https://doi.org/10.1068/a46269" target="_blank" rel="noopener">https://doi.org/10.1068/a46269</a> </li>
 <li id="ref-10_3390_ijgi15080375">Hamed Seyedbeiglou, S., Rienow, A., Ghaffari Gilandeh, A., 2026. Persistence-Based Analysis of Urban Growth Regimes, Spatial Drivers, and Growth-Pressure Screening: A Case Study of Tehran 2016–2030. ISPRS International Journal of Geo-Information 15, 375. <a href="https://doi.org/10.3390/ijgi15080375" target="_blank" rel="noopener">https://doi.org/10.3390/ijgi15080375</a> </li>
-<li id="ref-10_1109_tsmc_1973_4309314">Haralick, R.M., Shanmugam, K., Dinstein, I., 1973. Textural Features for Image Classification. IEEE Transactions on Systems, Man, and Cybernetics SMC-3, 610–621. <a href="https://doi.org/10.1109/tsmc.1973.4309314" target="_blank" rel="noopener">https://doi.org/10.1109/tsmc.1973.4309314</a> <span class="tag t-app">Aplikacja</span></li>
+<li id="ref-10_1109_tsmc_1973_4309314">Haralick, R.M., Shanmugam, K., Dinstein, I., 1973. Textural Features for Image Classification. IEEE Transactions on Systems, Man, and Cybernetics SMC-3, 610–621. <a href="https://doi.org/10.1109/tsmc.1973.4309314" target="_blank" rel="noopener">https://doi.org/10.1109/tsmc.1973.4309314</a> </li>
 <li id="ref-10_1109_tgrs_2011_2171351">Helder, D.L., Karki, S., Bhatt, R., Micijevic, E., Aaron, D., Jasinski, B., 2012. Radiometric Calibration of the Landsat MSS Sensor Series. IEEE Transactions on Geoscience and Remote Sensing 50, 2380–2399. <a href="https://doi.org/10.1109/tgrs.2011.2171351" target="_blank" rel="noopener">https://doi.org/10.1109/tgrs.2011.2171351</a> </li>
 <li id="ref-10_1016_j_landusepol_2015_08_001">Hennig, E.I., Schwick, C., Soukup, T., Orlitová, E., Kienast, F., Jaeger, J.A.G., 2015. Multi-scale analysis of urban sprawl in Europe: Towards a European de-sprawling strategy. Land Use Policy 49, 483–498. <a href="https://doi.org/10.1016/j.landusepol.2015.08.001" target="_blank" rel="noopener">https://doi.org/10.1016/j.landusepol.2015.08.001</a> </li>
 <li id="ref-10_1016_s0034_4257_03_00075_0">Herold, M., Goldstein, N.C., Clarke, K.C., 2003. The spatiotemporal form of urban growth: measurement, analysis and modeling. Remote Sensing of Environment 86, 286–302. <a href="https://doi.org/10.1016/s0034-4257(03)00075-0" target="_blank" rel="noopener">https://doi.org/10.1016/s0034-4257(03)00075-0</a> </li>
 <li id="ref-10_1073_pnas_0705527105">Irwin, E.G., Bockstael, N.E., 2007. The evolution of urban sprawl: Evidence of spatial heterogeneity and increasing land fragmentation. Proceedings of the National Academy of Sciences 104, 20672–20677. <a href="https://doi.org/10.1073/pnas.0705527105" target="_blank" rel="noopener">https://doi.org/10.1073/pnas.0705527105</a> </li>
 <li id="ref-10_17645_up_10841">Kajdanek, K., 2026. The Reurbanization That Never Was: Governance Challenges in Poland’s Suburbanizing Cities. Urban Planning 11, 10841. <a href="https://doi.org/10.17645/up.10841" target="_blank" rel="noopener">https://doi.org/10.17645/up.10841</a> </li>
 <li id="ref-10_1007_s10994_021_05972_1">Karasiak, N., Dejoux, J.-F., Monteil, C., Sheeren, D., 2022. Spatial dependence between training and test sets: another pitfall of classification accuracy assessment in remote sensing. Machine Learning 111, 2715–2740. <a href="https://doi.org/10.1007/s10994-021-05972-1" target="_blank" rel="noopener">https://doi.org/10.1007/s10994-021-05972-1</a> </li>
-<li id="ref-karra2021">Karra, K., Kontgis, C., Statman-Weil, Z., Mazzariello, J.C., Mathis, M., Brumby, S.P., 2021. Global land use / land cover with Sentinel 2 and deep learning, in: 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS. IEEE, pp. 4704–4707. <a href="https://doi.org/10.1109/igarss47720.2021.9553499" target="_blank" rel="noopener">https://doi.org/10.1109/igarss47720.2021.9553499</a> <span class="tag t-app">Aplikacja</span></li>
+<li id="ref-karra2021">Karra, K., Kontgis, C., Statman-Weil, Z., Mazzariello, J.C., Mathis, M., Brumby, S.P., 2021. Global land use / land cover with Sentinel 2 and deep learning, in: 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS. IEEE, pp. 4704–4707. <a href="https://doi.org/10.1109/igarss47720.2021.9553499" target="_blank" rel="noopener">https://doi.org/10.1109/igarss47720.2021.9553499</a> </li>
 <li id="ref-10_1016_j_landurbplan_2005_02_003">Kasanko, M., Barredo, J.I., Lavalle, C., McCormick, N., Demicheli, L., Sagris, V., Brezger, A., 2006. Are European cities becoming dispersed? Landscape and Urban Planning 77, 111–130. <a href="https://doi.org/10.1016/j.landurbplan.2005.02.003" target="_blank" rel="noopener">https://doi.org/10.1016/j.landurbplan.2005.02.003</a> </li>
 <li id="ref-10_1016_j_cities_2019_01_018">Kowalczyk, C., Kil, J., Kurowska, K., 2019. Dynamics of development of the largest cities - Evidence from Poland. Cities 89, 26–34. <a href="https://doi.org/10.1016/j.cities.2019.01.018" target="_blank" rel="noopener">https://doi.org/10.1016/j.cities.2019.01.018</a> </li>
 <li id="ref-10_1016_j_rse_2018_07_030">Li, X., Zhou, Y., Zhu, Z., Liang, L., Yu, B., Cao, W., 2018. Mapping annual urban dynamics (1985–2015) using time series of Landsat data. Remote Sensing of Environment 216, 674–683. <a href="https://doi.org/10.1016/j.rse.2018.07.030" target="_blank" rel="noopener">https://doi.org/10.1016/j.rse.2018.07.030</a> </li>
@@ -699,7 +954,7 @@ docker build -t landcoverrewind . &amp;&amp; docker run -p 8501:8501 landcoverre
 <li id="ref-10_1007_bf02295996">McNemar, Q., 1947. Note on the Sampling Error of the Difference Between Correlated Proportions or Percentages. Psychometrika 12, 153–157. <a href="https://doi.org/10.1007/bf02295996" target="_blank" rel="noopener">https://doi.org/10.1007/bf02295996</a> </li>
 <li id="ref-10_3390_ijgi8020096">Melchiorri, M., Pesaresi, M., Florczyk, A.J., Corbane, C., Kemper, T., 2019. Principles and Applications of the Global Human Settlement Layer as Baseline for the Land Use Efficiency Indicator—SDG 11.3.1. ISPRS International Journal of Geo-Information 8, 96. <a href="https://doi.org/10.3390/ijgi8020096" target="_blank" rel="noopener">https://doi.org/10.3390/ijgi8020096</a> </li>
 <li id="ref-10_1111_0033_0124_10042">Mennis, J., 2003. Generating Surface Models of Population Using Dasymetric Mapping. The Professional Geographer 55, 31–42. <a href="https://doi.org/10.1111/0033-0124.10042" target="_blank" rel="noopener">https://doi.org/10.1111/0033-0124.10042</a> </li>
-<li id="ref-mspc2022">Microsoft Open Source, McFarland, M., Emanuele, R., Morris, D., Augspurger, T., 2022. microsoft/PlanetaryComputer: October 2022. Zenodo. <a href="https://doi.org/10.5281/zenodo.7261897" target="_blank" rel="noopener">https://doi.org/10.5281/zenodo.7261897</a> <span class="tag t-app">Aplikacja</span></li>
+<li id="ref-mspc2022">Microsoft Open Source, McFarland, M., Emanuele, R., Morris, D., Augspurger, T., 2022. microsoft/PlanetaryComputer: October 2022. Zenodo. <a href="https://doi.org/10.5281/zenodo.7261897" target="_blank" rel="noopener">https://doi.org/10.5281/zenodo.7261897</a> </li>
 <li id="ref-10_1016_j_patcog_2011_06_019">Moreno-Torres, J.G., Raeder, T., Alaiz-Rodríguez, R., Chawla, N.V., Herrera, F., 2012. A unifying view on dataset shift in classification. Pattern Recognition 45, 521–530. <a href="https://doi.org/10.1016/j.patcog.2011.06.019" target="_blank" rel="noopener">https://doi.org/10.1016/j.patcog.2011.06.019</a> </li>
 <li id="ref-10_3390_ijgi8010010">Nicolau, R., David, J., Caetano, M., Pereira, J., 2019. Ratio of Land Consumption Rate to Population Growth Rate—Analysis of Different Formulations Applied to Mainland Portugal. ISPRS International Journal of Geo-Information 8, 10. <a href="https://doi.org/10.3390/ijgi8010010" target="_blank" rel="noopener">https://doi.org/10.3390/ijgi8010010</a> </li>
 <li id="ref-10_1787_4bc1c502_en">OECD, European Commission, FAO, UN-Habitat, ILO, World Bank, 2021. Applying the Degree of Urbanisation: A Methodological Manual to Define Cities, Towns and Rural Areas for International Comparisons, OECD Regional Development Studies. OECD Publishing, Paris. <a href="https://doi.org/10.1787/4bc1c502-en" target="_blank" rel="noopener">https://doi.org/10.1787/4bc1c502-en</a> </li>
@@ -707,12 +962,12 @@ docker build -t landcoverrewind . &amp;&amp; docker run -p 8501:8501 landcoverre
 <li id="ref-10_1016_j_rse_2014_02_015">Olofsson, P., Foody, G.M., Herold, M., Stehman, S.V., Woodcock, C.E., Wulder, M.A., 2014. Good practices for estimating area and assessing accuracy of land change. Remote Sensing of Environment 148, 42–57. <a href="https://doi.org/10.1016/j.rse.2014.02.015" target="_blank" rel="noopener">https://doi.org/10.1016/j.rse.2014.02.015</a> </li>
 <li id="ref-10_1177_0042098015577773">Oueslati, W., Alvanides, S., Garrod, G., 2015. Determinants of urban sprawl in European cities. Urban Studies 52, 1594–1614. <a href="https://doi.org/10.1177/0042098015577773" target="_blank" rel="noopener">https://doi.org/10.1177/0042098015577773</a> </li>
 <li id="ref-10_1109_cvprw59228_2023_00206">Pasquarella, V.J., Brown, C.F., Czerwinski, W., Rucklidge, W.J., 2023. Comprehensive quality assessment of optical satellite imagery using weakly supervised video learning, in: 2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW). IEEE, pp. 2125–2135. <a href="https://doi.org/10.1109/cvprw59228.2023.00206" target="_blank" rel="noopener">https://doi.org/10.1109/cvprw59228.2023.00206</a> </li>
-<li id="ref-pedregosa2011">Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J., Passos, A., Cournapeau, D., Brucher, M., Perrot, M., Duchesnay, É., 2011. Scikit-learn: machine learning in Python. Journal of Machine Learning Research 12, 2825–2830. URL <a href="https://jmlr.org/papers/v12/pedregosa11a.html" target="_blank" rel="noopener">https://jmlr.org/papers/v12/pedregosa11a.html</a>. <span class="tag t-app">Aplikacja</span></li>
+<li id="ref-pedregosa2011">Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J., Passos, A., Cournapeau, D., Brucher, M., Perrot, M., Duchesnay, É., 2011. Scikit-learn: machine learning in Python. Journal of Machine Learning Research 12, 2825–2830. URL <a href="https://jmlr.org/papers/v12/pedregosa11a.html" target="_blank" rel="noopener">https://jmlr.org/papers/v12/pedregosa11a.html</a>. </li>
 <li id="ref-10_3390_rs9020173">Pelletier, C., Valero, S., Inglada, J., Champion, N., Marais Sicre, C., Dedieu, G., 2017. Effect of Training Class Label Noise on Classification Performances for Land Cover Mapping with Satellite Image Time Series. Remote Sensing 9, 173. <a href="https://doi.org/10.3390/rs9020173" target="_blank" rel="noopener">https://doi.org/10.3390/rs9020173</a> </li>
 <li id="ref-10_1038_s41467_020_18321_y">Ploton, P., Mortier, F., Réjou-Méchain, M., Barbier, N., Picard, N., Rossi, V., Dormann, C., Cornu, G., Viennois, G., Bayol, N., Lyapustin, A., Gourlet-Fleury, S., Pélissier, R., 2020. Spatial validation reveals poor predictive performance of large-scale ecological mapping models. Nature Communications 11, 4540. <a href="https://doi.org/10.1038/s41467-020-18321-y" target="_blank" rel="noopener">https://doi.org/10.1038/s41467-020-18321-y</a> </li>
 <li id="ref-10_1111_ecog_02881">Roberts, D.R., Bahn, V., Ciuti, S., Boyce, M.S., Elith, J., Guillera‐Arroita, G., Hauenstein, S., Lahoz‐Monfort, J.J., Schröder, B., Thuiller, W., Warton, D.I., Wintle, B.A., Hartig, F., Dormann, C.F., 2017. Cross‐validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure. Ecography 40, 913–929. <a href="https://doi.org/10.1111/ecog.02881" target="_blank" rel="noopener">https://doi.org/10.1111/ecog.02881</a> </li>
 <li id="ref-10_1109_jstars_2021_3063849">Robinson, C., Malkin, K., Jojic, N., Chen, H., Qin, R., Xiao, C., Schmitt, M., Ghamisi, P., Hänsch, R., Yokoya, N., 2021. Global Land-Cover Mapping With Weak Supervision: Outcome of the 2020 IEEE GRSS Data Fusion Contest. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing 14, 3185–3199. <a href="https://doi.org/10.1109/jstars.2021.3063849" target="_blank" rel="noopener">https://doi.org/10.1109/jstars.2021.3063849</a> </li>
-<li id="ref-10_1016_j_rse_2015_12_024">Roy, D.P., Kovalskyy, V., Zhang, H.K., Vermote, E.F., Yan, L., Kumar, S.S., Egorov, A., 2016. Characterization of Landsat-7 to Landsat-8 reflective wavelength and normalized difference vegetation index continuity. Remote Sensing of Environment 185, 57–70. <a href="https://doi.org/10.1016/j.rse.2015.12.024" target="_blank" rel="noopener">https://doi.org/10.1016/j.rse.2015.12.024</a> <span class="tag t-app">Aplikacja</span></li>
+<li id="ref-10_1016_j_rse_2015_12_024">Roy, D.P., Kovalskyy, V., Zhang, H.K., Vermote, E.F., Yan, L., Kumar, S.S., Egorov, A., 2016. Characterization of Landsat-7 to Landsat-8 reflective wavelength and normalized difference vegetation index continuity. Remote Sensing of Environment 185, 57–70. <a href="https://doi.org/10.1016/j.rse.2015.12.024" target="_blank" rel="noopener">https://doi.org/10.1016/j.rse.2015.12.024</a> </li>
 <li id="ref-10_1068_b120059p">Salvati, L., Carlucci, M., 2015. Land-use structure, urban growth, and periurban landscape: a multivariate classification of the European cities. Environment and Planning B: Planning and Design 42, 801–829. <a href="https://doi.org/10.1068/b120059p" target="_blank" rel="noopener">https://doi.org/10.1068/b120059p</a> </li>
 <li id="ref-10_3390_su11205674">Schiavina, M., Melchiorri, M., Corbane, C., Florczyk, A., Freire, S., Pesaresi, M., Kemper, T., 2019. Multi-Scale Estimation of Land Use Efficiency (SDG 11.3.1) across 25 Years Using Global Open and Free Data. Sustainability 11, 5674. <a href="https://doi.org/10.3390/su11205674" target="_blank" rel="noopener">https://doi.org/10.3390/su11205674</a> </li>
 <li id="ref-10_1177_0042098007087340">Schneider, A., Woodcock, C.E., 2008. Compact, Dispersed, Fragmented, Extensive? A Comparison of Urban Growth in Twenty-five Global Cities using Remotely Sensed Data, Pattern Metrics and Census Information. Urban Studies 45, 659–692. <a href="https://doi.org/10.1177/0042098007087340" target="_blank" rel="noopener">https://doi.org/10.1177/0042098007087340</a> </li>
@@ -745,13 +1000,15 @@ docker build -t landcoverrewind . &amp;&amp; docker run -p 8501:8501 landcoverre
 <li id="ref-10_1080_01431160304987">Zha, Y., Gao, J., Ni, S., 2003. Use of normalized difference built-up index in automatically mapping urban areas from TM imagery. International Journal of Remote Sensing 24, 583–594. <a href="https://doi.org/10.1080/01431160304987" target="_blank" rel="noopener">https://doi.org/10.1080/01431160304987</a> </li>
 <li id="ref-10_5194_essd_13_2753_2021">Zhang, X., Liu, L., Chen, X., Gao, Y., Xie, S., Mi, J., 2021. GLC_FCS30: global land-cover product with fine classification system at 30 m using time-series Landsat imagery. Earth System Science Data 13, 2753–2776. <a href="https://doi.org/10.5194/essd-13-2753-2021" target="_blank" rel="noopener">https://doi.org/10.5194/essd-13-2753-2021</a> </li>
 <li id="ref-10_5194_essd_14_1831_2022">Zhang, X., Liu, L., Zhao, T., Gao, Y., Chen, X., Mi, J., 2022. GISD30: global 30 m impervious-surface dynamic dataset from 1985 to 2020 using time-series Landsat imagery on the Google Earth Engine platform. Earth System Science Data 14, 1831–1856. <a href="https://doi.org/10.5194/essd-14-1831-2022" target="_blank" rel="noopener">https://doi.org/10.5194/essd-14-1831-2022</a> </li>
-</ol>
+</ol></div></details>
 </div></section>
-<footer><div class="wrap">
-<p>© 2026 <a href="mailto:ggorniak@doktorant.umk.pl" title="Write to the author">Grzegorz Górniak</a>, Mieczysław Kunz · Nicolaus Copernicus University in Toruń · page texts CC BY 4.0, code MIT; figures in their pre-review version (© the authors).</p>
+</main>
+
+<footer><div class="wrap stopka"><div><img class="logo" loading="lazy" src="../assets/logo_kgits_umk.svg" width="866" height="392" alt="Nicolaus Copernicus University in Toruń, Department of Geoinformation and Environmental Remote Sensing"></div><div>
+<p>© 2026 <a href="mailto:ggorniak@doktorant.umk.pl" title="Write to the author">Grzegorz Górniak</a><sup class="orcid"><a href="https://orcid.org/0009-0009-9248-8018" target="_blank" rel="noopener" title="ORCID: 0009-0009-9248-8018" aria-label="ORCID Grzegorz Górniak: 0009-0009-9248-8018"><img src="../assets/orcid.png" width="14" height="14" alt="" loading="lazy"></a></sup>, Mieczysław Kunz<sup class="orcid"><a href="https://orcid.org/0000-0002-3334-5238" target="_blank" rel="noopener" title="ORCID: 0000-0002-3334-5238" aria-label="ORCID Mieczysław Kunz: 0000-0002-3334-5238"><img src="../assets/orcid.png" width="14" height="14" alt="" loading="lazy"></a></sup> · Nicolaus Copernicus University in Toruń · page texts CC BY 4.0, code MIT; figures in their pre-review version (© the authors).</p>
 <p>Data: Landsat Collection 2 (U.S. Geological Survey); modified Copernicus Sentinel data (2025); Dynamic World V1 (Google, World Resources Institute; CC BY 4.0); Impact Observatory/Esri 10 m Annual LULC (CC BY 4.0); CORINE Land Cover and Urban Atlas (Copernicus Land Monitoring Service, European Environment Agency); WSF Evolution (DLR; CC BY 4.0); 2011 and 2021 census grids (Statistics Poland); State Register of Boundaries (GUGiK); Natural Earth.</p>
 <p>Contact: <a href="mailto:ggorniak@doktorant.umk.pl">ggorniak@doktorant.umk.pl</a></p>
-</div></footer>
+</div></div></footer>
 <div aria-label="Enlarged figure" aria-modal="true" class="lbox" id="lbox" role="dialog"><button aria-label="Close" id="lbclose">×</button><img alt="" id="lbimg"/><p id="lbcap"></p></div>
 <div id="tip"></div>
 <script>
@@ -768,17 +1025,15 @@ document.querySelectorAll('a.lb').forEach(a=>a.onclick=e=>{e.preventDefault();lb
  document.getElementById('lbcap').textContent=a.dataset.cap;lb.style.display='flex';document.getElementById('lbclose').focus();});
 lb.onclick=e=>{if(e.target!==document.getElementById('lbimg'))zamknij();};document.addEventListener('keydown',e=>{if(e.key==='Escape'&&lb.style.display==='flex')zamknij();});
 // film w nagłówku: pauza i ograniczenie ruchu
-const hv=document.getElementById('hvid'),vb=document.getElementById('vctl');
-const ruch=window.matchMedia('(prefers-reduced-motion: reduce)').matches;if(ruch){hv.removeAttribute('autoplay');hv.pause();vb.textContent='▶ play';}
-vb.onclick=()=>{if(hv.paused){hv.play();vb.textContent='❚❚ pause';vb.setAttribute('aria-label','Pause the background animation');}else{hv.pause();vb.textContent='▶ play';vb.setAttribute('aria-label','Play the background animation');}};
+const ruch=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 // odtwarzacz klatek
 const OPIS={built:'Earlier built-up land (dark grey) and new built-up land of the period (red) over a Sentinel-2 summer 2025 composite. Epochs 1975 and 1980 come from the 60 m MSS model restricted to the 1985 built-up extent, epochs 1985–2025 from the 30 m series A. In the first frame all built-up land is red, because it is the initial state. Growth in 1985–1990 is inflated by omissions in the 1985 epoch (the first-epoch artefact).',
  lc:'Maps of the four-class Random Forest model (Landsat 30 m, built-up class from series A) in the analysis zones. Forest area in these maps departs from CORINE by −26.1% to +35.7%, so changes between the non-built classes are not interpreted.',
  forms:'New built-up land of each five-year period by the number of built-up neighbours in a 3 × 3 window in the earlier epoch: infill (at least 4 of 8 neighbours), edge expansion (1–3) and leapfrog (0). To make the forms visible at page scale, the dominant form of new built-up land is shown in 300 m squares (10 × 10 pixels) with at least three new built-up pixels. In 1990–2025, leapfrog made up 18.4% of new built-up land around Toruń and 20.5% around Bydgoszcz.'};
 const NAZWA={built:'Growth of built-up land',lc:'Four land cover classes',forms:'Growth forms'};
-let mode='built',idx=0,timer=null;const fr=document.getElementById('frame'),rng=document.getElementById('rng'),yr=document.getElementById('yr');
+let mode='lc',idx=0,timer=null;const fr=document.getElementById('frame'),rng=document.getElementById('rng'),yr=document.getElementById('yr');
 const zaladowane={};function wstepnie(m){if(zaladowane[m])return;zaladowane[m]=1;KLATKI[m].forEach(f=>{const i=new Image();i.src='../assets/anim/klatki/'+f;});}
-new IntersectionObserver((e,o)=>{if(e[0].isIntersecting){wstepnie(mode);o.disconnect();}}).observe(document.getElementById('animacje'));
+new IntersectionObserver((e,o)=>{if(e[0].isIntersecting){wstepnie(mode);o.disconnect();if(!ruch&&!timer)document.getElementById('play').click();}}).observe(document.getElementById('animacje'));
 function show(){const L=KLATKI[mode];idx=Math.max(0,Math.min(idx,L.length-1));fr.src='../assets/anim/klatki/'+L[idx];
  const y=L[idx].match(/(\d{4})/)[1];const lab=mode==='forms'?(+y-5)+'–'+y:y;yr.textContent=lab;rng.max=L.length-1;rng.value=idx;rng.setAttribute('aria-valuetext',lab);
  fr.alt=NAZWA[mode]+', '+lab+': Toruń (a) and Bydgoszcz (b)';document.getElementById('pdesc').textContent=OPIS[mode];}
@@ -797,10 +1052,10 @@ function draw(){const d=ZAB[city];const mob=window.innerWidth<640;const W=mob?40
  const ys=ser.flatMap(s=>s[1].map(p=>p[1]));const st=view==='ha'?1000:20;const ymax=Math.ceil(Math.max(...ys)*1.08/st)*st;const ymin=view==='ha'?0:Math.floor(Math.min(...ys)/20)*20;
  const X=y=>m.l+(y-1985)/40*(W-m.l-m.r),Y=v=>H-m.b-(v-ymin)/(ymax-ymin)*(H-m.t-m.b);
  const step=view==='ha'?(ymax>6000?2000:1000):(mob?40:20);
- for(let v=ymin;v<=ymax;v+=step){S+=`<line x1="${m.l}" x2="${W-m.r}" y1="${Y(v)}" y2="${Y(v)}" stroke="#e5e8e5"/><text x="${m.l-8}" y="${Y(v)+4}" text-anchor="end" font-size="${fs}" fill="#5a6773">${v.toLocaleString('en-GB')}</text>`;}
- for(let y=1985;y<=2025;y+=(mob?10:5))S+=`<text x="${X(y)}" y="${H-m.b+22}" text-anchor="middle" font-size="${fs}" fill="#5a6773">${y}</text>`;
+ for(let v=ymin;v<=ymax;v+=step){S+=`<line x1="${m.l}" x2="${W-m.r}" y1="${Y(v)}" y2="${Y(v)}" stroke="#e5e8e5"/><text x="${m.l-8}" y="${Y(v)+4}" text-anchor="end" font-size="${fs}" fill="#44546D">${v.toLocaleString('en-GB')}</text>`;}
+ for(let y=1985;y<=2025;y+=(mob?10:5))S+=`<text x="${X(y)}" y="${H-m.b+22}" text-anchor="middle" font-size="${fs}" fill="#44546D">${y}</text>`;
  S+=`<rect x="${X(1985)}" y="${m.t}" width="${X(1990)-X(1985)}" height="${H-m.t-m.b}" fill="#000" opacity=".05"/>`;
- const yt=view==='ha'?'built-up area [ha]':'index 1990 = 100';S+=mob?`<text x="4" y="16" font-size="${fs}" fill="#5a6773">${yt}</text>`:`<text x="14" y="${(H-m.b+m.t)/2}" transform="rotate(-90 14 ${(H-m.b+m.t)/2})" text-anchor="middle" font-size="${fs}" fill="#5a6773">${yt}</text>`;
+ const yt=view==='ha'?'built-up area [ha]':'index 1990 = 100';S+=mob?`<text x="4" y="16" font-size="${fs}" fill="#44546D">${yt}</text>`:`<text x="14" y="${(H-m.b+m.t)/2}" transform="rotate(-90 14 ${(H-m.b+m.t)/2})" text-anchor="middle" font-size="${fs}" fill="#44546D">${yt}</text>`;
  let ly=[];ser.forEach(([z,p])=>{const [lab,c]=ZN[z];S+=`<polyline fill="none" stroke="${c}" stroke-width="3" points="${p.map(q=>X(q[0])+','+Y(q[1])).join(' ')}"/>`;
   p.forEach(q=>S+=`<circle cx="${X(q[0])}" cy="${Y(q[1])}" r="${mob?7:5}" fill="${c}" tabindex="0" role="img" aria-label="${city}, ${lab}, ${q[0]}: ${view==='ha'?q[1].toLocaleString('en-GB',{maximumFractionDigits:0})+' ha':q[1].toFixed(0)}"/>`);
   ly.push([Y(p[p.length-1][1]),mob?lab.replace('ring ',''):lab,c]);});
@@ -832,13 +1087,13 @@ let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(draw
  // siatka prawdopodobieństw (krok 5)
  const sp=document.getElementById('siatkaP');const pv=[.1,.2,.7,.9,.8,.3,.15,.6,.85,.95,.7,.2,.05,.4,.75,.9,.5,.1,.1,.3,.66,.8,.35,.05,.2,.1,.5,.7,.2,.1,.1,.05,.2,.3,.1,.05];let h='';
  pv.forEach((v,i)=>{const x=(i%6)*40,y=Math.floor(i/6)*40;const c=Math.round(255-200*v),g=Math.round(245-245*v);
-  h+=`<rect class="pc${v>=.65?' hi':''}" x="${x}" y="${y}" width="38" height="38" fill="rgb(255,${g},${Math.round(240-230*v)})"/><text x="${x+19}" y="${y+24}" font-size="11" text-anchor="middle" fill="${v>.6?'#fff':'#14202b'}">${String(v.toFixed(2))}</text>`;});sp.innerHTML=h;
+  h+=`<rect class="pc${v>=.65?' hi':''}" x="${x}" y="${y}" width="38" height="38" fill="rgb(255,${g},${Math.round(240-230*v)})"/><text x="${x+19}" y="${y+24}" font-size="11" text-anchor="middle" fill="${v>.6?'#fff':'#0A2247'}">${String(v.toFixed(2))}</text>`;});sp.innerHTML=h;
  // serie (krok 6)
  const se=document.getElementById('serie');const st={0:[8,14],1:[8,9,13,15,20],2:[8,14,9,15,13,20,7,16,21,22,27,10]};const M=new Set([7,8,9,10,13,14,15,16,19,20,21,22,26,27,28]);h='';
  [0,1,2].forEach(k=>{const ox=40+k*190,oy=50;for(let i=0;i<36;i++){const x=ox+(i%6)*24,y=oy+Math.floor(i/6)*24;const luka=(k===1&&i===14);const zab=st[k].includes(i)||luka;
-   const tlo=M.has(i)?'#cdebe7':'#ededed';h+=`<rect class="${zab?'sr'+(luka?' naprawa':''):''}" x="${x}" y="${y}" width="22" height="22" fill="${zab&&!luka?'#b3261e':tlo}" style="animation-delay:${k*1.1}s"/>`;}
+   const tlo=M.has(i)?'#D6E6FA':'#ededed';h+=`<rect class="${zab?'sr'+(luka?' naprawa':''):''}" x="${x}" y="${y}" width="22" height="22" fill="${zab&&!luka?'#b3261e':tlo}" style="animation-delay:${k*1.1}s"/>`;}
   if(k===1)h+=`<text x="${ox+72}" y="${oy+162}" font-size="11" text-anchor="middle" fill="#b3261e" class="sr naprawa-t" style="animation-delay:3.4s">restored by the rule</text>`;});
- h+=`<rect x="40" y="232" width="12" height="12" fill="#cdebe7"/><text x="58" y="242" font-size="11" fill="#5a6773">extent mask: where built-up land is today</text><rect x="340" y="232" width="12" height="12" fill="#b3261e"/><text x="358" y="242" font-size="11" fill="#5a6773">built-up (once detected, it stays)</text>`;se.innerHTML=h;
+ h+=`<rect x="40" y="232" width="12" height="12" fill="#D6E6FA"/><text x="58" y="242" font-size="11" fill="#44546D">extent mask: where built-up land is today</text><rect x="340" y="232" width="12" height="12" fill="#b3261e"/><text x="358" y="242" font-size="11" fill="#44546D">built-up (once detected, it stays)</text>`;se.innerHTML=h;
  document.querySelectorAll('.a-pkt circle').forEach((c,i)=>c.style.animationDelay=(0.3*i+0.4)+'s');
  document.querySelectorAll('.a-drz g').forEach((g,i)=>g.style.animationDelay=(0.5*i+0.3)+'s');
  const bs=[...document.querySelectorAll('.pr-nav button')],sc=[...document.querySelectorAll('.sc')];let cur=0,tm=null;
@@ -857,6 +1112,39 @@ document.querySelectorAll('nav.top a, .badges a[href^="#"]').forEach(a=>a.addEve
 const norm=t=>t.toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu,'').replace(/ł/g,'l');
 document.querySelectorAll('#bib li').forEach(li=>li.dataset.n=norm(li.textContent));
 document.getElementById('szukaj').oninput=e=>{const q=norm(e.target.value);document.querySelectorAll('#bib li').forEach(li=>li.style.display=li.dataset.n.includes(q)?'':'none');};
+
+// pierwszy ekran: epoki mapy
+(function(){const F=KLATKI.built,P="../",im=document.getElementById('hframe'),bs=[...document.querySelectorAll('#hepoki button')],yr=document.getElementById('hyr'),se=document.getElementById('hsens'),pb=document.getElementById('hplay');
+ const T={"alt": "Built-up map of Toruń (a) and Bydgoszcz (b), epoch ", "mss": "Landsat MSS, 60 m pixel, second transfer stage", "tm": "Landsat TM, ETM+ and OLI, 30 m pixel, series A", "graj": "Play 1975–2025", "stop": "Stop"};let t=null;
+ function show(k){const y=F[k].match(/(\d{4})/)[1];im.src=P+'assets/anim/klatki/'+F[k];im.alt=T.alt+y;yr.textContent=y;se.textContent=k<2?T.mss:T.tm;
+  bs.forEach((b,i)=>{b.classList.toggle('on',i===k);b.classList.toggle('byl',i<k);b.setAttribute('aria-pressed',i===k);});}
+ function stop(){if(t){clearInterval(t);t=null;pb.textContent=T.graj;}}
+ function play(){stop();let k=0;show(0);pb.textContent=T.stop;t=setInterval(()=>{k++;show(k);if(k>=F.length-1)stop();},850);}
+ bs.forEach((b,i)=>b.onclick=()=>{stop();show(i);});pb.onclick=()=>{t?stop():play();};
+ let n=0;F.forEach(f=>{const i=new Image();i.onload=i.onerror=()=>{if(++n===F.length&&!ruch)play();};i.src=P+'assets/anim/klatki/'+f;});
+})();
+// bibliografia: rozwiń, gdy odnośnik prowadzi do pozycji
+(function(){const d=document.getElementById('bibd');if(!d)return;function chk(h){if(!h||h.length<2)return;let el;try{el=document.querySelector(h);}catch(e){return;}if(el&&d.contains(el)&&!d.open){d.open=true;setTimeout(()=>el.scrollIntoView(),30);}}
+ document.addEventListener('click',e=>{const a=e.target.closest('a[href^="#"]');if(a)chk(a.getAttribute('href'));},true);chk(location.hash);})();
+// pasek postępu czytania i zaznaczenie bieżącej sekcji w menu
+(function(){const bar=document.getElementById('postep'),ls=[...document.querySelectorAll('nav.top a[href^="#"]')],ss=ls.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);let tick=false;
+ function upd(){tick=false;const d=document.documentElement,max=d.scrollHeight-innerHeight;bar.style.width=(max>0?scrollY/max*100:0)+'%';
+  let cur=-1;ss.forEach((x,i)=>{if(x.getBoundingClientRect().top<=120)cur=i;});
+  ls.forEach((a,i)=>{const on=i===cur;if(on&&!a.classList.contains('tu')){a.classList.add('tu');a.setAttribute('aria-current','true');const w=a.parentElement;w.scrollLeft=a.offsetLeft-w.clientWidth/2+a.clientWidth/2;}else if(!on){a.classList.remove('tu');a.removeAttribute('aria-current');}});}
+ addEventListener('scroll',()=>{if(!tick){tick=true;requestAnimationFrame(upd);}},{passive:true});upd();
+})();
 </script>
 </body>
 </html>
+<h3 style="margin-top:56px">More animations from the project notebook</h3>
+<p class="notka">Seven animations exported from the analysis notebook. In this material Bydgoszcz is on the left and Toruń on the right.</p>
+<div class="kino">
+<figure><video controls preload="none" playsinline muted loop poster="../assets/anim/dodatkowe/H2_oba_miasta_rozwoj.jpg" aria-label="Animation of built-up growth in both cities side by side"><source src="../assets/anim/dodatkowe/H2_oba_miasta_rozwoj.mp4" type="video/mp4"></video><figcaption><b>Built-up growth in both cities</b>Animation of built-up growth in both cities side by side</figcaption></figure>
+<figure><video controls preload="none" playsinline muted loop poster="../assets/anim/dodatkowe/H3_oba_miasta_dynamika.jpg" aria-label="Animation of dynamics maps: new built-up land on a 1 km grid in successive five-year periods, both cities"><source src="../assets/anim/dodatkowe/H3_oba_miasta_dynamika.mp4" type="video/mp4"></video><figcaption><b>Dynamics on a 1 km grid</b>Animation of dynamics maps: new built-up land on a 1 km grid in successive five-year periods, both cities</figcaption></figure>
+<figure><video controls preload="none" playsinline muted loop poster="../assets/anim/dodatkowe/J5_oba_miasta_narastanie_wg_okresow.jpg" aria-label="Animation of built-up accretion coloured by the period of first appearance, both cities side by side"><source src="../assets/anim/dodatkowe/J5_oba_miasta_narastanie_wg_okresow.mp4" type="video/mp4"></video><figcaption><b>Accretion by period</b>Animation of built-up accretion coloured by the period of first appearance, both cities side by side</figcaption></figure>
+<figure><video controls preload="none" playsinline muted loop poster="../assets/anim/dodatkowe/J3_oba_miasta_forma_przyrostu.jpg" aria-label="Animation of maps of the form of new built-up land (infill, edge, leapfrog) in successive five-year periods, both cities side by side"><source src="../assets/anim/dodatkowe/J3_oba_miasta_forma_przyrostu.mp4" type="video/mp4"></video><figcaption><b>Forms of new built-up land</b>Animation of maps of the form of new built-up land (infill, edge, leapfrog) in successive five-year periods, both cities side by side</figcaption></figure>
+<figure><video controls preload="none" playsinline muted loop poster="../assets/anim/dodatkowe/J1_oba_miasta_zmiany_klas.jpg" aria-label="Animation of maps of changes among four classes in successive five-year periods, both cities side by side"><source src="../assets/anim/dodatkowe/J1_oba_miasta_zmiany_klas.mp4" type="video/mp4"></video><figcaption><b>Changes among four classes</b>Animation of maps of changes among four classes in successive five-year periods, both cities side by side</figcaption></figure>
+<figure><video controls preload="none" playsinline muted loop poster="../assets/anim/dodatkowe/J4_oba_miasta_morfotypy_gestosci.jpg" aria-label="Animation of built-up density morphotypes in the epochs 1985–2025, both cities side by side"><source src="../assets/anim/dodatkowe/J4_oba_miasta_morfotypy_gestosci.mp4" type="video/mp4"></video><figcaption><b>Density morphotypes</b>Animation of built-up density morphotypes in the epochs 1985–2025, both cities side by side</figcaption></figure>
+<figure><video controls preload="none" playsinline muted loop poster="../assets/anim/dodatkowe/I2_oba_miasta_4kl.jpg" aria-label="Animation of 4-class maps of both cities side by side"><source src="../assets/anim/dodatkowe/I2_oba_miasta_4kl.mp4" type="video/mp4"></video><figcaption><b>Four-class maps</b>Animation of 4-class maps of both cities side by side</figcaption></figure>
+</div>
+
