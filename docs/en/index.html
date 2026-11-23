@@ -233,7 +233,7 @@ main a{overflow-wrap:anywhere}
 <span class="langsw" role="navigation" aria-label="Language"><a href="../" hreflang="pl" title="Wersja polska" lang="pl">PL</a><a aria-current="page" lang="en">EN</a></span>
 <a class="btn-main" href="https://doi.org/10.5281/zenodo.24332551" target="_blank" rel="noopener">Download the app</a>
 </div></div>
-<nav class="top" aria-label="Page sections"><div class="wrap"><a href="#pobierz">Download the app</a><a href="#projekt">Project</a><a href="#proces">Method in animations</a><a href="#slowniczek">Glossary</a><a href="#aplikacja">App</a><a href="#ludnosc">Population and SDG</a><a href="#ryciny">Results in figures</a><a href="#dane">Data and code</a><a href="#bibliografia">References</a></div></nav>
+<nav class="top" aria-label="Page sections"><div class="wrap"><a href="#pobierz">Download the app</a><a href="#projekt">Project</a><a href="#proces">Method in animations</a><a href="#slowniczek">Glossary</a><a href="#aplikacja">App</a><a href="#python">For Python</a><a href="#ludnosc">Population and SDG</a><a href="#ryciny">Results in figures</a><a href="#dane">Data and code</a><a href="#bibliografia">References</a></div></nav>
 
 <header class="hero">
 <svg class="pierscienie" viewBox="0 0 980 980" aria-hidden="true"><g fill="none" stroke="#0050AA"><circle cx="490" cy="490" r="210" stroke-opacity=".16" stroke-width="2"/><circle cx="490" cy="490" r="340" stroke-opacity=".13" stroke-width="2" stroke-dasharray="10 9"/><circle cx="490" cy="490" r="470" stroke-opacity=".1" stroke-width="2" stroke-dasharray="3 9"/></g></svg>
@@ -450,6 +450,34 @@ docker build -t landcoverrewind . &amp;&amp; docker run -p 8501:8501 landcoverre
 <p>A 140 km² rectangle around Grudziądz, all epochs 1985–2025, pretrained model, threshold 0.65. Below are the results saved by the app, unchanged. The 1985 epoch shows less built-up land than 1990 (2226 versus 2947 ha): this is the first-epoch artefact, also visible in the project series, which is why growth is computed from 1990.</p>
 <div class="cols"><a class="lb" data-cap="App: growth of built-up land, Grudziądz 1985–2025" href="../assets/app/animacja_zabudowa.gif"><img alt="built-up land animation of Grudziądz from the app" height="652" loading="lazy" src="../assets/app/animacja_zabudowa.gif" style="width:100%;border-radius:10px;border:1px solid var(--line)" width="660"/></a>
 <a class="lb" data-cap="App: epoch of first built-up detection, Grudziądz" href="../assets/app/mapa_epoka_detekcji.png"><img alt="first-detection epoch map from the app" height="1484" loading="lazy" src="../assets/app/mapa_epoka_detekcji.png" style="width:100%;border-radius:10px;border:1px solid var(--line)" width="1400"/></a></div></div>
+</div></section>
+
+<section id="python" class="alt"><div class="wrap">
+<h2>Land Cover Rewind from Python<small>The whole workflow can be run from a script or the command line, with no graphical interface. The package is open-source (MIT) and reads data anonymously from the Microsoft Planetary Computer.</small></h2>
+<div class="cols">
+<div class="box"><h3>Install</h3>
+<pre>cd aplikacja
+pip install -r requirements.txt</pre>
+<h3 style="margin-top:18px">Command line</h3>
+<pre>python landcoverrewind_cli.py \
+  --file area.gpkg --epochs 1990 2005 2025 --out results</pre>
+<p class="notka"><strong>QGIS plugin:</strong> The <code>qgis_plugin/</code> folder of the repository holds a QGIS plugin, Land Cover Rewind: it runs the same workflow for a chosen vector layer and loads the results as styled raster layers.</p>
+</div>
+<div class="box"><h3>Minimal script</h3>
+<pre>import geopandas as gpd
+from shapely.validation import make_valid
+from odc.geo.geom import Geometry
+from landcoverrewind import pipeline
+
+gdf = gpd.read_file("area.gpkg")
+geom = Geometry(make_valid(gdf.to_crs(4326).union_all()),
+                "EPSG:4326")
+
+result = pipeline.run(geom, epochs=[1990, 2005, 2025],
+                     mode="pretrained", out_dir="results")
+print(result["out_dir"])</pre>
+</div>
+</div>
 </div></section>
 <section id="ludnosc"><div class="wrap">
 <h2>Population and SDG indicator 11.3.1<small>built-up land from the series and population from the GUS 1 km grid (censuses NSP 2011 and 2021) · new app function since version 1.3.0</small></h2>

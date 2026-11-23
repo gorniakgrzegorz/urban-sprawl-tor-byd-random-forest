@@ -232,7 +232,7 @@ main a{overflow-wrap:anywhere}
 <span class="langsw" role="navigation" aria-label="Language"><a aria-current="page" lang="pl">PL</a><a href="en/" hreflang="en" title="English version" lang="en">EN</a></span>
 <a class="btn-main" href="https://doi.org/10.5281/zenodo.24332551" target="_blank" rel="noopener">Pobierz aplikację</a>
 </div></div>
-<nav class="top" aria-label="Sekcje strony"><div class="wrap"><a href="#pobierz">Pobierz aplikację</a><a href="#projekt">Projekt</a><a href="#proces">Metoda w animacjach</a><a href="#slowniczek">Słowniczek</a><a href="#aplikacja">Aplikacja</a><a href="#ludnosc">Ludność i SDG</a><a href="#ryciny">Wyniki w rycinach</a><a href="#dane">Dane i kod</a><a href="#bibliografia">Bibliografia</a></div></nav>
+<nav class="top" aria-label="Sekcje strony"><div class="wrap"><a href="#pobierz">Pobierz aplikację</a><a href="#projekt">Projekt</a><a href="#proces">Metoda w animacjach</a><a href="#slowniczek">Słowniczek</a><a href="#aplikacja">Aplikacja</a><a href="#python">Dla Pythona</a><a href="#ludnosc">Ludność i SDG</a><a href="#ryciny">Wyniki w rycinach</a><a href="#dane">Dane i kod</a><a href="#bibliografia">Bibliografia</a></div></nav>
 
 <header class="hero">
 <svg class="pierscienie" viewBox="0 0 980 980" aria-hidden="true"><g fill="none" stroke="#0050AA"><circle cx="490" cy="490" r="210" stroke-opacity=".16" stroke-width="2"/><circle cx="490" cy="490" r="340" stroke-opacity=".13" stroke-width="2" stroke-dasharray="10 9"/><circle cx="490" cy="490" r="470" stroke-opacity=".1" stroke-width="2" stroke-dasharray="3 9"/></g></svg>
@@ -470,6 +470,34 @@ docker build -t landcoverrewind . &amp;&amp; docker run -p 8501:8501 landcoverre
 <a href="assets/app/mapa_epoka_detekcji.png" class="lb" data-cap="Aplikacja: epoka pierwszej detekcji zabudowy, Grudziądz"><img loading="lazy" width="1400" height="1484" src="assets/app/mapa_epoka_detekcji.png" alt="mapa epoki pierwszej detekcji z aplikacji" style="width:100%;border-radius:10px;border:1px solid var(--line)"></a></div></div>
 </div></section>
 
+
+<section id="python" class="alt"><div class="wrap">
+<h2>Land Cover Rewind z poziomu Pythona<small>Całą procedurę można uruchomić skryptem albo z wiersza poleceń, bez interfejsu graficznego. Pakiet jest otwarty (licencja MIT) i czyta dane anonimowo z Microsoft Planetary Computer.</small></h2>
+<div class="cols">
+<div class="box"><h3>Instalacja</h3>
+<pre>cd aplikacja
+pip install -r requirements.txt</pre>
+<h3 style="margin-top:18px">Wiersz poleceń</h3>
+<pre>python landcoverrewind_cli.py \
+  --file obszar.gpkg --epochs 1990 2005 2025 --out wyniki</pre>
+<p class="notka"><strong>Wtyczka QGIS:</strong> W folderze <code>qgis_plugin/</code> repozytorium jest wtyczka QGIS „Land Cover Rewind”: uruchamia tę samą procedurę dla zaznaczonej warstwy wektorowej i wczytuje wyniki jako gotowe, opisane warstwy rastrowe.</p>
+</div>
+<div class="box"><h3>Minimalny skrypt</h3>
+<pre>import geopandas as gpd
+from shapely.validation import make_valid
+from odc.geo.geom import Geometry
+from landcoverrewind import pipeline
+
+gdf = gpd.read_file("obszar.gpkg")
+geom = Geometry(make_valid(gdf.to_crs(4326).union_all()),
+                "EPSG:4326")
+
+wynik = pipeline.run(geom, epochs=[1990, 2005, 2025],
+                     mode="pretrained", out_dir="wyniki")
+print(wynik["out_dir"])</pre>
+</div>
+</div>
+</div></section>
 <section id="ludnosc"><div class="wrap">
 <h2>Ludność i wskaźnik SDG 11.3.1<small>zabudowa z serii a ludność z siatki kilometrowej GUS (NSP 2011 i 2021) · nowa funkcja aplikacji od wersji 1.3.0</small></h2>
 <p class="intro">Wskaźnik ONZ SDG 11.3.1 to stosunek tempa zużycia terenu (LCR) do tempa wzrostu ludności (PGR), w skrócie LCRPGR (<a href="#ref-sdg_indicator_metadata_indicator_11_3_1_ratio_of_land_consum" class="cyt">UN-Habitat, 2025</a>). Wartość 1 oznacza, że zabudowa i ludność rosną jednakowo; powyżej 1 zabudowa rośnie szybciej niż liczba mieszkańców, a wartość ujemna pojawia się, gdy zabudowa przybywa, a ludności ubywa. Ludność pochodzi z siatek kilometrowych Narodowych Spisów Powszechnych 2011 i 2021 (<a href="#ref-nsp_2011_dane_o_populacji_w_siatce_kilometrowej_zasób_nr_183" class="cyt">Główny Urząd Statystyczny, 2022</a>; <a href="#ref-nsp_2021_dane_o_ludności_krajowej_w_siatce_kilometrowej_2021" class="cyt">Główny Urząd Statystyczny, 2024</a>), a zabudowę w datach spisów interpolujemy liniowo między epokami 2010, 2015 i 2020.</p>
