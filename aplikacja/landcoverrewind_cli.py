@@ -21,7 +21,7 @@ g.add_argument("--file", help="GPKG / GeoJSON / SHP with the area polygon")
 g.add_argument("--bbox", nargs=4, type=float, metavar=("LON_MIN", "LAT_MIN", "LON_MAX", "LAT_MAX"))
 p.add_argument("--epochs", nargs="+", type=int, default=EPOCHS, help="epoch years (window: year - 1 to year + 1), 1985 or later")
 p.add_argument("--mode", choices=["pretrained", "local"], default="pretrained",
-               help="pretrained: Torun/Bydgoszcz 2025 model; local: training on IO LULC 2023 in this area")
+               help="pretrained: 2025 model (trained on Toruń & Bydgoszcz); local: training on IO LULC 2023 in this area")
 p.add_argument("--threshold", type=float, default=0.65, help="probability threshold of built-up land (0-1)")
 p.add_argument("--crs", default=None, help="projected CRS in metres, e.g. EPSG:2180; UTM zone of the centroid by default")
 p.add_argument("--max-cloud", type=int, default=70, help="maximum scene cloud cover [%%]")

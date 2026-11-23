@@ -12,7 +12,7 @@ from . import data, features, model, series, viz, population, EPOCHS, __version_
 
 # IO LULC classes -> 1 built-up, 2 trees and forest, 3 water, 4 other
 IO_TO_4 = {1: 3, 2: 2, 4: 3, 5: 4, 7: 1, 8: 4, 11: 4}
-PRETRAINED = ("rf_torun_bydgoszcz_2025_binary", "rf_torun_bydgoszcz_2025_4class")
+PRETRAINED = ("rf_pretrained_2025_binary", "rf_pretrained_2025_4class")
 
 
 def teacher_labels(geobox, year=2023, log=print):
@@ -65,7 +65,7 @@ def run(geom, epochs=None, mode="pretrained", threshold=0.65, out_dir="results",
         log=print, progress=None, lang="en", extent_years=(2017, 2023)):
     """Reconstruct the built-up series and four-class maps for `geom` (odc.geo Geometry).
 
-    mode: "pretrained" uses the Torun/Bydgoszcz 2025 models; "local" trains on IO LULC 2023 labels in the area
+    mode: "pretrained" uses the 2025 pretrained model (trained on Toruń & Bydgoszcz); "local" trains on IO LULC 2023 labels in the area
     (the most recent IO LULC map in the catalogue).
     progress(fraction 0-1, step description) lets a user interface show a progress bar.
     Returns a dict with the series B, four-class maps K4, probabilities P, extent mask M and tables.
@@ -102,7 +102,7 @@ def run(geom, epochs=None, mode="pretrained", threshold=0.65, out_dir="results",
     if mode == "pretrained":
         rf2, _ = model.load(PRETRAINED[0])
         rf4, _ = model.load(PRETRAINED[1])
-        log("Model: rf_torun_bydgoszcz_2025 (trained on the 2025 maps of Torun and Bydgoszcz)")
+        log("Model: rf_pretrained_2025 (trained on the 2025 maps of Torun and Bydgoszcz)")
     elif mode == "local":
         step("train")
         log("Model: local training on IO LULC 2023 labels and epoch 2025 features")

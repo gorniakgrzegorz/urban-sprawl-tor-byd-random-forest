@@ -1,4 +1,4 @@
-"""Rebuild the pretrained models rf_torun_bydgoszcz_2025 (for transparency; users do not need to run this).
+"""Rebuild the pretrained models rf_pretrained_2025 (for transparency; users do not need to run this).
 
 Labels: 2025 maps of the reference project (Torun and Bydgoszcz, 30 m, EPSG:2180; class 1 = built-up land of
 series A, 2 = trees and forest, 3 = water, 4 = other), derived from Dynamic World 2025 label transfer.
@@ -16,8 +16,8 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 from landcoverrewind import features, model
 
 CACHE = pathlib.Path("training_cache"); CACHE.mkdir(exist_ok=True)
-TARGETS = (("rf_torun_bydgoszcz_2025_binary", lambda l: np.where(l == 255, 255, (l == 1).astype("uint8"))),
-           ("rf_torun_bydgoszcz_2025_4class", lambda l: l))
+TARGETS = (("rf_pretrained_2025_binary", lambda l: np.where(l == 255, 255, (l == 1).astype("uint8"))),
+           ("rf_pretrained_2025_4class", lambda l: l))
 
 
 def city_data(path):
