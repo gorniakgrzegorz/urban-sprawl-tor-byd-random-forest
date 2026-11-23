@@ -1,4 +1,5 @@
 """Background task that runs the Land Cover Rewind CLI in a separate process."""
+import os
 import subprocess
 
 from qgis.core import QgsTask, QgsMessageLog, Qgis
@@ -15,12 +16,13 @@ class RunTask(QgsTask):
     thread in the dialog, connected to taskCompleted / taskTerminated.
     """
 
-    def __init__(self, command, out_dir, epochs, cwd=None):
-        super().__init__("Land Cover Rewind run", QgsTask.CanCancel)
+    def __init__(self, command, out_dir, epochs, cwd=None, env=None, description=None):
+        super().__init__(description or "Land Cover Rewind run", QgsTask.CanCancel)
         self.command = list(command)
         self.out_dir = out_dir
         self.epochs = list(epochs)
         self.cwd = cwd
+        self.env = env
         self.log_lines = []
         self.returncode = None
         self.error = None
@@ -29,9 +31,13 @@ class RunTask(QgsTask):
     def run(self):
         """Executed in a worker thread. Must not touch the GUI or the project."""
         QgsMessageLog.logMessage("Running: " + " ".join(self.command), MESSAGE_CATEGORY, Qgis.Info)
+        run_env = None
+        if self.env:
+            run_env = dict(os.environ)
+            run_env.update(self.env)
         try:
             self._proc = subprocess.Popen(
-                self.command, cwd=self.cwd,
+                self.command, cwd=self.cwd, env=run_env,
                 stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
                 text=True, bufsize=1, universal_newlines=True,
             )

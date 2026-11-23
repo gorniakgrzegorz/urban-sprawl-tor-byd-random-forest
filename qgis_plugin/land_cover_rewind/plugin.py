@@ -17,7 +17,7 @@ class LandCoverRewindPlugin:
         self._icon = os.path.join(os.path.dirname(__file__), "icon.png")
 
     def initGui(self):  # noqa: N802 (QGIS API name)
-        self.action = QAction(QIcon(self._icon), "Land Cover Rewind 1985-2025",
+        self.action = QAction(QIcon(self._icon), "Land Cover Rewind",
                               self.iface.mainWindow())
         self.action.triggered.connect(self.run)
         self.iface.addToolBarIcon(self.action)

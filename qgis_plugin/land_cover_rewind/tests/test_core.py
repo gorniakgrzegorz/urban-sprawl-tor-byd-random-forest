@@ -96,3 +96,31 @@ def test_colour_tables_cover_four_classes():
     vals = [v for v, _rgb, _lbl in core.LC4_CLASSES]
     assert vals == [1, 2, 3, 4]
     assert core.BUILTUP_CLASSES[0][0] == 1
+
+
+def test_bbox_geojson_valid_polygon():
+    import json as _json
+    gj = core.bbox_geojson(18.5, 52.9, 18.7, 53.1)
+    d = _json.loads(gj)
+    assert d["type"] == "FeatureCollection"
+    ring = d["features"][0]["geometry"]["coordinates"][0]
+    assert ring[0] == ring[-1]            # closed ring
+    assert len(ring) == 5
+    assert d["features"][0]["geometry"]["type"] == "Polygon"
+
+
+def test_bbox_geojson_rejects_empty_rectangle():
+    with pytest.raises(ValueError):
+        core.bbox_geojson(18.7, 53.1, 18.5, 52.9)
+
+
+def test_dedupe_keeps_first_order_and_drops_empty():
+    assert core.dedupe(["a", "", "b", "a", None, "c"]) == ["a", "b", "c"]
+
+
+def test_project_and_requirements_paths():
+    cli = os.path.join("x", "y", "landcoverrewind_cli.py")
+    assert core.project_dir(cli).endswith(os.path.join("x", "y"))
+    assert core.requirements_path(cli).endswith("requirements.txt")
+    assert core.project_dir("") == ""
+    assert core.requirements_path("") == ""

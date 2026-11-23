@@ -9,6 +9,7 @@ layers and their colours.
 from __future__ import annotations
 
 import datetime
+import json
 import os
 import re
 
@@ -84,6 +85,42 @@ def build_command(interpreter, cli_path, aoi_path, out_dir, epochs,
     if crs:
         cmd += ["--crs", str(crs)]
     return cmd
+
+
+def bbox_geojson(xmin, ymin, xmax, ymax):
+    """GeoJSON FeatureCollection (lon/lat, EPSG:4326) with one rectangular polygon.
+
+    Used when the user draws the area of interest on the map canvas.
+    """
+    xmin, ymin, xmax, ymax = float(xmin), float(ymin), float(xmax), float(ymax)
+    if xmax <= xmin or ymax <= ymin:
+        raise ValueError("the rectangle is empty (need xmax > xmin and ymax > ymin)")
+    ring = [[xmin, ymin], [xmax, ymin], [xmax, ymax], [xmin, ymax], [xmin, ymin]]
+    return json.dumps({
+        "type": "FeatureCollection",
+        "features": [{"type": "Feature", "properties": {},
+                      "geometry": {"type": "Polygon", "coordinates": [ring]}}],
+    })
+
+
+def project_dir(cli_path):
+    """Folder that holds landcoverrewind_cli.py (and the landcoverrewind package)."""
+    return os.path.dirname(os.path.abspath(cli_path)) if cli_path else ""
+
+
+def requirements_path(cli_path):
+    """Path to requirements.txt next to the CLI, if the CLI path is known (may not exist)."""
+    d = project_dir(cli_path)
+    return os.path.join(d, "requirements.txt") if d else ""
+
+
+def dedupe(seq):
+    """De-duplicated list keeping first-seen order; empty/None entries dropped."""
+    out = []
+    for x in seq:
+        if x and x not in out:
+            out.append(x)
+    return out
 
 
 def find_cli(search_dirs):
