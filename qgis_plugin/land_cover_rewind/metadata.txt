@@ -1,0 +1,16 @@
+[general]
+name=Land Cover Rewind
+qgisMinimumVersion=3.22
+description=Reconstruct built-up land and land cover 1985-2025 for any area from the Landsat archive, with a Dynamic World-trained Random Forest. No Google account.
+about=Runs the open-source Land Cover Rewind workflow (Gorniak and Kunz, Nicolaus Copernicus University in Torun) on an area you choose in QGIS. A Random Forest classifier trained on present-day 10 m land cover labels classifies Landsat composites read anonymously from the Microsoft Planetary Computer, producing a consistent 30 m built-up series and four-class land cover maps for 1985-2025, plus a first-detection map and a growth animation. The heavy processing runs in the project's command-line tool in a chosen Python interpreter; the plugin prepares the area, runs it in the background and loads the resulting GeoTIFF layers, styled, into QGIS. Requires the landcoverrewind package or its repository (see Homepage) and its Python dependencies.
+version=1.0.0
+author=Grzegorz Gorniak, Mieczyslaw Kunz
+email=ggorniak@doktorant.umk.pl
+tracker=https://github.com/gorniakgrzegorz/urban-sprawl-tor-byd-random-forest/issues
+repository=https://github.com/gorniakgrzegorz/urban-sprawl-tor-byd-random-forest
+homepage=https://gorniakgrzegorz.github.io/urban-sprawl-tor-byd-random-forest/
+tags=remote sensing,landsat,land cover,built-up,urban sprawl,random forest,change detection,raster,machine learning
+category=Raster
+icon=icon.png
+experimental=False
+deprecated=False
