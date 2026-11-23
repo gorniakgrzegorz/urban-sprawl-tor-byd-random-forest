@@ -30,7 +30,13 @@ def apply_lc4_style(layer):
 
 
 def apply_first_detection_style(layer, epochs):
-    """Colour the first-detection epochs with a dark-to-bright ramp; 0 and -1 stay unlisted (transparent)."""
+    """Colour the first-detection epochs with a dark-to-bright ramp.
+
+    Only pixels whose value falls within the epoch range [lo, hi] are drawn.
+    The ramp is clipped, so "never built-up" pixels (value 0, below lo) and the
+    raster nodata (-1) stay fully transparent instead of being clamped to the
+    oldest-epoch colour.
+    """
     years = core.normalize_epochs(epochs)
     if not years:
         return
@@ -45,6 +51,7 @@ def apply_first_detection_style(layer, epochs):
 
     ramp = QgsColorRampShader(lo, hi)
     ramp.setColorRampType(QgsColorRampShader.Interpolated)
+    ramp.setClip(True)  # values outside [lo, hi] (0 = never built-up, -1 = nodata) stay transparent
     items = []
     for y in years:
         t = (y - lo) / span
