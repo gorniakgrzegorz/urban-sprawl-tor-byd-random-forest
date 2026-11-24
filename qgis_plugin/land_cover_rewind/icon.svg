@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Land Cover Rewind - ikona wtyczki QGIS (96x96).
+     Kolory: tlo #01BDE7, zabudowa #B3261E, roslinnosc #A9D03C, obwodka #FFFFFF.
+     Kwadraty rosna po przekatnej (rozlewanie zabudowy w czasie). -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96" role="img" aria-label="Land Cover Rewind">
+  <rect x="0" y="0" width="96" height="96" rx="24.96" fill="#01BDE7"/>
+  <g stroke="#FFFFFF" stroke-width="0.87" stroke-linejoin="round">
+    <rect x="41.78" y="11.52" width="12.44" height="12.44" rx="1.99" fill="#B3261E"/>
+    <rect x="56.91" y="11.52" width="12.44" height="12.44" rx="1.99" fill="#B3261E"/>
+    <rect x="72.04" y="11.52" width="12.44" height="12.44" rx="1.99" fill="#B3261E"/>
+    <rect x="41.78" y="26.65" width="12.44" height="12.44" rx="1.99" fill="#B3261E"/>
+    <rect x="56.91" y="26.65" width="12.44" height="12.44" rx="1.99" fill="#B3261E"/>
+    <rect x="72.04" y="26.65" width="12.44" height="12.44" rx="1.99" fill="#B3261E"/>
+    <rect x="26.65" y="41.78" width="12.44" height="12.44" rx="1.99" fill="#B3261E"/>
+    <rect x="41.78" y="41.78" width="12.44" height="12.44" rx="1.99" fill="#B3261E"/>
+    <rect x="56.91" y="41.78" width="12.44" height="12.44" rx="1.99" fill="#B3261E"/>
+    <rect x="26.65" y="56.91" width="12.44" height="12.44" rx="1.99" fill="#A9D03C"/>
+    <rect x="41.78" y="56.91" width="12.44" height="12.44" rx="1.99" fill="#B3261E"/>
+    <rect x="11.52" y="72.04" width="12.44" height="12.44" rx="1.99" fill="#A9D03C"/>
+    <rect x="26.65" y="72.04" width="12.44" height="12.44" rx="1.99" fill="#A9D03C"/>
+  </g>
+</svg>
