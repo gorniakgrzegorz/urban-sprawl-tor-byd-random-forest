@@ -20,7 +20,7 @@ class RunTask(QgsTask):
     """
 
     def __init__(self, command, out_dir, epochs, cwd=None, env=None, description=None):
-        super().__init__(description or "Land Cover Rewind run", QgsTask.CanCancel)
+        super().__init__(description or "Land Cover Rewind run", QgsTask.Flag.CanCancel)
         self.command = list(command)
         self.out_dir = out_dir
         self.epochs = list(epochs)
@@ -41,17 +41,17 @@ class RunTask(QgsTask):
         pct, text = core.parse_progress(line)
         if pct is not None:
             self.setProgress(pct)
-            QgsMessageLog.logMessage(f"{pct}% {text}", MESSAGE_CATEGORY, Qgis.Info)
+            QgsMessageLog.logMessage(f"{pct}% {text}", MESSAGE_CATEGORY, Qgis.MessageLevel.Info)
 
     def run(self):
         """Executed in a worker thread. Must not touch the GUI or the project."""
-        QgsMessageLog.logMessage("Running: " + " ".join(self.command), MESSAGE_CATEGORY, Qgis.Info)
+        QgsMessageLog.logMessage("Running: " + " ".join(self.command), MESSAGE_CATEGORY, Qgis.MessageLevel.Info)
         program = self.command[0]
         arguments = self.command[1:]
 
         proc = QProcess()
         self._proc = proc
-        proc.setProcessChannelMode(QProcess.MergedChannels)  # stdout + stderr together
+        proc.setProcessChannelMode(QProcess.ProcessChannelMode.MergedChannels)  # stdout + stderr together
         if self.cwd:
             proc.setWorkingDirectory(self.cwd)
         if self.env:
@@ -78,7 +78,7 @@ class RunTask(QgsTask):
                 while "\n" in buffer:
                     line, buffer = buffer.split("\n", 1)
                     self._emit_line(line)
-            elif proc.state() == QProcess.NotRunning:
+            elif proc.state() == QProcess.ProcessState.NotRunning:
                 break
 
         data = proc.readAll()  # drain whatever is left after exit
@@ -87,7 +87,7 @@ class RunTask(QgsTask):
         for line in buffer.splitlines():
             self._emit_line(line)
 
-        if proc.exitStatus() != QProcess.NormalExit:
+        if proc.exitStatus() != QProcess.ExitStatus.NormalExit:
             self.returncode = -1
             tail = "\n".join(self.log_lines[-15:])
             self.error = f"the process stopped unexpectedly.\n{tail}"
@@ -101,7 +101,7 @@ class RunTask(QgsTask):
         return True
 
     def cancel(self):
-        QgsMessageLog.logMessage("Cancelling", MESSAGE_CATEGORY, Qgis.Warning)
+        QgsMessageLog.logMessage("Cancelling", MESSAGE_CATEGORY, Qgis.MessageLevel.Warning)
         super().cancel()
 
     def log_text(self):

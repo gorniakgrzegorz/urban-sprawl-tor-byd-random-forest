@@ -29,7 +29,7 @@ from .task import RunTask
 from .maptool import RectangleMapTool
 
 SETTINGS = "land_cover_rewind"
-CONTACT = "ggorniak@doktorant.umk.pl"
+CONTACT = "gorniakggrzegorz@gmail.com"
 
 # -- translations ------------------------------------------------------------
 STR = {
@@ -334,10 +334,10 @@ class LandCoverRewindDialog(QDialog):
 
         # --- buttons ---
         self.buttons = QDialogButtonBox()
-        self.run_btn = self.buttons.addButton(self.T("run_btn"), QDialogButtonBox.AcceptRole)
-        self.cancel_btn = self.buttons.addButton(self.T("cancel_btn"), QDialogButtonBox.ResetRole)
+        self.run_btn = self.buttons.addButton(self.T("run_btn"), QDialogButtonBox.ButtonRole.AcceptRole)
+        self.cancel_btn = self.buttons.addButton(self.T("cancel_btn"), QDialogButtonBox.ButtonRole.ResetRole)
         self.cancel_btn.setEnabled(False)
-        self.close_btn = self.buttons.addButton(QDialogButtonBox.Close)
+        self.close_btn = self.buttons.addButton(QDialogButtonBox.StandardButton.Close)
         self.close_btn.setText(self.T("close_btn"))
         self.run_btn.clicked.connect(self.start_run)
         self.cancel_btn.clicked.connect(self.cancel_run)
@@ -349,7 +349,7 @@ class LandCoverRewindDialog(QDialog):
         foot_row.addStretch(1)
         foot = QLabel('<a style="color:#888;text-decoration:none" '
                       'href="mailto:%s">© Grzegorz Górniak</a>' % CONTACT)
-        foot.setTextFormat(Qt.RichText)
+        foot.setTextFormat(Qt.TextFormat.RichText)
         foot.setOpenExternalLinks(True)
         foot.setToolTip(CONTACT)
         ff2 = foot.font()
@@ -368,7 +368,7 @@ class LandCoverRewindDialog(QDialog):
         self.layer_combo.clear()
         for lyr in QgsProject.instance().mapLayers().values():
             if (isinstance(lyr, QgsVectorLayer) and lyr.isValid()
-                    and lyr.geometryType() == QgsWkbTypes.PolygonGeometry):
+                    and lyr.geometryType() == QgsWkbTypes.GeometryType.PolygonGeometry):
                 self.layer_combo.addItem(lyr.name(), lyr.id())
 
     # ---------- draw on map ----------
@@ -510,7 +510,7 @@ class LandCoverRewindDialog(QDialog):
             return False
         out_text = bytes(proc.readAllStandardOutput()).decode("utf-8", "replace")
         err_text = bytes(proc.readAllStandardError()).decode("utf-8", "replace")
-        if proc.exitStatus() == QProcess.NormalExit and proc.exitCode() == 0:
+        if proc.exitStatus() == QProcess.ExitStatus.NormalExit and proc.exitCode() == 0:
             self.status_lbl.setText(self.T("st_ok"))
             self._save_settings()
             return True
@@ -524,16 +524,16 @@ class LandCoverRewindDialog(QDialog):
     def _install_deps(self):
         from qgis.core import Qgis
         if self.install_task is not None:
-            self._message(self.T("e_busy_install"), Qgis.Warning)
+            self._message(self.T("e_busy_install"), Qgis.MessageLevel.Warning)
             return
         if self.task is not None:
-            self._message(self.T("e_busy"), Qgis.Warning)
+            self._message(self.T("e_busy"), Qgis.MessageLevel.Warning)
             return
         interp = self.interp_edit.text().strip()
         cli = self.cli_edit.text().strip()
         req = core.requirements_path(cli)
         if not interp:
-            self._message(self.T("e_no_python"), Qgis.Critical)
+            self._message(self.T("e_no_python"), Qgis.MessageLevel.Critical)
             return
         if req and os.path.isfile(req):
             cmd = [interp, "-m", "pip", "install", "-r", req]
@@ -572,7 +572,7 @@ class LandCoverRewindDialog(QDialog):
         self.install_btn.setEnabled(True)
         self.status_lbl.setText(self.T("st_install_fail"))
         if err:
-            self._message(err, Qgis.Warning)
+            self._message(err, Qgis.MessageLevel.Warning)
 
     # ---------- helpers ----------
     def _message(self, text, level):
@@ -588,7 +588,7 @@ class LandCoverRewindDialog(QDialog):
         opts.onlySelectedFeatures = bool(selected_only)
         res = QgsVectorFileWriter.writeAsVectorFormatV3(
             layer, path, QgsCoordinateTransformContext(), opts)
-        if res[0] != QgsVectorFileWriter.NoError:
+        if res[0] != QgsVectorFileWriter.WriterError.NoError:
             raise RuntimeError(self.T("e_export", e=res[1]))
         return path
 
@@ -627,10 +627,10 @@ class LandCoverRewindDialog(QDialog):
     def start_run(self):
         from qgis.core import Qgis
         if self.task is not None:
-            self._message(self.T("e_busy"), Qgis.Warning)
+            self._message(self.T("e_busy"), Qgis.MessageLevel.Warning)
             return
         if self.install_task is not None:
-            self._message(self.T("e_busy_install"), Qgis.Warning)
+            self._message(self.T("e_busy_install"), Qgis.MessageLevel.Warning)
             return
         try:
             epochs = self._chosen_epochs()
@@ -655,7 +655,7 @@ class LandCoverRewindDialog(QDialog):
                                      self.threshold.value(), self.max_cloud.value(), crs,
                                      lang=self._lang)
         except (ValueError, RuntimeError) as e:
-            self._message(str(e), Qgis.Critical)
+            self._message(str(e), Qgis.MessageLevel.Critical)
             return
 
         self._out_dir = out_dir
@@ -666,7 +666,7 @@ class LandCoverRewindDialog(QDialog):
         self.run_btn.setEnabled(False)
         self.cancel_btn.setEnabled(True)
         self._save_settings()
-        self._message(self.T("msg_running"), Qgis.Info)
+        self._message(self.T("msg_running"), Qgis.MessageLevel.Info)
 
         self.task = RunTask(cmd, out_dir, epochs, cwd=core.project_dir(cli) or None,
                             env=self._backend_env())
@@ -707,22 +707,22 @@ class LandCoverRewindDialog(QDialog):
                 extent.combineExtentWith(ext)
             except Exception:
                 from qgis.core import QgsMessageLog, Qgis
-                QgsMessageLog.logMessage("Could not combine layer extent for zoom", "Land Cover Rewind", Qgis.Info)
+                QgsMessageLog.logMessage("Could not combine layer extent for zoom", "Land Cover Rewind", Qgis.MessageLevel.Info)
             added += 1
         if added and not extent.isEmpty():
             canvas.setExtent(extent)
             canvas.refresh()
         if added:
-            self._message(self.T("msg_done", n=added), Qgis.Success)
+            self._message(self.T("msg_done", n=added), Qgis.MessageLevel.Success)
         else:
-            self._message(self.T("msg_none"), Qgis.Warning)
+            self._message(self.T("msg_none"), Qgis.MessageLevel.Warning)
         self.task = None
 
     def _on_terminated(self):
         from qgis.core import Qgis
         self._finish_common()
         err = (self.task.error if self.task else "") or self.T("msg_cancel")
-        self._message(err, Qgis.Warning)
+        self._message(err, Qgis.MessageLevel.Warning)
         self.task = None
 
     def closeEvent(self, event):
@@ -737,7 +737,7 @@ class LandCoverRewindDialog(QDialog):
                     canvas.unsetMapTool(self._rect_tool)
             except Exception:
                 from qgis.core import QgsMessageLog, Qgis
-                QgsMessageLog.logMessage("Could not restore previous map tool", "Land Cover Rewind", Qgis.Info)
+                QgsMessageLog.logMessage("Could not restore previous map tool", "Land Cover Rewind", Qgis.MessageLevel.Info)
         super().closeEvent(event)
 
 

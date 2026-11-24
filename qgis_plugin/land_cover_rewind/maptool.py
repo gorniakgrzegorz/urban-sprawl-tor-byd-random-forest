@@ -13,7 +13,7 @@ class RectangleMapTool(QgsMapTool):
     def __init__(self, canvas):
         super().__init__(canvas)
         self.canvas = canvas
-        self._band = QgsRubberBand(canvas, QgsWkbTypes.PolygonGeometry)
+        self._band = QgsRubberBand(canvas, QgsWkbTypes.GeometryType.PolygonGeometry)
         self._band.setColor(QColor(0, 80, 170, 60))
         self._band.setStrokeColor(QColor(0, 80, 170))
         self._band.setWidth(2)
@@ -21,7 +21,7 @@ class RectangleMapTool(QgsMapTool):
         self._dragging = False
 
     def _show(self, rect):
-        self._band.reset(QgsWkbTypes.PolygonGeometry)
+        self._band.reset(QgsWkbTypes.GeometryType.PolygonGeometry)
         pts = [
             QgsPointXY(rect.xMinimum(), rect.yMinimum()),
             QgsPointXY(rect.xMaximum(), rect.yMinimum()),
@@ -32,7 +32,7 @@ class RectangleMapTool(QgsMapTool):
             self._band.addPoint(p, i == len(pts) - 1)
 
     def canvasPressEvent(self, event):
-        if event.button() != Qt.LeftButton:
+        if event.button() != Qt.MouseButton.LeftButton:
             return
         self._start = self.toMapCoordinates(event.pos())
         self._dragging = True
@@ -43,7 +43,7 @@ class RectangleMapTool(QgsMapTool):
         self._show(QgsRectangle(self._start, self.toMapCoordinates(event.pos())))
 
     def canvasReleaseEvent(self, event):
-        if event.button() != Qt.LeftButton or not self._dragging or self._start is None:
+        if event.button() != Qt.MouseButton.LeftButton or not self._dragging or self._start is None:
             return
         self._dragging = False
         rect = QgsRectangle(self._start, self.toMapCoordinates(event.pos()))
@@ -55,7 +55,7 @@ class RectangleMapTool(QgsMapTool):
         self.finished.emit(rect)
 
     def clear(self):
-        self._band.reset(QgsWkbTypes.PolygonGeometry)
+        self._band.reset(QgsWkbTypes.GeometryType.PolygonGeometry)
 
     def deactivate(self):
         self.clear()

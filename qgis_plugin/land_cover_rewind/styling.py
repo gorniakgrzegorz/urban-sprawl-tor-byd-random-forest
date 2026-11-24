@@ -50,7 +50,7 @@ def apply_first_detection_style(layer, epochs):
         return int(round(a + (b - a) * t))
 
     ramp = QgsColorRampShader(lo, hi)
-    ramp.setColorRampType(QgsColorRampShader.Interpolated)
+    ramp.setColorRampType(QgsColorRampShader.Type.Interpolated)
     ramp.setClip(True)  # values outside [lo, hi] (0 = never built-up, -1 = nodata) stay transparent
     items = []
     for y in years:

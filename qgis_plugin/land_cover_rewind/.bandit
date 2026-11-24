@@ -1,4 +1,0 @@
-[bandit]
-# The test suite uses asserts (B101) and is not shipped in the plugin package.
-skips = B101
-exclude = tests
