@@ -1,0 +1,9 @@
+[bandit]
+# Suppress non-critical, inherent findings for a plugin that must launch a
+# user-selected Python interpreter to run the landcoverrewind CLI:
+#   B404 - importing subprocess (required to launch the backend)
+#   B603 - subprocess called without a shell, with a user-chosen interpreter
+#          and fixed arguments (no shell=True; arguments are a list, not a string)
+#   B101 - asserts (used only in the test suite, not shipped at runtime)
+skips = B101,B404,B603
+exclude = tests

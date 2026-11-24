@@ -446,16 +446,8 @@ class LandCoverRewindDialog(QDialog):
         """Best-guess Python path without running anything heavy."""
         import shutil
         cands = [QgsSettings().value(f"{SETTINGS}/python", "")]
-        for n in ("python3", "python"):
+        for n in ("python3", "python", "py"):
             cands.append(shutil.which(n))
-        # Windows 'py' launcher
-        try:
-            out = subprocess.run(["py", "-3", "-c", "import sys;print(sys.executable)"],
-                                 capture_output=True, text=True, timeout=8)
-            if out.returncode == 0 and out.stdout.strip():
-                cands.append(out.stdout.strip())
-        except Exception:
-            pass
         cands.append(sys.executable)
         for pat in (os.path.expandvars(r"%LOCALAPPDATA%\Programs\Python\Python3*\python.exe"),
                     os.path.expandvars(r"%USERPROFILE%\anaconda3\python.exe"),
@@ -706,7 +698,8 @@ class LandCoverRewindDialog(QDialog):
                     ext = QgsCoordinateTransform(rl.crs(), dst, QgsProject.instance()).transformBoundingBox(ext)
                 extent.combineExtentWith(ext)
             except Exception:
-                pass
+                from qgis.core import QgsMessageLog, Qgis
+                QgsMessageLog.logMessage("Could not combine layer extent for zoom", "Land Cover Rewind", Qgis.Info)
             added += 1
         if added and not extent.isEmpty():
             canvas.setExtent(extent)
@@ -735,7 +728,8 @@ class LandCoverRewindDialog(QDialog):
                 else:
                     canvas.unsetMapTool(self._rect_tool)
             except Exception:
-                pass
+                from qgis.core import QgsMessageLog, Qgis
+                QgsMessageLog.logMessage("Could not restore previous map tool", "Land Cover Rewind", Qgis.Info)
         super().closeEvent(event)
 
 
