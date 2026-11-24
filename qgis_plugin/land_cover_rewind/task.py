@@ -1,7 +1,10 @@
-"""Background task that runs the Land Cover Rewind CLI in a separate process."""
-import os
-import subprocess
+"""Background task that runs the Land Cover Rewind CLI in a separate process.
 
+Uses Qt's QProcess (not the Python subprocess module) to launch the user-selected
+Python interpreter with the CLI; QProcess runs in the worker thread using its
+blocking waitFor* methods and needs no shell.
+"""
+from qgis.PyQt.QtCore import QProcess, QProcessEnvironment
 from qgis.core import QgsTask, QgsMessageLog, Qgis
 
 from . import core
@@ -28,43 +31,68 @@ class RunTask(QgsTask):
         self.error = None
         self._proc = None
 
+    def _emit_line(self, line):
+        line = line.rstrip("\r\n")
+        if not line:
+            return
+        self.log_lines.append(line)
+        if len(self.log_lines) > 1000:
+            del self.log_lines[:500]
+        pct, text = core.parse_progress(line)
+        if pct is not None:
+            self.setProgress(pct)
+            QgsMessageLog.logMessage(f"{pct}% {text}", MESSAGE_CATEGORY, Qgis.Info)
+
     def run(self):
         """Executed in a worker thread. Must not touch the GUI or the project."""
         QgsMessageLog.logMessage("Running: " + " ".join(self.command), MESSAGE_CATEGORY, Qgis.Info)
-        run_env = None
+        program = self.command[0]
+        arguments = self.command[1:]
+
+        proc = QProcess()
+        self._proc = proc
+        proc.setProcessChannelMode(QProcess.MergedChannels)  # stdout + stderr together
+        if self.cwd:
+            proc.setWorkingDirectory(self.cwd)
         if self.env:
-            run_env = dict(os.environ)
-            run_env.update(self.env)
-        try:
-            self._proc = subprocess.Popen(
-                self.command, cwd=self.cwd, env=run_env,
-                stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
-                text=True, bufsize=1, universal_newlines=True,
-            )
-        except OSError as e:
-            self.error = f"could not start the process: {e}"
+            qenv = QProcessEnvironment.systemEnvironment()
+            for key, value in self.env.items():
+                qenv.insert(str(key), str(value))
+            proc.setProcessEnvironment(qenv)
+
+        proc.start(program, arguments)
+        if not proc.waitForStarted(15000):
+            self.error = f"could not start the process: {program}"
             return False
 
-        for line in self._proc.stdout:
+        buffer = ""
+        while True:
             if self.isCanceled():
-                self._proc.terminate()
-                try:
-                    self._proc.wait(timeout=10)
-                except subprocess.TimeoutExpired:
-                    self._proc.kill()
+                proc.kill()
+                proc.waitForFinished(3000)
                 return False
-            line = line.rstrip("\n")
-            if not line:
-                continue
-            self.log_lines.append(line)
-            if len(self.log_lines) > 1000:
-                del self.log_lines[:500]
-            pct, text = core.parse_progress(line)
-            if pct is not None:
-                self.setProgress(pct)
-                QgsMessageLog.logMessage(f"{pct}% {text}", MESSAGE_CATEGORY, Qgis.Info)
+            proc.waitForReadyRead(200)
+            data = proc.readAll()
+            if len(data):
+                buffer += bytes(data).decode("utf-8", "replace")
+                while "\n" in buffer:
+                    line, buffer = buffer.split("\n", 1)
+                    self._emit_line(line)
+            elif proc.state() == QProcess.NotRunning:
+                break
 
-        self.returncode = self._proc.wait()
+        data = proc.readAll()  # drain whatever is left after exit
+        if len(data):
+            buffer += bytes(data).decode("utf-8", "replace")
+        for line in buffer.splitlines():
+            self._emit_line(line)
+
+        if proc.exitStatus() != QProcess.NormalExit:
+            self.returncode = -1
+            tail = "\n".join(self.log_lines[-15:])
+            self.error = f"the process stopped unexpectedly.\n{tail}"
+            return False
+        self.returncode = proc.exitCode()
         if self.returncode != 0:
             tail = "\n".join(self.log_lines[-15:])
             self.error = f"the process exited with code {self.returncode}.\n{tail}"

@@ -8,11 +8,10 @@ interest: a polygon layer, a rectangle drawn on the map, or a vector file.
 import glob
 import math
 import os
-import subprocess
 import sys
 import tempfile
 
-from qgis.PyQt.QtCore import Qt
+from qgis.PyQt.QtCore import Qt, QProcess, QProcessEnvironment
 from qgis.PyQt.QtWidgets import (
     QDialog, QVBoxLayout, QHBoxLayout, QFormLayout, QGroupBox, QGridLayout,
     QComboBox, QLineEdit, QPushButton, QLabel, QCheckBox, QDoubleSpinBox,
@@ -491,26 +490,35 @@ class LandCoverRewindDialog(QDialog):
             return False
         self.status_lbl.setText(self.T("st_checking"))
         QApplication_processEvents()
-        env = dict(os.environ)
-        be = self._backend_env()
-        if be:
-            env.update(be)
         probe = ("import landcoverrewind, geopandas, rasterio, sklearn, odc.geo, "
                  "odc.stac, pystac_client, planetary_computer, pyproj, shapely")
-        try:
-            out = subprocess.run([interp, "-c", probe], capture_output=True, text=True,
-                                 timeout=60, env=env)
-        except Exception as e:
-            self.status_lbl.setText(str(e))
+        qenv = QProcessEnvironment.systemEnvironment()
+        be = self._backend_env()
+        if be:
+            for key, value in be.items():
+                qenv.insert(str(key), str(value))
+        proc = QProcess()
+        proc.setProcessEnvironment(qenv)
+        proc.start(interp, ["-c", probe])
+        if not proc.waitForStarted(10000):
+            self.status_lbl.setText(self.T("st_no_python"))
             return False
-        if out.returncode == 0:
+        if not proc.waitForFinished(60000):
+            proc.kill()
+            self.status_lbl.setText(self.T("st_missing"))
+            self.install_btn.setEnabled(True)
+            return False
+        out_text = bytes(proc.readAllStandardOutput()).decode("utf-8", "replace")
+        err_text = bytes(proc.readAllStandardError()).decode("utf-8", "replace")
+        if proc.exitStatus() == QProcess.NormalExit and proc.exitCode() == 0:
             self.status_lbl.setText(self.T("st_ok"))
             self._save_settings()
             return True
         self.status_lbl.setText(self.T("st_missing"))
         self.install_btn.setEnabled(True)
-        if out.stderr:
-            self.log.appendPlainText(out.stderr.strip().splitlines()[-1] if out.stderr.strip() else "")
+        tail = (err_text or out_text).strip()
+        if tail:
+            self.log.appendPlainText(tail.splitlines()[-1])
         return False
 
     def _install_deps(self):

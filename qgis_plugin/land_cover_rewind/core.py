@@ -66,7 +66,7 @@ def build_command(interpreter, cli_path, aoi_path, out_dir, epochs,
 
     interpreter: Python executable; cli_path: path to landcoverrewind_cli.py;
     aoi_path: GPKG/GeoJSON/SHP with the area; out_dir: output folder.
-    Returns a list suitable for subprocess (no shell).
+    Returns an argument list suitable for QProcess (no shell).
     """
     epochs = normalize_epochs(epochs)
     validate_params(epochs, threshold, max_cloud, mode)
