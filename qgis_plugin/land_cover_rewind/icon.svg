@@ -1,22 +1,245 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Land Cover Rewind - ikona wtyczki QGIS (96x96).
      Kolory: tlo #01BDE7, zabudowa #B3261E, roslinnosc #A9D03C, obwodka #FFFFFF.
      Kwadraty rosna po przekatnej (rozlewanie zabudowy w czasie). -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96" role="img" aria-label="Land Cover Rewind">
-  <rect x="0" y="0" width="96" height="96" rx="24.96" fill="#01BDE7"/>
-  <g stroke="#FFFFFF" stroke-width="0.87" stroke-linejoin="round">
-    <rect x="41.78" y="11.52" width="12.44" height="12.44" rx="1.99" fill="#B3261E"/>
-    <rect x="56.91" y="11.52" width="12.44" height="12.44" rx="1.99" fill="#B3261E"/>
-    <rect x="72.04" y="11.52" width="12.44" height="12.44" rx="1.99" fill="#B3261E"/>
-    <rect x="41.78" y="26.65" width="12.44" height="12.44" rx="1.99" fill="#B3261E"/>
-    <rect x="56.91" y="26.65" width="12.44" height="12.44" rx="1.99" fill="#B3261E"/>
-    <rect x="72.04" y="26.65" width="12.44" height="12.44" rx="1.99" fill="#B3261E"/>
-    <rect x="26.65" y="41.78" width="12.44" height="12.44" rx="1.99" fill="#B3261E"/>
-    <rect x="41.78" y="41.78" width="12.44" height="12.44" rx="1.99" fill="#B3261E"/>
-    <rect x="56.91" y="41.78" width="12.44" height="12.44" rx="1.99" fill="#B3261E"/>
-    <rect x="26.65" y="56.91" width="12.44" height="12.44" rx="1.99" fill="#A9D03C"/>
-    <rect x="41.78" y="56.91" width="12.44" height="12.44" rx="1.99" fill="#B3261E"/>
-    <rect x="11.52" y="72.04" width="12.44" height="12.44" rx="1.99" fill="#A9D03C"/>
-    <rect x="26.65" y="72.04" width="12.44" height="12.44" rx="1.99" fill="#A9D03C"/>
+
+<svg
+   viewBox="0 0 96 96"
+   width="96"
+   height="96"
+   role="img"
+   aria-label="Land Cover Rewind"
+   version="1.1"
+   id="svg14"
+   sodipodi:docname="icon.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs14" />
+  <sodipodi:namedview
+     id="namedview14"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="13.471857"
+     inkscape:cx="23.753221"
+     inkscape:cy="52.219972"
+     inkscape:window-width="3840"
+     inkscape:window-height="2062"
+     inkscape:window-x="-10"
+     inkscape:window-y="-10"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg14" />
+  <rect
+     x="0"
+     y="0"
+     width="96"
+     height="96"
+     rx="24.96"
+     fill="#01BDE7"
+     id="rect1" />
+  <g
+     stroke="#ffffff"
+     stroke-width="0.87"
+     stroke-linejoin="round"
+     id="g14"
+     transform="matrix(0.9774417,0,0,0.98241713,-1.8533101,0.47283197)"
+     style="stroke-width:1.24116;stroke-linejoin:miter;stroke-dasharray:none">
+    <rect
+       x="41.779999"
+       y="11.52"
+       width="12.44"
+       height="12.44"
+       rx="1.99"
+       fill="#b3261e"
+       id="rect2"
+       style="stroke-width:1.24116;stroke-linejoin:miter;stroke-dasharray:none" />
+    <rect
+       x="56.91"
+       y="11.52"
+       width="12.44"
+       height="12.44"
+       rx="1.99"
+       fill="#b3261e"
+       id="rect3"
+       style="stroke-width:1.24116;stroke-linejoin:miter;stroke-dasharray:none" />
+    <rect
+       x="72.040001"
+       y="11.52"
+       width="12.44"
+       height="12.44"
+       rx="1.99"
+       fill="#b3261e"
+       id="rect4"
+       style="fill:#a9d03c;fill-opacity:1;stroke-width:1.24116;stroke-linejoin:miter;stroke-dasharray:none" />
+    <rect
+       x="41.779999"
+       y="26.65"
+       width="12.44"
+       height="12.44"
+       rx="1.99"
+       fill="#b3261e"
+       id="rect5"
+       style="stroke-width:1.24116;stroke-linejoin:miter;stroke-dasharray:none" />
+    <rect
+       x="56.91"
+       y="26.65"
+       width="12.44"
+       height="12.44"
+       rx="1.99"
+       fill="#b3261e"
+       id="rect6"
+       style="stroke-width:1.24116;stroke-linejoin:miter;stroke-dasharray:none" />
+    <rect
+       x="72.040001"
+       y="26.65"
+       width="12.44"
+       height="12.44"
+       rx="1.99"
+       fill="#b3261e"
+       id="rect7"
+       style="stroke-width:1.24116;stroke-linejoin:miter;stroke-dasharray:none" />
+    <rect
+       x="26.65"
+       y="41.779999"
+       width="12.44"
+       height="12.44"
+       rx="1.99"
+       fill="#b3261e"
+       id="rect8"
+       style="stroke-width:1.24116;stroke-linejoin:miter;stroke-dasharray:none" />
+    <rect
+       x="41.779999"
+       y="41.779999"
+       width="12.44"
+       height="12.44"
+       rx="1.99"
+       fill="#b3261e"
+       id="rect9"
+       style="stroke-width:1.24116;stroke-linejoin:miter;stroke-dasharray:none" />
+    <rect
+       x="56.91"
+       y="41.779999"
+       width="12.44"
+       height="12.44"
+       rx="1.99"
+       fill="#b3261e"
+       id="rect10"
+       style="stroke-width:1.24116;stroke-linejoin:miter;stroke-dasharray:none" />
+    <rect
+       x="26.65"
+       y="56.91"
+       width="12.44"
+       height="12.44"
+       rx="1.99"
+       fill="#a9d03c"
+       id="rect11"
+       style="stroke-width:1.24116;stroke-linejoin:miter;stroke-dasharray:none" />
+    <rect
+       x="41.779999"
+       y="56.91"
+       width="12.44"
+       height="12.44"
+       rx="1.99"
+       fill="#b3261e"
+       id="rect12"
+       style="stroke-width:1.24116;stroke-linejoin:miter;stroke-dasharray:none" />
+    <rect
+       x="11.52"
+       y="72.040001"
+       width="12.44"
+       height="12.44"
+       rx="1.99"
+       fill="#a9d03c"
+       id="rect13"
+       style="stroke-width:1.24116;stroke-linejoin:miter;stroke-dasharray:none" />
+    <rect
+       x="26.65"
+       y="72.040001"
+       width="12.44"
+       height="12.44"
+       rx="1.99"
+       fill="#a9d03c"
+       id="rect14"
+       style="stroke-width:1.24116;stroke-linejoin:miter;stroke-dasharray:none" />
+    <rect
+       x="41.779999"
+       y="26.65"
+       width="12.44"
+       height="12.44"
+       rx="1.99"
+       fill="#b3261e"
+       id="rect15"
+       style="stroke-width:1.24116;stroke-linejoin:miter;stroke-dasharray:none" />
+    <rect
+       x="56.91"
+       y="26.65"
+       width="12.44"
+       height="12.44"
+       rx="1.99"
+       fill="#b3261e"
+       id="rect16"
+       style="stroke-width:1.24116;stroke-linejoin:miter;stroke-dasharray:none" />
+    <rect
+       x="11.437784"
+       y="26.65"
+       width="12.44"
+       height="12.44"
+       rx="1.99"
+       fill="#b3261e"
+       id="rect18"
+       style="fill:#e0a030;fill-opacity:1;stroke-width:1.24116;stroke-linejoin:miter;stroke-dasharray:none" />
+    <rect
+       x="26.567785"
+       y="26.65"
+       width="12.44"
+       height="12.44"
+       rx="1.99"
+       fill="#b3261e"
+       id="rect19"
+       style="fill:#e0a030;fill-opacity:1;stroke-width:1.24116;stroke-linejoin:miter;stroke-dasharray:none" />
+    <rect
+       x="72.040001"
+       y="41.890068"
+       width="12.44"
+       height="12.44"
+       rx="1.99"
+       fill="#b3261e"
+       id="rect20"
+       style="fill:#b3b3b3;stroke-width:1.24116;stroke-linejoin:miter;stroke-dasharray:none" />
+    <rect
+       x="56.91"
+       y="57.020065"
+       width="12.44"
+       height="12.44"
+       rx="1.99"
+       fill="#b3261e"
+       id="rect21"
+       style="fill:#b3b3b3;stroke-width:1.24116;stroke-linejoin:miter;stroke-dasharray:none" />
+    <rect
+       x="56.775124"
+       y="72.059952"
+       width="12.44"
+       height="12.44"
+       rx="1.99"
+       fill="#b3261e"
+       id="rect17"
+       style="fill:#e0a030;fill-opacity:1;stroke-width:1.24116;stroke-linejoin:miter;stroke-dasharray:none" />
+    <rect
+       x="71.905121"
+       y="72.059952"
+       width="12.44"
+       height="12.44"
+       rx="1.99"
+       fill="#b3261e"
+       id="rect22"
+       style="fill:#e0a030;fill-opacity:1;stroke-width:1.24116;stroke-linejoin:miter;stroke-dasharray:none" />
   </g>
 </svg>
